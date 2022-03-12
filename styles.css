@@ -252,7 +252,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
 }
 
 .topnav a.active {
-  border-bottom: solid 2px var(--accent-color);
+  /* border-bottom: solid 2px var(--accent-color); */
   color: white;
 }
 
