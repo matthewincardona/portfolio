@@ -7,29 +7,32 @@
   <title>Matthew Incardona's Portfolio</title>
   <link rel="icon" type="image/png" href="./assets/logo.png">
   <link rel="stylesheet" href="styles.css" />
-  
+
   <!-- load fonts asynchronously -->
+  <!-- Jetbrains Mono -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" />
-  <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap""
-      media=" print" onload="this.media='all'" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" />
+  <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" media=" print"
+    onload="this.media='all'" />
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" />
-  </noscript>
-  <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" />
 
+    <!-- IBM Plex Sans -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" />
+    <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" media=" print"
+      onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" />
+    </noscript>
 
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
+    <!-- Roboto Mono -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
+    <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      media=" print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
+    </noscript>
+    <script src="scripts.js"></script>
 
 </head>
 
@@ -51,7 +54,7 @@
       <!-- Main welcome area -->
       <div class="hero">
         <div class="hero__welcome-msg">
-          <h1>Hi, my name's <br /><a href="./about-me.html">Matthew.</a></h1>
+          <h1><a href="./about-me.html"><span class="hero__name-top">Hi, my name is </span><br /><div class="hero__name-bottom">Matthew<br />Incardona</div> </a></h1>
         </div>
         <div class="hero__desc">
           <div class="hero__desc-top">
@@ -62,7 +65,7 @@
           </div>
           <div class="hero__desc-bottom">
             <p>
-              <span class="highlight highlight--alt">design</span> and
+              <span class="highlight highlight--alt">design</span> and<br />
               <span class="highlight highlight--alt">development.</span>
             </p>
           </div>
@@ -124,7 +127,8 @@
                 <li class="project-tag"><span>UI/UX Design</span></li>
               </ul>
               <p class="project__descr">
-                Rochester Greenovation is a local thrift store with a goal to let nothing go to waste. This project was part of a two-week team-based UX competition hosted by the Rochester Institute of Technology. 
+                Rochester Greenovation is a local thrift store with a goal to let nothing go to waste. This project was
+                part of a two-week team-based UX competition hosted by the Rochester Institute of Technology.
               </p>
               <a class="project__btn" href="./rochester-greenovation.html">
                 Open Project

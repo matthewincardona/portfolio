@@ -127,7 +127,7 @@ TYPOGRAPHY
 
 a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
   margin: 0;
   padding: 0;
@@ -136,7 +136,7 @@ a {
 ul,
 ol,
 li {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--body-color);
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   line-height: 140%;
@@ -150,15 +150,15 @@ hr {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: var(--header-color);
   font-size: clamp(2.5rem, 5vw, 4rem);
   letter-spacing: 0px;
-  line-height: 200%;
+  line-height: 140%;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: var(--header-color);
   font-size: clamp(3rem, 4.5vw, 3.4rem);
   letter-spacing: 4%;
@@ -167,7 +167,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: var(--header-color);
   font-size: clamp(2.4rem, 4.5vw, 3.2rem);
   letter-spacing: 4%;
@@ -176,7 +176,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: var(--header-color);
   font-size: clamp(2rem, 4.5vw, 2.2rem);
   letter-spacing: 4%;
@@ -186,13 +186,13 @@ h4 {
 }
 
 .subtitle {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
   font-size: clamp(1.5rem, 2.5vw, 2.8rem);
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--body-color);
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   line-height: 140%;
@@ -202,14 +202,14 @@ input,
 label,
 select,
 textarea {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--body-color);
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   line-height: 140%;
 }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
   font-size: clamp(1.2rem, 2.5vw, 1.2rem);
   line-height: 140%;
@@ -228,9 +228,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
   width: 100%;
   overflow: hidden;
   background-color: #390920;
-  font-family: "Arimo", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
-  font-size: clamp(1.2rem, 2.5vw, 0.6rem);
   padding-left: 10%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -246,6 +245,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
   text-decoration: none;
   font-size: 17px;
   transition: 0.2s all ease-out;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 0.6rem);
+  font-weight: 400;
 }
 
 .topnav a:hover {
@@ -301,23 +303,36 @@ HERO
 .hero {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.8fr;
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
   margin: auto;
   max-width: 1400px;
-  padding: 100px 7% 100px 7%;
+  padding: 100px 6% 100px 6%;
   column-gap: 6em;
 }
 
 .hero__welcome-msg {
-  padding: 20px;
-  padding-left: 50px;
+  margin-top: 2px;
+}
+
+.hero__welcome-msg a {
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero__name-top {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-family: "IBM Plex Sans", sans-serif;
+  display: inline-block;
+}
+
+.hero__name-bottom {
+  font-size: clamp(3.3rem, 5vw, 4.8rem);
+  line-height: 140%;
+  padding: 40px 60px;
   background-color: #3d1127;
   border-radius: 4px;
-  margin-top: 2px;
-  /* animation: fade-in 0.4s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) both; */
 }
 
 @keyframes fade-in {
@@ -330,24 +345,16 @@ HERO
 }
 
 .hero__desc {
-  height: 330px;
-  /* animation: fade-in 0.5s 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both; */
+  margin-top: 80px;
 }
 
 .hero__desc p {
-  font-family: "Arimo", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   line-height: 140%;
-  font-weight: 100;
-}
-
-.hero__desc-top {
-  margin-top: 20px;
-}
-
-.hero__desc-bottom {
-  margin-top: 24px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 /* Break this into two rows on smaller devices */
@@ -366,6 +373,7 @@ HERO
   display: inline-block;
   margin: 0px 0px 15px 0px;
   color: var(--cta-color);
+  font-family: "Roboto Mono", monospace;
   font-weight: 800;
 }
 
@@ -450,10 +458,6 @@ PROJECTS
   /* cursor: pointer; */
   transition: 0.2s filter ease-in-out;
   filter: saturate(0.8) brightness(0.95);
-}
-
-.project__img:hover {
-  /* filter: none; */
 }
 
 /* Add an alt color to container background */
