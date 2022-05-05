@@ -275,9 +275,12 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
   display: none;
 }
 
-i {
+i,
+.fa,
+.fa-bars,
+a.icon {
   color: white;
-  z-index: 100000;
+  font-size: 25px;
 }
 
 /* Apply this to everything but the first child of .topnav a */
@@ -383,6 +386,7 @@ HERO
 
 .hero__welcome-msg {
   margin-top: 2px;
+  margin: 20px;
 }
 
 .hero__welcome-msg a {
@@ -413,6 +417,7 @@ HERO
 }
 
 .hero__desc {
+  margin: 20px;
   margin-top: 80px;
 }
 
@@ -431,6 +436,9 @@ HERO
     grid-template-columns: 1fr;
     min-height: 60vh;
     margin-bottom: -100px;
+  }
+  .hero__name-bottom {
+    padding: 20px 40px;
   }
 }
 
