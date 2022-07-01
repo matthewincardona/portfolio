@@ -86,13 +86,13 @@ ROOT COLORS
   --cta-color: #3a89b6;
 }
 
+/* set background image and an overlay */
 body {
   background: linear-gradient(var(--main-bg-color), var(--main-bg-color)),
     url("/assets/blur-bg.webp");
   background-size: 200%;
   background-position: -400px -200px;
   overflow-x: hidden;
-  animation: fade-in 0.3s ease-in 0.3s both;
 }
 
 #canvas {
@@ -113,6 +113,7 @@ main {
   /* max-width: 1400px; */
   margin-left: auto;
   margin-right: auto;
+  animation: fade-in 0.3s ease-in 0.3s both;
 }
 
 img {
