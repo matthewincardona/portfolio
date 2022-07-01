@@ -38,10 +38,132 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
     <script src="scripts.js"></script>
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js";
+      import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
+      import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js";
+
+      // get height of document and set #canvas to it
+      const body = document.body;
+      const html = document.documentElement;
+      const height = Math.max(body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+
+      const scene = new THREE.Scene();
+      const scene2 = new THREE.Scene();
+      const loader = new GLTFLoader();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      
+      const renderer = new THREE.WebGLRenderer({ alpha: true });
+      renderer.setClearColor( 0xffffff, 0);
+      renderer.setSize(window.innerWidth, window.innerHeight);
+
+      document.getElementById( 'canvas' ).appendChild( renderer.domElement );
+      renderer.autoClear = false;
+
+      const controls = new OrbitControls(camera, renderer.domElement);
+
+      const geometry = new THREE.SphereGeometry( 100, 100, 100 );
+
+      const wireframe = new THREE.WireframeGeometry( geometry );
+
+      const line = new THREE.LineSegments( wireframe );
+      line.material.depthTest = false;
+      line.material.opacity = 0.1;
+      line.material.transparent = true;
+      line.renderOrder = 0;
+      line.onBeforeRender = function( renderer ) { renderer.clearDepth(); };
+
+      scene.add( line );
+
+      const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 0.4);
+      hemiLight.position.set(0, 20, 0);
+      scene2.add(hemiLight);
+
+      const dirLight = new THREE.DirectionalLight(0xffffff, 0.6);
+      dirLight.position.set(-3, 10, -10);
+      scene2.add(dirLight);
+
+      camera.position.z = 5;
+
+      loader.load(
+        "./assets/donut.glb",
+        function (gltf) {
+          var customModel = gltf.scene;
+          scene2.add(gltf.scene);
+          customModel.scale.set(30, 30, 30);
+          customModel.position.y = 4;
+        },
+        undefined,
+        function (error) {
+          console.error(error);
+        }
+      );
+
+      loader.load(
+        "./assets/cupcake.glb",
+        function (gltf) {
+          var customModel = gltf.scene;
+          scene2.add(gltf.scene);
+          customModel.scale.set(30, 30, 30);
+           customModel.position.x = Math.random() * 10;
+          customModel.position.y = Math.random() * 10;
+          customModel.position.z = Math.random() * 10;
+        },
+        undefined,
+        function (error) {
+          console.error(error);
+        }
+      );
+
+      for (let i = 0; i < 5; i++ ){
+      loader.load(
+        "./assets/cupcake.glb",
+        function (gltf) {
+          var customModel = gltf.scene;
+          scene2.add(gltf.scene);
+          customModel.scale.set(20, 20, 20);
+          // customModel.position.x = 35;
+          // customModel.position.y = 2;
+          // customModel.rotation.z = 20;
+          customModel.scale.set(Math.random() * 20, Math.random() * 20, Math.random() * 20);
+          customModel.position.x = Math.random() * 20;
+          customModel.position.y = Math.random() * 20;
+          customModel.position.z = Math.random() * 20;
+
+        },
+        undefined,
+        function (error) {
+          console.error(error);
+        }
+      )};
+
+      //controls.update() must be called after any manual changes to the camera's transform
+      camera.position.set(10, 20, 0);
+      controls.update();
+
+      renderer.setAnimationLoop((_) => {
+        scene.rotation.x += 0.003;
+        scene.rotation.y += 0.001;
+        scene2.rotation.x += 0.001;
+        scene2.rotation.y += 0.003;
+        renderer.render(scene, camera);
+        // renderer.render(scene2, camera);
+        // document.getElementById("canvas").style.height = height + 5;
+      });
+    </script>
 
 </head>
 
 <body>
+  <!-- threejs canvas -->
+      <div id="canvas"></div>
   <div class="bg-overlay">
     <header>
       <nav>
@@ -81,7 +203,6 @@
       </div>
     </header>
     <section>
-      <div class="bg-wrapper">
         <!-- Projects area -->
         <div class="projects">
           <!-- Project One -->
@@ -148,7 +269,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     </main>
     <footer>
