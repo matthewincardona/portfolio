@@ -110,7 +110,7 @@
         "./assets/cupcake.glb",
         function (gltf) {
           var customModel = gltf.scene;
-          scene2.add(gltf.scene);
+          // scene2.add(gltf.scene);
           customModel.scale.set(30, 30, 30);
            customModel.position.x = Math.random() * 10;
           customModel.position.y = Math.random() * 10;
@@ -127,7 +127,7 @@
         "./assets/cupcake.glb",
         function (gltf) {
           var customModel = gltf.scene;
-          scene2.add(gltf.scene);
+          // scene2.add(gltf.scene);
           customModel.scale.set(20, 20, 20);
           // customModel.position.x = 35;
           // customModel.position.y = 2;
@@ -154,7 +154,7 @@
         scene2.rotation.x += 0.001;
         scene2.rotation.y += 0.003;
         renderer.render(scene, camera);
-        // renderer.render(scene2, camera);
+        renderer.render(scene2, camera);
         // document.getElementById("canvas").style.height = height + 5;
       });
     </script>
