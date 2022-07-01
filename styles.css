@@ -87,12 +87,12 @@ ROOT COLORS
 }
 
 body {
-  /* background-image: url("/assets/blur-bg.webp"); */
   background: linear-gradient(var(--main-bg-color), var(--main-bg-color)),
     url("/assets/blur-bg.webp");
   background-size: 200%;
   background-position: -400px -200px;
   overflow-x: hidden;
+  animation: fade-in 0.3s ease-in 0.3s both;
 }
 
 #canvas {
