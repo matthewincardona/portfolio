@@ -86,6 +86,7 @@ ROOT COLORS
   --cta-color: #3a89b6;
 }
 
+/* set background image and an overlay */
 body {
   background: linear-gradient(var(--main-bg-color), var(--main-bg-color)),
     url("/assets/blur-bg.webp");
