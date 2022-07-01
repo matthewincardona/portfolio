@@ -79,7 +79,7 @@ ROOT COLORS
 =================*/
 
 :root {
-  --main-bg-color: rgba(35, 5, 22, 0.94);
+  --main-bg-color: rgba(35, 5, 22, 0.8);
   --header-color: #e5e5e5;
   --body-color: #f4ecd6;
   --accent-color: #e40066;
@@ -87,33 +87,32 @@ ROOT COLORS
 }
 
 body {
-  background-image: url("/assets/blur-bg.webp");
+  /* background-image: url("/assets/blur-bg.webp"); */
+  background: linear-gradient(var(--main-bg-color), var(--main-bg-color)),
+    url("/assets/blur-bg.webp");
   background-size: 200%;
   background-position: -400px -200px;
   overflow-x: hidden;
 }
 
-.bg-overlay {
-  background-color: var(--main-bg-color);
-}
-
-/* body::before {
-  content: "";
-  position: fixed;
+#canvas {
   width: 100%;
-  height: 100%;
+  height: 200px;
+  padding: 0px;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--main-bg-color);
-} */
+  z-index: -1;
+}
+
+.bg-overlay {
+  /* background-color: var(--main-bg-color); */
+}
 
 main {
   /* max-width: 1400px; */
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 5vh;
 }
 
 img {
@@ -431,14 +430,14 @@ HERO
 }
 
 /* Break this into two rows on smaller devices */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .hero {
     grid-template-columns: 1fr;
     min-height: 60vh;
-    margin-bottom: -100px;
   }
   .hero__name-bottom {
     padding: 20px 40px;
+    max-width: 400px;
   }
 }
 
@@ -460,6 +459,10 @@ HERO
 /* ================
 PROJECTS
 =================*/
+
+.projects {
+  background-color: rgba(211, 211, 211, 0.04);
+}
 
 /* Create a two column layout */
 .project-container {
@@ -490,7 +493,7 @@ PROJECTS
 
 /* Add an alt color to container background */
 .bg-wrapper {
-  background-color: rgba(211, 211, 211, 0.05);
+  background-color: rgba(211, 211, 211, 0.02);
 }
 
 .project-container__left-panel {
@@ -509,7 +512,7 @@ PROJECTS
   align-items: center;
   /* flex-grow: 0; */
   background-color: #00000000;
-  border: solid 2px#3A89B6;
+  border: solid 2px #3a89b6;
   border-radius: 50px;
   padding: 10px 25px;
   margin-top: 30px;
@@ -643,7 +646,7 @@ li span {
 }
 
 /* Break this into two rows on smaller devices */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .project-container {
     grid-template-columns: 1fr;
   }
