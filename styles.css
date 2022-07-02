@@ -89,10 +89,11 @@ ROOT COLORS
 /* set background image and an overlay */
 body {
   background: linear-gradient(var(--main-bg-color), var(--main-bg-color)),
-    url("/assets/blur-bg.webp");
+    url("/assets/blur-bg-cropped.webp");
   background-size: 200%;
   background-position: -400px -200px;
   overflow-x: hidden;
+  /* background-attachment: fixed; */
 }
 
 #canvas {
@@ -169,7 +170,7 @@ h2 {
 h3 {
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
-  font-size: clamp(2.4rem, 4.5vw, 3.2rem);
+  font-size: clamp(2.2rem, 4.5vw, 3rem);
   letter-spacing: 4%;
   line-height: 140%;
   margin-bottom: 15px;
@@ -234,12 +235,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
 
 /* Style navbar */
 .topnav {
-  position: fixed;
+  position: absolute;
   z-index: 100;
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #390920;
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
   padding-left: 10%;
@@ -444,7 +444,7 @@ HERO
 
 .highlight {
   border-radius: 3px;
-  border: solid 3px #3d1127;
+  border: solid 2px #3a89b6;
   padding: 0px 25px 0px 25px;
   display: inline-block;
   margin: 0px 0px 15px 0px;
@@ -550,7 +550,8 @@ li span {
   list-style-position: inside;
   padding: 10px 12px 10px 20px;
   margin-right: 25px;
-  background-color: #411c31;
+  /* background-color: #411c31; */
+  background-color: rgba(114, 114, 114, 0.1);
   border-radius: 3px;
   margin-bottom: 20px;
   user-select: none;
@@ -731,7 +732,8 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  background-color: #3d1127;
+  /* background-color: #3d1127; */
+  background-color: rgba(114, 114, 114, 0.1);
   padding: 15px 25px;
   border-radius: 4px;
   box-sizing: border-box;
