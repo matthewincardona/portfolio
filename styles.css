@@ -284,13 +284,16 @@ a.icon {
 }
 
 /* Apply this to everything but the first child of .topnav a */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .topnav a:not(:first-child) {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .topnav {
+    padding-left: 10px;
   }
 }
 
@@ -386,7 +389,6 @@ HERO
 
 .hero__welcome-msg {
   margin-top: 2px;
-  margin: 20px;
 }
 
 .hero__welcome-msg a {
@@ -403,8 +405,9 @@ HERO
   font-size: clamp(3.3rem, 5vw, 4.8rem);
   line-height: 140%;
   padding: 40px 60px;
-  background-color: #3d1127;
+  background-color: #3d1127c0;
   border-radius: 4px;
+  max-width: 550px;
 }
 
 @keyframes fade-in {
@@ -435,6 +438,7 @@ HERO
   .hero {
     grid-template-columns: 1fr;
     min-height: 60vh;
+    padding-bottom: 0;
   }
   .hero__name-bottom {
     padding: 20px 40px;
@@ -494,7 +498,7 @@ PROJECTS
 
 /* Add an alt color to container background */
 .bg-wrapper {
-  background-color: rgba(211, 211, 211, 0.02);
+  background-color: rgba(114, 114, 114, 0.08);
 }
 
 .project-container__left-panel {
@@ -651,6 +655,7 @@ li span {
 @media screen and (max-width: 1000px) {
   .project-container {
     grid-template-columns: 1fr;
+    padding-top: 100px;
   }
   .project__img {
     margin-top: -100px;
