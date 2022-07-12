@@ -104,6 +104,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  animation: fade-in 0.3s ease-in 0.3s both;
 }
 
 .bg-overlay {
