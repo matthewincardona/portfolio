@@ -525,6 +525,7 @@ PROJECTS
   transition: background-color ease-in 0.15s;
   font-size: clamp(1.2rem, 2.5vw, 1.2rem);
   line-height: 140%;
+  max-width: 300px;
 }
 
 .project__btn:hover {
