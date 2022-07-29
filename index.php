@@ -5,40 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matthew Incardona's Portfolio</title>
-  <link rel="icon" type="image/png" href="./assets/logo.png">
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- load fonts asynchronously -->
-  <!-- Jetbrains Mono -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" />
-  <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" media=" print"
-    onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" />
-
-    <!-- IBM Plex Sans -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" />
-    <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" media=" print"
-      onload="this.media='all'" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" />
-    </noscript>
-
-    <!-- Roboto Mono -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
-    <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" media=" print"
-      onload="this.media='all'" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
-    </noscript>
-    <!-- fontawesome cdn -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-    <script src="scripts.js"></script>
-    
+  <?php include './includes/head.php';?>
 </head>
 
 <body>
@@ -46,18 +13,7 @@
       <div id="canvas"></div>
   <div class="bg-overlay">
     <header>
-      <nav>
-        <!-- Responsive navbar -->
-        <div class="topnav" id="myTopnav">
-          <a href="./index.html" class="active">Home</a>
-          <a href="./about-me.html">About</a>
-          <a href="./contact.html">Contact Me</a>
-          <a href="./assets/Matthew Incardona's Resume.pdf">Resume</a>
-          <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </nav>
+      <?php include './includes/nav.php';?>
       <main>
       <!-- Main welcome area -->
       <div class="hero">
@@ -99,7 +55,7 @@
                 non-Windows users to stream Windows programs directly
                 through their browser.
               </p>
-              <a class="project__btn" href="./second-desk.html">
+              <a class="project__btn" href="./second-desk.php">
                 Open Project
                 <img class="project__btn-icon" src="./assets/arrow.svg" alt="" />
                 <a />
@@ -119,7 +75,7 @@
                 Explore projects from my freelance web design business, DouxDolci Web Design, where I work one-on-one
                 with a variety of clients to improve their online presence.
               </p>
-              <a class="project__btn" href="./web-design.html">
+              <a class="project__btn" href="./web-design.php">
                 Open Project
                 <img class="project__btn-icon" src="./assets/arrow.svg" alt="" />
                 <a />
@@ -138,7 +94,7 @@
                 Rochester Greenovation is a local thrift store with a goal to let nothing go to waste. This project was
                 part of a two-week team-based UX competition hosted by the Rochester Institute of Technology.
               </p>
-              <a class="project__btn" href="./rochester-greenovation.html">
+              <a class="project__btn" href="./rochester-greenovation.php">
                 Open Project
                 <img class="project__btn-icon" src="./assets/arrow.svg" alt="" />
                 <a />
@@ -150,21 +106,7 @@
         </div>
     </section>
     </main>
-    <footer>
-      <div class="footer-col">
-        <h5>Looking to get in touch?</h5><a href="./contact.html"><button class="footer-btn">Contact Me!</button></a>
-      </div>
-      <div class="footer-col">
-        <a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
-        <div class="footer__icon-row"><img class="footer__icon" src="./assets/behance-icon.svg" alt="behance icon"><p>See more of my work on Behance</p>
-        </div>
-        </a>
-        <a href="https://www.linkedin.com/in/matthew-incardona/" target="_blank" rel="noopener noreferrer">
-        <div class="footer__icon-row"><img class="footer__icon" src="./assets/linkedin-icon.svg" alt="linkedin icon"><p>Connect with me on LinkedIn</p>
-        </div>
-        </a>
-      </div>
-    </footer>
+      <?php include './includes/footer.php';?>
   </div>
   <script async defer type="module">
       import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js";
@@ -225,8 +167,9 @@
         function (gltf) {
           var customModel = gltf.scene;
           scene2.add(gltf.scene);
-          customModel.scale.set(30, 30, 30);
-          customModel.position.y = 4;
+          customModel.scale.set(35, 35, 35);
+          customModel.position.x = -5;
+          customModel.position.y = 10;
         },
         undefined,
         function (error) {
@@ -240,9 +183,10 @@
           var customModel = gltf.scene;
           // scene2.add(gltf.scene);
           customModel.scale.set(30, 30, 30);
-           customModel.position.x = Math.random() * 10;
-          customModel.position.y = Math.random() * 10;
-          customModel.position.z = Math.random() * 10;
+          //  customModel.position.x = Math.random() * 10;
+          customModel.position.x = 10;
+          customModel.position.y = 0;
+          customModel.rotation.x = .5;
         },
         undefined,
         function (error) {
@@ -252,18 +196,16 @@
 
       for (let i = 0; i < 5; i++ ){
       loader.load(
-        "./assets/cupcake.glb",
+        "./assets/cake.glb",
         function (gltf) {
           var customModel = gltf.scene;
           // scene2.add(gltf.scene);
           customModel.scale.set(20, 20, 20);
-          // customModel.position.x = 35;
-          // customModel.position.y = 2;
-          // customModel.rotation.z = 20;
-          customModel.scale.set(Math.random() * 20, Math.random() * 20, Math.random() * 20);
           customModel.position.x = Math.random() * 20;
           customModel.position.y = Math.random() * 20;
           customModel.position.z = Math.random() * 20;
+          customModel.rotation.x = Math.random() * 20;
+
 
         },
         undefined,

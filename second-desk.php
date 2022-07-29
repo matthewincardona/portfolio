@@ -5,57 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Second Desk | Matthew Incardona</title>
-  <link rel="icon" type="image/png" href="./assets/logo.png">
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- load fonts asynchronously -->
-  <!-- jetbrains mono -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" />
-  <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" media=" print"
-    onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" />
-
-    <!-- ibm plex sans -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" />
-    <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" media=" print"
-      onload="this.media='all'" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" />
-    </noscript>
-
-    <!-- M PLUS Rounded 1c -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" />
-    <link rel=" stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
-      media=" print" onload="this.media='all'" />
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" />
-    </noscript>
-    <!-- fontawesome cdn -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-    <script src="scripts.js"></script>
-
+      <?php include './includes/head.php';?>
 </head>
 
 <body>
   <div class="bg-overlay">
     <header>
-      <nav>
-        <!-- Responsive navbar -->
-        <div class="topnav" id="myTopnav">
-          <a href="./index.html" class="active">Home</a>
-          <a href="./about-me.html">About</a>
-          <a href="./contact.html">Contact Me</a>
-          <a href="./assets/Matthew Incardona's Resume.pdf">Resume</a>
-          <a href="javascript:void(0);" class="icon" onclick="openMobileNav()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-      </nav>
+      <?php include './includes/nav.php';?>
     </header>
     <main>
       <div class="case-study">
@@ -306,23 +262,7 @@
         </section>
       </div>
     </main>
-    <footer>
-      <div class="footer-col">
-        <h5>Looking to get in touch?</h5><a href="./contact.html"><button class="footer-btn">Contact Me!</button></a>
-      </div>
-      <div class="footer-col">
-        <a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
-          <div class="footer__icon-row"><img class="footer__icon" src="./assets/behance-icon.svg" alt="behance icon">
-            <p>See more of my work on Behance</p>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/matthew-incardona/" target="_blank" rel="noopener noreferrer">
-          <div class="footer__icon-row"><img class="footer__icon" src="./assets/linkedin-icon.svg" alt="behance icon">
-            <p>Connect with me on LinkedIn</p>
-          </div>
-        </a>
-      </div>
-    </footer>
+      <?php include './includes/footer.php';?>
   </div>
 </body>
 
