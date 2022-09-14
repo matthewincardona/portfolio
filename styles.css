@@ -546,15 +546,10 @@ PROJECTS
   margin-top: 10px;
 }
 
-li span {
-  position: relative;
-  left: -10px;
-}
-
 /* Styles tags for projects and places bullet points inside of the background */
 .project-tag {
   list-style-position: inside;
-  padding: 10px 12px 10px 20px;
+  padding: 10px 24px 10px 20px;
   margin-right: 25px;
   /* background-color: #411c31; */
   background-color: rgba(114, 114, 114, 0.1);
