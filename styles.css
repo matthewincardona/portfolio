@@ -104,7 +104,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  animation: fade-in 0.3s ease-in 0.3s both;
+  animation: fade-in 0.8s ease-in 0.5s both;
 }
 
 .bg-overlay {
@@ -115,7 +115,7 @@ main {
   /* max-width: 1400px; */
   margin-left: auto;
   margin-right: auto;
-  animation: fade-in 0.3s ease-in 0.3s both;
+  animation: fade-in 0.6s ease-in 0.15s both;
 }
 
 img {
