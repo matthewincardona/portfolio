@@ -335,20 +335,28 @@ footer {
   margin: 30px 60px;
   display: grid;
   grid-template-rows: auto;
-  row-gap: 0.5em;
+  row-gap: .5;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footer-col button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-btn {
-  border-radius: 0;
-  background-color: var(--cta-color);
+  border: var(--accent-color) 3px solid;
+  background-color: #00000000;
   color: white;
-  transition: background-color ease-in 0.15s;
-  padding: 15px 30px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in;
 }
 
 .footer-btn:hover {
-  background-color: #2e6e94;
-  cursor: pointer;
+  opacity: 0.8;
 }
 
 .footer__icon-row {
