@@ -697,9 +697,9 @@ ABOUT ME
 }
 
 .about-me__picture {
-  margin: auto;
-  width: 100%;
-  height: auto;
+  margin: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-me__bio {
