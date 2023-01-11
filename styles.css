@@ -349,7 +349,7 @@ footer {
   border: var(--accent-color) 3px solid;
   background-color: #00000000;
   color: white;
-  padding: 12px 20px;
+  padding: 8px 20px;
   border-radius: 4px;
   cursor: pointer;
   transition: opacity 0.15s ease-in;
@@ -744,7 +744,7 @@ textarea {
   width: 100%;
   /* background-color: #3d1127; */
   background-color: rgba(114, 114, 114, 0.1);
-  padding: 15px 25px;
+  padding: 10px 22px;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -761,7 +761,7 @@ input[type="submit"] {
   border: var(--accent-color) 3px solid;
   background-color: #00000000;
   color: white;
-  padding: 12px 20px;
+  padding: 8px 20px;
   border-radius: 4px;
   cursor: pointer;
   transition: opacity 0.15s ease-in;
