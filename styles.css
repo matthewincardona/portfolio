@@ -89,7 +89,7 @@ ROOT COLORS
 /* set background image and an overlay */
 body {
   background: linear-gradient(var(--main-bg-color), var(--main-bg-color)),
-    url("/assets/blur-bg-cropped.webp");
+    url("assets/blur-bg-cropped.webp");
   background-size: 200%;
   background-position: -400px -200px;
   overflow-x: hidden;
@@ -243,9 +243,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
   overflow: hidden;
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--header-color);
-  padding-left: 10%;
+  padding-left: 6%;
+  padding-right: 6%;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 1400px;
 }
 
 /* Style navbar links */
@@ -579,7 +581,7 @@ PROJECTS
 }
 
 .case-study section {
-  padding: 80px 5% 80px 5%;
+  padding: 80px 6% 80px 6%;
   max-width: 1400px;
   margin: auto;
 }
