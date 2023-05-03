@@ -6,7 +6,7 @@
 <footer>
 	<div class="footer-col">
 		<p>Looking to get in touch?</p>
-		<a href="./contact.html"><button class="footer-btn">Contact Me!</button></a>
+		<a href="/contact"><button class="footer-btn">Contact Me!</button></a>
 	</div>
 	<div class="footer-col">
 		<a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
