@@ -245,41 +245,4 @@ Some of it was focused on missing elements in the prototype. Things such as miss
 </p>
       </div>
     </section>
-
-    <!-- future improvements -->
-    <div class="bg-wrapper">
-      <section>
-        <div class="case-study__row">
-          <h4>Future Improvements</h4>
-          <p>While testing our MVP, there were several roadblocks that we kept facing:</p>
-          <ul>
-            <li>
-              Our remote desktop software was designed for simple office programs, not graphics-intensive ones. Low
-              stream quality and low FPS was sometimes an issue.
-            </li>
-            <li>The AWS instance lacked a dedicated GPU, which would bottleneck the performance of some programs.</li>
-          </ul>
-          <br /><br />
-          <p>
-            Finding new remote desktop software was our main priority, so after researching the stacks behind cloud
-            gaming services like Google Stadia (who excelled at remote app streaming), we found that a WebRTC-based
-            approach looked the most promising. Although, we are still in the process of looking for ways to
-            improve performance on the server itself.
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <!-- what I learned -->
-    <section>
-      <div class="case-study__row case-study__bottom-section">
-        <h4>What I Learned</h4>
-        <p>
-          Going into this project, I had little familiarity with UX principles, server management, or coding for the
-          web. I was the only product developer and designer working on it for a number of months, which forced me
-          to learn how to do everything from the ground up. I’ve made a lot of progress since starting and I’m
-          continuing to learn more as the project keeps evolving.
-        </p>
-      </div>
-    </section>
   </div>
