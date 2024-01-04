@@ -4,8 +4,8 @@ ROOT COLORS
 
 :root {
 	--main-bg-color: rgba(35, 5, 22, 0.8);
-	--header-color: #e5e5e5;
-	--body-color: #f4ecd6;
+	--header-color: #101010;
+	--body-color: #101010;
 	--accent-color: #e40066;
 	--cta-color: #3a89b6;
 }
@@ -61,9 +61,9 @@ ol,
 li {
 	font-family: 'IBM Plex Sans', sans-serif;
 	color: var(--body-color);
-	font-size: clamp(1rem, 2.5vw, 1.3rem);
-	line-height: 140%;
-	margin-top: 12px;
+	/* font-size: clamp(1rem, 2.5vw, 1.3rem);
+	line-height: 140%; */
+	font-size: 12px;
 }
 
 hr {
@@ -75,9 +75,14 @@ hr {
 h1 {
 	font-family: 'Major Mono Display', monospace;
 	color: var(--header-color);
-	font-size: clamp(2.5rem, 5vw, 4rem);
-	letter-spacing: 0px;
-	line-height: 140%;
+	/* font-size: clamp(2.5rem, 5vw, 4rem); */
+	/* letter-spacing: 0px; */
+	/* line-height: 140%; */
+	font-size: 168.361px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -13.469px;
 }
 
 h2 {
@@ -127,7 +132,8 @@ h5 {
 p {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--body-color);
-	font-size: clamp(1rem, 2.5vw, 1.3rem);
+	/* font-size: clamp(1rem, 2.5vw, 1.3rem); */
+	font-size: 12px;
 	line-height: 140%;
 }
 

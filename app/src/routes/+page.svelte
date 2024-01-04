@@ -1,6 +1,6 @@
 <script>
 	// assets
-	import Hero from '$lib/Hero.svelte';
+	import bg from '$lib/assets/bg.png';
 </script>
 
 <svelte:head>
@@ -14,8 +14,10 @@
 		<div class="hero__inner">
 			<div>
 				<strong
-					>A Frontend Developer, UX/UI Designer, and Entrepreneur at the Rochester Institute of
-					Technology.</strong
+					><p>
+						A Frontend Developer, UX/UI Designer, and Entrepreneur at the Rochester Institute of
+						Technology.
+					</p></strong
 				>
 			</div>
 			<div>
@@ -26,21 +28,46 @@
 					contributing to the success and growth of your organization."
 				</p>
 			</div>
-			<div><p>Being a bitch, 23 years of experience</p></div>
+			<div />
+			<div>
+				<p>Being a bitch, 23 years of experience</p>
+				<ul>
+					<li>Cloud Computing</li>
+					<li>JavaScript</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>React, Svelte, Angular</li>
+					<li>Figma</li>
+					<li>Photoshop, Illustrator</li>
+				</ul>
+			</div>
 		</div>
-		<h1>Developer</h1>
+
+		<div>
+			<img class="hero__text-mask" src={bg} alt="" />
+			<h1>Developer</h1>
+		</div>
 	</div>
 </section>
 
 <style>
 	.hero {
-		color: black;
+		min-height: 100dvh;
+		padding: 1% 3%;
 	}
 
 	.hero__inner {
-		display: flex;
-		width: 1261px;
-		justify-content: space-between;
-		align-items: flex-start;
+		display: grid;
+		grid-template-columns: 1fr 1.5fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 0px 0px;
+		grid-template-areas: '. . . .';
+	}
+
+	.hero__text-mask {
+		opacity: 0.8;
+		mix-blend-mode: lighten;
+		position: absolute;
+		inset: 0 0;
 	}
 </style>

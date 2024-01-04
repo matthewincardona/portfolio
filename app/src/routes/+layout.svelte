@@ -4,9 +4,9 @@
 </script>
 
 <div class="bg-overlay">
-	<Navbar />
+	<!-- <Navbar /> -->
 	<main>
 		<slot />
 	</main>
-	<Footer />
+	<!-- <Footer /> -->
 </div>
