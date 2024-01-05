@@ -2,6 +2,7 @@
 	// assets
 	import bg from '$lib/assets/bg.png';
 	import textMaskDev from '$lib/assets/text-mask-dev.png';
+	import resume from '$lib/assets/Matthew_Incardona_Resume-UX-Engineer.pdf';
 
 	import { onMount } from 'svelte';
 	onMount(() => {
@@ -50,7 +51,7 @@
 					word
 						.slice(1)
 						.split('')
-						.map((char) => (Math.random() < 0.7 ? char.toLowerCase() : char.toUpperCase()))
+						.map((char) => (Math.random() < 0.6 ? char.toLowerCase() : char.toUpperCase()))
 						.join('');
 
 				words[currentIndex] = modifiedWord;
@@ -65,17 +66,21 @@
 						callback(); // Trigger the callback to move on to the next word
 					}
 				}
-				animationDuration += 400; // Assuming a delay of 500ms per word, adjust if needed
+				animationDuration += 500; // Assuming a delay of 500ms per word, adjust if needed
 			};
+
+			// Continue the animation for the next word after a delay
+			const animationInterval = setInterval(() => {
+				animateWord();
+			}, getRandomInterval(200));
 
 			// Start the animation for the first word after a delay
 			setTimeout(() => {
 				animateWord();
-				// Continue the animation for the next word after a delay
-				const animationInterval = setInterval(() => {
-					animateWord();
-				}, getRandomInterval(50));
-			}, getRandomInterval(100)); // Add a small delay before starting the animation
+			}, getRandomInterval(800)); // Add a small delay before starting the animation
+
+			// Return the animation interval ID for cleanup, if needed
+			return animationInterval;
 		};
 
 		const h1Nodes = Array.from(document.getElementsByTagName('H1'));
@@ -84,13 +89,13 @@
 		const animateSequentially = (index) => {
 			if (index < h1Nodes.length) {
 				// Start the animation for the current <h1> element
-				textAnimator(
+				const nextAnimation = textAnimator(
 					h1Nodes[index],
 					() => {
 						// Move on to the next <h1> element after the animation completes
 						animateSequentially(index + 1);
 					},
-					5000
+					1500
 				); // Set the duration for the first word's animation
 			}
 		};
@@ -100,12 +105,12 @@
 
 		// Optionally, stop the entire animation sequence after a certain duration (e.g., 30 seconds)
 		// setTimeout(() => {
-		//     clearInterval(animationInterval);
+		//     clearInterval(firstAnimation);
 		// }, 30000);
 
 		// Function to get a random interval above a specified minimum value
 		function getRandomInterval(minimumInterval) {
-			return Math.floor(Math.random() * 300) + minimumInterval; // Generates a random number between minimumInterval and (minimumInterval + 600)
+			return Math.floor(Math.random() * 400) + minimumInterval; // Generates a random number between minimumInterval and (minimumInterval + 600)
 		}
 	});
 </script>
@@ -120,12 +125,12 @@
 		<h1 class="hero__inner__title--des">Designer</h1>
 		<div class="hero__inner">
 			<div>
-				<strong
-					><p>
+				<p>
+					<strong>
 						A Frontend Developer, UX/UI Designer, and Entrepreneur at the Rochester Institute of
 						Technology.
-					</p></strong
-				>
+					</strong>
+				</p>
 			</div>
 			<div>
 				<p>
@@ -150,10 +155,17 @@
 			</div>
 		</div>
 
-		<div class="hero__inner__text-mask-container">
+		<div>
 			<h1 class="hero__inner__title--dev">Developer</h1>
 			<!-- <img class="hero__inner__text-mask" src={textMaskDev} alt="" /> -->
 		</div>
+
+		<nav class="hero__nav">
+			<p><strong>Matthew Incardona</strong></p>
+			<a href="/about">About</a>
+			<a href="">Projects</a>
+			<a href={resume}>Resume</a>
+		</nav>
 	</div>
 </section>
 
@@ -193,7 +205,14 @@
 		color: transparent;
 	}
 
-	.hero__inner__text-mask-container {
-		position: relative;
+	.hero__nav {
+		display: flex;
+		align-items: end;
+		flex-direction: row;
+		flex-flow: row-reverse;
+		white-space: nowrap;
+		gap: 1em;
+		position: fixed;
+		inset: 98% 98%;
 	}
 </style>
