@@ -1,6 +1,7 @@
 <script>
 	// assets
 	import bg from '$lib/assets/bg.png';
+	import textMaskDev from '$lib/assets/text-mask-dev.png';
 </script>
 
 <svelte:head>
@@ -9,8 +10,8 @@
 
 <section>
 	<div class="hero">
-		<h1>Entreprenuer</h1>
-		<h1>Designer</h1>
+		<h1 class="hero__inner__title--des">Entreprenuer</h1>
+		<h1 class="hero__inner__title--des">Designer</h1>
 		<div class="hero__inner">
 			<div>
 				<strong
@@ -43,31 +44,62 @@
 			</div>
 		</div>
 
-		<div>
-			<img class="hero__text-mask" src={bg} alt="" />
-			<h1>Developer</h1>
+		<div class="hero__inner__text-mask-container">
+			<h1 class="hero__inner__title--dev">Developer</h1>
+			<!-- <img class="hero__inner__text-mask" src={textMaskDev} alt="" /> -->
 		</div>
 	</div>
 </section>
 
 <style>
 	.hero {
-		min-height: 100dvh;
+		min-height: 100vh;
 		padding: 1% 3%;
+		position: relative; /* Add this line to make the container a positioning context */
 	}
 
 	.hero__inner {
+		margin-top: 20px;
+		margin-left: 20px;
 		display: grid;
-		grid-template-columns: 1fr 1.5fr 1fr;
+		grid-template-columns: 1fr 1.3fr 1fr 1fr;
 		grid-template-rows: 1fr;
-		gap: 0px 0px;
+		gap: 0px 2em;
 		grid-template-areas: '. . . .';
 	}
 
-	.hero__text-mask {
+	.hero__inner__title--des {
+		background: url('$lib/assets/text-mask-des.png');
+		background-position: 0% 25%;
+		background-size: cover;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	.hero__inner__title--dev {
+		/* mix-blend-mode: lighten; */
+		/* mask-image: url('$lib/assets/text-mask-dev.png'); */
+		background: url('$lib/assets/text-mask-dev.png');
+		background-position: 0% 50%;
+		background-size: cover;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	.hero__inner__text-mask-container {
+		position: relative;
+	}
+
+	.hero__inner__text-mask {
 		opacity: 0.8;
-		mix-blend-mode: lighten;
+		mix-blend-mode: hard-light;
 		position: absolute;
-		inset: 0 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: solid 10px black;
 	}
 </style>

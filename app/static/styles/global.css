@@ -50,7 +50,7 @@ TYPOGRAPHY
 
 a {
 	text-decoration: none;
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
 	margin: 0;
 	padding: 0;
@@ -59,7 +59,7 @@ a {
 ul,
 ol,
 li {
-	font-family: 'IBM Plex Sans', sans-serif;
+	font-family: 'JetBrains Mono', monospace;
 	color: var(--body-color);
 	/* font-size: clamp(1rem, 2.5vw, 1.3rem);
 	line-height: 140%; */
