@@ -50,7 +50,7 @@
 					word
 						.slice(1)
 						.split('')
-						.map((char) => (Math.random() < 0.92 ? char.toLowerCase() : char.toUpperCase()))
+						.map((char) => (Math.random() < 0.7 ? char.toLowerCase() : char.toUpperCase()))
 						.join('');
 
 				words[currentIndex] = modifiedWord;
@@ -75,7 +75,7 @@
 				const animationInterval = setInterval(() => {
 					animateWord();
 				}, getRandomInterval(50));
-			}, getRandomInterval(1000)); // Add a small delay before starting the animation
+			}, getRandomInterval(100)); // Add a small delay before starting the animation
 		};
 
 		const h1Nodes = Array.from(document.getElementsByTagName('H1'));
