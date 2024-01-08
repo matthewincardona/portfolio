@@ -153,7 +153,7 @@
 			</div>
 			<div />
 			<div>
-				<p>Being a bitch, 23 years of experience</p>
+				<p>Freelance web designer, years of experience in</p>
 				<ul>
 					<li>Cloud Computing</li>
 					<li>JavaScript</li>
