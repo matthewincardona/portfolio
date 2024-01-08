@@ -6,6 +6,17 @@
 
 	import { onMount } from 'svelte';
 	onMount(() => {
+		// on hover, make the text small and blurred
+		document.getElementById('nav').addEventListener('mouseover', (e) => {
+			document.getElementById('hero').style.transform = 'scale(.7) translateY(0px)';
+			document.getElementById('hero').style.filter = 'blur(10px)';
+		});
+
+		document.getElementById('nav').addEventListener('mouseout', (e) => {
+			document.getElementById('hero').style.transform = '';
+			document.getElementById('hero').style.filter = '';
+		});
+
 		// const textAnimator = (textNode) => {
 		// 	// Split the text content into words
 		// 	const words = textNode.textContent.split(' ');
@@ -120,7 +131,7 @@
 </svelte:head>
 
 <section>
-	<div class="hero">
+	<div class="hero" id="hero">
 		<h1 class="hero__inner__title--des">Entreprenuer</h1>
 		<h1 class="hero__inner__title--des">Designer</h1>
 		<div class="hero__inner">
@@ -159,21 +170,30 @@
 			<h1 class="hero__inner__title--dev">Developer</h1>
 			<!-- <img class="hero__inner__text-mask" src={textMaskDev} alt="" /> -->
 		</div>
-
-		<nav class="hero__nav">
-			<p><strong>Matthew Incardona</strong></p>
-			<a href="/about">About</a>
-			<a href="">Projects</a>
-			<a href={resume}>Resume</a>
-		</nav>
 	</div>
 </section>
+<nav id="nav">
+	<p style="user-select: none"><strong>Matthew Incardona</strong></p>
+	<a href="/about">About</a>
+	<div id="projectsNav">
+		<ul id="projectsNav__menu">
+			<li><a href="/second-desk">Second Desk</a></li>
+			<li><a href="/douxdolci">DouxDolci</a></li>
+			<li><a href="/sbc4e">SBC4E</a></li>
+			<li><a href="/greenovation">Greenovation</a></li>
+		</ul>
+		<a href="#">Projects</a>
+	</div>
+	<a href={resume}>Resume</a>
+</nav>
 
 <style>
 	.hero {
+		user-select: none;
 		min-height: 100vh;
 		padding: 0% 2%;
-		position: relative; /* Add this line to make the container a positioning context */
+		position: relative;
+		transition: all 0.2s ease-out;
 	}
 
 	.hero__inner {
@@ -205,14 +225,48 @@
 		color: transparent;
 	}
 
-	.hero__nav {
+	#nav {
 		display: flex;
 		align-items: end;
 		flex-direction: row;
 		flex-flow: row-reverse;
 		white-space: nowrap;
-		gap: 1em;
 		position: fixed;
 		inset: 98% 98%;
+	}
+
+	#nav > * {
+		padding-right: 15px;
+	}
+
+	#projectsNav {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#projectsNav:hover #projectsNav__menu {
+		display: block;
+	}
+
+	#projectsNav__menu {
+		display: none;
+		position: absolute;
+		bottom: 100%;
+		list-style: none;
+		padding: 5px;
+		padding-left: 0;
+	}
+	#projectsNav__menu li {
+		margin-bottom: 5px;
+	}
+
+	#projectsNav__menu a {
+		text-decoration: none;
+	}
+
+	#projectsNav__menu a:hover {
+		text-decoration: underline;
+		cursor: pointer;
 	}
 </style>
