@@ -178,9 +178,9 @@
 	<div id="projectsNav">
 		<ul id="projectsNav__menu">
 			<li><a href="/second-desk">Second Desk</a></li>
-			<li><a href="/douxdolci">DouxDolci</a></li>
-			<li><a href="/sbc4e">SBC4E</a></li>
-			<li><a href="/greenovation">Greenovation</a></li>
+			<li><a href="/web-design">DouxDolci</a></li>
+			<li><a href="/sbc4e-hub">SBC4E Hub</a></li>
+			<li><a href="/rochester-greenovation">Greenovation</a></li>
 		</ul>
 		<a href="#">Projects</a>
 	</div>
