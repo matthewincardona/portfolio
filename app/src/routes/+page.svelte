@@ -8,7 +8,7 @@
 	onMount(() => {
 		// on hover, make the text small and blurred
 		document.getElementById('nav').addEventListener('mouseover', (e) => {
-			document.getElementById('hero').style.transform = 'scale(.7) translateY(0px)';
+			document.getElementById('hero').style.transform = 'scale(.85) translateY(0px)';
 			document.getElementById('hero').style.filter = 'blur(10px)';
 		});
 
