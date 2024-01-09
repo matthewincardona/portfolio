@@ -8,7 +8,7 @@
 	onMount(() => {
 		// on hover, make the text small and blurred
 		document.getElementById('nav').addEventListener('mouseover', (e) => {
-			document.getElementById('hero').style.transform = 'scale(.85) translateY(0px)';
+			document.getElementById('hero').style.transform = 'scale(.95) translateY(0px)';
 			document.getElementById('hero').style.filter = 'blur(10px)';
 		});
 
@@ -193,7 +193,7 @@
 		min-height: 100vh;
 		padding: 0% 2%;
 		position: relative;
-		transition: all 0.2s ease-out;
+		transition: all 0.08s ease-in-out;
 	}
 
 	.hero__inner {
