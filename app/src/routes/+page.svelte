@@ -273,7 +273,6 @@
 	#projectsNav__menu::before {
 		content: '';
 		position: absolute;
-		border: solid 1px blue;
 		width: calc(100% + 60px);
 		height: calc(100% + 15px);
 		top: -15px;
