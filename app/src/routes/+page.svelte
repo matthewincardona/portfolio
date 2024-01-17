@@ -8,13 +8,19 @@
 	onMount(() => {
 		// on hover, make the text small and blurred
 		document.getElementById('nav').addEventListener('mouseover', (e) => {
-			document.getElementById('hero').style.transform = 'scale(.95) translateY(0px)';
-			document.getElementById('hero').style.filter = 'blur(10px)';
+			const heroElement = document.getElementById('hero');
+			heroElement.style.transform = 'scale(.96) translateY(-20px)';
+			setTimeout(() => {
+				heroElement.style.filter = 'blur(8px)';
+			}, 100);
 		});
 
 		document.getElementById('nav').addEventListener('mouseout', (e) => {
-			document.getElementById('hero').style.transform = '';
-			document.getElementById('hero').style.filter = '';
+			const heroElement = document.getElementById('hero');
+			heroElement.style.transform = '';
+			setTimeout(() => {
+				heroElement.style.filter = '';
+			}, 100);
 		});
 
 		// const textAnimator = (textNode) => {
@@ -112,7 +118,7 @@
 		};
 
 		// Start the animation sequence for the first <h1> element
-		animateSequentially(0);
+		// animateSequentially(0);
 
 		// Optionally, stop the entire animation sequence after a certain duration (e.g., 30 seconds)
 		// setTimeout(() => {
@@ -189,11 +195,16 @@
 
 <style>
 	.hero {
-		user-select: none;
+		/* user-select: none; */
 		min-height: 100vh;
 		padding: 0% 2%;
 		position: relative;
-		transition: all 0.08s ease-in-out;
+		transition: all 0.3s cubic-bezier(0.64, 0.01, 0.41, 1);
+		/* transition: transform filter 1s ease-in-out; */
+	}
+
+	.hero h1 {
+		user-select: none;
 	}
 
 	.hero__inner {
@@ -232,14 +243,14 @@
 		flex-flow: row-reverse;
 		white-space: nowrap;
 		position: fixed;
-		inset: 98% 98%;
-	}
-
-	#nav > * {
-		padding-right: 15px;
+		gap: 0.8em;
+		bottom: 0; /* Adjust as needed */
+		right: 0; /* Adjust as needed */
+		padding: 30px 20px 10px 30px; /* Add padding to create space inside the element */
 	}
 
 	#projectsNav {
+		transition: all 0.3s ease-in-out;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -250,6 +261,7 @@
 	}
 
 	#projectsNav__menu {
+		transition: all 0.3s ease-in-out;
 		display: none;
 		position: absolute;
 		bottom: 100%;
@@ -257,6 +269,18 @@
 		padding: 5px;
 		padding-left: 0;
 	}
+
+	#projectsNav__menu::before {
+		content: '';
+		position: absolute;
+		border: solid 1px blue;
+		width: calc(100% + 60px);
+		height: calc(100% + 15px);
+		top: -15px;
+		left: -30px;
+		z-index: -1;
+	}
+
 	#projectsNav__menu li {
 		margin-bottom: 5px;
 	}

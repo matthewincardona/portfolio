@@ -67,6 +67,15 @@ h1 {
 	letter-spacing: -13.469px;
 }
 
+h1 {
+	background: url('./text-mask-des.png');
+	background-position: 0% 0%;
+	background-size: cover;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
 h2 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
