@@ -12,7 +12,7 @@
 			heroElement.style.transform = 'scale(.96) translateY(-20px)';
 			setTimeout(() => {
 				heroElement.style.filter = 'blur(8px)';
-			}, 100);
+			}, 0);
 		});
 
 		document.getElementById('nav').addEventListener('mouseout', (e) => {
@@ -20,7 +20,7 @@
 			heroElement.style.transform = '';
 			setTimeout(() => {
 				heroElement.style.filter = '';
-			}, 100);
+			}, 0);
 		});
 
 		// const textAnimator = (textNode) => {
@@ -199,8 +199,9 @@
 		min-height: 100vh;
 		padding: 0% 2%;
 		position: relative;
-		transition: all 0.3s cubic-bezier(0.64, 0.01, 0.41, 1);
-		/* transition: transform filter 1s ease-in-out; */
+		transition-property: transform, filter;
+		transition-duration: 1.2s, 0.6s; /* durations for width, height, and background-color transitions */
+		transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; /* timing functions for each transition */
 	}
 
 	.hero h1 {
@@ -246,7 +247,7 @@
 		gap: 0.8em;
 		bottom: 0; /* Adjust as needed */
 		right: 0; /* Adjust as needed */
-		padding: 30px 20px 10px 30px; /* Add padding to create space inside the element */
+		padding: 30px 40px 10px 70px; /* Add padding to create space inside the element */
 	}
 
 	#projectsNav {
