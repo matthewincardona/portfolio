@@ -70,7 +70,7 @@ h1 {
 h1 {
 	background: url('./text-mask-des.png');
 	background-position: 0% 0%;
-	background-size: cover;
+	background-size: 180%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -123,8 +123,7 @@ h5 {
 p {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--body-color);
-	/* font-size: clamp(1rem, 2.5vw, 1.3rem); */
-	font-size: 12px;
+	font-size: clamp(0.8rem, 2.5vw, 0.8rem);
 	line-height: 140%;
 }
 
@@ -132,7 +131,7 @@ a {
 	text-decoration: none;
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: 12px;
+	font-size: clamp(0.8rem, 2.5vw, 0.8rem);
 	margin: 0;
 	padding: 0;
 }
@@ -341,16 +340,6 @@ PROJECTS
 	background-color: rgba(114, 114, 114, 0.08);
 }
 
-.project-container__left-panel {
-	margin: 10px;
-}
-
-.project-container__right-panel {
-	margin: 10px;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
 .project__btn {
 	display: inline-flex;
 	justify-content: center;
@@ -379,25 +368,22 @@ PROJECTS
 .tag-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	margin-left: -40px;
+	padding: 0;
 	margin-top: 10px;
+	gap: 2em;
 }
 
 /* Styles tags for projects and places bullet points inside of the background */
 .project-tag {
-	list-style-position: inside;
+	list-style: none;
 	padding: 10px 24px 10px 20px;
-	margin-right: 25px;
-	/* background-color: #411c31; */
 	background-color: rgba(114, 114, 114, 0.1);
-	border-radius: 3px;
 	margin-bottom: 20px;
 	user-select: none;
-	font-size: clamp(1rem, 2.5vw, 1rem);
+	font-size: clamp(0.8rem, 2.5vw, 0.8rem);
 	letter-spacing: 4%;
 	line-height: 140%;
+	font-weight: bold;
 }
 
 .case-study__title {
@@ -407,6 +393,26 @@ PROJECTS
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.case-study__header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4em;
+}
+
+.case-study__header > h1 {
+	/* position: absolute; */
+	z-index: 1;
+	mix-blend-mode: hard-light;
+}
+
+.case-study__img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
 }
 
 .case-study section {
