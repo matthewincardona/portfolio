@@ -14,14 +14,14 @@
 		// on hover, make the text small and blurred
 		document.getElementById('nav').addEventListener('mouseover', (e) => {
 			const heroElement = document.getElementById('hero__inner');
-			heroElement.style.transform = 'scale(1.4) translate(-40px, -20px)';
+			// heroElement.style.transform = 'scale(.9) translate(-40px, -20px)';
 			// apply to all h1s
 			const el = document.getElementsByTagName('h1');
 			for (let index = 0; index < el.length; index++) {
-				el[index].style.letterSpacing = '80px';
+				// el[index].style.letterSpacing = '180px';
 			}
 			setTimeout(() => {
-				heroElement.style.filter = 'blur(8px)';
+				heroElement.style.filter = 'blur(30px)';
 			}, 0);
 		});
 
@@ -225,13 +225,13 @@
 		width: 100%;
 		position: absolute;
 		transition-property: transform, filter;
-		transition-duration: 0.7s, 0.35s; /* durations for width, height, and background-color transitions */
+		transition-duration: 0.8s, 0.4s; /* durations for width, height, and background-color transitions */
 		transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; /* timing functions for each transition */
 		overflow: hidden;
 	}
 
 	h1 {
-		transition: letter-spacing 0.7s cubic-bezier(0.77, 0.15, 0.07, 0.85);
+		transition: letter-spacing 0.8s cubic-bezier(0.77, 0.15, 0.07, 0.85);
 		white-space: nowrap;
 	}
 
