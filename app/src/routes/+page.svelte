@@ -8,50 +8,61 @@
 	onMount(() => {
 		// on hover, make the text small and blurred
 		document.getElementById('nav').addEventListener('mouseover', (e) => {
-			const heroElement = document.getElementById('hero');
-			heroElement.style.transform = 'scale(.96) translateY(-20px)';
+			const heroElement = document.getElementById('hero__inner');
+			heroElement.style.transform = 'scale(1.4) translate(-40px, -20px)';
 			setTimeout(() => {
 				heroElement.style.filter = 'blur(8px)';
+
+				// apply to all h1s
+				const el = document.getElementsByTagName('h1');
+				for (let index = 0; index < el.length; index++) {
+					el[index].style.letterSpacing = '100px';
+				}
 			}, 0);
 		});
 
 		document.getElementById('nav').addEventListener('mouseout', (e) => {
-			const heroElement = document.getElementById('hero');
+			const heroElement = document.getElementById('hero__inner');
 			heroElement.style.transform = '';
 			setTimeout(() => {
 				heroElement.style.filter = '';
+
+				const el = document.getElementsByTagName('h1');
+				for (let index = 0; index < el.length; index++) {
+					el[index].style.letterSpacing = '';
+				}
 			}, 0);
 		});
 
-		// const textAnimator = (textNode) => {
-		// 	// Split the text content into words
-		// 	const words = textNode.textContent.split(' ');
-		// 	console.log(words);
+		const textAnimator1 = (textNode) => {
+			// Split the text content into words
+			const words = textNode.textContent.split(' ');
+			// console.log(words);
 
-		// 	// Randomly change letters (excluding the first letter) in each word to uppercase
-		// 	const modifiedWords = words.map((word) => {
-		// 		const firstLetter = word.charAt(0);
-		// 		const restOfWord = word.slice(1);
+			// Randomly change letters (excluding the first letter) in each word to uppercase
+			const modifiedWords = words.map((word) => {
+				const firstLetter = word.charAt(0);
+				const restOfWord = word.slice(1);
 
-		// 		const modifiedRest = restOfWord
-		// 			.split('')
-		// 			.map((char) => (Math.random() < 0.8 ? char.toLowerCase() : char.toUpperCase()))
-		// 			.join('');
+				const modifiedRest = restOfWord
+					.split('')
+					.map((char) => (Math.random() < 0.9 ? char.toLowerCase() : char.toUpperCase()))
+					.join('');
 
-		// 		return firstLetter + modifiedRest;
-		// 	});
+				return firstLetter + modifiedRest;
+			});
 
-		// 	// Join the modified words back into a sentence
-		// 	const modifiedTextContent = modifiedWords.join(' ');
+			// Join the modified words back into a sentence
+			const modifiedTextContent = modifiedWords.join(' ');
 
-		// 	// Set the modified text content to the h1 element
-		// 	textNode.textContent = modifiedTextContent;
-		// };
+			// Set the modified text content to the h1 element
+			textNode.textContent = modifiedTextContent;
+		};
 		// const h1Nodes = document.getElementsByTagName('H1');
 		// fine-grained control over timing
-		// setInterval(() => textAnimator(h1Nodes[0]), getRandomInterval(3000));
-		// setInterval(() => textAnimator(h1Nodes[1]), getRandomInterval(800));
-		// setInterval(() => textAnimator(h1Nodes[2]), getRandomInterval(800));
+		// setInterval(() => textAnimator1(h1Nodes[0]), getRandomInterval(2000));
+		// setInterval(() => textAnimator1(h1Nodes[1]), getRandomInterval(1800));
+		// setInterval(() => textAnimator1(h1Nodes[2]), getRandomInterval(800));
 
 		const textAnimator = (textNode, callback, duration) => {
 			const words = textNode.textContent.split(' ');
@@ -89,7 +100,7 @@
 			// Continue the animation for the next word after a delay
 			const animationInterval = setInterval(() => {
 				animateWord();
-			}, getRandomInterval(200));
+			}, getRandomInterval(1500));
 
 			// Start the animation for the first word after a delay
 			setTimeout(() => {
@@ -118,7 +129,9 @@
 		};
 
 		// Start the animation sequence for the first <h1> element
-		// animateSequentially(0);
+		// setTimeout(() => {
+		// 	animateSequentially(0);
+		// }, 2000);
 
 		// Optionally, stop the entire animation sequence after a certain duration (e.g., 30 seconds)
 		// setTimeout(() => {
@@ -138,43 +151,45 @@
 
 <section>
 	<div class="hero" id="hero">
-		<h1 class="hero__inner__title--des">Entreprenuer</h1>
-		<h1 class="hero__inner__title--des">Designer</h1>
-		<div class="hero__inner">
-			<div>
-				<p>
-					<strong>
-						A Frontend Developer, UX/UI Designer, and Entrepreneur at the Rochester Institute of
-						Technology.
-					</strong>
-				</p>
+		<div class="hero__inner" id="hero__inner">
+			<h1 class="hero__inner__title--des">Entreprenuer</h1>
+			<h1 class="hero__inner__title--des">Designer</h1>
+			<div class="hero__descr">
+				<div>
+					<p>
+						<strong>
+							A Frontend Developer, UX/UI Designer, and Entrepreneur at the Rochester Institute of
+							Technology.
+						</strong>
+					</p>
+				</div>
+				<div>
+					<p>
+						"I bring a unique blend of technical expertise and human-centric design thinking to help
+						companies forge meaningful connections with their audience, ensuring a seamless and
+						delightful user experience from conceptualization to the polished product, thereby
+						contributing to the success and growth of your organization."
+					</p>
+				</div>
+				<div />
+				<div>
+					<p>Freelance web designer, years of experience in</p>
+					<ul>
+						<li>Cloud Computing</li>
+						<li>JavaScript</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>React, Svelte, Angular</li>
+						<li>Figma</li>
+						<li>Photoshop, Illustrator</li>
+					</ul>
+				</div>
 			</div>
-			<div>
-				<p>
-					"I bring a unique blend of technical expertise and human-centric design thinking to help
-					companies forge meaningful connections with their audience, ensuring a seamless and
-					delightful user experience from conceptualization to the polished product, thereby
-					contributing to the success and growth of your organization."
-				</p>
-			</div>
-			<div />
-			<div>
-				<p>Freelance web designer, years of experience in</p>
-				<ul>
-					<li>Cloud Computing</li>
-					<li>JavaScript</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>React, Svelte, Angular</li>
-					<li>Figma</li>
-					<li>Photoshop, Illustrator</li>
-				</ul>
-			</div>
-		</div>
 
-		<div>
-			<h1 class="hero__inner__title--dev">Developer</h1>
-			<!-- <img class="hero__inner__text-mask" src={textMaskDev} alt="" /> -->
+			<div>
+				<h1 class="hero__inner__title--dev">Developer</h1>
+				<!-- <img class="hero__inner__text-mask" src={textMaskDev} alt="" /> -->
+			</div>
 		</div>
 	</div>
 </section>
@@ -199,16 +214,29 @@
 		min-height: 100vh;
 		padding: 0% 2%;
 		position: relative;
+		overflow: hidden;
+	}
+
+	.hero__inner {
+		height: 100%;
+		width: 100%;
+		position: absolute;
 		transition-property: transform, filter;
 		transition-duration: 1.2s, 0.6s; /* durations for width, height, and background-color transitions */
 		transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; /* timing functions for each transition */
+		overflow: hidden;
+	}
+
+	h1 {
+		transition: letter-spacing 1.2s cubic-bezier(0.77, 0.15, 0.07, 0.85);
+		white-space: nowrap;
 	}
 
 	.hero h1 {
 		user-select: none;
 	}
 
-	.hero__inner {
+	.hero__descr {
 		margin: 20px 0px -20px 20px;
 		display: grid;
 		grid-template-columns: 1fr 1.3fr 1fr 1fr;

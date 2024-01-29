@@ -23,7 +23,7 @@ body {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	animation: fade-in 0.8s ease-in 0s both;
+	/* animation: fade-in 0.8s ease-in 0s both; */
 }
 
 .bg-overlay {
@@ -70,7 +70,7 @@ h1 {
 h1 {
 	background: url('./text-mask-des.png');
 	background-position: 0% 0%;
-	background-size: 180%;
+	background-size: 100%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -398,25 +398,23 @@ PROJECTS
 .case-study__header {
 	position: relative;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: end;
 	align-items: center;
 	gap: 4em;
+	min-height: 90dvh;
+	border: solid 1px red;
 }
 
-.case-study__header > h1 {
-	/* position: absolute; */
-	z-index: 1;
-	mix-blend-mode: hard-light;
-}
-
-.case-study__img {
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
+.case-study__cover {
+	width: 80%;
+	height: auto;
+	transition: transform 0.3s ease-out;
+	text-align: left;
 }
 
 .case-study section {
-	padding: 80px 6% 80px 6%;
+	padding: 2% 2% 80px 2%;
 	max-width: 1400px;
 	margin: auto;
 }

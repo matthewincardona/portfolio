@@ -11,6 +11,7 @@
 	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
 	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
 	import cover from '$lib/assets/second desk/second desk cover.png';
+	import { fly } from 'svelte/transition';
 
 	import { onMount } from 'svelte';
 
@@ -35,10 +36,10 @@
 	<!-- overview -->
 	<section>
 		<div>
-			<div class="case-study__header">
-				<h1 id="projectTitle">Second Desk</h1>
+			<div class="case-study__header parallax">
+				<h1 id="projectTitle parallax__layer parallax__layer--base">Second Desk</h1>
 				<img
-					class="case-study__img"
+					class="case-study__cover parallax__layer parallax__layer--back"
 					src={cover}
 					alt="Macbook with Second Desk website on it."
 					id="projectImage"
@@ -336,7 +337,7 @@
 	<!-- what I learned -->
 	<section>
 		<div class="case-study__row case-study__bottom-section">
-			<h4>What I Learned</h4>
+			<h4 class="parallax__layer--base">What I Learned</h4>
 			<p>
 				Going into this project, I had little familiarity with UX principles, server management, or
 				coding for the web. I was the only product developer and designer working on it for a number
@@ -348,21 +349,23 @@
 </div>
 
 <style>
-	.case-study__title {
+	.parallax {
+		perspective: 1px;
 		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
-
-	.case-study__img {
-		width: 100%;
-		max-width: 100%;
-		transform-origin: center center;
+	.parallax__layer {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 	}
-
-	.case-study__img.scroll-effect {
-		transition: transform 0.5s ease;
+	.parallax__layer--base {
+		transform: translateZ(0);
+	}
+	.parallax__layer--back {
+		transform: translateZ(-1px);
 	}
 </style>
