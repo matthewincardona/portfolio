@@ -1,3 +1,8 @@
+<!-- TO DO: -->
+<!-- add prefers reduced motion check -->
+<!-- convert font sizes to rem -->
+<!-- make mobile friendly -->
+
 <script>
 	// assets
 	import bg from '$lib/assets/bg.png';
@@ -10,27 +15,25 @@
 		document.getElementById('nav').addEventListener('mouseover', (e) => {
 			const heroElement = document.getElementById('hero__inner');
 			heroElement.style.transform = 'scale(1.4) translate(-40px, -20px)';
+			// apply to all h1s
+			const el = document.getElementsByTagName('h1');
+			for (let index = 0; index < el.length; index++) {
+				el[index].style.letterSpacing = '80px';
+			}
 			setTimeout(() => {
 				heroElement.style.filter = 'blur(8px)';
-
-				// apply to all h1s
-				const el = document.getElementsByTagName('h1');
-				for (let index = 0; index < el.length; index++) {
-					el[index].style.letterSpacing = '80px';
-				}
 			}, 0);
 		});
 
 		document.getElementById('nav').addEventListener('mouseout', (e) => {
 			const heroElement = document.getElementById('hero__inner');
 			heroElement.style.transform = '';
+			const el = document.getElementsByTagName('h1');
+			for (let index = 0; index < el.length; index++) {
+				el[index].style.letterSpacing = '';
+			}
 			setTimeout(() => {
 				heroElement.style.filter = '';
-
-				const el = document.getElementsByTagName('h1');
-				for (let index = 0; index < el.length; index++) {
-					el[index].style.letterSpacing = '';
-				}
 			}, 0);
 		});
 
@@ -222,13 +225,13 @@
 		width: 100%;
 		position: absolute;
 		transition-property: transform, filter;
-		transition-duration: 1.2s, 0.6s; /* durations for width, height, and background-color transitions */
+		transition-duration: 0.7s, 0.35s; /* durations for width, height, and background-color transitions */
 		transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; /* timing functions for each transition */
 		overflow: hidden;
 	}
 
 	h1 {
-		transition: letter-spacing 1.2s cubic-bezier(0.77, 0.15, 0.07, 0.85);
+		transition: letter-spacing 0.7s cubic-bezier(0.77, 0.15, 0.07, 0.85);
 		white-space: nowrap;
 	}
 
@@ -276,6 +279,12 @@
 		bottom: 0; /* Adjust as needed */
 		right: 0; /* Adjust as needed */
 		padding: 30px 40px 10px 70px; /* Add padding to create space inside the element */
+		background-color: none;
+		transition: all 0s 0s ease;
+	}
+
+	#nav:hover {
+		background-color: #ffffff82;
 	}
 
 	#projectsNav {
