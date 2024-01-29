@@ -16,7 +16,7 @@
 				// apply to all h1s
 				const el = document.getElementsByTagName('h1');
 				for (let index = 0; index < el.length; index++) {
-					el[index].style.letterSpacing = '100px';
+					el[index].style.letterSpacing = '80px';
 				}
 			}, 0);
 		});
