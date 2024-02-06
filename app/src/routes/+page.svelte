@@ -7,35 +7,53 @@
 	// assets
 	import bg from '$lib/assets/bg.png';
 	import textMaskDev from '$lib/assets/text-mask-dev.png';
+	import hamburgerMenu from '$lib/assets/hamburger-menu.svg';
 	import resume from '$lib/assets/Matthew_Incardona_Resume-UX-Engineer.pdf';
 
 	import { onMount } from 'svelte';
 	onMount(() => {
 		// on hover, make the text small and blurred
-		document.getElementById('nav').addEventListener('mouseover', (e) => {
+		document.getElementById('hamburgerMenu').addEventListener('click', (e) => {
 			const heroElement = document.getElementById('hero__inner');
-			// heroElement.style.transform = 'scale(.9) translate(-40px, -20px)';
-			// apply to all h1s
-			const el = document.getElementsByTagName('h1');
-			for (let index = 0; index < el.length; index++) {
-				// el[index].style.letterSpacing = '180px';
+			const navElement = document.getElementById('nav');
+			// if menu is not currently visible...
+			if (!navElement.classList.contains('menu--show')) {
+				heroElement.style.transform = 'scale(.9) translate(-40px, -20px)';
+				// apply to all h1s
+				const el = document.getElementsByTagName('h1');
+				for (let index = 0; index < el.length; index++) {
+					el[index].style.letterSpacing = '180px';
+				}
+				setTimeout(() => {
+					// heroElement.style.filter = 'blur(10px)';
+					// show menu
+					navElement.classList.add('menu--show');
+				}, 0);
+			} else {
+				heroElement.style.transform = '';
+				const el = document.getElementsByTagName('h1');
+				for (let index = 0; index < el.length; index++) {
+					el[index].style.letterSpacing = '';
+				}
+				setTimeout(() => {
+					heroElement.style.filter = '';
+					// hide menu
+					navElement.classList.add('menu--hide');
+				}, 0);
 			}
-			setTimeout(() => {
-				heroElement.style.filter = 'blur(30px)';
-			}, 0);
 		});
 
-		document.getElementById('nav').addEventListener('mouseout', (e) => {
-			const heroElement = document.getElementById('hero__inner');
-			heroElement.style.transform = '';
-			const el = document.getElementsByTagName('h1');
-			for (let index = 0; index < el.length; index++) {
-				el[index].style.letterSpacing = '';
-			}
-			setTimeout(() => {
-				heroElement.style.filter = '';
-			}, 0);
-		});
+		// document.getElementById('nav').addEventListener('mouseout', (e) => {
+		// 	const heroElement = document.getElementById('hero__inner');
+		// 	heroElement.style.transform = '';
+		// 	const el = document.getElementsByTagName('h1');
+		// 	for (let index = 0; index < el.length; index++) {
+		// 		el[index].style.letterSpacing = '';
+		// 	}
+		// 	setTimeout(() => {
+		// 		heroElement.style.filter = '';
+		// 	}, 0);
+		// });
 
 		const textAnimator1 = (textNode) => {
 			// Split the text content into words
@@ -197,9 +215,10 @@
 	</div>
 </section>
 <nav id="nav">
+	<img class="hamburger-menu" id="hamburgerMenu" src={hamburgerMenu} alt="" />
 	<p style="user-select: none"><strong>Matthew Incardona</strong></p>
 	<a href="/about">About</a>
-	<div id="projectsNav">
+	<!-- <div id="projectsNav">
 		<ul id="projectsNav__menu">
 			<li><a href="/second-desk">Second Desk</a></li>
 			<li><a href="/web-design">DouxDolci</a></li>
@@ -207,7 +226,7 @@
 			<li><a href="/rochester-greenovation">Greenovation</a></li>
 		</ul>
 		<a href="#">Projects</a>
-	</div>
+	</div> -->
 	<a href={resume}>Resume</a>
 </nav>
 
@@ -283,8 +302,9 @@
 		transition: all 0s 0s ease;
 	}
 
-	#nav:hover {
-		background-color: #ffffff82;
+	.hamburger-menu {
+		width: 32px;
+		cursor: pointer;
 	}
 
 	#projectsNav {
