@@ -403,7 +403,6 @@ PROJECTS
 	align-items: center;
 	gap: 4em;
 	min-height: 90dvh;
-	border: solid 1px red;
 }
 
 .case-study__cover {

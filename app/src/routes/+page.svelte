@@ -218,15 +218,15 @@
 	<img class="hamburger-menu" id="hamburgerMenu" src={hamburgerMenu} alt="" />
 	<p style="user-select: none"><strong>Matthew Incardona</strong></p>
 	<a href="/about">About</a>
-	<!-- <div id="projectsNav">
+	<div id="projectsNav">
 		<ul id="projectsNav__menu">
 			<li><a href="/second-desk">Second Desk</a></li>
 			<li><a href="/web-design">DouxDolci</a></li>
-			<li><a href="/sbc4e-hub">SBC4E Hub</a></li>
+			<li><a href="/mission-threads">Mission Threads</a></li>
 			<li><a href="/rochester-greenovation">Greenovation</a></li>
 		</ul>
 		<a href="#">Projects</a>
-	</div> -->
+	</div>
 	<a href={resume}>Resume</a>
 </nav>
 

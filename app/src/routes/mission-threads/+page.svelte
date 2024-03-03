@@ -37,7 +37,7 @@
 	<section>
 		<div>
 			<div class="case-study__header parallax">
-				<h1 id="projectTitle parallax__layer parallax__layer--base">Second Desk</h1>
+				<h1 id="projectTitle parallax__layer parallax__layer--base">Mission Threads</h1>
 				<img
 					class="case-study__cover parallax__layer parallax__layer--back"
 					src={cover}
@@ -49,27 +49,15 @@
 				<div>
 					<h4>Overview</h4>
 					<p>
-						Second Desk is a <b>Desktop-As-A-Service product</b> that enables non-Windows users to
-						stream Windows programs directly through their browser. This project will provide a
-						solution for Chromebook and Linux users that can’t run work/school required Windows
-						programs on their personal computers.
-						<br />
-						<br />
-						<b
-							>Note: This is a work-in-progress. It's actively being mentored by coaches from the
-							Rochester Institute of Technology (RIT) and is under constant development by its team
-							of students.</b
-						>
-						<br /><br />
-						<b>**Content shown is from a earlier versions of the product/business</b>.
+						During my time with <b>Peraton</b>, I was placed on a small team working on the Mission Threads project. We had the goal of transforming the company's existing knowledge base, which included thousands of important internal documents across several heritage companies. The knowledge base was essential for employees applying to government contracts and as a general source of information for everyone at the company.
 					</p>
 				</div>
 				<div>
 					<h4>Tools & Roles</h4>
-					<p>UX/UI Design, Product Strategy, Market Research, Frontend Development</p>
+					<p>UX/UI Design, Usability Testing, Product Strategy</p>
 					<ul class="tag-container">
-						<li class="project-tag"><span>Founder</span></li>
-						<li class="project-tag"><span>UX Engineer</span></li>
+						<li class="project-tag"><span>UX Researcher</span></li>
+						<li class="project-tag"><span>Visual Designer</span></li>
 					</ul>
 				</div>
 			</div>
@@ -82,10 +70,7 @@
 			<div class="case-study__row">
 				<h4>Background</h4>
 				<p>
-					With the massive growth of Chromebooks in recent years, particularly in the field of
-					education, more and more students are using them to do their schoolwork. But after
-					realizing how limiting a Chromebook’s app library can be, a lot of them end up frustrated
-					and with very few options.
+					As a company that grows rapidly through acquisitions, Peraton struggles to keep it's database of information up to date.
 					<br /> <br />
 					I started Second Desk as a way to provide Chromebook users with a more robust computing experience,
 					without having to purchase a new Windows or Mac machine. We’re focusing on a niche target audience
