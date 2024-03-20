@@ -5,13 +5,20 @@
 
 <script>
 	// assets
-	import bg from '$lib/assets/bg.png';
-	import textMaskDev from '$lib/assets/text-mask-dev.png';
 	import hamburgerMenu from '$lib/assets/hamburger-menu.svg';
 	import resume from '$lib/assets/Matthew_Incardona_Resume-UX-Engineer.pdf';
 
+	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
 	onMount(() => {
+		// Spline
+		// make sure you have a canvas in the body
+		const canvas = document.getElementById('canvas3d');
+
+		// start the application and load the scene
+		const spline = new Application(canvas);
+		spline.load('https://prod.spline.design/gC9F02eys1txbPQP/scene.splinecode');
+
 		// on hover, make the text small and blurred
 		document.getElementById('hamburgerMenu').addEventListener('click', (e) => {
 			const heroElement = document.getElementById('hero__inner');
@@ -170,6 +177,8 @@
 	<title>Matthew Incardona</title>
 </svelte:head>
 
+<canvas id="canvas3d" />
+
 <section>
 	<div class="hero" id="hero">
 		<div class="hero__inner" id="hero__inner">
@@ -225,21 +234,33 @@
 			<li><a href="/mission-threads">Mission Threads</a></li>
 			<li><a href="/rochester-greenovation">Greenovation</a></li>
 		</ul>
+		<!-- svelte-ignore a11y-invalid-attribute -->
 		<a href="#">Projects</a>
 	</div>
 	<a href={resume}>Resume</a>
 </nav>
 
 <style>
+	#canvas3d {
+		position: absolute;
+		width: 100vw !important;
+		max-height: 100vh !important;
+	}
+
 	.hero {
 		/* user-select: none; */
 		min-height: 100vh;
 		padding: 0% 2%;
 		position: relative;
 		overflow: hidden;
+		padding: 6%;
+		border: solid red 4px;
 	}
 
 	.hero__inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2em;
 		height: 100%;
 		width: 100%;
 		position: absolute;
@@ -259,12 +280,17 @@
 	}
 
 	.hero__descr {
+		max-width: 1400px;
 		margin: 20px 0px -20px 20px;
 		display: grid;
-		grid-template-columns: 1fr 1.3fr 1fr 1fr;
+		grid-template-columns: 1fr 1.3fr 1fr;
 		grid-template-rows: 1fr;
 		gap: 0px 2em;
 		grid-template-areas: '. . . .';
+	}
+
+	.hero__descr * {
+		font-size: 14px;
 	}
 
 	.hero__inner__title--des {
