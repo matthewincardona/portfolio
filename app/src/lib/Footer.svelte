@@ -27,3 +27,65 @@
 		</a>
 	</div>
 </footer>
+
+<style>
+	footer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		border-top: 4px solid var(--accent-color);
+		background-color: #00000040;
+		min-height: 200px;
+		width: 100%;
+		padding-top: 10px;
+	}
+
+	.footer-col {
+		margin: 30px 60px;
+		display: grid;
+		grid-template-rows: auto;
+		row-gap: 0.5;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.footer-col button {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.footer-btn {
+		border: var(--accent-color) 3px solid;
+		background-color: #00000000;
+		color: white;
+		padding: 8px 20px;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: opacity 0.15s ease-in;
+	}
+
+	.footer-btn:hover {
+		opacity: 0.8;
+	}
+
+	.footer__icon-row {
+		display: grid;
+		grid-template-columns: 0.2fr 1fr;
+		grid-template-rows: auto;
+		column-gap: 1em;
+		align-items: center;
+		padding-bottom: 20px;
+		transition: opacity 0.15s ease-in;
+	}
+
+	.footer__icon-row:hover {
+		opacity: 0.8;
+	}
+
+	.footer__icon {
+		width: 3.5em;
+		height: auto;
+	}
+</style>

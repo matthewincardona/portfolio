@@ -2,11 +2,12 @@
 <!-- add prefers reduced motion check -->
 <!-- convert font sizes to rem -->
 <!-- make mobile friendly -->
+<!-- make menu just a hamburg -->
+<!-- make less text on the front -->
 
 <script>
 	// assets
-	import hamburgerMenu from '$lib/assets/hamburger-menu.svg';
-	import resume from '$lib/assets/Matthew_Incardona_Resume-UX-Engineer.pdf';
+	import Navbar from '../lib/Navbar.svelte';
 
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
@@ -14,168 +15,19 @@
 		// Spline
 		// make sure you have a canvas in the body
 		const canvas = document.getElementById('canvas3d');
-
 		// start the application and load the scene
 		const spline = new Application(canvas);
-		spline.load('https://prod.spline.design/gC9F02eys1txbPQP/scene.splinecode');
+		spline.load('https://prod.spline.design/MoATaLmqKlEtJnxV/scene.splinecode');
 
 		// on hover, make the text small and blurred
-		document.getElementById('hamburgerMenu').addEventListener('click', (e) => {
-			const heroElement = document.getElementById('hero__inner');
-			const navElement = document.getElementById('nav');
-			// if menu is not currently visible...
-			if (!navElement.classList.contains('menu--show')) {
-				heroElement.style.transform = 'scale(.9) translate(-40px, -20px)';
-				// apply to all h1s
-				const el = document.getElementsByTagName('h1');
-				for (let index = 0; index < el.length; index++) {
-					el[index].style.letterSpacing = '180px';
-				}
-				setTimeout(() => {
-					// heroElement.style.filter = 'blur(10px)';
-					// show menu
-					navElement.classList.add('menu--show');
-				}, 0);
-			} else {
-				heroElement.style.transform = '';
-				const el = document.getElementsByTagName('h1');
-				for (let index = 0; index < el.length; index++) {
-					el[index].style.letterSpacing = '';
-				}
-				setTimeout(() => {
-					heroElement.style.filter = '';
-					// hide menu
-					navElement.classList.add('menu--hide');
-				}, 0);
-			}
-		});
-
-		// document.getElementById('nav').addEventListener('mouseout', (e) => {
-		// 	const heroElement = document.getElementById('hero__inner');
-		// 	heroElement.style.transform = '';
-		// 	const el = document.getElementsByTagName('h1');
-		// 	for (let index = 0; index < el.length; index++) {
-		// 		el[index].style.letterSpacing = '';
-		// 	}
-		// 	setTimeout(() => {
-		// 		heroElement.style.filter = '';
-		// 	}, 0);
-		// });
-
-		const textAnimator1 = (textNode) => {
-			// Split the text content into words
-			const words = textNode.textContent.split(' ');
-			// console.log(words);
-
-			// Randomly change letters (excluding the first letter) in each word to uppercase
-			const modifiedWords = words.map((word) => {
-				const firstLetter = word.charAt(0);
-				const restOfWord = word.slice(1);
-
-				const modifiedRest = restOfWord
-					.split('')
-					.map((char) => (Math.random() < 0.9 ? char.toLowerCase() : char.toUpperCase()))
-					.join('');
-
-				return firstLetter + modifiedRest;
-			});
-
-			// Join the modified words back into a sentence
-			const modifiedTextContent = modifiedWords.join(' ');
-
-			// Set the modified text content to the h1 element
-			textNode.textContent = modifiedTextContent;
-		};
-		// const h1Nodes = document.getElementsByTagName('H1');
-		// fine-grained control over timing
-		// setInterval(() => textAnimator1(h1Nodes[0]), getRandomInterval(2000));
-		// setInterval(() => textAnimator1(h1Nodes[1]), getRandomInterval(1800));
-		// setInterval(() => textAnimator1(h1Nodes[2]), getRandomInterval(800));
-
-		const textAnimator = (textNode, callback, duration) => {
-			const words = textNode.textContent.split(' ');
-
-			let currentIndex = 0;
-			let animationDuration = 0;
-
-			const animateWord = () => {
-				const word = words[currentIndex];
-
-				// Preserve the first letter and modify the rest
-				const modifiedWord =
-					word.charAt(0) +
-					word
-						.slice(1)
-						.split('')
-						.map((char) => (Math.random() < 0.6 ? char.toLowerCase() : char.toUpperCase()))
-						.join('');
-
-				words[currentIndex] = modifiedWord;
-				textNode.textContent = words.join(' ');
-
-				currentIndex = (currentIndex + 1) % words.length;
-
-				// Check if the duration has been reached and stop the animation
-				if (animationDuration >= duration) {
-					clearInterval(animationInterval);
-					if (callback) {
-						callback(); // Trigger the callback to move on to the next word
-					}
-				}
-				animationDuration += 500; // Assuming a delay of 500ms per word, adjust if needed
-			};
-
-			// Continue the animation for the next word after a delay
-			const animationInterval = setInterval(() => {
-				animateWord();
-			}, getRandomInterval(1500));
-
-			// Start the animation for the first word after a delay
-			setTimeout(() => {
-				animateWord();
-			}, getRandomInterval(800)); // Add a small delay before starting the animation
-
-			// Return the animation interval ID for cleanup, if needed
-			return animationInterval;
-		};
-
-		const h1Nodes = Array.from(document.getElementsByTagName('H1'));
-
-		// Function to coordinate the animation sequence for each <h1> element
-		const animateSequentially = (index) => {
-			if (index < h1Nodes.length) {
-				// Start the animation for the current <h1> element
-				const nextAnimation = textAnimator(
-					h1Nodes[index],
-					() => {
-						// Move on to the next <h1> element after the animation completes
-						animateSequentially(index + 1);
-					},
-					1500
-				); // Set the duration for the first word's animation
-			}
-		};
-
-		// Start the animation sequence for the first <h1> element
-		// setTimeout(() => {
-		// 	animateSequentially(0);
-		// }, 2000);
-
-		// Optionally, stop the entire animation sequence after a certain duration (e.g., 30 seconds)
-		// setTimeout(() => {
-		//     clearInterval(firstAnimation);
-		// }, 30000);
-
-		// Function to get a random interval above a specified minimum value
-		function getRandomInterval(minimumInterval) {
-			return Math.floor(Math.random() * 400) + minimumInterval; // Generates a random number between minimumInterval and (minimumInterval + 600)
-		}
 	});
 </script>
 
 <svelte:head>
 	<title>Matthew Incardona</title>
 </svelte:head>
+
+<Navbar />
 
 <canvas id="canvas3d" />
 
@@ -223,22 +75,6 @@
 		</div>
 	</div>
 </section>
-<nav id="nav">
-	<img class="hamburger-menu" id="hamburgerMenu" src={hamburgerMenu} alt="" />
-	<p style="user-select: none"><strong>Matthew Incardona</strong></p>
-	<a href="/about">About</a>
-	<div id="projectsNav">
-		<ul id="projectsNav__menu">
-			<li><a href="/second-desk">Second Desk</a></li>
-			<li><a href="/web-design">DouxDolci</a></li>
-			<li><a href="/mission-threads">Mission Threads</a></li>
-			<li><a href="/rochester-greenovation">Greenovation</a></li>
-		</ul>
-		<!-- svelte-ignore a11y-invalid-attribute -->
-		<a href="#">Projects</a>
-	</div>
-	<a href={resume}>Resume</a>
-</nav>
 
 <style>
 	#canvas3d {
@@ -254,7 +90,6 @@
 		position: relative;
 		overflow: hidden;
 		padding: 6%;
-		border: solid red 4px;
 	}
 
 	.hero__inner {
@@ -311,69 +146,5 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
-	}
-
-	#nav {
-		display: flex;
-		align-items: end;
-		flex-direction: row;
-		flex-flow: row-reverse;
-		white-space: nowrap;
-		position: fixed;
-		gap: 0.8em;
-		bottom: 0; /* Adjust as needed */
-		right: 0; /* Adjust as needed */
-		padding: 30px 40px 10px 70px; /* Add padding to create space inside the element */
-		background-color: none;
-		transition: all 0s 0s ease;
-	}
-
-	.hamburger-menu {
-		width: 32px;
-		cursor: pointer;
-	}
-
-	#projectsNav {
-		transition: all 0.3s ease-in-out;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-	}
-
-	#projectsNav:hover #projectsNav__menu {
-		display: block;
-	}
-
-	#projectsNav__menu {
-		transition: all 0.3s ease-in-out;
-		display: none;
-		position: absolute;
-		bottom: 100%;
-		list-style: none;
-		padding: 5px;
-		padding-left: 0;
-	}
-
-	#projectsNav__menu::before {
-		content: '';
-		position: absolute;
-		width: calc(100% + 60px);
-		height: calc(100% + 15px);
-		top: -15px;
-		left: -30px;
-		z-index: -1;
-	}
-
-	#projectsNav__menu li {
-		margin-bottom: 5px;
-	}
-
-	#projectsNav__menu a {
-		text-decoration: none;
-	}
-
-	#projectsNav__menu a:hover {
-		text-decoration: underline;
-		cursor: pointer;
 	}
 </style>

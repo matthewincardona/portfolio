@@ -1,6 +1,12 @@
+<script>
+	import Navbar from '../../lib/Navbar.svelte';
+</script>
+
 <svelte:head>
-    <title>Contact Me | Matthew Incardona</title> 
+	<title>Contact Me | Matthew Incardona</title>
 </svelte:head>
+
+<Navbar />
 
 <div class="contact-container">
 	<div class="form-container">
