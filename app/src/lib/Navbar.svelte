@@ -21,8 +21,10 @@
 	<div class="topnav" id="myTopnav">
 		<div class="topnav__inner">
 			<a href="/" class="active" on:click={closeMobileNav}>Home</a>
+			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href="/about" on:click={closeMobileNav}>About</a>
 			<a href="/contact" on:click={closeMobileNav}>Contact Me</a>
+			<p>|</p>
 			<a href={resume} on:click={closeMobileNav}>Resume</a>
 		</div>
 		<!-- svelte-ignore a11y-invalid-attribute -->
@@ -31,88 +33,3 @@
 		</a>
 	</div>
 </nav>
-
-<style>
-	/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav */
-
-	/* Style navbar */
-	.topnav {
-		position: absolute;
-		z-index: 100;
-		top: 0;
-		width: 100%;
-		overflow: hidden;
-		font-family: 'IBM Plex Sans', sans-serif;
-		color: var(--header-color);
-		padding: 5px 6%;
-		/* background-color: #00000010; */
-		backdrop-filter: blur(4px);
-	}
-
-	/* Style navbar links */
-	.topnav a {
-		color: var(--header-color);
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-size: 17px;
-		transition: 0.15s all ease-out;
-		font-family: 'IBM Plex Sans', sans-serif;
-		font-size: clamp(1.2rem, 2.5vw, 0.6rem);
-		font-weight: 400;
-	}
-
-	.topnav__inner {
-		display: flex;
-	}
-
-	.topnav a:hover {
-		opacity: 0.7;
-	}
-
-	.topnav a.active {
-		/* border-bottom: solid 2px var(--accent-color); */
-	}
-
-	.topnav .icon {
-		display: none;
-	}
-
-	i,
-	.fa,
-	.fa-bars,
-	a.icon {
-		font-size: 25px;
-	}
-
-	/* Apply this to everything but the first child of .topnav a */
-	@media screen and (max-width: 1000px) {
-		.topnav a:not(:first-child) {
-			display: none;
-		}
-		.topnav a.icon {
-			float: right;
-			display: block;
-		}
-		.topnav {
-			padding-left: 10px;
-		}
-	}
-
-	@media screen and (max-width: 1000px) {
-		.topnav.responsive {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			/* backdrop-filter: blur(30px); */
-		}
-		.topnav.responsive .icon {
-			position: relative;
-		}
-		.topnav.responsive a {
-			float: none;
-			display: block;
-			text-align: left;
-		}
-	}
-</style>

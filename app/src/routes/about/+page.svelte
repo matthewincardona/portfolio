@@ -1,6 +1,7 @@
 <script>
 	import aboutMePic from '$lib/assets/about me headshot.webp';
 	import Navbar from '../../lib/Navbar.svelte';
+	import Footer from '../../lib/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -21,10 +22,53 @@
 			multiple projects across many different areas of the web and I use what I learn everyday to
 			help build my next idea.
 			<br /><br />
-			I've been a freelance web designer for 4 years now and am still actively taking on clients through
+			I've been a freelance web designer for 5 years now and am still actively taking on clients through
 			my business DouxDolci Web Design.
-			<!-- <br> -->
-			<!-- And PS: If the floating donut didn't give it away on the home page, I'm also a baker & cook at heart &lt;3 -->
 		</p>
 	</div>
 </div>
+
+<Footer />
+
+<style>
+	/* Create a two column layout */
+	.about-me {
+		min-height: 100vh;
+		margin: auto;
+		display: grid;
+		max-width: 2000px;
+		justify-content: center;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		gap: 3em;
+		padding: 100px 5% 100px 5%;
+	}
+
+	.about-me__picture {
+		margin: 5%;
+		margin-left: auto;
+		max-width: 20rem;
+	}
+
+	.about-me__bio {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+	}
+
+	/* Break this into two rows on smaller devices */
+	@media screen and (max-width: 600px) {
+		.about-me {
+			grid-template-columns: 1fr;
+		}
+		.about-me__bio {
+			margin-top: 50px;
+		}
+		.about-me__picture {
+			margin-top: 50px;
+			max-width: 60vw;
+			margin-left: 0;
+		}
+	}
+</style>

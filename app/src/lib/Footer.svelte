@@ -6,7 +6,7 @@
 <footer>
 	<div class="footer-col">
 		<p>Looking to get in touch?</p>
-		<a href="/contact"><button class="footer-btn">Contact Me!</button></a>
+		<a href="/contact"><button class="footer-btn">Contact Me</button></a>
 	</div>
 	<div class="footer-col">
 		<a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
@@ -36,7 +36,6 @@
 		justify-content: center;
 		align-content: center;
 		border-top: 4px solid var(--accent-color);
-		background-color: #00000040;
 		min-height: 200px;
 		width: 100%;
 		padding-top: 10px;
@@ -59,15 +58,15 @@
 	.footer-btn {
 		border: var(--accent-color) 3px solid;
 		background-color: #00000000;
-		color: white;
 		padding: 8px 20px;
 		border-radius: 4px;
 		cursor: pointer;
-		transition: opacity 0.15s ease-in;
+		transition: background-color ease-in 0.15s;
+		font-size: clamp(1rem, 2.5vw, 1rem);
 	}
 
 	.footer-btn:hover {
-		opacity: 0.8;
+		background-color: #0000001d;
 	}
 
 	.footer__icon-row {
@@ -85,7 +84,7 @@
 	}
 
 	.footer__icon {
-		width: 3.5em;
+		width: 3em;
 		height: auto;
 	}
 </style>
