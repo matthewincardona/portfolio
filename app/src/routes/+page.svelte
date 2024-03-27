@@ -259,7 +259,7 @@
 	}
 
 	.hero__inner__title--des {
-		background: url('$lib/assets/text-mask-des.png');
+		background: url('$lib/assets/text-mask-des.webp');
 		background-position: 0% 25%;
 		background-size: cover;
 		background-clip: text;
@@ -270,7 +270,7 @@
 	.hero__inner__title--dev {
 		/* mix-blend-mode: lighten; */
 		/* mask-image: url('$lib/assets/text-mask-dev.png'); */
-		background: url('$lib/assets/text-mask-dev.png');
+		background: url('$lib/assets/text-mask-dev.webp');
 		background-position: 0% 50%;
 		background-size: cover;
 		background-clip: text;

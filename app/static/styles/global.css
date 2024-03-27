@@ -27,7 +27,7 @@ body {
 }
 
 .bg-overlay {
-	background-image: url('./bg.png');
+	background-image: url('./bg.webp');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -65,7 +65,7 @@ h1 {
 }
 
 h1 {
-	background: url('./text-mask-des.png');
+	background: url('./text-mask-des.webp');
 	background-position: 0% 0%;
 	background-size: 100%;
 	background-clip: text;
