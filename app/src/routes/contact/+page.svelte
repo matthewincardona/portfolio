@@ -1,5 +1,6 @@
 <script>
 	import Navbar from '../../lib/Navbar.svelte';
+	import Footer from '../../lib/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -34,6 +35,8 @@
 		<input type="submit" value="Submit" />
 	</form>
 </div>
+
+<Footer />
 
 <style>
 	.contact-container {

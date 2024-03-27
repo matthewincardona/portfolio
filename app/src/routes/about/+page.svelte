@@ -36,10 +36,10 @@
 		min-height: 100vh;
 		margin: auto;
 		display: grid;
-		max-width: 2000px;
+		max-width: 1800px;
 		justify-content: center;
 		align-items: center;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 0.6fr 1fr;
 		grid-template-rows: auto;
 		gap: 3em;
 		padding: 100px 5% 100px 5%;
@@ -55,6 +55,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2em;
+	}
+
+	.about-me__bio p {
+		max-width: 60ch;
 	}
 
 	/* Break this into two rows on smaller devices */

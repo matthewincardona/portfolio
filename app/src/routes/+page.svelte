@@ -2,7 +2,6 @@
 <!-- add prefers reduced motion check -->
 <!-- convert font sizes to rem -->
 <!-- make mobile friendly -->
-<!-- make menu just a hamburg -->
 <!-- make less text on the front -->
 
 <script>
@@ -145,13 +144,9 @@
 		</div>
 
 		<!-- Extra Projects -->
-		<div class="case-study">
+		<!-- <div class="case-study">
 			<div class="bg-wrapper">
 				<section>
-					<!-- <h3 class="case-study__section-title">Extra Projects</h3>
-						<p>See some of the websites that didn't receive their own page, but still deserve a place.
-						<br /><br /><br /><br />
-						</p> -->
 					<div class="case-study__row">
 						<h4>Class Projects</h4>
 						<p>
@@ -169,6 +164,45 @@
 						</div>
 					</div>
 				</section>
+			</div>
+		</div>
+	</div> -->
+
+		<!-- Extra Projects -->
+		<div class="about-me__card-grid-wrapper">
+			<h3 style="text-align: left;">Things I Make</h3>
+			<p style="text-align: left; margin-bottom: 40px">
+				Some things I've made, GitHub repos optionally included.
+			</p>
+			<div class="about-me__card-grid">
+				<div class="about-me__card">
+					<h5>Control-C</h5>
+					<p>A git-like backup program for designers.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>Time-Based Task Manager</h5>
+					<p>A volatile task manager that encourages you to complete tasks on time.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>Classroom Coding Assistant</h5>
+					<p>A coding assistant for keeping pace with programming lectures.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>Umami AI</h5>
+					<p>A platform for hosting helpful gen AI personas.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>Booty Call</h5>
+					<p>A video-calling app for couples with an interactive artboard.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>UX Interview Bot</h5>
+					<p>An AI bot for helping conduct UX interviews.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>Second Desk</h5>
+					<p>A</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -242,6 +276,48 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
+	}
+
+	/* ================
+ABOUT
+=================*/
+
+	.about-me__card-grid-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-width: 1600px;
+		padding: 100px 5% 100px 5%;
+	}
+
+	.about-me__card-grid {
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		justify-content: start;
+		align-items: center;
+		gap: 3vw;
+		flex-wrap: wrap;
+	}
+
+	.about-me__card {
+		background-color: rgba(114, 114, 114, 0.08);
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		text-align: left;
+		padding: 40px;
+		width: 350px;
+		height: 400px;
+		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
+			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
+	}
+
+	.about-me__card--mini {
+		width: 240px;
+		height: 100px;
 	}
 
 	/* ================
