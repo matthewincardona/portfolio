@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@splinetool/runtime": "^1.0.82"
+		"@splinetool/runtime": "^1.0.82",
+		"onchange": "^7.1.0"
 	}
 }
