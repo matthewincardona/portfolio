@@ -26,6 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"@splinetool/runtime": "^1.0.82",
+		"on-change": "^3.0.2",
 		"onchange": "^7.1.0"
 	}
 }
