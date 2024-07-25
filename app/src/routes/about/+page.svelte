@@ -1,13 +1,10 @@
 <script>
 	import aboutMePic from '$lib/assets/about me headshot.webp';
-	import Navbar from '../../lib/Navbar.svelte';
-	import Footer from '../../lib/Footer.svelte';
 </script>
 
 <svelte:head>
 	<title>About Me | Matthew Incardona</title>
 </svelte:head>
-<Navbar />
 <div class="about-me">
 	<!-- About me picture -->
 	<div class="about-me__picture">
@@ -27,8 +24,6 @@
 		</p>
 	</div>
 </div>
-
-<Footer />
 
 <style>
 	/* Create a two column layout */

@@ -1,21 +1,18 @@
 <!-- TO DO: -->
 <!-- add prefers reduced motion check -->
-<!-- convert font sizes to rem -->
 <!-- make mobile friendly -->
 <!-- make less text on the front -->
 
 <script>
 	// assets
-	import Navbar from '../lib/Navbar.svelte';
 	import Footer from '../lib/Footer.svelte';
 	import arrow from '$lib/assets/arrow.svg';
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
 	import greenovation from '$lib/assets/greenovation.webp';
-	import midterm from '$lib/assets/extra projects/midterm.jpg';
-
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
+
 	onMount(() => {
 		// Spline
 		// make sure you have a canvas in the body
@@ -24,15 +21,21 @@
 		const spline = new Application(canvas);
 		spline.load('https://prod.spline.design/MoATaLmqKlEtJnxV/scene.splinecode');
 
-		// on hover, make the text small and blurred
+		// Hide overlay after 1 second
+		document.body.style.overflow = 'hidden';
+		setTimeout(function () {
+			const overlay = document.querySelector('.overlay');
+			document.body.style.overflow = 'auto'; // Restore scrolling
+			overlay.style.display = 'none';
+		}, 1000);
 	});
 </script>
 
 <svelte:head>
-	<title>Matthew Incardona</title>
+	<title>Matthew Incardona | UX Engineer</title>
 </svelte:head>
 
-<Navbar />
+<div class="overlay" />
 
 <canvas id="canvas3d" />
 
@@ -50,13 +53,13 @@
 						</strong>
 					</p>
 				</div>
-				<div>
+				<!-- <div>
 					<p>
-						"I bring a unique blend of technical expertise and human-centric design thinking to help
+						Bringing a unique blend of technical expertise and human-centric design thinking to help
 						companies forge meaningful connections with their audience, ensuring a seamless and
-						delightful user experience from conceptualization to the polished product."
+						delightful user experience from conceptualization to the polished product.
 					</p>
-				</div>
+				</div> -->
 				<div />
 				<div>
 					<p>Years of experience in:</p>
@@ -170,47 +173,105 @@
 
 		<!-- Extra Projects -->
 		<div class="about-me__card-grid-wrapper">
-			<h3 style="text-align: left;">Things I Make</h3>
+			<h3 style="text-align: left;">More Projects</h3>
 			<p style="text-align: left; margin-bottom: 40px">
-				Some things I've made, GitHub repos optionally included.
+				Some interesting projects I've made over the years.
 			</p>
 			<div class="about-me__card-grid">
 				<div class="about-me__card">
-					<h5>Control-C</h5>
-					<p>A git-like backup program for designers.</p>
-				</div>
-				<div class="about-me__card">
 					<h5>Time-Based Task Manager</h5>
 					<p>A volatile task manager that encourages you to complete tasks on time.</p>
-				</div>
-				<div class="about-me__card">
-					<h5>Classroom Coding Assistant</h5>
-					<p>A coding assistant for keeping pace with programming lectures.</p>
+					<p><b>Flutter</b></p>
 				</div>
 				<div class="about-me__card">
 					<h5>Umami AI</h5>
 					<p>A platform for hosting helpful gen AI personas.</p>
+					<p><b>Svelte, ChatGPT, Firebase</b></p>
+				</div>
+				<div class="about-me__card">
+					<h5>SBC4E Hub</h5>
+					<p>An online hub for Social Behavior Change for Education (SBC4E) content.</p>
+					<p><b>Figma</b></p>
+				</div>
+				<div class="about-me__card">
+					<h5>Jukebox</h5>
+					<p>An app that empowers people to listen to music socially.</p>
+					<p><b>Swift, Spotify API</b></p>
 				</div>
 				<div class="about-me__card">
 					<h5>Booty Call</h5>
 					<p>A video-calling app for couples with an interactive artboard.</p>
+					<p><b>AWS, WebRTC</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>UX Interview Bot</h5>
-					<p>An AI bot for helping conduct UX interviews.</p>
+					<h5>DoxuDolci Hosting</h5>
+					<p>The master server for DouxDolci web design, hosting client's WordPress sites.</p>
+					<p><b>Oracle Cloud, Webmin, Cloudflare</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>Second Desk</h5>
-					<p>A</p>
+					<h5>Remote Desktop Client</h5>
+					<p>An Apache Guacamole-style remote desktop app.</p>
+					<p><b>Electron, React, WebRTC, AWS</b></p>
 				</div>
+				<div class="about-me__card">
+					<h5>Job App Tracker</h5>
+					<p>A website that encourages people to put out more job applications.</p>
+					<p><b>Cloudflare Workers & Cloudflare D1</b></p>
+				</div>
+				<div class="about-me__card">
+					<h5>AVS Website</h5>
+					<p>A website showcasing an Autonomous Vehicle Security project.</p>
+					<p><b>Jekyll, SASS, Tailwind</b></p>
+				</div>
+				<!-- <div class="about-me__card">
+					<h5>Control-C</h5>
+					<p>A git-like backup program for designers.</p>
+				</div>
+				<div class="about-me__card">
+					<h5>Classroom Coding Assistant</h5>
+					<p>A coding assistant for keeping pace with programming lectures.</p>
+				</div> -->
+			</div>
+
+			<!-- People I've Worked With -->
+			<h3 style="margin-top: 150px;">People & Orgs I've Worked With</h3>
+			<div class="hero__people-ive-worked-with">
+				<p>mEducation Alliance</p>
+				<p>Smashing Magazine</p>
+				<p>Chiara Aliotta</p>
+				<p>Debbie Levitt</p>
+				<p>Liddiard Consulting Corp.</p>
+				<p>STSS Inc.</p>
+				<p>The Tailored Male</p>
+				<p>Yvette Simmons</p>
+				<p>KPGT</p>
+				<p>PWEC NA</p>
+				<p>Matt Urban Marketing</p>
+				<p>Susan Rodgers</p>
+				<p>Bubble Meets</p>
+				<p>Institute for Caring</p>
+				<p>Emma S. Clark Library</p>
+				<p>SBDC</p>
+				<p>Tr-State Design Solutions, Inc.</p>
+				<p>Students Helping Honduras</p>
+				<p>Asir Law Firm</p>
+				<p />
 			</div>
 		</div>
 	</div>
 </section>
 
-<Footer />
-
 <style>
+	.overlay {
+		position: fixed; /* Fix to viewport */
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(27, 11, 11, 0); /* Semi-transparent background */
+		z-index: 10; /* Ensure it's on top */
+	}
+
 	#canvas3d {
 		position: absolute;
 		width: 100vw !important;
@@ -219,11 +280,41 @@
 
 	.hero {
 		/* user-select: none; */
-		min-height: 100vh;
+		min-height: 100dvh;
 		padding: 0% 2%;
 		position: relative;
 		overflow: hidden;
 		padding: 6%;
+		margin-top: -2%;
+		animation: fade-in 0.5s 0.5s ease-in-out both;
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.hero {
+			padding-top: 10%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding-top: 15%;
+			min-height: 80dvh;
+		}
+	}
+
+	@media (max-width: 500px) {
+		.hero {
+			padding-top: 20%;
+		}
 	}
 
 	.hero__inner {
@@ -248,14 +339,27 @@
 		user-select: none;
 	}
 
-	.hero__descr {
-		max-width: 1400px;
+	/* .hero__descr {
+		max-width: 1200px;
 		margin: 20px 0px 0px 20px;
 		display: grid;
 		grid-template-columns: 1.2fr 1.2fr 0.2fr 1fr;
 		grid-template-rows: 1fr;
 		gap: 0px 2em;
 		grid-template-areas: '. . . .';
+	} */
+
+	.hero__descr {
+		max-width: 1200px;
+		margin: 20px 0px 0px 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 2em 2em;
+	}
+
+	.hero__descr > div {
+		max-width: 400px;
 	}
 
 	.hero__inner__title--des {
@@ -276,6 +380,13 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
+	}
+
+	.hero__people-ive-worked-with {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		flex-wrap: wrap;
+		gap: 1em;
 	}
 
 	/* ================
@@ -309,10 +420,14 @@ ABOUT
 		align-items: start;
 		text-align: left;
 		padding: 40px;
-		width: 350px;
-		height: 400px;
+		max-width: 500px;
+		max-height: 300px;
 		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
+	}
+
+	.about-me__card > p:nth-of-type(2) {
+		margin-top: 20px;
 	}
 
 	.about-me__card--mini {
@@ -414,7 +529,7 @@ PROJECTS
 		.project__img {
 			margin-top: -100px;
 		}
-		.case-study__title {
+		/* .case-study__title {
 			margin-top: -80px;
 		}
 		.case-study__container {
@@ -425,6 +540,6 @@ PROJECTS
 		.case-study__img {
 			width: 90vw;
 			max-width: 90vw;
-		}
+		} */
 	}
 </style>

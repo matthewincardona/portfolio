@@ -23,8 +23,7 @@
 			<a href="/" class="active" on:click={closeMobileNav}>Home</a>
 			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href="/about" on:click={closeMobileNav}>About</a>
-			<a href="/contact" on:click={closeMobileNav}>Contact Me</a>
-			<p>|</p>
+			<!-- <a href="/contact" on:click={closeMobileNav}>Contact Me</a> -->
 			<a href={resume} on:click={closeMobileNav}>Resume</a>
 		</div>
 		<!-- svelte-ignore a11y-invalid-attribute -->

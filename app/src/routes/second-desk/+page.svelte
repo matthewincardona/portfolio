@@ -11,39 +11,24 @@
 	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
 	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
 	import cover from '$lib/assets/second desk/second desk cover.png';
-	import { fly } from 'svelte/transition';
-
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		document.addEventListener('DOMContentLoaded', function () {
-			const image = document.getElementById('projectImage');
-
-			window.addEventListener('scroll', function () {
-				const scrollPercentage = (window.scrollY / window.innerHeight) * 100;
-
-				// Resize and spin image based on scroll
-				const scale = 1 - scrollPercentage / 200;
-				const rotation = scrollPercentage / 10;
-
-				image.style.transform = `scale(${scale}) rotate(${rotation}deg)`;
-			});
-		});
-	});
 </script>
+
+<svelte:head>
+	<title>Projects | Second Desk</title>
+</svelte:head>
 
 <div class="case-study">
 	<!-- overview -->
 	<section>
 		<div>
-			<div class="case-study__header parallax">
-				<h1 id="projectTitle parallax__layer parallax__layer--base">Second Desk</h1>
+			<div class="case-study__header">
 				<img
-					class="case-study__cover parallax__layer parallax__layer--back"
+					class="case-study__cover"
 					src={cover}
 					alt="Macbook with Second Desk website on it."
 					id="projectImage"
 				/>
+				<h1 id="projectTitle">Second Desk</h1>
 			</div>
 			<div class="case-study__container">
 				<div>
@@ -337,7 +322,7 @@
 	<!-- what I learned -->
 	<section>
 		<div class="case-study__row case-study__bottom-section">
-			<h4 class="parallax__layer--base">What I Learned</h4>
+			<h4 class="__layer--base">What I Learned</h4>
 			<p>
 				Going into this project, I had little familiarity with UX principles, server management, or
 				coding for the web. I was the only product developer and designer working on it for a number
@@ -349,23 +334,4 @@
 </div>
 
 <style>
-	.parallax {
-		perspective: 1px;
-		height: 100vh;
-		overflow-x: hidden;
-		overflow-y: auto;
-	}
-	.parallax__layer {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-	.parallax__layer--base {
-		transform: translateZ(0);
-	}
-	.parallax__layer--back {
-		transform: translateZ(-1px);
-	}
 </style>

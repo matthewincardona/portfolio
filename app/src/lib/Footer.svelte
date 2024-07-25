@@ -5,10 +5,6 @@
 
 <footer>
 	<div class="footer-col">
-		<p>Looking to get in touch?</p>
-		<a href="/contact"><button class="footer-btn">Contact Me</button></a>
-	</div>
-	<div class="footer-col">
 		<a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
 			<div class="footer__icon-row">
 				<img class="footer__icon" src={behanceIcon} alt="behance icon" />
@@ -25,6 +21,11 @@
 				<p>Connect with me on LinkedIn</p>
 			</div>
 		</a>
+	</div>
+	<div class="footer-col">
+		<a href="mailto:doublethink.inc@gmail.com"
+			><button class="footer-btn">doublethink.inc@gmail.com</button></a
+		>
 	</div>
 </footer>
 
