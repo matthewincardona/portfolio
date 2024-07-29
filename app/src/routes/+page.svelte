@@ -175,7 +175,7 @@
 		<div class="about-me__card-grid-wrapper">
 			<h3 style="text-align: left;">More Projects</h3>
 			<p style="text-align: left; margin-bottom: 40px">
-				Some interesting projects I've made over the years.
+				A collection of interesting projects I've made over the years
 			</p>
 			<div class="about-me__card-grid">
 				<div class="about-me__card">
