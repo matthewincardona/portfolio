@@ -199,8 +199,10 @@
 					<p><b>Swift, Spotify API</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>Booty Call</h5>
-					<p>A video-calling app for couples with an interactive artboard.</p>
+					<h5>"Booty Call"</h5>
+					<p>
+						A secure, privacy-focused video-calling app for couples with an interactive artboard.
+					</p>
 					<p><b>AWS, WebRTC</b></p>
 				</div>
 				<div class="about-me__card">
