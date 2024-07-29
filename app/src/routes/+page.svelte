@@ -19,7 +19,7 @@
 		const canvas = document.getElementById('canvas3d');
 		// start the application and load the scene
 		const spline = new Application(canvas);
-		spline.load('https://prod.spline.design/MoATaLmqKlEtJnxV/scene.splinecode');
+		spline.load('https://prod.spline.design/l0O9Y1iecZ5RpNnl/scene.splinecode');
 
 		// Hide overlay after 1 second
 		document.body.style.overflow = 'hidden';
