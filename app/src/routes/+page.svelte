@@ -126,7 +126,7 @@
 			</div>
 
 			<!-- Project Three -->
-			<div class="project-container__left-panel">
+			<!-- <div class="project-container__left-panel">
 				<h2>Rochester Greenovation</h2>
 				<ul class="tag-container">
 					<li class="project-tag"><span>UX/UI Designer</span></li>
@@ -143,7 +143,7 @@
 			</div>
 			<div class="project-container__right-panel">
 				<img class="project__img" src={greenovation} alt="Rochester Greenovation project preview" />
-			</div>
+			</div> -->
 		</div>
 
 		<!-- Extra Projects -->
