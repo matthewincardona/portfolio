@@ -57,7 +57,7 @@ hr {
 h1 {
 	font-family: 'Major Mono Display', monospace;
 	color: var(--header-color);
-	font-size: clamp(3.2rem, 8vw, 8rem);
+	font-size: clamp(3.2rem, 8vw, 7rem);
 	line-height: normal;
 	font-style: normal;
 	font-weight: 400;
