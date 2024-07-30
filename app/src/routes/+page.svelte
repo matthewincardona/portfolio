@@ -5,21 +5,24 @@
 
 <script>
 	// assets
-	import Footer from '../lib/Footer.svelte';
 	import arrow from '$lib/assets/arrow.svg';
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
-	import greenovation from '$lib/assets/greenovation.webp';
+	// import greenovation from '$lib/assets/greenovation.webp';
+	import heroVideo from '$lib/assets/hero-video.webm';
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
 		// Spline
-		// make sure you have a canvas in the body
+		// // make sure you have a canvas in the body
 		const canvas = document.getElementById('canvas3d');
-		// start the application and load the scene
+		// // start the application and load the scene
 		const spline = new Application(canvas);
 		spline.load('https://prod.spline.design/l0O9Y1iecZ5RpNnl/scene.splinecode');
+		setTimeout(function () {
+			spline.stop();
+		}, 3000);
 
 		// Hide overlay after 1 second
 		document.body.style.overflow = 'hidden';
@@ -38,6 +41,9 @@
 <div class="overlay" />
 
 <canvas id="canvas3d" />
+
+<!-- svelte-ignore a11y-media-has-caption -->
+<!-- <video src={heroVideo} autoplay id="heroVideo" /> -->
 
 <section>
 	<div class="hero" id="hero">
@@ -273,8 +279,8 @@
 		background-color: rgba(27, 11, 11, 0); /* Semi-transparent background */
 		z-index: 10; /* Ensure it's on top */
 	}
-
-	#canvas3d {
+	#canvas3d,
+	#heroVideo {
 		position: absolute;
 		width: 100vw !important;
 		max-height: 100vh !important;
@@ -432,10 +438,10 @@ ABOUT
 		margin-top: 20px;
 	}
 
-	.about-me__card--mini {
+	/* .about-me__card--mini {
 		width: 240px;
 		height: 100px;
-	}
+	} */
 
 	/* ================
 PROJECTS
@@ -473,9 +479,9 @@ PROJECTS
 	}
 
 	/* Add an alt color to container background */
-	.bg-wrapper {
+	/* .bg-wrapper {
 		background-color: rgba(114, 114, 114, 0.08);
-	}
+	} */
 
 	.project__btn {
 		display: inline-flex;
