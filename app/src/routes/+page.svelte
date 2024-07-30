@@ -9,7 +9,6 @@
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
 	// import greenovation from '$lib/assets/greenovation.webp';
-	import heroVideo from '$lib/assets/hero-video.webm';
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
 
@@ -19,10 +18,11 @@
 		const canvas = document.getElementById('canvas3d');
 		// // start the application and load the scene
 		const spline = new Application(canvas);
-		spline.load('https://prod.spline.design/l0O9Y1iecZ5RpNnl/scene.splinecode');
-		setTimeout(function () {
-			spline.stop();
-		}, 3000);
+		spline.load('https://prod.spline.design/KWvZ9DsHNqCoOsAC/scene.splinecode').then(() => {
+			setTimeout(function () {
+				spline.stop();
+			}, 2800);
+		});
 
 		// Hide overlay after 1 second
 		document.body.style.overflow = 'hidden';
@@ -30,7 +30,7 @@
 			const overlay = document.querySelector('.overlay');
 			document.body.style.overflow = 'auto'; // Restore scrolling
 			overlay.style.display = 'none';
-		}, 1000);
+		}, 800);
 	});
 </script>
 
@@ -242,7 +242,7 @@
 			</div>
 
 			<!-- People I've Worked With -->
-			<h3 style="margin-top: 150px;">People & Orgs I've Worked With</h3>
+			<!-- <h3 style="margin-top: 150px;">People & Orgs I've Worked With</h3>
 			<div class="hero__people-ive-worked-with">
 				<p>mEducation Alliance</p>
 				<p>Smashing Magazine</p>
@@ -264,7 +264,7 @@
 				<p>Students Helping Honduras</p>
 				<p>Asir Law Firm</p>
 				<p />
-			</div>
+			</div> -->
 		</div>
 	</div>
 </section>
@@ -279,8 +279,7 @@
 		background-color: rgba(27, 11, 11, 0); /* Semi-transparent background */
 		z-index: 10; /* Ensure it's on top */
 	}
-	#canvas3d,
-	#heroVideo {
+	#canvas3d {
 		position: absolute;
 		width: 100vw !important;
 		max-height: 100vh !important;
@@ -294,7 +293,7 @@
 		overflow: hidden;
 		padding: 6%;
 		margin-top: -2%;
-		animation: fade-in 0.5s 0.5s ease-in-out both;
+		animation: fade-in 0.3s 0.5s ease-in-out both;
 	}
 
 	@keyframes fade-in {
@@ -390,12 +389,13 @@
 		color: transparent;
 	}
 
-	.hero__people-ive-worked-with {
+	/* .hero__people-ive-worked-with {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		flex-wrap: wrap;
 		gap: 1em;
-	}
+		margin-bottom: 10vh;
+	} */
 
 	/* ================
 ABOUT
@@ -406,7 +406,7 @@ ABOUT
 		flex-direction: column;
 		margin: auto;
 		max-width: 1600px;
-		padding: 100px 5% 100px 5%;
+		padding: 100px 5% 20dvh 5%;
 	}
 
 	.about-me__card-grid {
@@ -446,10 +446,6 @@ ABOUT
 	/* ================
 PROJECTS
 =================*/
-
-	.projects {
-		/* background-color: rgba(211, 211, 211, 0.04); */
-	}
 
 	/* Create a two column layout */
 	.project-container {
