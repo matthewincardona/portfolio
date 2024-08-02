@@ -1,7 +1,6 @@
 <!-- TO DO: -->
 <!-- add prefers reduced motion check -->
 <!-- make mobile friendly -->
-<!-- make less text on the front -->
 
 <script>
 	// assets
