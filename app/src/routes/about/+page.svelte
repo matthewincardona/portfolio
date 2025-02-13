@@ -15,13 +15,16 @@
 		<div class="about-me__bio">
 			<h1>About Me</h1>
 			<p>
-				I'm an undergraduate human-centered computing major at the Rochester Institute of Technology
-				who loves learning about all things web-related. As an avid entrepreneur, I enjoy working on
-				multiple projects across many different areas of the web and I use what I learn everyday to
-				help build my next idea.
+				I graduated from <strong
+					>Rochester Institute of Technology with a degree in Human-Centered Computing</strong
+				>, combining my passion for design, development, and business. As an entrepreneur, designer,
+				and developer, I thrive on building digital experiences that are not just visually engaging
+				but also strategically effective.
 				<br /><br />
-				I've been a freelance web designer for 5 years now and am still actively taking on clients through
-				my business DouxDolci Web Design.
+				<strong>For over five years, I’ve run my own web design business</strong>, DouxDolci Web
+				Design, working with clients to create thoughtful, user-friendly solutions. I’m always
+				learning, experimenting, and finding new ways to push myself and make even better products
+				for my clients.
 			</p>
 		</div>
 	</div>
