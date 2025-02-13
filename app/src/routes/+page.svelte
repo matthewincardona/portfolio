@@ -62,10 +62,10 @@
 			<div class="hero__descr">
 				<div>
 					<p>
-						Taking a <strong>business-focused approach to UX</strong>, creating digital experiences
-						that are both user-friendly and strategic.
+						<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and
+						development, I bridge the gap between what users need and what businesses want to
+						achieve.
 						<br /><br />
-						With a background in research, design, and development.
 					</p>
 				</div>
 				<!-- <div>
@@ -447,7 +447,7 @@
 	}
 
 	.hero__descr > div {
-		max-width: 500px;
+		max-width: 600px;
 	}
 
 	.hero__inner__title--des {
