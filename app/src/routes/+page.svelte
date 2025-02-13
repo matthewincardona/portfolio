@@ -17,7 +17,7 @@
 		const canvas = document.getElementById('canvas3d');
 		// // start the application and load the scene
 		const spline = new Application(canvas);
-		spline.load('https://prod.spline.design/KWvZ9DsHNqCoOsAC/scene.splinecode').then(() => {
+		spline.load('https://prod.spline.design/dquOI6xKoTCv6DlD/scene.splinecode').then(() => {
 			// Hide overlay
 			document.body.style.overflow = 'hidden';
 			const overlay = document.getElementsByClassName('.loader-container')[0];
@@ -29,7 +29,7 @@
 
 			setTimeout(function () {
 				spline.stop();
-			}, 2800);
+			}, 4000);
 		});
 	});
 </script>
@@ -76,15 +76,14 @@
 					</p>
 				</div> -->
 				<div />
-				<div>
-					<p>And years of experience in:</p>
+				<!-- <div>
+					<p>Experienced in:</p>
 					<ul>
-						<li>AWS, Cloudflare, GCP</li>
-						<li>CSS, Tailwind</li>
-						<li>React, Svelte, Angular</li>
-						<li>Figma, Adobe Suite</li>
+						<li>Design Thinking, User Research</li>
+						<li>Prototyping & Wireframing in Figma</li>
+						<li>HTML, CSS, JS, React, Flutter</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 
 			<div>
