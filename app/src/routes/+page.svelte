@@ -29,7 +29,7 @@
 
 			setTimeout(function () {
 				spline.stop();
-			}, 4000);
+			}, 4200);
 		});
 	});
 </script>
