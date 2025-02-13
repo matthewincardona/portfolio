@@ -62,10 +62,10 @@
 			<div class="hero__descr">
 				<div>
 					<p>
-						<strong>
-							A Frontend Developer, UX/UI Designer, and Entrepreneur at the Rochester Institute of
-							Technology.
-						</strong>
+						Taking a <strong>business-focused approach to UX</strong>, creating digital experiences
+						that are both user-friendly and strategic.
+						<br /><br />
+						With a background in research, design, and development.
 					</p>
 				</div>
 				<!-- <div>
@@ -77,7 +77,7 @@
 				</div> -->
 				<div />
 				<div>
-					<p>With years of experience in:</p>
+					<p>And years of experience in:</p>
 					<ul>
 						<li>AWS, Cloudflare, GCP</li>
 						<li>CSS, Tailwind</li>
@@ -448,7 +448,7 @@
 	}
 
 	.hero__descr > div {
-		max-width: 400px;
+		max-width: 500px;
 	}
 
 	.hero__inner__title--des {
