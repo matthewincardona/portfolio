@@ -1,5 +1,6 @@
 <script>
 	import resume from '$lib/assets/Matthew_Incardona_Resume-UX-Engineer.pdf';
+	import pdfIcon from '$lib/assets/pdf-icon.svg';
 
 	// function toggleMobileNav() {
 	// 	var x = document.getElementById('myTopnav');
@@ -35,7 +36,10 @@
 			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href="/about">About</a>
 			<!-- <a href="/contact" on:click={closeMobileNav}>Contact Me</a> -->
-			<a href={resume}>Resume</a>
+			 <a href="{resume}" class="topnav__inner-resume">
+				<p>Resume</p>
+				<img src="{pdfIcon}" alt="Icon of a pdf file">
+			 </a>
 		</div>
 	</div>
 </nav>
@@ -73,6 +77,16 @@
 		display: flex;
 		justify-content: end;
 		align-items: center;
+	}
+
+	.topnav__inner-resume {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		border: 1px solid var(--cta-color);
+		border-radius: 100px;
+		padding: 8px 16px !important;
+		/* transition: opacity 0.3s ease-in-out; */
 	}
 
 	.topnav a:hover {

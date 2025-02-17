@@ -95,13 +95,13 @@
 
 	<!-- Projects area -->
 	<div class="projects">
-		<!-- Project One -->
 		<div class="project-container">
+			<!-- Project One -->
 			<div class="project-container__left-panel">
 				<h2>Second Desk</h2>
 				<ul class="tag-container">
-					<li class="project-tag"><span>Founder</span></li>
 					<li class="project-tag"><span>UX Engineer</span></li>
+					<li class="project-tag"><span>UX Researcher</span></li>
 				</ul>
 				<p class="project__descr">
 					Dive into my work on Second Desk, a Desktop-As-A-Service product that enables non-Windows
@@ -117,6 +117,26 @@
 			</div>
 
 			<!-- Project Two -->
+			<div class="project-container__left-panel">
+				<h2>Mission Threads</h2>
+				<ul class="tag-container">
+					<li class="project-tag"><span>UX Researcher</span></li>
+					<li class="project-tag"><span>UX/UI Designer</span></li>
+				</ul>
+				<p class="project__descr">
+					Explore my work on Mission Threads, a redesign of a legacy knowledge management system
+					that empowers contract proposal writers to do their best work in the least amount of time.
+				</p>
+				<a class="project__btn" href="/mission-threads">
+					Open Project
+					<img class="project__btn-icon" src={arrow} alt="" />
+				</a>
+			</div>
+			<div class="project-container__right-panel">
+				<img class="project__img" src={secondDesk} alt="Second Desk project preview" />
+			</div>
+
+			<!-- Project Three -->
 			<div class="project-container__left-panel">
 				<h2>DouxDolci Web Design</h2>
 				<ul class="tag-container">
