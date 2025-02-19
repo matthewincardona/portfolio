@@ -208,10 +208,10 @@ CASE STUDIES
 }
 
 .case-study section {
-	padding: 2% 2% 80px 2%;
+	padding: 0% 2% 80px 2%;
 	max-width: 1400px;
 	margin: auto;
-	padding-top: 10dvh;
+	/* padding-top: 10dvh; */
 }
 
 /* section titles */

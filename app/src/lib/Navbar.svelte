@@ -79,6 +79,11 @@
 		align-items: center;
 	}
 
+	.topnav__inner a:not(:last-child):hover {
+		transform: translateY(-2px);
+		opacity: .6;
+	}
+
 	.topnav__inner-resume {
 		display: flex;
 		align-items: center;
@@ -89,8 +94,8 @@
 		/* transition: opacity 0.3s ease-in-out; */
 	}
 
-	.topnav a:hover {
-		opacity: 0.7;
+	.topnav__inner-resume:hover {
+		opacity: .6;
 	}
 
 	.topnav .icon {

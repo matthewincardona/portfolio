@@ -1,63 +1,44 @@
 <script>
-	import competitivePositioningAnalysis1 from '$lib/assets/second desk/competitive positioning analysis 1.png';
-	import competitivePositioningAnalysis2 from '$lib/assets/second desk/competitive positioning analysis 2.png';
-	import productOffering from '$lib/assets/second desk/product offering.png';
-	import userPersona1 from '$lib/assets/second desk/user persona 1.webp';
-	import userPersona2 from '$lib/assets/second desk/user persona 2.webp';
+	import userPersona1 from '$lib/assets/mission threads/persona1.webp';
+	import userPersona2 from '$lib/assets/mission threads/persona2.webp';
 	import empathyMap1 from '$lib/assets/second desk/empathy map 1.webp';
 	import empathyMap2 from '$lib/assets/second desk/empathy map 2.webp';
 	import userFlow from '$lib/assets/second desk/user flow.png';
 	import homeScreen from '$lib/assets/second desk/home screen.png';
 	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
 	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
-	import cover from '$lib/assets/second desk/second desk cover.png';
-	import { fly } from 'svelte/transition';
-
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		document.addEventListener('DOMContentLoaded', function () {
-			const image = document.getElementById('projectImage');
-
-			window.addEventListener('scroll', function () {
-				const scrollPercentage = (window.scrollY / window.innerHeight) * 100;
-
-				// Resize and spin image based on scroll
-				const scale = 1 - scrollPercentage / 200;
-				const rotation = scrollPercentage / 10;
-
-				image.style.transform = `scale(${scale}) rotate(${rotation}deg)`;
-			});
-		});
-	});
 </script>
+
+<svelte:head>
+	<title>Projects | Mission Threads</title>
+</svelte:head>
 
 <div class="case-study">
 	<!-- overview -->
 	<section>
 		<div>
-			<div class="case-study__header parallax">
-				<h1 id="projectTitle parallax__layer parallax__layer--base">Mission Threads</h1>
-				<img
-					class="case-study__cover parallax__layer parallax__layer--back"
-					src={cover}
-					alt="Macbook with Second Desk website on it."
-					id="projectImage"
-				/>
+			<div class="case-study__title">
+				<h1>Mission Threads</h1>
 			</div>
 			<div class="case-study__container">
 				<div>
 					<h4>Overview</h4>
 					<p>
-						During my time with <b>Peraton</b>, I was placed on a small team working on the Mission Threads project. We had the goal of transforming the company's existing knowledge base, which included thousands of important internal documents across several heritage companies. The knowledge base was essential for employees applying to government contracts and as a general source of information for everyone at the company.
+						During my time at <b>Peraton</b>, I worked with a small team to transform the company's
+						fragmented knowledge base, consolidating thousands of critical internal documents spread
+						across multiple heritage companies.
+						<br /><br />
+						Employees relied on this system for government contract applications and daily operations,
+						yet it was difficult to search and maintain. Our goal was to create a structured, intuitive
+						system that simplified access and encouraged engagement.
 					</p>
 				</div>
 				<div>
 					<h4>Tools & Roles</h4>
-					<p>UX/UI Design, Usability Testing, Product Strategy</p>
+					<p>UX/UI Design, User Research, Usability Testing, Product Strategy</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>UX Researcher</span></li>
-						<li class="project-tag"><span>Visual Designer</span></li>
+						<li class="project-tag"><span>UI Designer</span></li>
 					</ul>
 				</div>
 			</div>
@@ -70,287 +51,252 @@
 			<div class="case-study__row">
 				<h4>Background</h4>
 				<p>
-					As a company that grows rapidly through acquisitions, Peraton struggles to keep it's database of information up to date.
-					<br /> <br />
-					I started Second Desk as a way to provide Chromebook users with a more robust computing experience,
-					without having to purchase a new Windows or Mac machine. We’re focusing on a niche target audience
-					with a specific problem to fix.
-				</p>
-			</div>
-		</section>
-	</div>
-
-	<!-- competitive positioning analysis -->
-	<section>
-		<h3 class="case-study__section-title">Product Strategy</h3>
-		<div class="case-study__row">
-			<h4>Competitive Positioning Analysis</h4>
-			<p>
-				To understand our place in this growing market, we compared ourselves to a variety of
-				Desktop-As-A-Service (DAAS) products ranging from enterprise-focused offerings to more
-				consumer-grade ones. We found that there were very few companies who had products that both
-				catered to individual consumers and offered a relatively low price point.
-			</p>
-			<div class="case-study__flex">
-				<img class="case-study__img" src={competitivePositioningAnalysis1} alt="" loading="lazy" />
-			</div>
-			<p>
-				We found that there were very few companies who had products that both catered to individual
-				consumers and offered a relatively low price point.
-			</p>
-			<div class="case-study__flex">
-				<img class="case-study__img" src={competitivePositioningAnalysis2} alt="" loading="lazy" />
-			</div>
-		</div>
-	</section>
-
-	<!-- product offering -->
-	<div class="bg-wrapper">
-		<section>
-			<div class="case-study__row">
-				<h4>Product Offering</h4>
-				<p>
-					At the moment, we’re still in the customer discovery phase. Our current concept of an MVP
-					is subject to change as we continue learning more about the problems about users face.
-					That said, we believe a potential solution is to stream a remote Windows server and its
-					applications directly through the user’s browser. This approach has both pros and cons
-					when compared to a common existing solution:
-				</p>
-				<div class="case-study__flex">
-					<img class="case-study__img" src={productOffering} alt="" loading="lazy" />
-				</div>
-				<p>
-					After comparing these two approaches, we felt that ours did an excellent job of addressing
-					our user’s issues, mainly a low price point and high ease-of-use. Because requiring a
-					decent internet connection could be a challenge to some users, it will be an important
-					area to test while we build our MVP.
-				</p>
-			</div>
-		</section>
-	</div>
-
-	<!-- start of ui/ux design section -->
-	<!-- empathy interviews -->
-	<section>
-		<h3 class="case-study__section-title">UI/UX Design</h3>
-		<div class="case-study__row">
-			<h4>Empathy Interviews</h4>
-			<p>
-				Being the only UX Designer on the team, it was my responsibility to establish a <b
-					>user-centric approach</b
-				>
-				in my team. I used a few methods, which you can see below, to help put them in our audience's
-				shoes. <br /><br />
-				First and foremost, it was important to conduct interviews and collect data to work from, so
-				we could have an idea of where to start. I wanted to understand common challenges our target
-				audience faced while working on their computer(s); these were the questions I asked and the criteria
-				used for participants:
-			</p>
-			<ul>
-				<li>What is your occupation/major?</li>
-				<li>How old are you?</li>
-				<li>What is your current computer situation? Do you own one or do you share\lease?</li>
-				<li>
-					What do you regularly use it for? (school, work, personal; where do you use it; what apps
-					do you typically run)
-				</li>
-				<li>What challenges do you face while using a computer? How does this make you feel?</li>
-				<li>
-					Is there any way in which you feel these challenges could be resolved? Is there anything
-					stopping you from solving these challenges yourself?
-				</li>
-			</ul>
-			<br />
-			<br />
-			<p>Target participant characteristics:</p>
-			<ul>
-				<li>Ages 12-24</li>
-				<li>High school and college students</li>
-				<li>Mainly Chromebook users</li>
-				<li>Include participants of different majors</li>
-				<li>Include participants of different genders</li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- user personas -->
-	<div class="bg-wrapper">
-		<section>
-			<div class="case-study__row">
-				<h4>User Personas</h4>
-				<p>
-					These are the first personas that were made from the data we gathered. Of course, as we
-					are constantly conducting more interviews and revising our work, updates will be made when
-					new content is available.
-
+					Peraton's rapid growth through acquisitions makes maintaining an up-to-date database
+					challenging. Information is often missing, outdated, or lacks proper points of contact.
+					Employees frequently keep documents on personal devices or share them informally, and
+					uploaded files are often unsearchable.
 					<br /><br />
-					We found that our interviewees were were often more creative-focused in terms of current/preferred
-					major, were on tight budgets and couldn't afford a more expensive Mac or PC, and were frustrated
-					at having to switch between devices to get their work done.
+					The existing knowledge base was a disorganized collection of thousands of documents, making
+					it difficult to find or update information. Our goal was to build a system that allows employees
+					to easily access and contribute valuable knowledge.
 				</p>
-				<div class="case-study__flex">
-					<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
-					<img class="case-study__img" src={userPersona2} alt="" loading="lazy" />
-				</div>
 			</div>
 		</section>
 	</div>
 
-	<!-- empathy maps -->
+	<!-- information gathering -->
 	<section>
+		<h3 class="case-study__section-title">Information Gathering</h3>
 		<div class="case-study__row">
-			<h4>Empathy Maps</h4>
+			<h4>User Interviews</h4>
 			<p>
-				In order to gain a deeper understanding with our users and really connect with them, I
-				created empathy maps. It was an effective way to, for lack of a better word, create empathy
-				in my team, none of whom had ever seen this kind of thing before. Unlike the user personas,
-				which focused more on the black-and-white needs of our users, these were more helpful for
-				understanding people's general emotions and what they were thinking.
+				We conducted user interviews to understand how employees interacted with the current system
+				and what improvements they needed. Key pain points included:
 			</p>
-			<div class="case-study__flex">
-				<img
-					class="case-study__img case-study__img--small"
-					src={empathyMap1}
-					alt=""
-					loading="lazy"
-				/>
-				<img
-					class="case-study__img case-study__img--small"
-					src={empathyMap2}
-					alt=""
-					loading="lazy"
-				/>
+
+			<br /><br />
+
+			<div class="interview__card-grid">
+				<div class="interview__card">
+					<p>
+						"Information is siloed. I know my work, but I have no visibility into what others are
+						doing."
+					</p>
+					<p><b>Director</b></p>
+				</div>
+				<div class="interview__card">
+					<p>
+						"Finding resources and contacts is frustrating—there’s no clear way to navigate the
+						system."
+					</p>
+					<p><b>General Manager</b></p>
+				</div>
+				<div class="interview__card">
+					<p>
+						"The system is underutilized. If no one’s using it, why should I bother updating it?"
+					</p>
+					<p><b>Senior Program Director</b></p>
+				</div>
+				<div class="interview__card">
+					<p>
+						"Duplicated efforts are common. Everyone keeps their own documents, leading to
+						inefficiencies."
+					</p>
+					<p><b>Senior Systems Architect</b></p>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- <div class="bg-wrapper">
-      <section>
-        <div class="case-study__row">
-          <h4>User Flow</h4>
-          <img class="case-study__img" src="./assets/second-desk/user-flow.png" alt="" loading="lazy">
-        </div>
-      </section>
-    </div> -->
-
-	<!-- mockups -->
-	<div class="bg-wrapper">
-		<section>
-			<div class="case-study__row">
-				<h4>User Flow and Prototypes</h4>
-				<p>
-					Mapping out the user flow helped get an idea of how the website would actually function
-					and what screens were needed for the prototype. This is a simplified example of how the
-					flow looks.
-				</p>
-				<div class="constrained-img--horizontal" style="margin-bottom: 80px;">
-					<img class="case-study__img" src={userFlow} alt="" loading="lazy" />
-				</div>
-				<p>Home page</p>
-				<div class="case-study__flex">
-					<img class="case-study__img" src={homeScreen} alt="" loading="lazy" />
-				</div>
-				<p>Select a plan</p>
-				<div class="case-study__flex">
-					<img class="case-study__img" src={planSelectionScreen} alt="" loading="lazy" />
-				</div>
-				<p>Desktop</p>
-				<div class="case-study__flex">
-					<img class="case-study__img" src={desktopScreen} alt="" loading="lazy" />
-				</div>
-				<p>Interactive Figma Prototype</p>
-				<iframe
-					class="case-study__img"
-					title="figma frame"
-					style="border: 1px solid rgba(0, 0, 0, 0.1); background-color: gray;"
-					width="1000"
-					height="600"
-					src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0Hn3hbJaOXv90jWwYgbCeB%2FSecond-Desk%3Fnode-id%3D521%253A44%26viewport%3D-23924%252C-36227%252C1.83%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D521%253A44"
-					allowfullscreen
-				/>
-			</div>
-		</section>
-	</div>
-
-	<!-- start of development section -->
-	<!-- mvp -->
 	<section>
-		<h3 class="case-study__section-title">Development</h3>
-		<div class="case-study__row">
-			<h4>MVP</h4>
-			<p>
-				There are two main components to our product: the website and the remote servers. To get a
-				working MVP going, we need to allow access to a remote desktop session directly through our
-				website.
-				<br /><br />
-				Our initial builds used a Windows 2019 EC2 instance from AWS and an in-browser remote desktop
-				client called Myrtille. With it, we could access both remote applications like Inkscape and the
-				full desktop of our server without ever needing a user download. We eventually constructed a
-				React-based website that could connect users to specific programs and even offered a small library
-				of downloaded apps to run.
-			</p>
-		</div>
+		<h4>Key Insights</h4>
+		<p>
+			We conducted user interviews with employees at Peraton to gather insights on their experiences
+			with the existing knowledge base. The feedback highlighted several key issues:
+			<br /><br />
+			- The knowledge base was difficult to navigate and search, leading to frustration and inefficiency.
+			<br />
+			- Employees were less motivated to update the knowledge base because they felt it was underutilized.
+			<br />
+			- Information was often siloed, making it hard to get a comprehensive view of the company's knowledge.
+			<br />
+			- It was difficult to quickly identify relevent documents from search results and then pull out
+			relevant info from them.
+			<br />
+			- There was a need for a more user-friendly interface and better search functionality.
+		</p>
 	</section>
 
-	<!-- future improvements -->
-	<div class="bg-wrapper">
+	<!-- requirements brainstorming -->
+	<section>
+		<h4>Requirements Brainstorming</h4>
+		<p>
+			We took the information we gathered from our interviews and conversations with stakeholders
+			and started to brainstorm requirements for the new system.
+		</p>
+
+		<br />
+
+		<iframe
+			style="border: 1px solid rgba(0, 0, 0, 0.1);"
+			max-width="1000"
+			width="100%"
+			height="700"
+			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1012-4162&viewport=-1254%2C-1050%2C0.12&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
+			allowfullscreen
+		/>
+	</section>
+
+	<!-- Key Insights -->
 		<section>
-			<div class="case-study__row">
-				<h4>Future Improvements</h4>
-				<p>While testing our MVP, there were several roadblocks that we kept facing:</p>
+			<h3 class="case-study__section-title">Personas & Features</h3>
+			<p>Based on the information gathered from our interviews, we created the following personas.</p>
+			<br>
+		<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
+		<img class="case-study__img" src={userPersona2} alt="" loading="lazy" />
+
+		<br /><br />
+		<p>This further helped us to create a potential list of features, which we would later refine through more interviews and feedback. It included:</p>
 				<ul>
-					<li>
-						Our remote desktop software was designed for simple office programs, not
-						graphics-intensive ones. Low stream quality and low FPS was sometimes an issue.
-					</li>
-					<li>
-						The AWS instance lacked a dedicated GPU, which would bottleneck the performance of some
-						programs.
-					</li>
+					<li>Home Page</li>
+					<li>Industry trends - Customized per user</li>
+					<li>Recent content</li>
+					<li>Search bar</li>
+					<li>Filters (take the ones from PKX)</li>
+					<li>Contribute Info Button (TBD)</li>
+					<li>Upload Documents Page</li>
+					<li>Search Results Page</li>
+					<ul>
+						<li>Breadcrumbs</li>
+						<li>Displays results of a search/filter</li>
+						<li>See how old/new each item is</li>
+						<li>Report & request missing information button</li>
+					</ul>
+					<li>Individual Search Result</li>
+					<ul>
+						<li>Author, date, title, brief description, accuracy rating</li>
+						<li>Document tags</li>
+					</ul>
+					<li>Mission Threads Document Page</li>
+					<ul>
+						<li>Breadcrumbs</li>
+						<li>Core nodes</li>
+						<li>Author, date, title, brief description, accuracy rating</li>
+						<li>Report & request missing information button</li>
+						<li>Tags for heritage companies</li>
+					</ul>
+					<li>User Accounts Page</li>
 				</ul>
-				<br /><br />
-				<p>
-					Finding new remote desktop software was our main priority, so after researching the stacks
-					behind cloud gaming services like Google Stadia (who excelled at remote app streaming), we
-					found that a WebRTC-based approach looked the most promising. Although, we are still in
-					the process of looking for ways to improve performance on the server itself.
-				</p>
-			</div>
-		</section>
-	</div>
+	</section>
 
-	<!-- what I learned -->
 	<section>
-		<div class="case-study__row case-study__bottom-section">
-			<h4 class="parallax__layer--base">What I Learned</h4>
-			<p>
-				Going into this project, I had little familiarity with UX principles, server management, or
-				coding for the web. I was the only product developer and designer working on it for a number
-				of months, which forced me to learn how to do everything from the ground up. I’ve made a lot
-				of progress since starting and I’m continuing to learn more as the project keeps evolving.
-			</p>
-		</div>
+		<h3 class="case-study__section-title">Prototypes</h3>
+		<p>
+			From there, we boiled down our features list to just a few items that we wanted to focus on
+			and created a prototype to present to our stakeholders.
+		</p>
+		<br />
+
+		<p><strong>Showcased Features:</strong></p>
+		<ul>
+			<li>Search dropdown for more nuances searches</li>
+			<li>Filter by date range</li>
+			<li>Feedback and copy buttons</li>
+			<li>Content pagination</li>
+			<li>View counter</li>
+		</ul>
+		<br />
+
+		<br />
+		<iframe
+			style="border: 1px solid rgba(0, 0, 0, 0.1);"
+			max-width="1000"
+			width="100%"
+			height="700"
+			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1002-5452&viewport=-1254%2C-1050%2C0.12&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
+			allowfullscreen
+		/>
+		<br /><br />
+		<p>
+			We also explored AI-enabled ideas to see what a far-future version of the system could look
+			like. We modeled it after ChatGPT's UI and AI search result UIs from browsers like Brave. This
+			kind of system would sit next to the new proposed UI as a separate feature and would allow
+			users to quickly search for specific points of interest across multiple documents.
+		</p>
+
+		<br />
+
+		<iframe
+			style="border: 1px solid rgba(0, 0, 0, 0.1);"
+			max-width="1000"
+			width="100%"
+			height="700"
+			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1096-5995&viewport=-12326%2C-8259%2C0.56&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
+			allowfullscreen
+		/>
+	</section>
+
+	<!-- Future Plans -->
+	<section>
+		<h3 class="case-study__section-title">Reflection</h3>
+		<p>
+			Our redesign transformed Peraton’s outdated knowledge base into an intuitive, searchable
+			system with improved document organization and discoverability.
+			<br /><br />
+			However, key challenges emerged that offer opportunities for further refinement:
+		</p>
+		<ol>
+			<li>
+				<b>Driving Adoption:</b> Despite improved usability, some employees hesitated to contribute.
+				Future iterations could incorporate onboarding tutorials and incentives to encourage participation.
+			</li>
+			<li>
+				<b>Iterative Testing:</b> Additional user testing throughout development would have surfaced
+				pain points earlier. A phased rollout with real-time analytics could provide continuous feedback.
+			</li>
+			<li>
+				<b>Search Optimization:</b> Inconsistent metadata made finding specific documents challenging.
+				AI-driven tagging and metadata standardization could improve search accuracy.
+			</li>
+		</ol>
 	</section>
 </div>
 
 <style>
-	.parallax {
-		perspective: 1px;
-		height: 100vh;
-		overflow-x: hidden;
-		overflow-y: auto;
+	.interview__card-grid-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-width: 1600px;
+		padding: 100px 5% 20dvh 5%;
 	}
-	.parallax__layer {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+
+	.interview__card-grid {
+		display: flex;
+		flex-direction: row;
+		margin: auto;
+		justify-content: start;
+		align-items: center;
+		gap: 3vw;
+		flex-wrap: wrap;
 	}
-	.parallax__layer--base {
-		transform: translateZ(0);
+
+	.interview__card {
+		background-color: rgba(114, 114, 114, 0.08);
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		text-align: left;
+		padding: 40px;
+		max-width: 500px;
+		max-height: 300px;
+		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
+			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
-	.parallax__layer--back {
-		transform: translateZ(-1px);
+
+	.interview__card > p:nth-of-type(2) {
+		margin-top: 20px;
 	}
 </style>

@@ -7,6 +7,7 @@
 	import arrow from '$lib/assets/arrow.svg';
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
+	import missionThreads from '$lib/assets/missionThreads.webp';
 	// import greenovation from '$lib/assets/greenovation.webp';
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
@@ -121,7 +122,7 @@
 				<h2>Mission Threads</h2>
 				<ul class="tag-container">
 					<li class="project-tag"><span>UX Researcher</span></li>
-					<li class="project-tag"><span>UX/UI Designer</span></li>
+					<li class="project-tag"><span>UI Designer</span></li>
 				</ul>
 				<p class="project__descr">
 					Explore my work on Mission Threads, a redesign of a legacy knowledge management system
@@ -133,7 +134,7 @@
 				</a>
 			</div>
 			<div class="project-container__right-panel">
-				<img class="project__img" src={secondDesk} alt="Second Desk project preview" />
+				<img class="project__img" src={missionThreads} alt="Mission Threads project preview" />
 			</div>
 
 			<!-- Project Three -->
@@ -217,7 +218,7 @@
 				<div class="about-me__card">
 					<h5>Umami AI</h5>
 					<p>A platform for hosting helpful gen AI personas.</p>
-					<p><b>Svelte, ChatGPT, Firebase</b></p>
+					<p><b>Svelte, ChatGPT API, Firebase</b></p>
 				</div>
 				<div class="about-me__card">
 					<h5>SBC4E Hub</h5>
@@ -234,12 +235,12 @@
 					<p>
 						A secure, privacy-focused video-calling app for couples with an interactive artboard.
 					</p>
-					<p><b>AWS, WebRTC</b></p>
+					<p><b>Cloudflare, WebRTC, HTML Canvas</b></p>
 				</div>
 				<div class="about-me__card">
 					<h5>DoxuDolci Hosting</h5>
-					<p>The master server for DouxDolci web design, hosting client's WordPress sites.</p>
-					<p><b>Oracle Cloud, Webmin, Cloudflare</b></p>
+					<p>The main server for DouxDolci web design, hosting client's WordPress sites.</p>
+					<p><b>Oracle Cloud, Webmin</b></p>
 				</div>
 				<div class="about-me__card">
 					<h5>Remote Desktop Client</h5>

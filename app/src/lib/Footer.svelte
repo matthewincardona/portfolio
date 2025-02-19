@@ -5,12 +5,12 @@
 
 <footer>
 	<div class="footer-col">
-		<a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
+		<!-- <a href="https://www.behance.net/matthewincardo/" target="_blank" rel="noopener noreferrer">
 			<div class="footer__icon-row">
 				<img class="footer__icon" src={behanceIcon} alt="behance icon" />
 				<p>See more of my work on Behance</p>
 			</div>
-		</a>
+		</a> -->
 		<a
 			href="https://www.linkedin.com/in/matthew-incardona/"
 			target="_blank"
@@ -23,8 +23,8 @@
 		</a>
 	</div>
 	<div class="footer-col">
-		<a href="mailto:doublethink.inc@gmail.com"
-			><button class="footer-btn">doublethink.inc@gmail.com</button></a
+		<a href="mailto:matthew@douxdolci.com"
+			><button class="footer-btn">matthew@douxdolci.com</button></a
 		>
 	</div>
 </footer>
@@ -40,6 +40,7 @@
 		min-height: 200px;
 		width: 100%;
 		padding-top: 10px;
+		margin-top: 60px;
 	}
 
 	.footer-col {
@@ -76,7 +77,7 @@
 		grid-template-rows: auto;
 		column-gap: 1em;
 		align-items: center;
-		padding-bottom: 20px;
+		/* padding-bottom: 20px; */
 		transition: opacity 0.15s ease-in;
 	}
 
