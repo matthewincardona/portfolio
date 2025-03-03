@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects | ISTE 501 Peer Feedback Tool</title>
+	<title>Projects | iSchool Peer Feedback Tool</title>
 </svelte:head>
 
 <div class="case-study">
@@ -26,18 +26,18 @@
 	<section>
 		<div>
 			<div class="case-study__title">
-				<h1>ISTE 501 Peer Feedback Tool</h1>
+				<h1>iSchool Peer Feedback Tool</h1>
 			</div>
 			<div class="case-study__container">
 				<div>
 					<h4>Overview</h4>
 					<p>
-						The <strong>ISTE 500-501 and iSchool Peer Feedback Tool</strong> was developed to
-						address the inefficiencies of manual peer review processes in academic settings.
-						Traditionally, gathering and processing feedback for both students and faculty was a
-						time-consuming task that required significant administrative effort. The tool automates
-						feedback solicitation, anonymizes responses, and generates detailed reports, reducing a
-						30-hour workload to just 1-2 hours per semester.
+						The <strong>iSchool Peer Feedback Tool</strong> was developed to address the
+						inefficiencies of manual peer review processes in academic settings. Traditionally,
+						gathering and processing feedback for both students and faculty was a time-consuming
+						task that required significant administrative effort. The tool automates feedback
+						solicitation, anonymizes responses, and generates detailed reports, reducing a 30-hour
+						workload to just 1-2 hours per semester.
 						<br /><br />
 						This streamlining not only saves time but also ensures timely, accurate feedback that fosters
 						continuous improvement. With its scalable design, the tool has the potential to be adopted
