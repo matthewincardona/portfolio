@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects | ISTE 501 Peer Feedback System</title>
+	<title>Projects | ISTE 501 Peer Feedback Tool</title>
 </svelte:head>
 
 <div class="case-study">
