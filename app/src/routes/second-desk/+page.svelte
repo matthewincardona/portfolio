@@ -21,7 +21,7 @@
 	<!-- overview -->
 	<section>
 		<div>
-			<div class="case-study__header">
+			<!-- <div class="case-study__header">
 				<img
 					class="case-study__cover"
 					src={cover}
@@ -29,6 +29,9 @@
 					id="projectImage"
 				/>
 				<h1 id="projectTitle">Second Desk</h1>
+			</div> -->
+			<div class="case-study__title">
+				<h1>Second Desk</h1>
 			</div>
 			<div class="case-study__container">
 				<div>
