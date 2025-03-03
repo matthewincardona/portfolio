@@ -8,6 +8,8 @@
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
 	import missionThreads from '$lib/assets/missionThreads.webp';
+	import ISTEPeerFeedbackTool from '$lib/assets/501 peer feedback tool cover.webp';
+
 	// import greenovation from '$lib/assets/greenovation.webp';
 	import { Application } from '@splinetool/runtime';
 	import { onMount } from 'svelte';
@@ -155,6 +157,30 @@
 			</div>
 			<div class="project-container__right-panel">
 				<img class="project__img" src={douxDolci2} alt="Web design project preview" />
+			</div>
+
+			<!-- Project Four -->
+			<div class="project-container__left-panel">
+				<h2>iSchool Peer Feedback Tool</h2>
+				<ul class="tag-container">
+					<li class="project-tag"><span>Project Manager</span></li>
+				</ul>
+				<p class="project__descr">
+					See the results of my senior dev project at RIT, creating an tool that automates and
+					streamlines the peer review process for academic courses and faculty evaluations at the
+					iSchool.
+				</p>
+				<a class="project__btn" href="/501-feedback-tool">
+					Open Project
+					<img class="project__btn-icon" src={arrow} alt="" />
+				</a>
+			</div>
+			<div class="project-container__right-panel">
+				<img
+					class="project__img"
+					src={ISTEPeerFeedbackTool}
+					alt="iSchool peer feedback tool project preview"
+				/>
 			</div>
 
 			<!-- Project Three -->
