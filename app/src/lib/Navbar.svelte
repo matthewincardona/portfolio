@@ -87,6 +87,7 @@
 	.topnav__inner-resume {
 		display: flex;
 		align-items: center;
+		margin-left: 14px;
 		gap: 0.5rem;
 		border: 1px solid var(--cta-color);
 		border-radius: 100px;
