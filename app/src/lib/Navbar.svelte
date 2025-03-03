@@ -99,16 +99,16 @@
 		opacity: 0.6;
 	}
 
-	.topnav .icon {
+	/* .topnav .icon {
 		display: none;
-	}
+	} */
 
-	i,
+	/* i,
 	.fa,
 	.fa-bars,
 	a.icon {
 		font-size: 25px;
-	}
+	} */
 
 	/* Apply this to everything but the first child of .topnav a */
 	/* @media screen and (max-width: 1000px) {
