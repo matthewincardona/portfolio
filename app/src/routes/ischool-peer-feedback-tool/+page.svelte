@@ -125,6 +125,7 @@
 		</ul>
 	</section>
 
+	<!-- svelte-ignore a11y-media-has-caption -->
 	<section>
 		<h3 class="case-study__section-title">Screens</h3>
 		<h4>Shibboleth Login</h4>
@@ -139,8 +140,15 @@
 		<img class="case-study__img" src={addCreators} alt="" loading="lazy" />
 		<img class="case-study__img" src={creatorPermissions} alt="" loading="lazy" />
 		<img class="case-study__img" src={setDates} alt="" loading="lazy" />
-		<img class="case-study__img" src={createAForm} alt="" loading="lazy" />
-
+		<video
+			src={createAForm}
+			loading="lazy"
+			autoplay="true"
+			controls="true"
+			style="width: 95%; margin-left: 3%"
+		/>
+		<br />
+		<br />
 		<br />
 		<h4>Admin Page</h4>
 		<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
