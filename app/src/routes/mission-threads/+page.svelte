@@ -137,6 +137,7 @@
 		<br />
 
 		<iframe
+			title="Requirements brainstorming"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
 			max-width="1000"
 			width="100%"
@@ -211,6 +212,7 @@
 
 		<br />
 		<iframe
+			title="Figma prototype"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
 			max-width="1000"
 			width="100%"
@@ -229,6 +231,7 @@
 		<br />
 
 		<iframe
+			title="Figma AI prototype"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
 			max-width="1000"
 			width="100%"
@@ -265,13 +268,13 @@
 </div>
 
 <style>
-	.interview__card-grid-wrapper {
+	/* .interview__card-grid-wrapper {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
 		max-width: 1600px;
 		padding: 100px 5% 20dvh 5%;
-	}
+	} */
 
 	.interview__card-grid {
 		display: flex;

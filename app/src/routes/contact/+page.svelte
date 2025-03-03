@@ -92,7 +92,7 @@
 		background-color: #0000001d;
 	}
 
-	.form-container {
+	/* .form-container {
 		border-radius: 5px;
-	}
+	} */
 </style>
