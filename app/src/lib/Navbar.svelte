@@ -1,5 +1,5 @@
 <script>
-	import resume from '$lib/assets/Matthew_Incardona_Resume-UX-Engineer.pdf';
+	import resume from '$lib/assets/Matthew_Incardona_Resume.pdf';
 	import pdfIcon from '$lib/assets/pdf-icon.svg';
 
 	// function toggleMobileNav() {
@@ -36,10 +36,10 @@
 			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href="/about">About</a>
 			<!-- <a href="/contact" on:click={closeMobileNav}>Contact Me</a> -->
-			 <a href="{resume}" class="topnav__inner-resume">
+			<a href={resume} class="topnav__inner-resume">
 				<p>Resume</p>
-				<img src="{pdfIcon}" alt="Icon of a pdf file">
-			 </a>
+				<img src={pdfIcon} alt="Icon of a pdf file" />
+			</a>
 		</div>
 	</div>
 </nav>
@@ -81,7 +81,7 @@
 
 	.topnav__inner a:not(:last-child):hover {
 		transform: translateY(-2px);
-		opacity: .6;
+		opacity: 0.6;
 	}
 
 	.topnav__inner-resume {
@@ -95,7 +95,7 @@
 	}
 
 	.topnav__inner-resume:hover {
-		opacity: .6;
+		opacity: 0.6;
 	}
 
 	.topnav .icon {
