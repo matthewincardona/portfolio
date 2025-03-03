@@ -534,7 +534,7 @@ ABOUT
 		flex-direction: column;
 		margin: auto;
 		max-width: 1600px;
-		padding: 100px 5% 20dvh 5%;
+		padding: 0px 5% 20dvh 5%;
 	}
 
 	.about-me__card-grid {
@@ -584,9 +584,9 @@ PROJECTS
 		align-items: center;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
-		padding: 150px 5% 150px 5%;
+		padding: 150px 0 150px 5%;
 		column-gap: 6em;
-		row-gap: 10em;
+		row-gap: 6em;
 	}
 
 	.project__descr {

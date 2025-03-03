@@ -142,10 +142,10 @@
 		<img class="case-study__img" src={setDates} alt="" loading="lazy" />
 		<video
 			src={createAForm}
+			id="create-a-form-video"
 			loading="lazy"
 			autoplay="true"
 			controls="true"
-			style="width: 95%; margin-left: 3%"
 		/>
 		<br />
 		<br />
@@ -169,4 +169,12 @@
 </div>
 
 <style>
+	#create-a-form-video {
+		width: 95%;
+		margin-left: 3%;
+		border-radius: 10px;
+		-webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.35);
+		-moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.35);
+	}
 </style>
