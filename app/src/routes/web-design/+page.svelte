@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects | Mission Threads</title>
+	<title>Projects | DouxDolci Web Design</title>
 </svelte:head>
 
 <div class="case-study">

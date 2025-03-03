@@ -46,7 +46,7 @@
 				</div>
 				<div>
 					<h4>Tools & Roles</h4>
-					<p>Project Manager, UX/UI Designer, Frontend Developer</p>
+					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
 						<li class="project-tag"><span>Figma</span></li>

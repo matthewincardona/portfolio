@@ -54,10 +54,12 @@
 				</div>
 				<div>
 					<h4>Tools & Roles</h4>
-					<p>UX/UI Design, Product Strategy, Market Research, Frontend Development</p>
+					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
-						<li class="project-tag"><span>Founder</span></li>
-						<li class="project-tag"><span>UX Engineer</span></li>
+						<li class="project-tag"><span>AWS</span></li>
+						<li class="project-tag"><span>CloudFlare</span></li>
+						<li class="project-tag"><span>Electron</span></li>
+						<li class="project-tag"><span>Figma</span></li>
 					</ul>
 				</div>
 			</div>
