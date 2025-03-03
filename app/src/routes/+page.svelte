@@ -170,7 +170,7 @@
 					streamlines the peer review process for academic courses and faculty evaluations at the
 					iSchool.
 				</p>
-				<a class="project__btn" href="/501-feedback-tool">
+				<a class="project__btn" href="/ischool-peer-feedback-tool">
 					Open Project
 					<img class="project__btn-icon" src={arrow} alt="" />
 				</a>
