@@ -218,7 +218,7 @@
 		<br />
 		<h4>Form States</h4>
 		<p>
-			Forms have appropriate states depending on a form's status (Incomplete, Completed, Not Yet
+			Forms have appropriate states depending on a form's status (Complete Form, Completed, Not Yet
 			Available, Passed Deadline).
 		</p>
 		<img class="case-study__img" src={mincardDashCompleteForm} alt="" loading="lazy" />
