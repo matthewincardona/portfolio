@@ -7,6 +7,7 @@
 	import creatorPermissions from '$lib/assets/501-feedback-tool/optimized/creator permissions.webp';
 	import setDates from '$lib/assets/501-feedback-tool/optimized/set dates.webp';
 	import createAForm from '$lib/assets/501-feedback-tool/optimized/create a form.webm';
+	import viewData from '$lib/assets/501-feedback-tool/optimized/view data.webp';
 	import adminPage from '$lib/assets/501-feedback-tool/optimized/admin page.webp';
 	import respondToForm1 from '$lib/assets/501-feedback-tool/optimized/respond to form 1.webp';
 	import respondToForm2 from '$lib/assets/501-feedback-tool/optimized/respond to form 2.webp';
@@ -39,9 +40,9 @@
 						solicitation, anonymizes responses, and generates detailed reports, reducing a 30-hour
 						workload to just 1-2 hours per semester.
 						<br /><br />
-						This streamlining not only saves time but also ensures timely, accurate feedback that fosters
-						continuous improvement. With its scalable design, the tool has the potential to be adopted
-						by other academic departments and administrative processes in the future.
+						This was a <strong>two-semester project,</strong> made for clients at the iSchool. We met
+						with our core stakeholders regularly, and at larger gate reviews with additional stakeholders,
+						for strategic discussions and to ensure the final product would effectively meet their needs.
 					</p>
 				</div>
 				<div>
@@ -61,6 +62,16 @@
 	<section>
 		<div class="case-study__row">
 			<h4>Background</h4>
+			<p>
+				My role in the project was as the project manager, an occasional UX/UI designer, and a
+				frontend developer (doing SQL / API work when needed). I directed our team of designers and
+				developers using a Waterfall methodology. One reason we used the waterfall methodology is
+				its structured and predictable nature, which allowed us to plan and budget our time
+				accurately. We used Azure DevOps to organize our tasks and to host our codebase.
+			</p>
+
+			<br /><br />
+			<p>The final product had to meet the following requirements:</p>
 			<ul>
 				<li>
 					<strong>Reduce Manual Labor by 95%:</strong> Decrease the time spent on the peer feedback process
@@ -84,6 +95,11 @@
 
 	<section>
 		<h4>Features</h4>
+		<p>
+			We spent the first semester creating a list of MVP requirements, a project charter, and
+			discussing our plans for design, development, and the final implementation. Through many
+			iterations, we decided on the following requirements:
+		</p>
 		<ul>
 			<li>
 				Develop a user role management system, allowing users to select and assign roles. Presently,
@@ -129,16 +145,54 @@
 	<section>
 		<h3 class="case-study__section-title">Screens</h3>
 		<h4>Shibboleth Login</h4>
-		<br />
+		<p>Users can securely log in using Shibboleth, similar to RIT's own login system.</p>
 		<img class="case-study__img" src={asmithLogin} alt="" loading="lazy" />
 		<br />
 		<h4>Creating a Form</h4>
+		<p>
+			One of the hardest parts of this project was making it work for both faculty reviews and
+			in-class student reviews. The tool had to be flexible enough to handle both situations and use
+			language that reflected that. We create a system of "Groups", "Teams", and "Users" to
+			effectively capture both use cases.
 
+			<br />
+			<br />
+
+			At the second-highest level of power, behind only admins, creators can make new forms, edit
+			existing forms and assigned teams/users, and view individual and aggregated submission data.
+			Creators can be also be responders on forms.
+		</p>
 		<img class="case-study__img" src={asmithDash1} alt="" loading="lazy" />
 		<img class="case-study__img" src={asmithDash2} alt="" loading="lazy" />
+
+		<br />
+		<br />
+		<p>
+			Only users in the same team can submit responses for each other. This can be seen later on in
+			the "Responding To Forms" section.
+		</p>
 		<img class="case-study__img" src={createGroup} alt="" loading="lazy" />
+
+		<br />
+		<br />
+		<p>
+			An important feature is the ability to add multiple creators and set their permissions
+			individually. This way, multiple people can see data, edit forms, and edit assigned teams /
+			users. In some cases, we didn't want every creator to have access to all of these features.
+			This also applies to the initial creator, who, on the honor system, might need to remove some
+			of their own abilities on a particular form.
+		</p>
 		<img class="case-study__img" src={addCreators} alt="" loading="lazy" />
+
+		<br />
 		<img class="case-study__img" src={creatorPermissions} alt="" loading="lazy" />
+
+		<br />
+		<br />
+		<p>
+			Start and end dates determine when the form becomes available to responders and if it can be
+			edited (forms cannot be edited after they open, to protect submission data tables).
+		</p>
 		<img class="case-study__img" src={setDates} alt="" loading="lazy" />
 		<video
 			src={createAForm}
@@ -147,24 +201,62 @@
 			autoplay="true"
 			controls="true"
 		/>
+		<img class="case-study__img" src={viewData} alt="" loading="lazy" />
+
 		<br />
 		<br />
 		<br />
+
 		<h4>Admin Page</h4>
+		<p>
+			Admins are able to delegate roles to users and have a dedicated page viewable only to them.
+			This was in response to a need for user management that wouldn't require backend skills /
+			knowledge, as the admin wouldn't necessarily be a technically-savy individual.
+		</p>
 		<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
 
 		<br />
-		<h4>Responding To Forms</h4>
-		<img class="case-study__img" src={respondToForm1} alt="" loading="lazy" />
-		<img class="case-study__img" src={respondToForm2} alt="" loading="lazy" />
-		<img class="case-study__img" src={respondToForm3} alt="" loading="lazy" />
-
-		<br />
 		<h4>Form States</h4>
+		<p>
+			Forms have appropriate states depending on a form's status (Incomplete, Completed, Not Yet
+			Available, Passed Deadline).
+		</p>
 		<img class="case-study__img" src={mincardDashCompleteForm} alt="" loading="lazy" />
 		<img class="case-study__img" src={mincardDashCompleted} alt="" loading="lazy" />
 		<img class="case-study__img" src={mincardDashNotYetAvailable} alt="" loading="lazy" />
 		<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
+
+		<br />
+		<h4>Responding To Forms</h4>
+		<p>
+			Users who are assigned to a form can respond if it's available (which happens when it's past
+			the creator-set start date). Once all submissions are made, a message confirms to the user
+			that they've completed this form and the dashboard view reflects this (by setting the form to
+			a "Completed" status and stopping any further actions).
+		</p>
+		<img class="case-study__img" src={respondToForm1} alt="" loading="lazy" />
+		<img class="case-study__img" src={respondToForm2} alt="" loading="lazy" />
+		<img class="case-study__img" src={respondToForm3} alt="" loading="lazy" />
+	</section>
+
+	<section>
+		<div class="case-study__row">
+			<h4>What I Learned</h4>
+			<p>
+				When starting the project, I initially balanced both development and project management
+				responsibilities. However, I quickly recognized the critical importance of fully embracing
+				the project management role to ensure the team's success. I focused on delegating tasks
+				effectively, breaking down complex objectives into clear, actionable steps, and providing
+				detailed documentation to streamline execution.
+
+				<br /><br />
+				I also prioritized regular check-ins with team members to address roadblocks, gather feedback,
+				and align on goals. Additionally, I worked on improving sprint planning, setting realistic timelines,
+				and ensuring seamless collaboration across different functions. This shift in approach not only
+				enhanced team productivity but also strengthened my ability to lead projects efficiently while
+				maintaining a clear strategic vision.
+			</p>
+		</div>
 	</section>
 </div>
 
