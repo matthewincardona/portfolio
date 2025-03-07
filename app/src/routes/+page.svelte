@@ -205,64 +205,64 @@
 
 		<!-- Extra Projects -->
 		<div class="about-me__card-grid-wrapper">
-			<h3 style="text-align: left;">More Projects</h3>
+			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
 				A collection of interesting projects I've made over the years
 			</p>
 			<div class="about-me__card-grid">
 				<div class="about-me__card">
-					<h5>Time-Based Task Manager</h5>
+					<h3>Time-Based Task Manager</h3>
 					<p>A volatile task manager that encourages you to complete tasks on time.</p>
 					<p><b>Flutter</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>Umami AI</h5>
+					<h3>Umami AI</h3>
 					<p>A platform for hosting helpful gen AI personas.</p>
 					<p><b>Svelte, ChatGPT API, Firebase</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>SBC4E Hub</h5>
+					<h3>SBC4E Hub</h3>
 					<p>An online hub for Social Behavior Change for Education (SBC4E) content.</p>
 					<p><b>Figma</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>Jukebox</h5>
+					<h3>Jukebox</h3>
 					<p>An app that empowers people to listen to music socially.</p>
 					<p><b>Swift, Spotify API</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>"Booty Call"</h5>
+					<h3>"Booty Call"</h3>
 					<p>
 						A secure, privacy-focused video-calling app for couples with an interactive artboard.
 					</p>
 					<p><b>Cloudflare, WebRTC, HTML Canvas</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>DoxuDolci Hosting</h5>
+					<h3>DoxuDolci Hosting</h3>
 					<p>The main server for DouxDolci web design, hosting client's WordPress sites.</p>
 					<p><b>Oracle Cloud, Webmin</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>Remote Desktop Client</h5>
+					<h3>Remote Desktop Client</h3>
 					<p>An Apache Guacamole-style remote desktop app.</p>
 					<p><b>Electron, React, WebRTC, AWS</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>Job App Tracker</h5>
+					<h3>Job App Tracker</h3>
 					<p>A website that encourages people to put out more job applications.</p>
 					<p><b>Cloudflare Workers & Cloudflare D1</b></p>
 				</div>
 				<div class="about-me__card">
-					<h5>AVS Website</h5>
+					<h3>AVS Website</h3>
 					<p>A website showcasing an Autonomous Vehicle Security project.</p>
 					<p><b>Jekyll, SASS, Tailwind</b></p>
 				</div>
 				<!-- <div class="about-me__card">
-					<h5>Control-C</h5>
+					<h3>Control-C</h3>
 					<p>A git-like backup program for designers.</p>
 				</div>
 				<div class="about-me__card">
-					<h5>Classroom Coding Assistant</h5>
+					<h3>Classroom Coding Assistant</h3>
 					<p>A coding assistant for keeping pace with programming lectures.</p>
 				</div> -->
 			</div>
