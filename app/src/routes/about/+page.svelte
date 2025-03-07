@@ -75,6 +75,10 @@
 		max-width: 20rem;
 	}
 
+	.about-me__picture img {
+		border-radius: 10px;
+	}
+
 	.about-me__bio {
 		display: flex;
 		flex-direction: column;
