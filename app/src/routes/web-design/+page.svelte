@@ -20,7 +20,7 @@
 			</ul> -->
 			<div class="case-study__container">
 				<div class="case-study__left-panel">
-					<h4>Overview</h4>
+					<h2>Overview</h2>
 					<p>
 						I started DouxDolci Web Design a number of years ago as a way to get my foot in the door
 						and learn web design professionally. Since then, I've worked with a number of small
@@ -33,7 +33,7 @@
 					</p>
 				</div>
 				<div class="case-study__right-panel">
-					<h4>Keywords</h4>
+					<h2>Keywords</h2>
 					<p>Visual Design, User Experience, WordPress CMS</p>
 				</div>
 			</div>
@@ -43,9 +43,9 @@
 	<!-- med -->
 	<div class="bg-wrapper">
 		<section>
-			<h3 class="case-study__section-title">mEducation Alliance</h3>
+			<h2 class="case-study__section-title">mEducation Alliance</h2>
 			<div class="case-study__row">
-				<h4>Challenge</h4>
+				<h3>Challenge</h3>
 				<p>
 					Creating a more user-friendly website backend, which can be used by interns with little to
 					no web design experience. Our pain points were:
@@ -57,7 +57,7 @@
 				</ul>
 			</div>
 			<div class="case-study__row">
-				<h4>Solution</h4>
+				<h3>Solution</h3>
 				<p>
 					Rebuilt pages using a WYSIWYG builder, allowing for page backups, intuitive visual
 					editing, and page previews. Rebuilt a nonprofit website with a user-friendly backend
@@ -80,13 +80,13 @@
 
 	<!-- urban -->
 	<section>
-		<h3 class="case-study__section-title">
+		<h2 class="case-study__section-title">
 			<a href="https://www.matturbanmarketing.com/" target="_blank" rel="noopener noreferrer"
 				>Matt Urban Marketing</a
 			>
-		</h3>
+		</h2>
 		<div class="case-study__row">
-			<h4>Challenge</h4>
+			<h3>Challenge</h3>
 			<p>
 				Creating a website for a marketing startup that exhibits a unique brand image. Has the
 				following requirements:
@@ -98,7 +98,7 @@
 			</ul>
 		</div>
 		<div class="case-study__row">
-			<h4>Solution</h4>
+			<h3>Solution</h3>
 			<p>
 				Designed and built a responsive and user-centered website based on client needs and
 				feedback. Worked within brand guidelines to create a consistent company image. The website
@@ -117,7 +117,7 @@
 			</div>
 		</div>
 		<div class="case-study__row">
-			<h4>Further Support</h4>
+			<h3>Further Support</h3>
 			<p>
 				The project concluded with a short course in managing and editing their website. This
 				allowed them to make basic edits without the need to contact and web designer and pay for
@@ -129,15 +129,15 @@
 	<!-- tailored male -->
 	<div class="bg-wrapper">
 		<section>
-			<h3 class="case-study__section-title">
+			<h2 class="case-study__section-title">
 				<a
 					href="https://thetailoredmaleofeastsetauket.com/"
 					target="_blank"
 					rel="noopener noreferrer">The Tailored Male of East Setauket</a
 				>
-			</h3>
+			</h2>
 			<div class="case-study__row">
-				<h4>Challenge</h4>
+				<h3>Challenge</h3>
 				<p>
 					Creating a website for a local barbershop, which shows off their key selling points
 					services. The age of their main audience was around 40-60, with a smaller group of 12-20
@@ -151,7 +151,7 @@
 				</ul>
 			</div>
 			<div class="case-study__row">
-				<h4>Solution</h4>
+				<h3>Solution</h3>
 				<p>
 					Since the barbershop's audience tended to be older, the website was given a simplified
 					design, with bold colors and sharp contrasts. Contact info and directions were placed
@@ -174,13 +174,13 @@
 
 	<!-- pwec -->
 	<section>
-		<h3 class="case-study__section-title">
+		<h2 class="case-study__section-title">
 			<a href="https://pwecna.org/" target="_blank" rel="noopener noreferrer"
 				>Preach the Word Evangelical Church NA</a
 			>
-		</h3>
+		</h2>
 		<div class="case-study__row">
-			<h4>Challenge</h4>
+			<h3>Challenge</h3>
 			<p>
 				This project was to create a website for an international church's Texas-based chapter. The
 				website had to:
@@ -192,7 +192,7 @@
 			</ul>
 		</div>
 		<div class="case-study__row">
-			<h4>Solution</h4>
+			<h3>Solution</h3>
 			<p>
 				The final product included the logo's red, green, and white color scheme. A user-friendly
 				event system was put in place so staff could add new events with ease.
@@ -209,7 +209,7 @@
 			</div>
 		</div>
 		<div class="case-study__row">
-			<h4>Further Support</h4>
+			<h3>Further Support</h3>
 			<p>
 				Staff were given a lesson in using WordPress and how to use the WYSIWYG editor Elementor to
 				make minor updates to pages.
