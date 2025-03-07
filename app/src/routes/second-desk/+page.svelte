@@ -10,7 +10,7 @@
 	import homeScreen from '$lib/assets/second desk/home screen.png';
 	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
 	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
-	import cover from '$lib/assets/second desk/second desk cover.png';
+	// import cover from '$lib/assets/second desk/second desk cover.png';
 </script>
 
 <svelte:head>
