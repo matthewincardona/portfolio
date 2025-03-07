@@ -37,8 +37,7 @@
 					<h4>Tools & Roles</h4>
 					<p>UX/UI Design, User Research, Usability Testing, Product Strategy</p>
 					<ul class="tag-container">
-						<li class="project-tag"><span>UX Researcher</span></li>
-						<li class="project-tag"><span>UI Designer</span></li>
+						<li class="project-tag"><span>Figma</span></li>
 					</ul>
 				</div>
 			</div>
@@ -138,6 +137,7 @@
 		<br />
 
 		<iframe
+			title="Requirements brainstorming"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
 			max-width="1000"
 			width="100%"
@@ -148,45 +148,48 @@
 	</section>
 
 	<!-- Key Insights -->
-		<section>
-			<h3 class="case-study__section-title">Personas & Features</h3>
-			<p>Based on the information gathered from our interviews, we created the following personas.</p>
-			<br>
+	<section>
+		<h3 class="case-study__section-title">Personas & Features</h3>
+		<p>Based on the information gathered from our interviews, we created the following personas.</p>
+		<br />
 		<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
 		<img class="case-study__img" src={userPersona2} alt="" loading="lazy" />
 
 		<br /><br />
-		<p>This further helped us to create a potential list of features, which we would later refine through more interviews and feedback. It included:</p>
-				<ul>
-					<li>Home Page</li>
-					<li>Industry trends - Customized per user</li>
-					<li>Recent content</li>
-					<li>Search bar</li>
-					<li>Filters (take the ones from PKX)</li>
-					<li>Contribute Info Button (TBD)</li>
-					<li>Upload Documents Page</li>
-					<li>Search Results Page</li>
-					<ul>
-						<li>Breadcrumbs</li>
-						<li>Displays results of a search/filter</li>
-						<li>See how old/new each item is</li>
-						<li>Report & request missing information button</li>
-					</ul>
-					<li>Individual Search Result</li>
-					<ul>
-						<li>Author, date, title, brief description, accuracy rating</li>
-						<li>Document tags</li>
-					</ul>
-					<li>Mission Threads Document Page</li>
-					<ul>
-						<li>Breadcrumbs</li>
-						<li>Core nodes</li>
-						<li>Author, date, title, brief description, accuracy rating</li>
-						<li>Report & request missing information button</li>
-						<li>Tags for heritage companies</li>
-					</ul>
-					<li>User Accounts Page</li>
-				</ul>
+		<p>
+			This further helped us to create a potential list of features, which we would later refine
+			through more interviews and feedback. It included:
+		</p>
+		<ul>
+			<li>Home Page</li>
+			<li>Industry trends - Customized per user</li>
+			<li>Recent content</li>
+			<li>Search bar</li>
+			<li>Filters (take the ones from PKX)</li>
+			<li>Contribute Info Button (TBD)</li>
+			<li>Upload Documents Page</li>
+			<li>Search Results Page</li>
+			<ul>
+				<li>Breadcrumbs</li>
+				<li>Displays results of a search/filter</li>
+				<li>See how old/new each item is</li>
+				<li>Report & request missing information button</li>
+			</ul>
+			<li>Individual Search Result</li>
+			<ul>
+				<li>Author, date, title, brief description, accuracy rating</li>
+				<li>Document tags</li>
+			</ul>
+			<li>Mission Threads Document Page</li>
+			<ul>
+				<li>Breadcrumbs</li>
+				<li>Core nodes</li>
+				<li>Author, date, title, brief description, accuracy rating</li>
+				<li>Report & request missing information button</li>
+				<li>Tags for heritage companies</li>
+			</ul>
+			<li>User Accounts Page</li>
+		</ul>
 	</section>
 
 	<section>
@@ -209,6 +212,7 @@
 
 		<br />
 		<iframe
+			title="Figma prototype"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
 			max-width="1000"
 			width="100%"
@@ -227,6 +231,7 @@
 		<br />
 
 		<iframe
+			title="Figma AI prototype"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
 			max-width="1000"
 			width="100%"
@@ -263,13 +268,13 @@
 </div>
 
 <style>
-	.interview__card-grid-wrapper {
+	/* .interview__card-grid-wrapper {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
 		max-width: 1600px;
 		padding: 100px 5% 20dvh 5%;
-	}
+	} */
 
 	.interview__card-grid {
 		display: flex;
