@@ -139,8 +139,6 @@
 				<img class="project__img" src={secondDesk} alt="Second Desk project preview" />
 			</div>
 
-
-
 			<!-- Project Three -->
 			<div class="project-container__left-panel">
 				<h2>DouxDolci Web Design</h2>
@@ -591,9 +589,9 @@ PROJECTS
 		row-gap: 6em;
 	}
 
-	.project__descr {
+	/* .project__descr {
 		margin-top: 2rem;
-	}
+	} */
 
 	.project__img {
 		width: 100%;
