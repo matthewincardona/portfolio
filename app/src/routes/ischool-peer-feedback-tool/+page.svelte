@@ -63,11 +63,17 @@
 		<div class="case-study__row">
 			<h2>Background</h2>
 			<p>
-				My role in the project was as the project manager, an occasional UX/UI designer, and a
-				frontend developer (doing SQL / API work when needed). I directed our team of designers and
-				developers using a Waterfall methodology. One reason we used the waterfall methodology is
-				its structured and predictable nature, which allowed us to plan and budget our time
-				accurately. We used Azure DevOps to organize our tasks and to host our codebase.
+				As the project manager, I led our team of designers and developers while also contributing
+				as a UX/UI designer and frontend developer, stepping into SQL and API work as needed. I
+				directed the team using a Waterfall methodology, chosen for its structured and predictable
+				approach, which allowed us to effectively plan and allocate time and resources.
+				<br />
+				<br />
+				To ensure consistency and efficiency, I organized our codebase in a clear, scalable structure,
+				making it easy to replicate. Additionally, I created comprehensive documentation to streamline
+				collaboration between our design and development teams, clarifying workflows and communication
+				processes. We utilized Azure DevOps for task management and code hosting, keeping the team aligned
+				and productive.
 			</p>
 
 			<br /><br />
