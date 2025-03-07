@@ -30,7 +30,7 @@
 	</div>
 
 	<!-- People I've Worked With -->
-	<h3 style="margin-top: 150px;">People & Orgs I've Worked With</h3>
+	<h2 style="margin-top: 150px;">People & Orgs I've Worked With</h2>
 	<div class="hero__people-ive-worked-with">
 		<p>mEducation Alliance</p>
 		<p>Smashing Magazine</p>
