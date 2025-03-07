@@ -35,7 +35,7 @@
 			</div>
 			<div class="case-study__container">
 				<div>
-					<h4>Overview</h4>
+					<h2>Overview</h2>
 					<p>
 						Second Desk is a <b>Desktop-As-A-Service product</b> that enables non-Windows users to
 						stream Windows programs directly through their browser. This project will provide a
@@ -53,7 +53,7 @@
 					</p>
 				</div>
 				<div>
-					<h4>Tools & Roles</h4>
+					<h2>Tools & Roles</h2>
 					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>AWS</span></li>
@@ -70,7 +70,7 @@
 	<div class="bg-wrapper">
 		<section>
 			<div class="case-study__row">
-				<h4>Background</h4>
+				<h2>Background</h2>
 				<p>
 					With the massive growth of Chromebooks in recent years, particularly in the field of
 					education, more and more students are using them to do their schoolwork. But after
