@@ -82,7 +82,7 @@ h1 {
 h2 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: clamp(2.4rem, 4vw, 3rem);
+	font-size: clamp(2.2rem, 4vw, 2.6rem);
 	letter-spacing: 4%;
 	line-height: 140%;
 	margin-bottom: 15px;
