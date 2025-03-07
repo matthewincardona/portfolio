@@ -327,7 +327,7 @@
 	<!-- what I learned -->
 	<section>
 		<div class="case-study__row case-study__bottom-section">
-			<h2 class="__layer--base">What I Learned</h2>
+			<h2 class="__layer--base">Project Reflection</h2>
 			<p>
 				Going into this project, I had little familiarity with UX principles, server management, or
 				coding for the web. I was the only product developer and designer working on it for a number

@@ -243,7 +243,7 @@
 
 	<!-- Future Plans -->
 	<section>
-		<h2 class="case-study__section-title">Reflection</h2>
+		<h2 class="case-study__section-title">Project Reflection</h2>
 		<p>
 			Our redesign transformed Peraton’s outdated knowledge base into an intuitive, searchable
 			system with improved document organization and discoverability.
