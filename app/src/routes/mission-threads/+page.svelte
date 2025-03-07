@@ -168,26 +168,29 @@
 			<li>Filters (take the ones from PKX)</li>
 			<li>Contribute Info Button (TBD)</li>
 			<li>Upload Documents Page</li>
-			<li>Search Results Page</li>
-			<ul>
-				<li>Breadcrumbs</li>
-				<li>Displays results of a search/filter</li>
-				<li>See how old/new each item is</li>
-				<li>Report & request missing information button</li>
-			</ul>
-			<li>Individual Search Result</li>
-			<ul>
-				<li>Author, date, title, brief description, accuracy rating</li>
-				<li>Document tags</li>
-			</ul>
-			<li>Mission Threads Document Page</li>
-			<ul>
-				<li>Breadcrumbs</li>
-				<li>Core nodes</li>
-				<li>Author, date, title, brief description, accuracy rating</li>
-				<li>Report & request missing information button</li>
-				<li>Tags for heritage companies</li>
-			</ul>
+			<li>Search Results Page
+				<ul>
+					<li>Breadcrumbs</li>
+					<li>Displays results of a search/filter</li>
+					<li>See how old/new each item is</li>
+					<li>Report & request missing information button</li>
+				</ul>
+			</li>
+			<li>Individual Search Result
+				<ul>
+					<li>Author, date, title, brief description, accuracy rating</li>
+					<li>Document tags</li>
+				</ul>
+			</li>
+			<li>Mission Threads Document Page
+				<ul>
+					<li>Breadcrumbs</li>
+					<li>Core nodes</li>
+					<li>Author, date, title, brief description, accuracy rating</li>
+					<li>Report & request missing information button</li>
+					<li>Tags for heritage companies</li>
+				</ul>
+			</li>
 			<li>User Accounts Page</li>
 		</ul>
 	</section>
