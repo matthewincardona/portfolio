@@ -31,7 +31,7 @@
 			</div>
 			<div class="case-study__container">
 				<div>
-					<h4>Overview</h4>
+					<h2>Overview</h2>
 					<p>
 						The <strong>iSchool Peer Feedback Tool</strong> was developed to address the
 						inefficiencies of manual peer review processes in academic settings. Traditionally,
@@ -46,7 +46,7 @@
 					</p>
 				</div>
 				<div>
-					<h4>Tools & Roles</h4>
+					<h2>Tools & Roles</h2>
 					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
@@ -61,7 +61,7 @@
 
 	<section>
 		<div class="case-study__row">
-			<h4>Background</h4>
+			<h2>Background</h2>
 			<p>
 				My role in the project was as the project manager, an occasional UX/UI designer, and a
 				frontend developer (doing SQL / API work when needed). I directed our team of designers and
@@ -94,7 +94,7 @@
 	</section>
 
 	<section>
-		<h4>Features</h4>
+		<h2 class="case-study__section-title">Features</h2>
 		<p>
 			We spent the first semester creating a list of MVP requirements, a project charter, and
 			discussing our plans for design, development, and the final implementation. Through many
@@ -143,12 +143,12 @@
 
 	<!-- svelte-ignore a11y-media-has-caption -->
 	<section>
-		<h3 class="case-study__section-title">Screens</h3>
-		<h4>Shibboleth Login</h4>
+		<h2 class="case-study__section-title">Screens</h2>
+		<h3>Shibboleth Login</h3>
 		<p>Users can securely log in using Shibboleth, similar to RIT's own login system.</p>
 		<img class="case-study__img" src={asmithLogin} alt="" loading="lazy" />
 		<br />
-		<h4>Creating a Form</h4>
+		<h3>Creating a Form</h3>
 		<p>
 			One of the hardest parts of this project was making it work for both faculty reviews and
 			in-class student reviews. The tool had to be flexible enough to handle both situations and use
@@ -207,7 +207,7 @@
 		<br />
 		<br />
 
-		<h4>Admin Page</h4>
+		<h3>Admin Page</h3>
 		<p>
 			Admins are able to delegate roles to users and have a dedicated page viewable only to them.
 			This was in response to a need for user management that wouldn't require backend skills /
@@ -216,7 +216,7 @@
 		<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
 
 		<br />
-		<h4>Form States</h4>
+		<h3>Form States</h3>
 		<p>
 			Forms have appropriate states depending on a form's status (Complete Form, Completed, Not Yet
 			Available, Passed Deadline).
@@ -227,7 +227,7 @@
 		<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
 
 		<br />
-		<h4>Responding To Forms</h4>
+		<h3>Responding To Forms</h3>
 		<p>
 			Users who are assigned to a form can respond if it's available (which happens when it's past
 			the creator-set start date). Once all submissions are made, a message confirms to the user
@@ -241,7 +241,7 @@
 
 	<section>
 		<div class="case-study__row">
-			<h4>What I Learned</h4>
+			<h2 class="case-study__section-title">Project Reflection</h2>
 			<p>
 				When starting the project, I initially balanced both development and project management
 				responsibilities. However, I quickly recognized the critical importance of fully embracing
