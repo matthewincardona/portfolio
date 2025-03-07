@@ -22,7 +22,7 @@
 			</div>
 			<div class="case-study__container">
 				<div>
-					<h4>Overview</h4>
+					<h2>Overview</h2>
 					<p>
 						During my time at <b>Peraton</b>, I worked with a small team to transform the company's
 						fragmented knowledge base, consolidating thousands of critical internal documents spread
@@ -34,7 +34,7 @@
 					</p>
 				</div>
 				<div>
-					<h4>Tools & Roles</h4>
+					<h2>Tools & Roles</h2>
 					<p>UX/UI Design, User Research, Usability Testing, Product Strategy</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Figma</span></li>
@@ -48,7 +48,7 @@
 	<div class="bg-wrapper">
 		<section>
 			<div class="case-study__row">
-				<h4>Background</h4>
+				<h2>Background</h2>
 				<p>
 					Peraton's rapid growth through acquisitions makes maintaining an up-to-date database
 					challenging. Information is often missing, outdated, or lacks proper points of contact.
@@ -65,9 +65,9 @@
 
 	<!-- information gathering -->
 	<section>
-		<h3 class="case-study__section-title">Information Gathering</h3>
+		<h2 class="case-study__section-title">Information Gathering</h2>
 		<div class="case-study__row">
-			<h4>User Interviews</h4>
+			<h3>User Interviews</h3>
 			<p>
 				We conducted user interviews to understand how employees interacted with the current system
 				and what improvements they needed. Key pain points included:
@@ -108,7 +108,7 @@
 	</section>
 
 	<section>
-		<h4>Key Insights</h4>
+		<h3>Key Insights</h3>
 		<p>
 			We conducted user interviews with employees at Peraton to gather insights on their experiences
 			with the existing knowledge base. The feedback highlighted several key issues:
@@ -128,7 +128,7 @@
 
 	<!-- requirements brainstorming -->
 	<section>
-		<h4>Requirements Brainstorming</h4>
+		<h3>Requirements Brainstorming</h3>
 		<p>
 			We took the information we gathered from our interviews and conversations with stakeholders
 			and started to brainstorm requirements for the new system.
@@ -149,7 +149,7 @@
 
 	<!-- Key Insights -->
 	<section>
-		<h3 class="case-study__section-title">Personas & Features</h3>
+		<h2 class="case-study__section-title">Personas & Features</h2>
 		<p>Based on the information gathered from our interviews, we created the following personas.</p>
 		<br />
 		<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
@@ -193,7 +193,7 @@
 	</section>
 
 	<section>
-		<h3 class="case-study__section-title">Prototypes</h3>
+		<h2 class="case-study__section-title">Prototypes</h2>
 		<p>
 			From there, we boiled down our features list to just a few items that we wanted to focus on
 			and created a prototype to present to our stakeholders.
@@ -243,7 +243,7 @@
 
 	<!-- Future Plans -->
 	<section>
-		<h3 class="case-study__section-title">Reflection</h3>
+		<h2 class="case-study__section-title">Reflection</h2>
 		<p>
 			Our redesign transformed Peraton’s outdated knowledge base into an intuitive, searchable
 			system with improved document organization and discoverability.

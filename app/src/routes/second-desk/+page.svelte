@@ -87,9 +87,9 @@
 
 	<!-- competitive positioning analysis -->
 	<section>
-		<h3 class="case-study__section-title">Product Strategy</h3>
+		<h2 class="case-study__section-title">Product Strategy</h2>
 		<div class="case-study__row">
-			<h4>Competitive Positioning Analysis</h4>
+			<h3>Competitive Positioning Analysis</h3>
 			<p>
 				To understand our place in this growing market, we compared ourselves to a variety of
 				Desktop-As-A-Service (DAAS) products ranging from enterprise-focused offerings to more
@@ -113,7 +113,7 @@
 	<div class="bg-wrapper">
 		<section>
 			<div class="case-study__row">
-				<h4>Product Offering</h4>
+				<h3>Product Offering</h3>
 				<p>
 					At the moment, we’re still in the customer discovery phase. Our current concept of an MVP
 					is subject to change as we continue learning more about the problems about users face.
@@ -137,9 +137,9 @@
 	<!-- start of ui/ux design section -->
 	<!-- empathy interviews -->
 	<section>
-		<h3 class="case-study__section-title">UI/UX Design</h3>
+		<h2 class="case-study__section-title">UI/UX Design</h2>
 		<div class="case-study__row">
-			<h4>Empathy Interviews</h4>
+			<h3>Empathy Interviews</h3>
 			<p>
 				Being the only UX Designer on the team, it was my responsibility to establish a <b
 					>user-centric approach</b
@@ -182,7 +182,7 @@
 	<div class="bg-wrapper">
 		<section>
 			<div class="case-study__row">
-				<h4>User Personas</h4>
+				<h3>User Personas</h3>
 				<p>
 					These are the first personas that were made from the data we gathered. Of course, as we
 					are constantly conducting more interviews and revising our work, updates will be made when
@@ -204,7 +204,7 @@
 	<!-- empathy maps -->
 	<section>
 		<div class="case-study__row">
-			<h4>Empathy Maps</h4>
+			<h3>Empathy Maps</h3>
 			<p>
 				In order to gain a deeper understanding with our users and really connect with them, I
 				created empathy maps. It was an effective way to, for lack of a better word, create empathy
@@ -232,7 +232,7 @@
 	<!-- <div class="bg-wrapper">
       <section>
         <div class="case-study__row">
-          <h4>User Flow</h4>
+          <h3>User Flow</h3>
           <img class="case-study__img" src="./assets/second-desk/user-flow.png" alt="" loading="lazy">
         </div>
       </section>
@@ -242,7 +242,7 @@
 	<div class="bg-wrapper">
 		<section>
 			<div class="case-study__row">
-				<h4>User Flow and Prototypes</h4>
+				<h3>User Flow and Prototypes</h3>
 				<p>
 					Mapping out the user flow helped get an idea of how the website would actually function
 					and what screens were needed for the prototype. This is a simplified example of how the
@@ -280,9 +280,9 @@
 	<!-- start of development section -->
 	<!-- mvp -->
 	<section>
-		<h3 class="case-study__section-title">Development</h3>
+		<h2 class="case-study__section-title">Development</h2>
 		<div class="case-study__row">
-			<h4>MVP</h4>
+			<h3>MVP</h3>
 			<p>
 				There are two main components to our product: the website and the remote servers. To get a
 				working MVP going, we need to allow access to a remote desktop session directly through our
@@ -301,7 +301,7 @@
 	<div class="bg-wrapper">
 		<section>
 			<div class="case-study__row">
-				<h4>Future Improvements</h4>
+				<h3>Future Improvements</h3>
 				<p>While testing our MVP, there were several roadblocks that we kept facing:</p>
 				<ul>
 					<li>
@@ -327,7 +327,7 @@
 	<!-- what I learned -->
 	<section>
 		<div class="case-study__row case-study__bottom-section">
-			<h4 class="__layer--base">What I Learned</h4>
+			<h2 class="__layer--base">What I Learned</h2>
 			<p>
 				Going into this project, I had little familiarity with UX principles, server management, or
 				coding for the web. I was the only product developer and designer working on it for a number
