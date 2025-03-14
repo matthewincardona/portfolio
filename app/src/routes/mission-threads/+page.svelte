@@ -161,12 +161,11 @@
 			through more interviews and feedback. It included:
 		</p>
 		<ul>
-			<li>Home Page</li>
 			<li>Industry trends - Customized per user</li>
 			<li>Recent content</li>
 			<li>Search bar</li>
-			<li>Filters (take the ones from PKX)</li>
-			<li>Contribute Info Button (TBD)</li>
+			<li>Filters</li>
+			<li>Contribute Info Button</li>
 			<li>Upload Documents Page</li>
 			<li>Search Results Page
 				<ul>
@@ -191,7 +190,6 @@
 					<li>Tags for heritage companies</li>
 				</ul>
 			</li>
-			<li>User Accounts Page</li>
 		</ul>
 	</section>
 
