@@ -323,7 +323,7 @@
 
 <style>
 	.loader-container {
-		width: 100vw;
+		width: 100%;
 		height: 120dvh;
 		z-index: 100000000;
 		display: flex;
