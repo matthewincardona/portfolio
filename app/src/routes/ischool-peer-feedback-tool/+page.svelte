@@ -33,13 +33,14 @@
 				<div>
 					<h2>Overview</h2>
 					<p>
-						The <strong>iSchool Peer Feedback Tool</strong> was developed to address the
-						inefficiencies of manual peer review processes in academic settings. Traditionally,
-						gathering and processing feedback for both students and faculty was a time-consuming
-						task that required significant administrative effort. The tool automates feedback
-						solicitation, anonymizes responses, and generates detailed reports, reducing a 30-hour
-						workload to just 1-2 hours per semester.
-						<br /><br />
+						The <strong>iSchool Peer Feedback Tool</strong> was developed to address the inefficiencies
+						of manual peer review processes in academic settings. Traditionally, gathering and processing
+						feedback for both students and faculty was a time-consuming task that required significant
+						administrative effort. The tool automates feedback solicitation, anonymizes responses, and
+						generates detailed reports, reducing a 30-hour workload to just 1-2 hours per semester.
+					</p>
+
+					<p>
 						This was a <strong>two-semester project,</strong> made for clients at the iSchool. We met
 						with our core stakeholders regularly, and at larger gate reviews with additional stakeholders,
 						for strategic discussions and to ensure the final product would effectively meet their needs.
@@ -67,16 +68,15 @@
 				as a UX/UI designer and frontend developer, stepping into SQL and API work as needed. I
 				directed the team using a Waterfall methodology, chosen for its structured and predictable
 				approach, which allowed us to effectively plan and allocate time and resources.
-				<br />
-				<br />
-				To ensure consistency and efficiency, I organized our codebase in a clear, scalable structure,
-				making it easy to replicate. Additionally, I created comprehensive documentation to streamline
-				collaboration between our design and development teams, clarifying workflows and communication
-				processes. We utilized Azure DevOps for task management and code hosting, keeping the team aligned
-				and productive.
+			</p>
+			<p>
+				To ensure consistency and efficiency, I organized our codebase in a clear, scalable
+				structure, making it easy to replicate. Additionally, I created comprehensive documentation
+				to streamline collaboration between our design and development teams, clarifying workflows
+				and communication processes. We utilized Azure DevOps for task management and code hosting,
+				keeping the team aligned and productive.
 			</p>
 
-			<br /><br />
 			<p>The final product had to meet the following requirements:</p>
 			<ul>
 				<li>
@@ -153,17 +153,14 @@
 		<h3>Shibboleth Login</h3>
 		<p>Users can securely log in using Shibboleth, similar to RIT's own login system.</p>
 		<img class="case-study__img" src={asmithLogin} alt="" loading="lazy" />
-		<br />
 		<h3>Creating a Form</h3>
 		<p>
 			One of the hardest parts of this project was making it work for both faculty reviews and
 			in-class student reviews. The tool had to be flexible enough to handle both situations and use
 			language that reflected that. We create a system of "Groups", "Teams", and "Users" to
 			effectively capture both use cases.
-
-			<br />
-			<br />
-
+		</p>
+		<p>
 			At the second-highest level of power, behind only admins, creators can make new forms, edit
 			existing forms and assigned teams/users, and view individual and aggregated submission data.
 			Creators can be also be responders on forms.
@@ -171,16 +168,12 @@
 		<img class="case-study__img" src={asmithDash1} alt="" loading="lazy" />
 		<img class="case-study__img" src={asmithDash2} alt="" loading="lazy" />
 
-		<br />
-		<br />
 		<p>
 			Only users in the same team can submit responses for each other. This can be seen later on in
 			the "Responding To Forms" section.
 		</p>
 		<img class="case-study__img" src={createGroup} alt="" loading="lazy" />
 
-		<br />
-		<br />
 		<p>
 			An important feature is the ability to add multiple creators and set their permissions
 			individually. This way, multiple people can see data, edit forms, and edit assigned teams /
@@ -190,11 +183,8 @@
 		</p>
 		<img class="case-study__img" src={addCreators} alt="" loading="lazy" />
 
-		<br />
 		<img class="case-study__img" src={creatorPermissions} alt="" loading="lazy" />
 
-		<br />
-		<br />
 		<p>
 			Start and end dates determine when the form becomes available to responders and if it can be
 			edited (forms cannot be edited after they open, to protect submission data tables).
@@ -210,10 +200,6 @@
 		/>
 		<img class="case-study__img" src={viewData} alt="" loading="lazy" />
 
-		<br />
-		<br />
-		<br />
-
 		<h3>Admin Page</h3>
 		<p>
 			Admins are able to delegate roles to users and have a dedicated page viewable only to them.
@@ -222,7 +208,6 @@
 		</p>
 		<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
 
-		<br />
 		<h3>Form States</h3>
 		<p>
 			Forms have appropriate states depending on a form's status (Complete Form, Completed, Not Yet
@@ -233,7 +218,6 @@
 		<img class="case-study__img" src={mincardDashNotYetAvailable} alt="" loading="lazy" />
 		<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
 
-		<br />
 		<h3>Responding To Forms</h3>
 		<p>
 			Users who are assigned to a form can respond if it's available (which happens when it's past
@@ -255,13 +239,13 @@
 				the project management role to ensure the team's success. I focused on delegating tasks
 				effectively, breaking down complex objectives into clear, actionable steps, and providing
 				detailed documentation to streamline execution.
-
-				<br /><br />
-				I also prioritized regular check-ins with team members to address roadblocks, gather feedback,
-				and align on goals. Additionally, I worked on improving sprint planning, setting realistic timelines,
-				and ensuring seamless collaboration across different functions. This shift in approach not only
-				enhanced team productivity but also strengthened my ability to lead projects efficiently while
-				maintaining a clear strategic vision.
+			</p>
+			<p>
+				I also prioritized regular check-ins with team members to address roadblocks, gather
+				feedback, and align on goals. Additionally, I worked on improving sprint planning, setting
+				realistic timelines, and ensuring seamless collaboration across different functions. This
+				shift in approach not only enhanced team productivity but also strengthened my ability to
+				lead projects efficiently while maintaining a clear strategic vision.
 			</p>
 		</div>
 	</section>

@@ -65,28 +65,12 @@
 			<div class="hero__descr">
 				<div>
 					<p>
-						<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and
-						development, I bridge the gap between what users need and what businesses want to
-						achieve.
-						<br /><br />
+						<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and development,
+						I bridge the gap between what users need and what businesses want to achieve.
 					</p>
 				</div>
-				<!-- <div>
-					<p>
-						Bringing a unique blend of technical expertise and human-centric design thinking to help
-						companies forge meaningful connections with their audience, ensuring a seamless and
-						delightful user experience from conceptualization to the polished product.
-					</p>
-				</div> -->
+
 				<div />
-				<!-- <div>
-					<p>Experienced in:</p>
-					<ul>
-						<li>Design Thinking, User Research</li>
-						<li>Prototyping & Wireframing in Figma</li>
-						<li>HTML, CSS, JS, React, Flutter</li>
-					</ul>
-				</div> -->
 			</div>
 
 			<div>
@@ -205,31 +189,6 @@
 		</div>
 
 		<!-- Extra Projects -->
-		<!-- <div class="case-study">
-			<div class="bg-wrapper">
-				<section>
-					<div class="case-study__row">
-						<h4>Class Projects</h4>
-						<p>
-							ISTE240 Individual Final Project: This was a semester-long website build that included
-							both design and development work. The site is based off of a popular boatshow in
-							Newport, Rhode Island and is made modular using PHP and a MySQL database to store user
-							comments. <a href="https://people.rit.edu/mpi7253/ISTE240/Midterm/"
-								><b><u>Try it out here!</u></b></a
-							>
-						</p>
-						<div class="case-study__flex">
-							<a href="https://people.rit.edu/mpi7253/ISTE240/Midterm/">
-								<img class="case-study__img" src={midterm} alt="" loading="lazy" />
-							</a>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-	</div> -->
-
-		<!-- Extra Projects -->
 		<div class="about-me__card-grid-wrapper">
 			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
@@ -283,40 +242,7 @@
 					<p>A website showcasing an Autonomous Vehicle Security project.</p>
 					<p><b>Jekyll, SASS, Tailwind</b></p>
 				</div>
-				<!-- <div class="about-me__card">
-					<h3>Control-C</h3>
-					<p>A git-like backup program for designers.</p>
-				</div>
-				<div class="about-me__card">
-					<h3>Classroom Coding Assistant</h3>
-					<p>A coding assistant for keeping pace with programming lectures.</p>
-				</div> -->
 			</div>
-
-			<!-- People I've Worked With -->
-			<!-- <h3 style="margin-top: 150px;">People & Orgs I've Worked With</h3>
-			<div class="hero__people-ive-worked-with">
-				<p>mEducation Alliance</p>
-				<p>Smashing Magazine</p>
-				<p>Chiara Aliotta</p>
-				<p>Debbie Levitt</p>
-				<p>Liddiard Consulting Corp.</p>
-				<p>STSS Inc.</p>
-				<p>The Tailored Male</p>
-				<p>Yvette Simmons</p>
-				<p>KPGT</p>
-				<p>PWEC NA</p>
-				<p>Matt Urban Marketing</p>
-				<p>Susan Rodgers</p>
-				<p>Bubble Meets</p>
-				<p>Institute for Caring</p>
-				<p>Emma S. Clark Library</p>
-				<p>SBDC</p>
-				<p>Tr-State Design Solutions, Inc.</p>
-				<p>Students Helping Honduras</p>
-				<p>Asir Law Firm</p>
-				<p />
-			</div> -->
 		</div>
 	</div>
 </section>
@@ -615,7 +541,6 @@ PROJECTS
 		border: solid 2px #3a89b6;
 		border-radius: 50px;
 		padding: 10px 25px;
-		margin-top: 30px;
 		transition: background-color ease-in 0.15s;
 		font-size: clamp(1rem, 2.5vw, 1rem);
 		line-height: 140%;

@@ -37,7 +37,7 @@
 			<a href="/about">About</a>
 			<!-- <a href="/contact" on:click={closeMobileNav}>Contact Me</a> -->
 			<a href={resume} class="topnav__inner-resume">
-				<p>Resume</p>
+				Resume
 				<img src={pdfIcon} alt="Icon of a pdf file" />
 			</a>
 		</div>

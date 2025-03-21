@@ -187,6 +187,15 @@ button {
 CASE STUDIES
 =================*/
 
+iframe {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+video {
+	margin-bottom: 40px;
+}
+
 .case-study__title {
 	padding-top: 20vh;
 	margin-left: auto;
@@ -227,6 +236,7 @@ CASE STUDIES
 	display: inline-block;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	width: fit-content;
 }
 
 .case-study__container {
@@ -263,6 +273,7 @@ CASE STUDIES
 .case-study__img {
 	width: 100%;
 	margin-top: 30px;
+	margin-bottom: 40px;
 	filter: saturate(0.8) brightness(0.95);
 }
 

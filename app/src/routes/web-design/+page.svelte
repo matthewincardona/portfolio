@@ -29,7 +29,9 @@
 						I started DouxDolci Web Design a number of years ago as a way to get my foot in the door
 						and learn web design professionally. Since then, I've worked with a number of small
 						businesses and nonprofit groups, creating custom websites that fit their user's needs
-						and could be managed without the need for a web designer. <br /><br />
+						and could be managed without the need for a web designer.
+					</p>
+					<p>
 						To learn more about DouxDolci, you can visit the website
 						<a href="https://douxdolci.com" target="_blank" rel="noopener noreferrer"
 							><u>here.</u></a
@@ -55,7 +57,6 @@
 				beginnings in Kingston, Jamaica, to her successful career in the U.S. healthcare staffing
 				industry—serves as an inspiration to many.
 			</p>
-			<br /><br />
 			<h3>Redesign Objectives:</h3>
 			<ul>
 				<li>
@@ -75,7 +76,6 @@
 					of ability.
 				</li>
 			</ul>
-			<br /><br />
 
 			<h3>Accessibility Enhancements:</h3>
 			<ul>
@@ -103,8 +103,6 @@
 					muted="true"
 				/>
 
-				<br /><br />
-
 				<video
 					src={yvetteEntrepreneurshipBook}
 					id="create-a-form-video"
@@ -114,8 +112,6 @@
 					muted="true"
 				/>
 
-				<br /><br />
-
 				<video
 					src={yvetteJourneyPhyisicianRecruiter}
 					id="create-a-form-video"
@@ -124,7 +120,6 @@
 					controls="true"
 					muted="true"
 				/>
-				<br /><br />
 
 				<video
 					src={yvetteContactMe}

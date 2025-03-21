@@ -18,7 +18,7 @@
 		>
 			<div class="footer__icon-row">
 				<img class="footer__icon" src={linkedinIcon} alt="linkedin icon" />
-				<p>Connect with me on LinkedIn</p>
+				Connect with me on LinkedIn
 			</div>
 		</a>
 	</div>

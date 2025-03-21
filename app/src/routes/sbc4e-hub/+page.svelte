@@ -75,13 +75,13 @@
 				</ul>
 
 				<p>
-					<br />
-					This is for organizations that are doing projects that support education systems in countries.
-					These can be orgs who have been working on SBC4E for a long time or those who are just getting
-					introduced to it and need somewhere to start. Our goal is to be a knowledge repository that
-					centralizes a lot of this important information and makes it easy to search through and discover
-					new content. It will be an open area for the dissemination of information; a robust and valuable
-					platform that encourages users to keep contributing and others to continue discovering.
+					This is for organizations that are doing projects that support education systems in
+					countries. These can be orgs who have been working on SBC4E for a long time or those who
+					are just getting introduced to it and need somewhere to start. Our goal is to be a
+					knowledge repository that centralizes a lot of this important information and makes it
+					easy to search through and discover new content. It will be an open area for the
+					dissemination of information; a robust and valuable platform that encourages users to keep
+					contributing and others to continue discovering.
 				</p>
 			</div>
 		</section>
@@ -259,11 +259,7 @@
 								User Satisfaction Scores: Ratings provided by users on overall satisfaction with the
 								platform's design, functionality, and content relevance.
 							</li>
-							<p>
-								Number of participants: 5
-								<br /><br />
-								Method of Analysis: Online survey
-							</p>
+							<p>Number of participants: 5 Method of Analysis: Online survey</p>
 							<p />
 						</ul>
 					</ul>
@@ -280,33 +276,29 @@
 			<p>
 				Before analyzing the survey results, it’s important to look at the verbal feedback I was
 				given.
+			</p>
 
-				<br /><br />
-				<strong>
-					Visuals:<br />
-				</strong>
+			<p>
+				<strong> Visuals: </strong>
 				In my initial tests, despite how lively the very playful and colorful design looked to me, people
 				preferred the more blue one. They often said that it was easier to follow and more obvious where
 				they were supposed to be looking, eg. the hierarchy was stronger. The very gray and simple design
 				was given points for simplicity, but people with more of a designer’s eye were not too interested
 				in scrolling through gray boxes all day, nor could they see themselves using this version for
 				long periods of time.
+			</p>
 
-				<br /><br />
-				<strong>
-					Content:
-					<br />
-				</strong>
+			<p>
+				<strong> Content: </strong>
 				It was no surprise to me that people tended to favor the more information dense version of the
 				resource cards. They felt like they were missing out on important information with the less detailed
 				ones and that the design was taking precedence over the content. They also thought it would make
 				searching through a long list of cards much harder, as you would have to open them more frequently
 				in order to find the right ones.
+			</p>
 
-				<br /><br />
-				<strong>
-					Survey results: <br />
-				</strong>
+			<p>
+				<strong> Survey results: </strong>
 				Some of it was focused on missing elements in the prototype. Things such as missing the navbar
 				on the top of every page or missing the ability to view an organization’s profile (which is a
 				great idea and something that should be included in a future iteration, but is not part of the
