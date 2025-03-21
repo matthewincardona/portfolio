@@ -206,6 +206,7 @@
 			loading="lazy"
 			autoplay="true"
 			controls="true"
+			muted="true"
 		/>
 		<img class="case-study__img" src={viewData} alt="" loading="lazy" />
 
