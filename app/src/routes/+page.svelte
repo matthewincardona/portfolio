@@ -583,9 +583,6 @@ PROJECTS
 			grid-template-columns: 1fr;
 			padding-top: 100px;
 		}
-		.project__img {
-			margin-top: -100px;
-		}
 		/* .case-study__title {
 			margin-top: -80px;
 		}
