@@ -54,9 +54,6 @@
 
 <canvas id="canvas3d" />
 
-<!-- svelte-ignore a11y-media-has-caption -->
-<!-- <video src={heroVideo} autoplay id="heroVideo" /> -->
-
 <section>
 	<div class="hero" id="hero">
 		<div class="hero__inner" id="hero__inner">
@@ -421,16 +418,6 @@
 		white-space: nowrap;
 	}
 
-	/* .hero__descr {
-		max-width: 1200px;
-		margin: 20px 0px 0px 20px;
-		display: grid;
-		grid-template-columns: 1.2fr 1.2fr 0.2fr 1fr;
-		grid-template-rows: 1fr;
-		gap: 0px 2em;
-		grid-template-areas: '. . . .';
-	} */
-
 	.hero__descr {
 		max-width: 1200px;
 		margin: 20px 0px 0px 20px;
@@ -463,14 +450,6 @@
 		-webkit-background-clip: text;
 		color: transparent;
 	}
-
-	/* .hero__people-ive-worked-with {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		flex-wrap: wrap;
-		gap: 1em;
-		margin-bottom: 10vh;
-	} */
 
 	/* ================
 ABOUT
@@ -513,11 +492,6 @@ ABOUT
 		margin-top: 20px;
 	}
 
-	/* .about-me__card--mini {
-		width: 240px;
-		height: 100px;
-	} */
-
 	/* ================
 PROJECTS
 =================*/
@@ -536,10 +510,6 @@ PROJECTS
 		row-gap: 6em;
 	}
 
-	/* .project__descr {
-		margin-top: 2rem;
-	} */
-
 	.project__img {
 		width: 100%;
 		height: auto;
@@ -548,11 +518,6 @@ PROJECTS
 		transition: 0.15s filter ease-in-out;
 		filter: saturate(0.8) brightness(0.95);
 	}
-
-	/* Add an alt color to container background */
-	/* .bg-wrapper {
-		background-color: rgba(114, 114, 114, 0.08);
-	} */
 
 	.project__btn {
 		display: inline-flex;
@@ -604,17 +569,5 @@ PROJECTS
 			grid-template-columns: 1fr;
 			padding-top: 100px;
 		}
-		/* .case-study__title {
-			margin-top: -80px;
-		}
-		.case-study__container {
-			margin-top: 40px;
-			grid-template-columns: 1fr;
-			row-gap: 3em;
-		}
-		.case-study__img {
-			width: 90vw;
-			max-width: 90vw;
-		} */
 	}
 </style>
