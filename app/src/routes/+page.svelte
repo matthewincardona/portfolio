@@ -46,8 +46,6 @@
 	/>
 </svelte:head>
 
-<!-- <div class="overlay" /> -->
-
 <div class="loader-container">
 	<div class="loader" />
 </div>
@@ -343,16 +341,6 @@
 			transform: translateY(0);
 		}
 	}
-
-	/* .overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(27, 11, 11, 0);
-		z-index: 10;
-	} */
 
 	#canvas3d {
 		position: absolute;
