@@ -184,20 +184,20 @@
 		</div>
 
 		<!-- Extra Projects -->
-		<div class="about-me__card-grid-wrapper">
+		<div class="extra-projects__card-grid-wrapper">
 			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
 				A collection of interesting projects I've made over the years
 			</p>
-			<div class="about-me__card-grid">
-				<div class="about-me__card">
+			<div class="extra-projects__card-grid">
+				<div class="extra-projects__card">
 					<h3>Time-Based Task Manager</h3>
 					<p>
 						A volatile task manager that encourages you to complete tasks on time.<br /><br
 						/><strong>Flutter</strong>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>Umami AI</h3>
 					<p>
 						A platform for hosting helpful gen AI personas.<br /><br /><strong
@@ -205,14 +205,14 @@
 						>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>SBC4E Hub</h3>
 					<p>
 						An online hub for Social Behavior Change for Education (SBC4E) content.<br /><br
 						/><strong>Figma</strong>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>Jukebox</h3>
 					<p>
 						An app that empowers people to listen to music socially.<br /><br /><strong
@@ -220,21 +220,21 @@
 						>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>"Booty Call"</h3>
 					<p>
 						A secure, privacy-focused video-calling app for couples with an interactive artboard.<br
 						/><br /><strong>Cloudflare, WebRTC, HTML Canvas</strong>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>DoxuDolci Hosting</h3>
 					<p>
 						The main server for DouxDolci web design, hosting client's WordPress sites.<br /><br
 						/><strong>Oracle Cloud, Webmin</strong>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>Remote Desktop Client</h3>
 					<p>
 						An Apache Guacamole-style remote desktop app.<br /><br /><strong
@@ -242,7 +242,7 @@
 						>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>Job App Tracker</h3>
 					<p>
 						A website that encourages people to put out more job applications.<br /><br /><strong
@@ -250,7 +250,7 @@
 						>
 					</p>
 				</div>
-				<div class="about-me__card">
+				<div class="extra-projects__card">
 					<h3>AVS Website</h3>
 					<p>
 						A website showcasing an Autonomous Vehicle Security project.<br /><br /><strong
@@ -443,7 +443,7 @@
 ABOUT
 =================*/
 
-	.about-me__card-grid-wrapper {
+	.extra-projects__card-grid-wrapper {
 		display: flex;
 		flex-direction: column;
 		margin: auto;
@@ -451,7 +451,7 @@ ABOUT
 		padding: 0px 5% 20dvh 5%;
 	}
 
-	.about-me__card-grid {
+	.extra-projects__card-grid {
 		display: flex;
 		flex-direction: row;
 		margin: auto;
@@ -461,7 +461,7 @@ ABOUT
 		flex-wrap: wrap;
 	}
 
-	.about-me__card {
+	.extra-projects__card {
 		background-color: rgba(114, 114, 114, 0.08);
 		border-radius: 8px;
 		display: flex;
@@ -476,7 +476,7 @@ ABOUT
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
 
-	.about-me__card > p:nth-of-type(2) {
+	.extra-projects__card > p:nth-of-type(2) {
 		margin-top: 20px;
 	}
 
