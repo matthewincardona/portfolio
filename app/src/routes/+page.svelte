@@ -197,50 +197,71 @@
 			<div class="about-me__card-grid">
 				<div class="about-me__card">
 					<h3>Time-Based Task Manager</h3>
-					<p>A volatile task manager that encourages you to complete tasks on time.</p>
-					<p><b>Flutter</b></p>
+					<p>
+						A volatile task manager that encourages you to complete tasks on time.<br /><br
+						/><strong>Flutter</strong>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>Umami AI</h3>
-					<p>A platform for hosting helpful gen AI personas.</p>
-					<p><b>Svelte, ChatGPT API, Firebase</b></p>
+					<p>
+						A platform for hosting helpful gen AI personas.<br /><br /><strong
+							>Svelte, ChatGPT API, Firebase</strong
+						>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>SBC4E Hub</h3>
-					<p>An online hub for Social Behavior Change for Education (SBC4E) content.</p>
-					<p><b>Figma</b></p>
+					<p>
+						An online hub for Social Behavior Change for Education (SBC4E) content.<br /><br
+						/><strong>Figma</strong>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>Jukebox</h3>
-					<p>An app that empowers people to listen to music socially.</p>
-					<p><b>Swift, Spotify API</b></p>
+					<p>
+						An app that empowers people to listen to music socially.<br /><br /><strong
+							>Swift, Spotify API</strong
+						>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>"Booty Call"</h3>
 					<p>
-						A secure, privacy-focused video-calling app for couples with an interactive artboard.
+						A secure, privacy-focused video-calling app for couples with an interactive artboard.<br
+						/><br /><strong>Cloudflare, WebRTC, HTML Canvas</strong>
 					</p>
-					<p><b>Cloudflare, WebRTC, HTML Canvas</b></p>
 				</div>
 				<div class="about-me__card">
 					<h3>DoxuDolci Hosting</h3>
-					<p>The main server for DouxDolci web design, hosting client's WordPress sites.</p>
-					<p><b>Oracle Cloud, Webmin</b></p>
+					<p>
+						The main server for DouxDolci web design, hosting client's WordPress sites.<br /><br
+						/><strong>Oracle Cloud, Webmin</strong>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>Remote Desktop Client</h3>
-					<p>An Apache Guacamole-style remote desktop app.</p>
-					<p><b>Electron, React, WebRTC, AWS</b></p>
+					<p>
+						An Apache Guacamole-style remote desktop app.<br /><br /><strong
+							>Electron, React, WebRTC, AWS</strong
+						>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>Job App Tracker</h3>
-					<p>A website that encourages people to put out more job applications.</p>
-					<p><b>Cloudflare Workers & Cloudflare D1</b></p>
+					<p>
+						A website that encourages people to put out more job applications.<br /><br /><strong
+							>Cloudflare Workers & Cloudflare D1</strong
+						>
+					</p>
 				</div>
 				<div class="about-me__card">
 					<h3>AVS Website</h3>
-					<p>A website showcasing an Autonomous Vehicle Security project.</p>
-					<p><b>Jekyll, SASS, Tailwind</b></p>
+					<p>
+						A website showcasing an Autonomous Vehicle Security project.<br /><br /><strong
+							>Jekyll, SASS, Tailwind</strong
+						>
+					</p>
 				</div>
 			</div>
 		</div>
