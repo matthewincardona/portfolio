@@ -44,6 +44,13 @@
 		href="https://prod.spline.design/KWvZ9DsHNqCoOsAC/scene.splinecode"
 		as="script"
 	/>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
 </svelte:head>
 
 <div class="loader-container">
@@ -187,76 +194,111 @@
 		<div class="extra-projects__card-grid-wrapper">
 			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
-				A collection of interesting projects I've made over the years
+				A collection of interesting projects that I've made over the years. <br /><strong
+					>Click the icons to view repos and prototypes.</strong
+				>
 			</p>
 			<div class="extra-projects__card-grid">
 				<div class="extra-projects__card">
-					<h3>Time-Based Task Manager</h3>
-					<p>
-						A volatile task manager that encourages you to complete tasks on time.<br /><br
-						/><strong>Flutter</strong>
-					</p>
-				</div>
-				<div class="extra-projects__card">
-					<h3>Umami AI</h3>
-					<p>
-						A platform for hosting helpful gen AI personas.<br /><br /><strong
-							>Svelte, ChatGPT API, Firebase</strong
+					<div>
+						<h3>Umami AI</h3>
+						<p>
+							A platform for creating and hosting helpful gen AI personas made to do any task.
+							Future plans included file uploads, remixing/forking bots, and embeddable bots.<br
+							/><br /><strong>Svelte, ChatGPT API, Firebase</strong>
+						</p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a href="https://github.com/matthewincardona/umami-ai" target="_blank"
+							><i class="fa-brands fa-github" /></a
 						>
-					</p>
-				</div>
-				<div class="extra-projects__card">
-					<h3>SBC4E Hub</h3>
-					<p>
-						An online hub for Social Behavior Change for Education (SBC4E) content.<br /><br
-						/><strong>Figma</strong>
-					</p>
-				</div>
-				<div class="extra-projects__card">
-					<h3>Jukebox</h3>
-					<p>
-						An app that empowers people to listen to music socially.<br /><br /><strong
-							>Swift, Spotify API</strong
+						<a
+							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
+							target="_blank"><i class="fa-brands fa-figma" /></a
 						>
-					</p>
+					</div>
 				</div>
 				<div class="extra-projects__card">
-					<h3>"Booty Call"</h3>
-					<p>
-						A secure, privacy-focused video-calling app for couples with an interactive artboard.<br
-						/><br /><strong>Cloudflare, WebRTC, HTML Canvas</strong>
-					</p>
-				</div>
-				<div class="extra-projects__card">
-					<h3>DoxuDolci Hosting</h3>
-					<p>
-						The main server for DouxDolci web design, hosting client's WordPress sites.<br /><br
-						/><strong>Oracle Cloud, Webmin</strong>
-					</p>
-				</div>
-				<div class="extra-projects__card">
-					<h3>Remote Desktop Client</h3>
-					<p>
-						An Apache Guacamole-style remote desktop app.<br /><br /><strong
-							>Electron, React, WebRTC, AWS</strong
+					<div>
+						<h3>Close Up</h3>
+						<p>
+							A secure, privacy-focused video-calling app for couples with an interactive artboard.<br
+							/><br /><strong>Cloudflare, WebRTC, HTML Canvas</strong>
+						</p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a href="https://github.com/matthewincardona/close-up" target="_blank"
+							><i class="fa-brands fa-github" /></a
 						>
-					</p>
+
+						<a
+							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
+							target="_blank"><i class="fa-brands fa-figma" /></a
+						>
+					</div>
 				</div>
 				<div class="extra-projects__card">
-					<h3>Job App Tracker</h3>
-					<p>
-						A website that encourages people to put out more job applications.<br /><br /><strong
-							>Cloudflare Workers & Cloudflare D1</strong
+					<div>
+						<h3>SBC4E Hub</h3>
+						<p>
+							An online hub for Social Behavior Change for Education (SBC4E) content. Created and
+							pitched in part with the mEducation Alliance. <br /><br /><strong
+								>Prototype Phase</strong
+							>
+						</p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a
+							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
+							target="_blank"><i class="fa-brands fa-figma" /></a
 						>
-					</p>
+					</div>
 				</div>
 				<div class="extra-projects__card">
-					<h3>AVS Website</h3>
-					<p>
-						A website showcasing an Autonomous Vehicle Security project.<br /><br /><strong
-							>Jekyll, SASS, Tailwind</strong
+					<div>
+						<h3>Jukebox</h3>
+						<p>
+							Jukebox encourages anyone to be a DJ, to connect with their friends over music and be
+							part of the jam. It's purposefully designed and built so only one person needs to have
+							the app downloaded.
+							<br /><br /><strong>Swift, Spotify API</strong>
+						</p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank"
+							><i class="fa-brands fa-github" /></a
 						>
-					</p>
+					</div>
+				</div>
+				<div class="extra-projects__card">
+					<div>
+						<h3>Time-Based Task Manager</h3>
+						<p>
+							A volatile task manager with an ever-present countdown that encourages you to complete
+							your tasks on time.<br /><br /><strong>Kotlin</strong>
+						</p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a href="https://github.com/matthewincardona/outta-time" target="_blank"
+							><i class="fa-brands fa-github" /></a
+						>
+					</div>
+				</div>
+				<div class="extra-projects__card">
+					<div>
+						<h3>Secret Santa</h3>
+						<p>
+							A simple website that creates secret santa groups, allowing assignments to be viewed
+							anonymously and without even the event creator knowing.<br /><br /><strong
+								>Cloudflare Workers & Cloudflare D1</strong
+							>
+						</p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a href="https://github.com/matthewincardona/secret-santa" target="_blank"
+							><i class="fa-brands fa-github" /></a
+						>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -440,7 +482,7 @@
 	}
 
 	/* ================
-ABOUT
+EXTRA PROJECTS
 =================*/
 
 	.extra-projects__card-grid-wrapper {
@@ -466,18 +508,29 @@ ABOUT
 		border-radius: 8px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: start;
 		text-align: left;
 		padding: 40px;
-		max-width: 500px;
-		max-height: 300px;
+		max-width: 600px;
+		width: 100%;
+		min-height: 350px;
+		max-height: 450px;
 		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
 
 	.extra-projects__card > p:nth-of-type(2) {
 		margin-top: 20px;
+	}
+
+	.extra-projects__card-toolbar {
+		display: flex;
+		gap: 1.8em;
+	}
+
+	.extra-projects__card i {
+		font-size: 32px;
 	}
 
 	/* ================
