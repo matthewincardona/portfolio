@@ -67,7 +67,7 @@
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
-		font-size: clamp(1.2rem, 2.5vw, 1.2rem);
+		font-size: clamp(0.8rem, 2.5vw, 1rem);
 		transition: 0.15s all ease-out;
 		font-family: 'IBM Plex Sans', sans-serif;
 		font-weight: 400;

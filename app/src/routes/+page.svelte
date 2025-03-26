@@ -21,6 +21,9 @@
 		// // start the application and load the scene
 		const spline = new Application(canvas);
 		spline.load('https://prod.spline.design/dquOI6xKoTCv6DlD/scene.splinecode').then(() => {
+			document.getElementsByClassName('hero__inner__title--des')[0].classList.add('fade-up');
+			document.getElementsByClassName('hero__descr')[0].classList.add('fade-up');
+
 			// Hide overlay
 			document.body.style.overflow = 'hidden';
 			const overlay = document.getElementsByClassName('.loader-container')[0];
@@ -28,6 +31,7 @@
 			document
 				.getElementsByClassName('loader-container')[0]
 				.classList.add('loader-container--hidden');
+
 			// overlay.style.display = 'none';
 
 			setTimeout(function () {
@@ -60,28 +64,21 @@
 <canvas id="canvas3d" />
 
 <section>
-	<div class="hero" id="hero">
-		<div class="hero__inner" id="hero__inner">
-			<h1 class="hero__inner__title--des">Entreprenuer</h1>
-			<h1 class="hero__inner__title--des">Designer</h1>
-			<div class="hero__descr">
-				<div>
-					<p>
-						<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and development,
-						I bridge the gap between what users need and what businesses want to achieve.
-					</p>
-				</div>
-
-				<div />
-			</div>
-
-			<div>
-				<h1 class="hero__inner__title--dev">Developer</h1>
-				<!-- <img class="hero__inner__text-mask" src={textMaskDev} alt="" /> -->
+	<div class="hero-container">
+		<div class="hero" id="hero">
+			<div class="hero__inner" id="hero__inner">
+				<h1 class="hero__inner__title--des">Entreprenuer<br />Designer<br />Developer</h1>
 			</div>
 		</div>
+		<div class="hero__descr">
+			<p>
+				<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and development,
+				I bridge the gap between what users need and what businesses want to achieve.
+			</p>
+			<p>Learn More</p>
+			<i class="fa-solid fa-arrow-down" />
+		</div>
 	</div>
-
 	<!-- Projects area -->
 	<div class="projects">
 		<div class="project-container">
@@ -386,20 +383,22 @@
 
 	#canvas3d {
 		position: absolute;
-		width: 120vw !important;
-		height: 120dvh !important;
+		width: 100vw !important;
+		height: 100dvh !important;
+	}
+
+	.hero-container {
+		position: relative;
+		min-height: 100dvh;
+		box-shadow: inset 0px 0px 30px -10px rgba(31, 25, 25, 0.249);
 	}
 
 	.hero {
-		/* user-select: none; */
-		min-height: 120dvh;
-		padding: 0% 2%;
-		position: relative;
-		overflow: hidden;
-		padding: 6%;
-		margin-top: -2%;
-		/* animation: fade-in 0.3s 0.5s ease-in-out both; */
-		box-shadow: inset 0px 0px 30px -10px rgba(31, 25, 25, 0.249);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80vh;
+		width: 100%;
 	}
 
 	@keyframes fade-in {
@@ -431,16 +430,11 @@
 	}
 
 	.hero__inner {
-		display: flex;
-		flex-direction: column;
-		row-gap: 2em;
-		height: 100%;
-		width: 100%;
-		position: absolute;
 		transition-property: transform, filter;
 		transition-duration: 0.8s, 0.4s; /* durations for width, height, and background-color transitions */
 		transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; /* timing functions for each transition */
-		overflow: hidden;
+		margin: auto;
+		width: fit-content;
 	}
 
 	h1 {
@@ -449,37 +443,39 @@
 	}
 
 	.hero__descr {
-		max-width: 1200px;
-		margin: 20px 0px 0px 20px;
+		width: 100%;
+		text-align: center;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+		align-items: center;
 		flex-wrap: wrap;
-		gap: 2em 2em;
+		row-gap: -20px;
 	}
 
-	.hero__descr > div {
-		max-width: 600px;
+	.hero__descr p {
+		max-width: 65ch;
+		margin-bottom: 20px;
 	}
 
 	.hero__inner__title--des {
 		background: url('$lib/assets/text-mask-des.webp');
-		background-position: 0% 25%;
-		background-size: cover;
+		background-position: 0% 0%;
+		background-size: 200%;
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
 	}
 
-	.hero__inner__title--dev {
-		/* mix-blend-mode: lighten; */
-		/* mask-image: url('$lib/assets/text-mask-dev.png'); */
+	/* .hero__inner__title--dev {
+		mix-blend-mode: lighten;
+		mask-image: url('$lib/assets/text-mask-dev.png');
 		background: url('$lib/assets/text-mask-dev.webp');
 		background-position: 0% 50%;
 		background-size: cover;
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
-	}
+	} */
 
 	/* ================
 EXTRA PROJECTS
@@ -520,10 +516,6 @@ EXTRA PROJECTS
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
 
-	.extra-projects__card > p:nth-of-type(2) {
-		margin-top: 20px;
-	}
-
 	.extra-projects__card-toolbar {
 		display: flex;
 		gap: 1.8em;
@@ -552,7 +544,7 @@ PROJECTS
 	}
 
 	.project__img {
-		width: 100%;
+		width: 80%;
 		height: auto;
 		max-width: 800px;
 		/* cursor: pointer; */
@@ -588,6 +580,7 @@ PROJECTS
 		flex-direction: row;
 		padding: 0;
 		margin-top: 10px;
+		margin-bottom: 10px;
 		gap: 2em;
 	}
 
