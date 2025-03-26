@@ -564,9 +564,9 @@ PROJECTS
 		align-items: center;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
-		padding: 150px 5% 20dvh 5%;
-		column-gap: 6em;
-		row-gap: 6em;
+		padding: 10dvh 5% 10dvh 5%;
+		column-gap: 4em;
+		row-gap: 5em;
 	}
 
 	.project__img {
