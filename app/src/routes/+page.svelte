@@ -66,7 +66,7 @@
 				<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and development,
 				I bridge the gap between what users need and what businesses want to achieve.
 			</p>
-			<p>Learn More</p>
+			<p>See My Work</p>
 			<div class="hero__descr-icon">
 				<i class="fa-solid fa-arrow-down" />
 			</div>
