@@ -1,5 +1,5 @@
 <script>
-	import heroVideo from '$lib/assets/hero video.webm';
+	import heroVideo from '$lib/assets/hero video 4.webm';
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
 	import missionThreads from '$lib/assets/missionThreads.webp';
@@ -48,7 +48,7 @@
 <section>
 	<div class="hero-container">
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<video src="heroVideo" id="heroVideo" autoplay="true" muted="true" />
+		<video src={heroVideo} id="heroVideo" autoplay="true" muted="true" />
 
 		<!-- <canvas id="canvas3d" /> -->
 
@@ -442,10 +442,10 @@
 
 	#heroVideo {
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100dvh;
+		bottom: 10dvh;
+		left: 10vw;
+		width: 90vw;
+		height: 90dvh;
 	}
 
 	.hero__inner {
@@ -468,6 +468,7 @@
 		flex-direction: column;
 		align-items: center;
 		flex-wrap: wrap;
+		padding: 16px;
 		padding-bottom: 24px;
 	}
 

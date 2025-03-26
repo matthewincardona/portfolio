@@ -86,7 +86,7 @@
 	}
 
 	.about-me__picture {
-		max-width: 20rem;
+		max-width: 150px;
 	}
 
 	.about-me__picture img {
