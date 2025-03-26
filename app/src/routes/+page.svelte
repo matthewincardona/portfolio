@@ -1,42 +1,32 @@
-<!-- TO DO: -->
-<!-- add prefers reduced motion check -->
-<!-- make mobile friendly -->
-
 <script>
-	// assets
-	import arrow from '$lib/assets/arrow.svg';
+	import heroVideo from '$lib/assets/hero video.webm';
 	import secondDesk from '$lib/assets/secondDesk.webp';
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
 	import missionThreads from '$lib/assets/missionThreads.webp';
 	import ISTEPeerFeedbackTool from '$lib/assets/501 peer feedback tool cover.webp';
 
-	// import greenovation from '$lib/assets/greenovation.webp';
-	import { Application } from '@splinetool/runtime';
-	import { onMount } from 'svelte';
+	// import { Application } from '@splinetool/runtime';
+	// import { onMount } from 'svelte';
 
-	onMount(() => {
-		// Spline
-		// // make sure you have a canvas in the body
-		const canvas = document.getElementById('canvas3d');
-		// // start the application and load the scene
-		const spline = new Application(canvas);
-		spline.load('https://prod.spline.design/dquOI6xKoTCv6DlD/scene.splinecode').then(() => {
-			document.getElementsByClassName('hero__inner__title--des')[0].classList.add('fade-up');
-			document.getElementsByClassName('hero__descr')[0].classList.add('fade-down');
+	// Load spline
+	// onMount(() => {
+	// 	// Spline
+	// 	const canvas = document.getElementById('canvas3d');
+	// 	// // start the application and load the scene
+	// 	const spline = new Application(canvas);
+	// 	spline.load('https://prod.spline.design/dquOI6xKoTCv6DlD/scene.splinecode').then(() => {
+	// 		document.getElementsByClassName('hero__inner__title--des')[0].classList.add('fade-up');
+	// 		document.getElementsByClassName('hero__descr')[0].classList.add('fade-down');
 
-			// Hide overlay
-			const overlay = document.getElementsByClassName('loader-container')[0];
-			document
-				.getElementsByClassName('loader-container')[0]
-				.classList.add('loader-container--hidden');
+	// 		document
+	// 			.getElementsByClassName('loader-container')[0]
+	// 			.classList.add('loader-container--hidden');
 
-			// overlay.style.display = 'none';
-
-			setTimeout(function () {
-				spline.stop();
-			}, 4200);
-		});
-	});
+	// 		setTimeout(function () {
+	// 			spline.stop();
+	// 		}, 4200);
+	// 	});
+	// });
 </script>
 
 <svelte:head>
@@ -57,24 +47,29 @@
 
 <section>
 	<div class="hero-container">
-		<canvas id="canvas3d" />
+		<!-- svelte-ignore a11y-media-has-caption -->
+		<video src="heroVideo" id="heroVideo" autoplay="true" muted="true" />
 
-		<div class="loader-container">
-			<div class="loader" />
-		</div>
+		<!-- <canvas id="canvas3d" /> -->
+
+		<!-- <div class="loader-container">
+			<div class="loader2" />
+		</div> -->
 
 		<div class="hero" id="hero">
 			<div class="hero__inner" id="hero__inner">
-				<h1 class="hero__inner__title--des">Entreprenuer<br />Designer<br />Developer</h1>
+				<h1 class="hero__inner__title--des fade-down">Entreprenuer<br />Designer<br />Developer</h1>
 			</div>
 		</div>
-		<div class="hero__descr">
+		<div class="hero__descr fade-up">
 			<p>
 				<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and development,
 				I bridge the gap between what users need and what businesses want to achieve.
 			</p>
 			<p>Learn More</p>
-			<i class="fa-solid fa-arrow-down" />
+			<div class="hero__descr-icon">
+				<i class="fa-solid fa-arrow-down" />
+			</div>
 		</div>
 	</div>
 	<!-- Projects area -->
@@ -93,7 +88,7 @@
 				</p>
 				<a class="project__btn" href="/mission-threads">
 					Open Project
-					<img class="project__btn-icon" src={arrow} alt="" />
+					<i class="project__btn-icon fa-solid fa-arrow-right" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -113,7 +108,7 @@
 				</p>
 				<a class="project__btn" href="/second-desk">
 					Open Project
-					<img class="project__btn-icon" src={arrow} alt="" />
+					<i class="project__btn-icon fa-solid fa-arrow-right" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -133,7 +128,7 @@
 				</p>
 				<a class="project__btn" href="/web-design">
 					Open Project
-					<img class="project__btn-icon" src={arrow} alt="" />
+					<i class="project__btn-icon fa-solid fa-arrow-right" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -153,7 +148,7 @@
 				</p>
 				<a class="project__btn" href="/ischool-peer-feedback-tool">
 					Open Project
-					<img class="project__btn-icon" src={arrow} alt="" />
+					<i class="project__btn-icon fa-solid fa-arrow-right" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -190,7 +185,7 @@
 			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
 				A collection of interesting projects that I've made over the years. <br /><strong
-					>Click the icons to view repos and prototypes.</strong
+					>* Click the icons to view repos and prototypes.</strong
 				>
 			</p>
 			<div class="extra-projects__card-grid">
@@ -267,7 +262,7 @@
 				</div>
 				<div class="extra-projects__card">
 					<div>
-						<h3>Time-Based Task Manager</h3>
+						<h3>Outta Time</h3>
 						<p>
 							A volatile task manager with an ever-present countdown that encourages you to complete
 							your tasks on time.<br /><br /><strong>Kotlin</strong>
@@ -281,7 +276,7 @@
 				</div>
 				<div class="extra-projects__card">
 					<div>
-						<h3>Secret Santa</h3>
+						<h3>Secret Santa Planner</h3>
 						<p>
 							A simple website that creates secret santa groups, allowing assignments to be viewed
 							anonymously and without even the event creator knowing.<br /><br /><strong
@@ -301,6 +296,23 @@
 </section>
 
 <style>
+	/* .loader2 {
+		width: fit-content;
+		font-weight: bold;
+		font-family: monospace;
+		font-size: 30px;
+		clip-path: inset(0 3ch 0 0);
+		animation: l4 1s steps(4) infinite;
+	}
+	.loader2:before {
+		content: 'Loading...';
+	}
+	@keyframes l4 {
+		to {
+			clip-path: inset(0 -1ch 0 0);
+		}
+	}
+
 	.loader-container {
 		width: 100%;
 		height: 100dvh;
@@ -324,7 +336,7 @@
 			opacity: 0;
 		}
 		100% {
-			/* visibility: hidden; */
+			visibility: hidden;
 			visibility: hidden;
 		}
 	}
@@ -384,7 +396,7 @@
 		position: absolute;
 		width: 100vw !important;
 		height: calc(100dvh + 32px) !important;
-	}
+	} */
 
 	.hero-container {
 		position: relative;
@@ -428,10 +440,18 @@
 		}
 	}
 
+	#heroVideo {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100dvh;
+	}
+
 	.hero__inner {
-		transition-property: transform, filter;
-		transition-duration: 0.8s, 0.4s; /* durations for width, height, and background-color transitions */
-		transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; /* timing functions for each transition */
+		/* transition-property: transform, filter; */
+		/* transition-duration: 0.8s, 0.4s; durations for width, height, and background-color transitions */
+		/* transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; timing functions for each transition */
 		margin: auto;
 		width: fit-content;
 	}
@@ -454,6 +474,13 @@
 	.hero__descr p {
 		max-width: 65ch;
 		margin-bottom: 20px;
+	}
+
+	.hero__descr-icon {
+		border-radius: 1000px;
+		border: solid 1px #3a89b6;
+		padding: 5px;
+		margin-top: -10px;
 	}
 
 	.hero__inner__title--des {
@@ -506,11 +533,10 @@ EXTRA PROJECTS
 		justify-content: space-between;
 		align-items: start;
 		text-align: left;
-		padding: 40px;
+		padding: 32px;
 		max-width: 600px;
 		width: 100%;
-		min-height: 350px;
-		max-height: 450px;
+		height: 320px;
 		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
@@ -521,7 +547,7 @@ EXTRA PROJECTS
 	}
 
 	.extra-projects__card i {
-		font-size: 32px;
+		font-size: 28px;
 	}
 
 	/* ================
@@ -553,7 +579,7 @@ PROJECTS
 		justify-content: center;
 		align-items: center;
 		background-color: #00000000;
-		border: solid 2px #3a89b6;
+		border: solid 1px #3a89b6;
 		border-radius: 50px;
 		padding: 10px 25px;
 		transition: background-color ease-in 0.15s;

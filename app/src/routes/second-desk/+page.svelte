@@ -10,7 +10,6 @@
 	import homeScreen from '$lib/assets/second desk/home screen.png';
 	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
 	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
-	// import cover from '$lib/assets/second desk/second desk cover.png';
 </script>
 
 <svelte:head>
@@ -31,6 +30,7 @@
 				<h1 id="projectTitle">Second Desk</h1>
 			</div> -->
 			<div class="case-study__title">
+				<p>Case Study</p>
 				<h1>Second Desk</h1>
 			</div>
 			<div class="case-study__container">
@@ -338,4 +338,9 @@
 </div>
 
 <style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
 </style>

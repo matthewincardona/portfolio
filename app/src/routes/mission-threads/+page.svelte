@@ -18,6 +18,7 @@
 	<section>
 		<div>
 			<div class="case-study__title">
+				<p>Case Study</p>
 				<h1>Mission Threads</h1>
 			</div>
 			<div class="case-study__container">
@@ -277,6 +278,12 @@
 		max-width: 1600px;
 		padding: 100px 5% 20dvh 5%;
 	} */
+
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
 
 	.interview__card-grid {
 		display: flex;

@@ -82,7 +82,7 @@ h1 {
 h2 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: clamp(2rem, 4vw, 2.2rem);
+	font-size: clamp(1.8rem, 4vw, 2rem);
 	letter-spacing: 4%;
 	line-height: 140%;
 	margin-bottom: 15px;
@@ -92,7 +92,7 @@ h2 {
 h3 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: clamp(1.4rem, 4vw, 1.6rem);
+	font-size: clamp(1.3rem, 4vw, 1.5rem);
 	letter-spacing: 4%;
 	line-height: 140%;
 	margin-bottom: 15px;
@@ -194,7 +194,7 @@ UTILITIES
 @keyframes fade-up {
 	from {
 		opacity: 0;
-		transform: translateY(-20px);
+		transform: translateY(20px);
 	}
 
 	to {
@@ -210,7 +210,7 @@ UTILITIES
 @keyframes fade-down {
 	from {
 		opacity: 0;
-		transform: translateY(20px);
+		transform: translateY(-20px);
 	}
 
 	to {

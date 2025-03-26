@@ -19,6 +19,7 @@
 	<!-- overview -->
 	<section>
 		<div class="case-study__title">
+			<p>Case Study</p>
 			<h1>Rochester Greenovation</h1>
 			<!-- <ul class="tag-container">
 				<li class="project-tag"><span>UX/UI Designer</span></li>
@@ -187,3 +188,11 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+</style>

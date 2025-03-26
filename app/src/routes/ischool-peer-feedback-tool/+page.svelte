@@ -27,6 +27,7 @@
 	<section>
 		<div>
 			<div class="case-study__title">
+				<p>Case Study</p>
 				<h1>iSchool Peer Feedback Tool</h1>
 			</div>
 			<div class="case-study__container">
@@ -252,6 +253,12 @@
 </div>
 
 <style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+
 	#create-a-form-video {
 		width: 95%;
 		margin-left: 3%;

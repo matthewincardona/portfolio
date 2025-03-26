@@ -6,23 +6,13 @@
 	import mood1 from '$lib/assets/sbc4e/mood1.png';
 	import mood2 from '$lib/assets/sbc4e/mood2.png';
 	import mood3 from '$lib/assets/sbc4e/mood3.png';
-	import competitivePositioningAnalysis1 from '$lib/assets/second desk/competitive positioning analysis 1.png';
-	import competitivePositioningAnalysis2 from '$lib/assets/second desk/competitive positioning analysis 2.png';
-	import productOffering from '$lib/assets/second desk/product offering.png';
-	import userPersona1 from '$lib/assets/second desk/user persona 1.webp';
-	import userPersona2 from '$lib/assets/second desk/user persona 2.webp';
-	import empathyMap1 from '$lib/assets/second desk/empathy map 1.webp';
-	import empathyMap2 from '$lib/assets/second desk/empathy map 2.webp';
-	import userFlow from '$lib/assets/second desk/user flow.png';
-	import homeScreen from '$lib/assets/second desk/home screen.png';
-	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
-	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
 </script>
 
 <div class="case-study">
 	<!-- overview -->
 	<section>
 		<div class="case-study__title">
+			<p>Case Study</p>
 			<h1>SBC4E Hub</h1>
 			<ul class="tag-container">
 				<li class="project-tag"><span>UI Designer</span></li>
@@ -316,3 +306,11 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+</style>

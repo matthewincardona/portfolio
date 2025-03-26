@@ -17,6 +17,7 @@
 	<!-- overview -->
 	<section>
 		<div class="case-study__title">
+			<p>Case Studies</p>
 			<h1>DouxDolci Web Design</h1>
 			<!-- <ul class="tag-container">
 				<li class="project-tag"><span>Founder</span></li>
@@ -317,3 +318,11 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+</style>
