@@ -4,6 +4,7 @@
 	import douxDolci2 from '$lib/assets/douxdolci2.webp';
 	import missionThreads from '$lib/assets/missionThreads.webp';
 	import ISTEPeerFeedbackTool from '$lib/assets/501 peer feedback tool cover.webp';
+	import umamiVideo from '$lib/assets/umami walkthrough.webm';
 
 	// import { Application } from '@splinetool/runtime';
 	// import { onMount } from 'svelte';
@@ -199,13 +200,14 @@
 						</p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="https://github.com/matthewincardona/umami-ai" target="_blank"
+						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank"
 							><i class="fa-brands fa-github" /></a
 						>
 						<a
-							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
+							href="https://www.figma.com/proto/879Vqt1b66iVcWuSQucKxv/Umami-AI-UI?page-id=180%3A188&node-id=208-296&viewport=-1008%2C554%2C0.21&t=NvgxM7BGT0iPkcgZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=208%3A296"
 							target="_blank"><i class="fa-brands fa-figma" /></a
 						>
+						<a href={umamiVideo} target="_blank"><i class="fa-solid fa-file-video" /></a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
