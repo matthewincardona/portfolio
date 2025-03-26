@@ -444,8 +444,8 @@
 		position: absolute;
 		bottom: 10dvh;
 		left: 10vw;
-		width: 90vw;
-		height: 90dvh;
+		width: 100vw;
+		height: 80dvh;
 	}
 
 	.hero__inner {
