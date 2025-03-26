@@ -22,12 +22,10 @@
 		const spline = new Application(canvas);
 		spline.load('https://prod.spline.design/dquOI6xKoTCv6DlD/scene.splinecode').then(() => {
 			document.getElementsByClassName('hero__inner__title--des')[0].classList.add('fade-up');
-			document.getElementsByClassName('hero__descr')[0].classList.add('fade-up');
+			document.getElementsByClassName('hero__descr')[0].classList.add('fade-down');
 
 			// Hide overlay
-			document.body.style.overflow = 'hidden';
-			const overlay = document.getElementsByClassName('.loader-container')[0];
-			document.body.style.overflow = 'auto'; // Restore scrolling
+			const overlay = document.getElementsByClassName('loader-container')[0];
 			document
 				.getElementsByClassName('loader-container')[0]
 				.classList.add('loader-container--hidden');
@@ -57,14 +55,14 @@
 	/>
 </svelte:head>
 
-<div class="loader-container">
-	<div class="loader" />
-</div>
-
-<canvas id="canvas3d" />
-
 <section>
 	<div class="hero-container">
+		<canvas id="canvas3d" />
+
+		<div class="loader-container">
+			<div class="loader" />
+		</div>
+
 		<div class="hero" id="hero">
 			<div class="hero__inner" id="hero__inner">
 				<h1 class="hero__inner__title--des">Entreprenuer<br />Designer<br />Developer</h1>
@@ -305,7 +303,7 @@
 <style>
 	.loader-container {
 		width: 100%;
-		height: 120dvh;
+		height: 100dvh;
 		z-index: 100000000;
 		display: flex;
 		justify-content: center;
@@ -326,6 +324,7 @@
 			opacity: 0;
 		}
 		100% {
+			/* visibility: hidden; */
 			visibility: hidden;
 		}
 	}
@@ -384,7 +383,7 @@
 	#canvas3d {
 		position: absolute;
 		width: 100vw !important;
-		height: 100dvh !important;
+		height: calc(100dvh + 32px) !important;
 	}
 
 	.hero-container {
@@ -397,7 +396,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 80vh;
+		height: 80dvh;
 		width: 100%;
 	}
 
@@ -449,7 +448,7 @@
 		flex-direction: column;
 		align-items: center;
 		flex-wrap: wrap;
-		row-gap: -20px;
+		padding-bottom: 24px;
 	}
 
 	.hero__descr p {
@@ -538,18 +537,15 @@ PROJECTS
 		align-items: center;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: auto;
-		padding: 150px 0 150px 5%;
+		padding: 150px 5% 20dvh 5%;
 		column-gap: 6em;
 		row-gap: 6em;
 	}
 
 	.project__img {
-		width: 80%;
+		width: 100%;
 		height: auto;
-		max-width: 800px;
-		/* cursor: pointer; */
-		transition: 0.15s filter ease-in-out;
-		filter: saturate(0.8) brightness(0.95);
+		max-width: 600px;
 	}
 
 	.project__btn {
@@ -567,7 +563,7 @@ PROJECTS
 	}
 
 	.project__btn:hover {
-		background-color: #0000001d;
+		background-color: #0000000c;
 		cursor: pointer;
 	}
 
