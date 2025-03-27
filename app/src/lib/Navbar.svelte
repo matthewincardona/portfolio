@@ -30,6 +30,8 @@
 		color: var(--header-color);
 		padding: 5px 6%;
 		backdrop-filter: blur(4px);
+		background-color: #f3f3f3df;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.095);
 	}
 
 	/* Style navbar links */
