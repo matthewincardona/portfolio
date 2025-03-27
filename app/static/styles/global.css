@@ -6,8 +6,8 @@ ROOT COLORS
 	--main-bg-color: rgba(35, 5, 22, 0.8);
 	--header-color: #101010;
 	--body-color: #101010;
-	--accent-color: #e40066;
-	--cta-color: #3a89b6;
+	--accent-color: #3a89b6;
+	--cta-color: #e40066;
 }
 
 /* set background image and an overlay */

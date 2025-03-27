@@ -188,12 +188,21 @@
 		</div>
 
 		<!-- Extra Projects -->
+		<!-- SVG for icon background color -->
+		<svg width="0" height="0">
+			<defs>
+				<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color: #b444d0; stop-opacity: 1" />
+					<stop offset="100%" style="stop-color: #58334a; stop-opacity: 1" />
+				</linearGradient>
+			</defs>
+		</svg>
+
 		<div class="extra-projects__card-grid-wrapper">
 			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
-				A collection of interesting projects that I've made over the years. <br /><strong
-					>* Click the project icons to view repos, prototypes, and more!</strong
-				>
+				A collection of interesting projects that I've made over the years. <br />*
+				<b>Click the project icons</b> to view repos, prototypes, and more!
 			</p>
 			<div class="extra-projects__card-grid">
 				<div class="extra-projects__card">
@@ -207,16 +216,16 @@
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank">
-							<LogoGithub size="32px" style="fill: var(--body-color)" />
+							<LogoGithub size="32px" style="fill: url(#gradient)" />
 						</a>
 						<a
 							href="https://www.figma.com/proto/879Vqt1b66iVcWuSQucKxv/Umami-AI-UI?page-id=180%3A188&node-id=208-296&viewport=-1008%2C554%2C0.21&t=NvgxM7BGT0iPkcgZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=208%3A296"
 							target="_blank"
 						>
-							<LogoFigma size="32px" style="fill: var(--body-color)" />
+							<LogoFigma size="32px" style="fill: url(#gradient);" />
 						</a>
 						<a href={umamiVideo} target="_blank">
-							<DocumentVideo size="32px" style="fill: var(--body-color)" />
+							<DocumentVideo size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -230,14 +239,14 @@
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/close-up" target="_blank">
-							<LogoGithub size="32px" style="fill: var(--body-color)" />
+							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
 
 						<a
 							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
 							target="_blank"
 						>
-							<LogoFigma size="32px" style="fill: var(--body-color)" />
+							<LogoFigma size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -256,7 +265,7 @@
 							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
 							target="_blank"
 						>
-							<LogoFigma size="32px" style="fill: var(--body-color)" />
+							<LogoFigma size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -272,7 +281,7 @@
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank">
-							<LogoGithub size="32px" style="fill: var(--body-color)" />
+							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -286,7 +295,7 @@
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/outta-time" target="_blank">
-							<LogoGithub size="32px" style="fill: var(--body-color)" />
+							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -302,10 +311,10 @@
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/secret-santa" target="_blank">
-							<LogoGithub size="32px" style="fill: var(--body-color)" />
+							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
 						<a href="https://secret-santa.matthewincardona.com/" target="_blank">
-							<ApplicationWeb size="32px" style="fill: var(--body-color)" />
+							<ApplicationWeb size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -402,7 +411,7 @@
 
 	.hero__descr-icon {
 		border-radius: 1000px;
-		border: solid 1px #3a89b6;
+		border: solid 2px #3a89b6;
 		padding: 5px;
 		margin-top: -10px;
 	}
@@ -437,6 +446,7 @@ EXTRA PROJECTS
 		margin: auto;
 		max-width: 1600px;
 		padding: 0px 5% 20dvh 5%;
+		margin-top: 10dvh;
 	}
 
 	.extra-projects__card-grid {
@@ -467,11 +477,22 @@ EXTRA PROJECTS
 
 	.extra-projects__card-toolbar {
 		display: flex;
-		gap: 1.8em;
+		gap: 1.4em;
+		transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s;
+		transform-origin: 0%;
+		width: 100%;
 	}
 
-	.extra-projects__card i {
-		font-size: 28px;
+	.extra-projects__card-toolbar:hover {
+		transform: scale(1.1);
+	}
+
+	.extra-projects__card-toolbar * {
+		transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s;
+	}
+
+	.extra-projects__card-toolbar *:hover {
+		transform: translateY(-4px);
 	}
 
 	/* ================
@@ -483,17 +504,17 @@ PROJECTS
 		max-width: 1600px;
 		margin: auto;
 		display: grid;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 0.8fr 1fr;
 		grid-template-rows: auto;
 		padding: 10dvh 5% 10dvh 5%;
 		column-gap: 4em;
-		row-gap: 5em;
+		row-gap: 9em;
 	}
 
 	.project__img {
-		width: 100%;
+		width: 70%;
 		height: auto;
 		max-width: 600px;
 	}
@@ -502,16 +523,46 @@ PROJECTS
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #00000000;
-		border: solid 1px #3a89b6;
 		border-radius: 50px;
 		padding: 10px 25px;
-		transition: background-color ease-in 0.15s;
+		transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s;
 		gap: 0.6em;
+		position: relative;
+		z-index: 1;
+	}
+
+	.project__btn::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 50px;
+		padding: 2px; /* Adjust the thickness of the border */
+		background: linear-gradient(90deg, #b444d0 0%, #58334a 100%);
+		mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		z-index: -1;
+		animation: border-animation 3s linear infinite;
+	}
+
+	@keyframes border-animation {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
 	}
 
 	.project__btn:hover {
-		background-color: #0000000c;
+		transform: translateX(8px);
 		cursor: pointer;
 	}
 
