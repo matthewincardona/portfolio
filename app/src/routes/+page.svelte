@@ -315,107 +315,11 @@
 </section>
 
 <style>
-	/* .loader2 {
-		width: fit-content;
-		font-weight: bold;
-		font-family: monospace;
-		font-size: 30px;
-		clip-path: inset(0 3ch 0 0);
-		animation: l4 1s steps(4) infinite;
-	}
-	.loader2:before {
-		content: 'Loading...';
-	}
-	@keyframes l4 {
-		to {
-			clip-path: inset(0 -1ch 0 0);
-		}
-	}
-
-	.loader-container {
-		width: 100%;
-		height: 100dvh;
-		z-index: 100000000;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: #000000;
-		position: absolute;
-	}
-
-	:global(.loader-container--hidden) {
-		animation: fade-out 0.3s 0s both;
-	}
-
-	@keyframes fade-out {
-		0% {
-			opacity: 1;
-		}
-		99% {
-			opacity: 0;
-		}
-		100% {
-			visibility: hidden;
-			visibility: hidden;
-		}
-	}
-
-	.loader {
-		--s: 25px;
-
-		--_d: calc(0.353 * var(--s));
-		width: calc(var(--s) + var(--_d));
-		aspect-ratio: 1;
-		display: flex;
-	}
-	.loader:before,
-	.loader:after {
-		content: '';
-		flex: 1;
-		clip-path: polygon(
-			var(--_d) 0,
-			100% 0,
-			100% calc(100% - var(--_d)),
-			calc(100% - var(--_d)) 100%,
-			0 100%,
-			0 var(--_d)
-		);
-		background: conic-gradient(
-			from -90deg at calc(100% - var(--_d)) var(--_d),
-			#fff 135deg,
-			#666 0 270deg,
-			#aaa 0
-		);
-		animation: l5 1.2s infinite;
-	}
-	.loader:before {
-		margin-right: calc(var(--_d) / -2 - 1px);
-	}
-	.loader:after {
-		margin-left: calc(var(--_d) / -2 - 1px);
-		animation-delay: 0.6s;
-	}
-	@keyframes l5 {
-		0% {
-			transform: translateY(0);
-		}
-		16.67% {
-			transform: translateY(-10px);
-		}
-		33.33% {
-			transform: translateY(10px);
-		}
-		50%,
-		100% {
-			transform: translateY(0);
-		}
-	}
-
-	#canvas3d {
+	/* #canvas3d {
 		position: absolute;
 		width: 100vw !important;
 		height: calc(100dvh + 32px) !important;
-	} */
+	}  */
 
 	.hero-container {
 		position: relative;
