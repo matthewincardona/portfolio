@@ -291,7 +291,7 @@
 		margin: auto;
 		justify-content: start;
 		align-items: center;
-		gap: 3vw;
+		gap: 2vw;
 		flex-wrap: wrap;
 	}
 
@@ -301,11 +301,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: start;
+		align-items: center;
 		text-align: left;
 		padding: 40px;
 		max-width: 500px;
-		max-height: 300px;
+		height: 280px;
 		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
