@@ -26,6 +26,7 @@
 	"type": "module",
 	"dependencies": {
 		"@splinetool/runtime": "^1.0.82",
+		"carbon-icons-svelte": "^13.3.0",
 		"on-change": "^5.0.1",
 		"onchange": "^7.1.0"
 	}

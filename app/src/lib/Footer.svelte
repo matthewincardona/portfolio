@@ -1,12 +1,12 @@
 <script>
-	import linkedinIcon from '$lib/assets/linkedin icon.svg';
+	import LogoLinkedin from 'carbon-icons-svelte/lib/LogoLinkedin.svelte';
 </script>
 
 <footer>
 	<a href="https://www.linkedin.com/in/matthew-incardona/" target="_blank">
-		<i class="fa-brands fa-linkedin" />
+		<LogoLinkedin size="40px" style="fill: var(--body-color)" />
 	</a>
-	<a href="mailto:matthew@douxdolci.com" style="margin-top: 3px;">matthew@douxdolci.com</a>
+	<a href="mailto:matthew@douxdolci.com" style="margin-top: 7px;">matthew@douxdolci.com</a>
 </footer>
 
 <style>
@@ -19,9 +19,5 @@
 		width: 100%;
 		padding: 24px 0;
 		gap: 2em;
-	}
-
-	footer i {
-		font-size: 32px;
 	}
 </style>

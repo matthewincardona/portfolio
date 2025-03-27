@@ -1,4 +1,5 @@
 <script>
+	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import asmithLogin from '$lib/assets/501-feedback-tool/optimized/asmith login.webp';
 	import asmithDash1 from '$lib/assets/501-feedback-tool/optimized/asmith dash 1.webp';
 	import asmithDash2 from '$lib/assets/501-feedback-tool/optimized/asmith dash 2.webp';
@@ -57,9 +58,13 @@
 				<div>
 					<h2>Tools & Roles</h2>
 					<p>
-						<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank"
-							><i class="fa-brands fa-github" /> Github Repo</a
-						><br /><br />Project Management, UX/UI Design, Frontend Development
+						<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
+							<div class="tools-links">
+								<LogoGithub size="32px" style="fill: var(--body-color)" />
+								<span><b>Github Repo</b></span>
+							</div></a
+						>
+						<br /><br />Project Management, UX/UI Design, Frontend Development
 					</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
@@ -270,6 +275,12 @@
 		color: rgb(94, 94, 94);
 	}
 
+	.tools-links {
+		display: flex;
+		align-items: center;
+		gap: 0.8em;
+	}
+
 	#create-a-form-video {
 		width: 95%;
 		margin-left: 3%;
@@ -277,9 +288,5 @@
 		-webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.35);
 		-moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.35);
 		box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.35);
-	}
-
-	i {
-		font-size: 32px;
 	}
 </style>

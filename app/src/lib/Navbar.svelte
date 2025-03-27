@@ -1,18 +1,16 @@
 <script>
 	import resume from '$lib/assets/Matthew_Incardona_Resume.pdf';
-	import pdfIcon from '$lib/assets/pdf-icon.svg';
+	import DocumentPdf from 'carbon-icons-svelte/lib/DocumentPdf.svelte';
 </script>
 
 <nav>
-	<div class="topnav" id="myTopnav">
+	<div class="topnav">
 		<div class="topnav__inner">
 			<a href="/" class="active">Home</a>
-			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href="/about">About</a>
-			<!-- <a href="/contact" on:click={closeMobileNav}>Contact Me</a> -->
 			<a href={resume} class="topnav__inner-resume">
 				Resume
-				<img src={pdfIcon} alt="Icon of a pdf file" />
+				<DocumentPdf size="20px" style="fill: var(--body-color)" />
 			</a>
 		</div>
 	</div>

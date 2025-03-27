@@ -5,6 +5,12 @@
 	import missionThreads from '$lib/assets/missionThreads.webp';
 	import ISTEPeerFeedbackTool from '$lib/assets/501 peer feedback tool cover.webp';
 	import umamiVideo from '$lib/assets/umami walkthrough.webm';
+	import ArrowDown from 'carbon-icons-svelte/lib/ArrowDown.svelte';
+	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
+	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
+	import LogoFigma from 'carbon-icons-svelte/lib/LogoFigma.svelte';
+	import ApplicationWeb from 'carbon-icons-svelte/lib/ApplicationWeb.svelte';
+	import DocumentVideo from 'carbon-icons-svelte/lib/DocumentVideo.svelte';
 
 	// import { Application } from '@splinetool/runtime';
 	// import { onMount } from 'svelte';
@@ -69,7 +75,7 @@
 			</p>
 			<p>See My Work</p>
 			<div class="hero__descr-icon">
-				<i class="fa-solid fa-arrow-down" />
+				<ArrowDown size="20px" style="fill: var(--body-color)" />
 			</div>
 		</div>
 	</div>
@@ -89,7 +95,7 @@
 				</p>
 				<a class="project__btn" href="/mission-threads">
 					Open Project
-					<i class="project__btn-icon fa-solid fa-arrow-right" />
+					<ArrowRight size="20px" style="fill: var(--body-color)" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -109,7 +115,7 @@
 				</p>
 				<a class="project__btn" href="/second-desk">
 					Open Project
-					<i class="project__btn-icon fa-solid fa-arrow-right" />
+					<ArrowRight size="20px" style="fill: var(--body-color)" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -129,7 +135,7 @@
 				</p>
 				<a class="project__btn" href="/web-design">
 					Open Project
-					<i class="project__btn-icon fa-solid fa-arrow-right" />
+					<ArrowRight size="20px" style="fill: var(--body-color)" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -149,7 +155,7 @@
 				</p>
 				<a class="project__btn" href="/ischool-peer-feedback-tool">
 					Open Project
-					<i class="project__btn-icon fa-solid fa-arrow-right" />
+					<ArrowRight size="20px" style="fill: var(--body-color)" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -173,7 +179,7 @@
 				</p>
 				<a class="project__btn" href="/rochester-greenovation">
 					Open Project
-					<img class="project__btn-icon" src={arrow} alt="" />
+					<img  src={arrow} alt="" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
@@ -186,7 +192,7 @@
 			<h2 style="text-align: left;">More Projects</h2>
 			<p style="text-align: left; margin-bottom: 40px">
 				A collection of interesting projects that I've made over the years. <br /><strong
-					>* Click the icons to view repos and prototypes.</strong
+					>* Click the project icons to view repos, prototypes, and more!</strong
 				>
 			</p>
 			<div class="extra-projects__card-grid">
@@ -200,14 +206,18 @@
 						</p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank"
-							><i class="fa-brands fa-github" /></a
-						>
+						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank">
+							<LogoGithub size="32px" style="fill: var(--body-color)" />
+						</a>
 						<a
 							href="https://www.figma.com/proto/879Vqt1b66iVcWuSQucKxv/Umami-AI-UI?page-id=180%3A188&node-id=208-296&viewport=-1008%2C554%2C0.21&t=NvgxM7BGT0iPkcgZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=208%3A296"
-							target="_blank"><i class="fa-brands fa-figma" /></a
+							target="_blank"
 						>
-						<a href={umamiVideo} target="_blank"><i class="fa-solid fa-file-video" /></a>
+							<LogoFigma size="32px" style="fill: var(--body-color)" />
+						</a>
+						<a href={umamiVideo} target="_blank">
+							<DocumentVideo size="32px" style="fill: var(--body-color)" />
+						</a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
@@ -219,14 +229,16 @@
 						</p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="https://github.com/matthewincardona/close-up" target="_blank"
-							><i class="fa-brands fa-github" /></a
-						>
+						<a href="https://github.com/matthewincardona/close-up" target="_blank">
+							<LogoGithub size="32px" style="fill: var(--body-color)" />
+						</a>
 
 						<a
 							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
-							target="_blank"><i class="fa-brands fa-figma" /></a
+							target="_blank"
 						>
+							<LogoFigma size="32px" style="fill: var(--body-color)" />
+						</a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
@@ -242,8 +254,10 @@
 					<div class="extra-projects__card-toolbar">
 						<a
 							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
-							target="_blank"><i class="fa-brands fa-figma" /></a
+							target="_blank"
 						>
+							<LogoFigma size="32px" style="fill: var(--body-color)" />
+						</a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
@@ -257,9 +271,9 @@
 						</p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank"
-							><i class="fa-brands fa-github" /></a
-						>
+						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank">
+							<LogoGithub size="32px" style="fill: var(--body-color)" />
+						</a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
@@ -271,9 +285,9 @@
 						</p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="https://github.com/matthewincardona/outta-time" target="_blank"
-							><i class="fa-brands fa-github" /></a
-						>
+						<a href="https://github.com/matthewincardona/outta-time" target="_blank">
+							<LogoGithub size="32px" style="fill: var(--body-color)" />
+						</a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
@@ -287,9 +301,12 @@
 						</p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="https://github.com/matthewincardona/secret-santa" target="_blank"
-							><i class="fa-brands fa-github" /></a
-						>
+						<a href="https://github.com/matthewincardona/secret-santa" target="_blank">
+							<LogoGithub size="32px" style="fill: var(--body-color)" />
+						</a>
+						<a href="https://secret-santa.matthewincardona.com/" target="_blank">
+							<ApplicationWeb size="32px" style="fill: var(--body-color)" />
+						</a>
 					</div>
 				</div>
 			</div>
@@ -586,18 +603,12 @@ PROJECTS
 		border-radius: 50px;
 		padding: 10px 25px;
 		transition: background-color ease-in 0.15s;
-		font-size: clamp(1rem, 2.5vw, 1rem);
-		line-height: 140%;
-		max-width: 300px;
+		gap: 0.6em;
 	}
 
 	.project__btn:hover {
 		background-color: #0000000c;
 		cursor: pointer;
-	}
-
-	.project__btn-icon {
-		margin-left: 20px;
 	}
 
 	.tag-container {
