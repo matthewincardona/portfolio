@@ -106,8 +106,8 @@
 			<div class="project-container__left-panel">
 				<h2>Second Desk</h2>
 				<ul class="tag-container">
+					<li class="project-tag"><span>Co-Founder</span></li>
 					<li class="project-tag"><span>UX Engineer</span></li>
-					<li class="project-tag"><span>UX Researcher</span></li>
 				</ul>
 				<p class="project__descr">
 					Dive into my work on Second Desk, a Desktop-As-A-Service product that enables non-Windows
