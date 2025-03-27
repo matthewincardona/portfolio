@@ -334,6 +334,7 @@
 		position: relative;
 		min-height: 100dvh;
 		box-shadow: inset 0px 0px 30px -10px rgba(31, 25, 25, 0.249);
+		overflow: hidden;
 	}
 
 	.hero {
