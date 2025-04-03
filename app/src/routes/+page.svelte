@@ -200,9 +200,9 @@
 
 		<div class="extra-projects__card-grid-wrapper">
 			<h2 style="text-align: left;">More Projects</h2>
+			<p>A collection of interesting projects that I've made over the years.</p>
 			<p style="text-align: left; margin-bottom: 40px">
-				A collection of interesting projects that I've made over the years. <br />*
-				<b>Click the project icons</b> to view repos, prototypes, and more!
+				<b>* Click the project icons</b> to view repos, prototypes, and more!
 			</p>
 			<div class="extra-projects__card-grid">
 				<div class="extra-projects__card">
@@ -210,9 +210,9 @@
 						<h3>Umami AI</h3>
 						<p>
 							A platform for creating and hosting helpful gen AI personas made to do any task.
-							Future plans included file uploads, remixing/forking bots, and embeddable bots.<br
-							/><br /><strong>Svelte, ChatGPT API, Firebase</strong>
+							Future plans included file uploads, remixing/forking bots, and embeddable bots.
 						</p>
+						<p><strong>Svelte, ChatGPT API, Firebase</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank">

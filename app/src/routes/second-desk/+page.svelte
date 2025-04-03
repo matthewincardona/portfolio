@@ -37,18 +37,12 @@
 				<div>
 					<h2>Overview</h2>
 					<p>
-						Second Desk is a <b>Desktop-As-A-Service product</b> that enables non-Windows users to
-						stream Windows programs directly through their browser. This project will provide a
-						solution for Chromebook and Linux users that can’t run work/school required Windows
-						programs on their personal computers.
-						<strong
-							>Note: This is a work-in-progress. It's actively being mentored by coaches from the
-							Rochester Institute of Technology (RIT) and is under constant development by its team
-							of students.</strong
-						>
+						Second Desk is a <b>Desktop-As-A-Service product</b> that enables non-Windows users to stream
+						Windows programs directly through their browser. This project will provide a solution for
+						Chromebook and Linux users that can’t run work/school required Windows programs on their
+						personal computers.
 					</p>
-					<strong>**Content shown is from earlier versions of the product/business</strong>.
-					<p />
+					<p><strong>**Content shown is from earlier versions of the product/business</strong>.</p>
 				</div>
 				<div>
 					<h2>Tools & Roles</h2>
