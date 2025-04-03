@@ -65,7 +65,11 @@
 
 		<div class="hero" id="hero">
 			<div class="hero__inner" id="hero__inner">
-				<h1 class="hero__inner__title--des fade-down">Entreprenuer<br />Designer<br />Developer</h1>
+				<h1 class="hero__inner__title--des fade-down">
+					<span>Entreprenuer</span>
+					<span>Designer</span>
+					<span>Developer</span>
+				</h1>
 			</div>
 		</div>
 		<div class="hero__descr fade-up">
@@ -424,6 +428,10 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
+	}
+
+	.hero__inner__title--des span {
+		display: block;
 	}
 
 	/* .hero__inner__title--dev {
