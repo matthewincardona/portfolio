@@ -64,8 +64,8 @@
 								<span><b>Github Repo</b></span>
 							</div></a
 						>
-						<br /><br />Project Management, UX/UI Design, Frontend Development
 					</p>
+					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
 						<li class="project-tag"><span>Figma</span></li>

@@ -232,9 +232,9 @@
 					<div>
 						<h3>Close Up</h3>
 						<p>
-							A secure, privacy-focused video-calling app for couples with an interactive artboard.<br
-							/><br /><strong>WebRTC, HTML Canvas</strong>
+							A secure, privacy-focused video-calling app for couples with an interactive artboard.
 						</p>
+						<p><strong>WebRTC, HTML Canvas</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/close-up" target="_blank">
@@ -256,10 +256,9 @@
 						<h3>SBC4E Hub</h3>
 						<p>
 							An online hub for Social Behavior Change for Education (SBC4E) content. Created and
-							pitched in part with the mEducation Alliance. <br /><br /><strong
-								>Prototype Phase</strong
-							>
+							pitched in part with the mEducation Alliance.
 						</p>
+						<p><strong>Prototype Phase</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a
@@ -277,8 +276,8 @@
 							Jukebox encourages anyone to be a DJ, to connect with their friends over music and be
 							part of the jam. It's purposefully designed and built so only one person needs to have
 							the app downloaded.
-							<br /><br /><strong>Swift, Spotify API</strong>
 						</p>
+						<p><strong>Swift, Spotify API</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank">
@@ -291,8 +290,9 @@
 						<h3>Outta Time</h3>
 						<p>
 							A volatile task manager with an ever-present countdown that encourages you to complete
-							your tasks on time.<br /><br /><strong>Kotlin</strong>
+							your tasks on time.
 						</p>
+						<p><strong>Kotlin</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/outta-time" target="_blank">
@@ -305,10 +305,9 @@
 						<h3>Secret Santa Planner</h3>
 						<p>
 							A simple website that creates secret santa groups, allowing assignments to be viewed
-							anonymously and without even the event creator knowing.<br /><br /><strong
-								>Cloudflare Workers & Cloudflare D1</strong
-							>
+							anonymously and without even the event creator knowing.
 						</p>
+						<p><strong>Cloudflare Workers & Cloudflare D1</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/secret-santa" target="_blank">
