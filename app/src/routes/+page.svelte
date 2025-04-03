@@ -104,22 +104,26 @@
 
 			<!-- Project Two -->
 			<div class="project-container__left-panel">
-				<h2>Second Desk</h2>
+				<h2>iSchool Peer Feedback Tool</h2>
 				<ul class="tag-container">
-					<li class="project-tag"><span>Co-Founder</span></li>
-					<li class="project-tag"><span>UX Engineer</span></li>
+					<li class="project-tag"><span>Project Manager</span></li>
 				</ul>
 				<p class="project__descr">
-					Dive into my work on Second Desk, a Desktop-As-A-Service product that enables non-Windows
-					users to stream Windows programs directly through their browser.
+					See the results of my senior dev project at RIT, creating an tool that automates and
+					streamlines the peer review process for academic courses and faculty evaluations at the
+					iSchool.
 				</p>
-				<a class="project__btn" href="/second-desk">
+				<a class="project__btn" href="/ischool-peer-feedback-tool">
 					Open Project
 					<ArrowRight size="20px" style="fill: var(--body-color)" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
-				<img class="project__img" src={secondDesk} alt="Second Desk project preview" />
+				<img
+					class="project__img"
+					src={ISTEPeerFeedbackTool}
+					alt="iSchool peer feedback tool project preview"
+				/>
 			</div>
 
 			<!-- Project Three -->
@@ -144,29 +148,24 @@
 
 			<!-- Project Four -->
 			<div class="project-container__left-panel">
-				<h2>iSchool Peer Feedback Tool</h2>
+				<h2>Second Desk</h2>
 				<ul class="tag-container">
-					<li class="project-tag"><span>Project Manager</span></li>
+					<li class="project-tag"><span>Co-Founder</span></li>
+					<li class="project-tag"><span>UX Engineer</span></li>
 				</ul>
 				<p class="project__descr">
-					See the results of my senior dev project at RIT, creating an tool that automates and
-					streamlines the peer review process for academic courses and faculty evaluations at the
-					iSchool.
+					Dive into my work on Second Desk, a Desktop-As-A-Service product that enables non-Windows
+					users to stream Windows programs directly through their browser.
 				</p>
-				<a class="project__btn" href="/ischool-peer-feedback-tool">
+				<a class="project__btn" href="/second-desk">
 					Open Project
 					<ArrowRight size="20px" style="fill: var(--body-color)" />
 				</a>
 			</div>
 			<div class="project-container__right-panel">
-				<img
-					class="project__img"
-					src={ISTEPeerFeedbackTool}
-					alt="iSchool peer feedback tool project preview"
-				/>
+				<img class="project__img" src={secondDesk} alt="Second Desk project preview" />
 			</div>
 
-			<!-- Project Three -->
 			<!-- <div class="project-container__left-panel">
 				<h2>Rochester Greenovation</h2>
 				<ul class="tag-container">
