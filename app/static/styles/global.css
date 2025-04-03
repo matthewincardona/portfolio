@@ -133,7 +133,7 @@ p {
 	color: var(--body-color);
 	font-size: clamp(.8rem, 2.5vw, 1rem);
 	line-height: 140%;
-	margin-bottom: 20px;
+	margin-bottom: .9rem;
 }
 
 li {
