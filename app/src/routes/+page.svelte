@@ -244,12 +244,6 @@
 						<a href="https://github.com/matthewincardona/close-up" target="_blank">
 							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
-						<a
-							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
-							target="_blank"
-						>
-							<LogoFigma size="32px" style="fill: url(#gradient);" />
-						</a>
 						<a href="https://close-up.pages.dev" target="_blank">
 							<ApplicationWeb size="32px" style="fill: url(#gradient);" />
 						</a>
