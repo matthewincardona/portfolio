@@ -265,6 +265,13 @@
 						>
 							<LogoFigma size="32px" style="fill: url(#gradient);" />
 						</a>
+						<a
+							class="linear-gradient"
+							href="https://www.figma.com/board/R0Mr5pPeBylCr3rLp2K01a/SBC4E-Platform-Research?node-id=0-1&t=dHLw1BfE5kPiEXvm-1"
+							target="_blank"
+						>
+							<b>Figjam</b>
+						</a>
 					</div>
 				</div>
 				<div class="extra-projects__card">
@@ -484,6 +491,7 @@ EXTRA PROJECTS
 		transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) 0.15s;
 		transform-origin: 0%;
 		width: 100%;
+		align-items: center;
 	}
 
 	.extra-projects__card-toolbar:hover {
@@ -496,6 +504,13 @@ EXTRA PROJECTS
 
 	.extra-projects__card-toolbar *:hover {
 		transform: translateY(-4px);
+	}
+
+	.linear-gradient {
+		background: linear-gradient(to right, #b444d0 0%, #58334a 100%);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
 	}
 
 	/* ================
