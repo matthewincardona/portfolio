@@ -22,7 +22,7 @@
 				but also strategically effective.
 			</p>
 			<p>
-				<strong>For over five years, I’ve run my own web design business</strong>, DouxDolci Web
+				<strong>For over seven years, I’ve run my own web design business</strong>, DouxDolci Web
 				Design, working with clients to create thoughtful, user-friendly solutions. I’m always
 				learning, experimenting, and finding new ways to push myself and make even better products
 				for my clients.
