@@ -77,15 +77,18 @@
 				<strong>Hi, I’m Matthew Incardona!</strong> With a background in research, design, and development,
 				I bridge the gap between what users need and what businesses want to achieve.
 			</p>
-			<p>See My Work</p>
+			<p style="margin-top: 16px">See My Work</p>
 			<div class="hero__descr-icon">
-				<ArrowDown size="20px" style="fill: var(--body-color)" />
+				<a href="#projects">
+					<ArrowDown size="20px" style="fill: var(--body-color)" />
+				</a>
+				
 			</div>
 		</div>
 	</div>
 	<!-- Projects area -->
 	<div class="projects">
-		<div class="project-container">
+		<div class="project-container" id="projects">
 			<!-- Project One -->
 			<div class="project-container__left-panel">
 				<h2>Mission Threads</h2>
@@ -346,7 +349,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 80dvh;
+		height: 75dvh;
 		width: 100%;
 	}
 
