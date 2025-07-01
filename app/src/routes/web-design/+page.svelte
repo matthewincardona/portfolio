@@ -53,7 +53,7 @@
 			<h2 class="case-study__section-title">Yvette Simmons</h2>
 
 			<p>
-				In redesigning Yvette Simmons' website, I aimed to create a platform that authentically
+				In redesigning Yvette Simmon's website, I aimed to create a platform that authentically
 				represents her journey and expertise as an author and entrepreneur. Yvette's story—from her
 				beginnings in Kingston, Jamaica, to her successful career in the U.S. healthcare staffing
 				industry—serves as an inspiration to many.
