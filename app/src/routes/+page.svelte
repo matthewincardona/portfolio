@@ -116,7 +116,7 @@
 					<li class="project-tag"><span>Project Manager</span></li>
 				</ul>
 				<p class="project__descr">
-					See the results of my senior dev project at RIT, creating an tool that automates and
+					See the results of my senior dev project at RIT, creating a tool that automates and
 					streamlines the peer review process for academic courses and faculty evaluations at the
 					iSchool.
 				</p>
