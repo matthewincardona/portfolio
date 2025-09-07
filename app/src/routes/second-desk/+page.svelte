@@ -270,7 +270,7 @@
 					style="border: 1px solid rgba(0, 0, 0, 0.1); background-color: gray;"
 					width="1000"
 					height="600"
-					src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0Hn3hbJaOXv90jWwYgbCeB%2FSecond-Desk%3Fnode-id%3D521%253A44%26viewport%3D-23924%252C-36227%252C1.83%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D521%253A44"
+					src="<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/0Hn3hbJaOXv90jWwYgbCeB/Second-Desk?page-id=0%3A1&node-id=521-274&viewport=-947%2C-1479%2C0.09&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=521%3A44&embed-host=share" allowfullscreen></iframe>"
 					allowfullscreen
 				/>
 			</div>
