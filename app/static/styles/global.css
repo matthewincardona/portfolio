@@ -6,13 +6,13 @@ ROOT COLORS
 	--main-bg-color: rgba(35, 5, 22, 0.8);
 	--header-color: #101010;
 	--body-color: #101010;
-	--accent-color: #e40066;
-	--cta-color: #3a89b6;
+	--accent-color: #3a89b6;
+	--cta-color: #e40066;
 }
 
 /* set background image and an overlay */
 body {
-	background-color: #fff;
+	background-color: #f3f3f3;
 }
 
 #canvas {
@@ -27,21 +27,25 @@ body {
 }
 
 .bg-overlay {
-	background-image: url('./bg.webp');
+	/* background-image: url('./bg.webp'); */
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: #ffffff;
 }
 
 main {
-	/* max-width: 1400px; */
 	margin-left: auto;
 	margin-right: auto;
-	animation: fade-in 0.6s ease-in 0.15s both;
+	/* animation: fade-in 0.6s ease-in 0.15s both; */
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+i {
+	color: blue !important;
 }
 
 /* ================
@@ -57,11 +61,11 @@ hr {
 h1 {
 	font-family: 'Major Mono Display', monospace;
 	color: var(--header-color);
-	font-size: clamp(3rem, 6vw, 6.6rem);
+	font-size: clamp(2rem, 6vw, 3.5rem);
 	line-height: normal;
 	font-style: normal;
 	font-weight: 400;
-	letter-spacing: -13.469px;
+	letter-spacing: -4px;
 }
 
 h1 {
@@ -73,16 +77,16 @@ h1 {
 	color: transparent;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	h1 {
-		letter-spacing: -5px;
+		letter-spacing: -2px;
 	}
 }
 
 h2 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: clamp(2rem, 4vw, 2.2rem);
+	font-size: clamp(1.8rem, 4vw, 2rem);
 	letter-spacing: 4%;
 	line-height: 140%;
 	margin-bottom: 15px;
@@ -92,7 +96,7 @@ h2 {
 h3 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: clamp(1.4rem, 4vw, 1.6rem);
+	font-size: clamp(1.3rem, 4vw, 1.5rem);
 	letter-spacing: 4%;
 	line-height: 140%;
 	margin-bottom: 15px;
@@ -129,6 +133,7 @@ p {
 	color: var(--body-color);
 	font-size: clamp(.8rem, 2.5vw, 1rem);
 	line-height: 140%;
+	margin-bottom: .9rem;
 }
 
 li {
@@ -159,6 +164,10 @@ li {
 	line-height: 140%; */
 }
 
+ul {
+	margin-bottom: 40px;
+}
+
 input,
 label,
 select,
@@ -179,8 +188,53 @@ button {
 }
 
 /* ================
+UTILITIES
+=================*/
+
+.fade-up {
+	animation: fade-up 1s 0s ease-in-out both;
+}
+
+@keyframes fade-up {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.fade-down {
+	animation: fade-down 1s 0s ease-in-out both;
+}
+
+@keyframes fade-down {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/* ================
 CASE STUDIES
 =================*/
+
+iframe {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+video {
+	margin-bottom: 40px;
+}
 
 .case-study__title {
 	padding-top: 20vh;
@@ -222,6 +276,7 @@ CASE STUDIES
 	display: inline-block;
 	margin-top: 40px;
 	margin-bottom: 40px;
+	width: fit-content;
 }
 
 .case-study__container {
@@ -258,6 +313,7 @@ CASE STUDIES
 .case-study__img {
 	width: 100%;
 	margin-top: 30px;
+	margin-bottom: 40px;
 	filter: saturate(0.8) brightness(0.95);
 }
 

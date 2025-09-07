@@ -19,6 +19,7 @@
 	<!-- overview -->
 	<section>
 		<div class="case-study__title">
+			<p>Case Study</p>
 			<h1>Rochester Greenovation</h1>
 			<!-- <ul class="tag-container">
 				<li class="project-tag"><span>UX/UI Designer</span></li>
@@ -122,8 +123,7 @@
 			<div class="case-study__row">
 				<h4>Mockups and Prototypes</h4>
 				<p>
-					Splash screen:
-					<br />
+					<strong>Splash screen:</strong>
 					We wanted to show off how much Greenovation has helped their local community. When they first
 					log on, users are shown, approximately, how much waste Greenovation has saved from going into
 					landfills.
@@ -133,8 +133,7 @@
 					<img class="case-study__img" src={splashPage2} alt="" loading="lazy" />
 				</div>
 				<p>
-					Login & Sign Up screens:
-					<br />
+					<strong>Login & Sign Up screens:</strong>
 					Inventory management was an important feature for the client, so we decided to have an account
 					system that would track purchases. It can be used to validate purchases and make sure reviews
 					are given by the person who actually bought the item.
@@ -176,10 +175,11 @@
 				making a gamification system that encouraged users to save waste. Shoppers would see a
 				"Green Score" next to every item, which shows them approximately how much waste purchasing
 				the item would save.
-				<br /><br />
-				There was also room for tiering systems and other traditional gamification elements. Although
-				we had wanted to explore this concept further, it was too close to the competition deadline and
-				just couldn't be prioritized.
+			</p>
+			<p>
+				There was also room for tiering systems and other traditional gamification elements.
+				Although we had wanted to explore this concept further, it was too close to the competition
+				deadline and just couldn't be prioritized.
 			</p>
 			<div class="case-study__flex">
 				<img class="case-study__img" src={greenScore} alt="" loading="lazy" />
@@ -188,3 +188,11 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+</style>

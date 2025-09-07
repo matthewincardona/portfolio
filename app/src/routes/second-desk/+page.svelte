@@ -10,7 +10,6 @@
 	import homeScreen from '$lib/assets/second desk/home screen.png';
 	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
 	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
-	// import cover from '$lib/assets/second desk/second desk cover.png';
 </script>
 
 <svelte:head>
@@ -31,26 +30,19 @@
 				<h1 id="projectTitle">Second Desk</h1>
 			</div> -->
 			<div class="case-study__title">
+				<p>Case Study</p>
 				<h1>Second Desk</h1>
 			</div>
 			<div class="case-study__container">
 				<div>
 					<h2>Overview</h2>
 					<p>
-						Second Desk is a <b>Desktop-As-A-Service product</b> that enables non-Windows users to
-						stream Windows programs directly through their browser. This project will provide a
-						solution for Chromebook and Linux users that can’t run work/school required Windows
-						programs on their personal computers.
-						<br />
-						<br />
-						<b
-							>Note: This is a work-in-progress. It's actively being mentored by coaches from the
-							Rochester Institute of Technology (RIT) and is under constant development by its team
-							of students.</b
-						>
-						<br /><br />
-						<b>**Content shown is from a earlier versions of the product/business</b>.
+						Second Desk is a <b>Desktop-As-A-Service product</b> that enables non-Windows users to stream
+						Windows programs directly through their browser. This project will provide a solution for
+						Chromebook and Linux users that can’t run work/school required Windows programs on their
+						personal computers.
 					</p>
+					<p><strong>**Content shown is from earlier versions of the product/business</strong>.</p>
 				</div>
 				<div>
 					<h2>Tools & Roles</h2>
@@ -76,10 +68,11 @@
 					education, more and more students are using them to do their schoolwork. But after
 					realizing how limiting a Chromebook’s app library can be, a lot of them end up frustrated
 					and with very few options.
-					<br /> <br />
-					I started Second Desk as a way to provide Chromebook users with a more robust computing experience,
-					without having to purchase a new Windows or Mac machine. We’re focusing on a niche target audience
-					with a specific problem to fix.
+				</p>
+				<p>
+					I started Second Desk as a way to provide Chromebook users with a more robust computing
+					experience, without having to purchase a new Windows or Mac machine. We’re focusing on a
+					niche target audience with a specific problem to fix.
 				</p>
 			</div>
 		</section>
@@ -145,11 +138,13 @@
 					>user-centric approach</b
 				>
 				in my team. I used a few methods, which you can see below, to help put them in our audience's
-				shoes. <br /><br />
+				shoes.
+			</p>
+			<p>
 				First and foremost, it was important to conduct interviews and collect data to work from, so
 				we could have an idea of where to start. I wanted to understand common challenges our target
-				audience faced while working on their computer(s); these were the questions I asked and the criteria
-				used for participants:
+				audience faced while working on their computer(s); these were the questions I asked and the
+				criteria used for participants:
 			</p>
 			<ul>
 				<li>What is your occupation/major?</li>
@@ -165,8 +160,6 @@
 					stopping you from solving these challenges yourself?
 				</li>
 			</ul>
-			<br />
-			<br />
 			<p>Target participant characteristics:</p>
 			<ul>
 				<li>Ages 12-24</li>
@@ -187,11 +180,11 @@
 					These are the first personas that were made from the data we gathered. Of course, as we
 					are constantly conducting more interviews and revising our work, updates will be made when
 					new content is available.
-
-					<br /><br />
-					We found that our interviewees were were often more creative-focused in terms of current/preferred
-					major, were on tight budgets and couldn't afford a more expensive Mac or PC, and were frustrated
-					at having to switch between devices to get their work done.
+				</p>
+				<p>
+					We found that our interviewees were were often more creative-focused in terms of
+					current/preferred major, were on tight budgets and couldn't afford a more expensive Mac or
+					PC, and were frustrated at having to switch between devices to get their work done.
 				</p>
 				<div class="case-study__flex">
 					<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
@@ -287,12 +280,13 @@
 				There are two main components to our product: the website and the remote servers. To get a
 				working MVP going, we need to allow access to a remote desktop session directly through our
 				website.
-				<br /><br />
-				Our initial builds used a Windows 2019 EC2 instance from AWS and an in-browser remote desktop
-				client called Myrtille. With it, we could access both remote applications like Inkscape and the
-				full desktop of our server without ever needing a user download. We eventually constructed a
-				React-based website that could connect users to specific programs and even offered a small library
-				of downloaded apps to run.
+			</p>
+			<p>
+				Our initial builds used a Windows 2019 EC2 instance from AWS and an in-browser remote
+				desktop client called Myrtille. With it, we could access both remote applications like
+				Inkscape and the full desktop of our server without ever needing a user download. We
+				eventually constructed a React-based website that could connect users to specific programs
+				and even offered a small library of downloaded apps to run.
 			</p>
 		</div>
 	</section>
@@ -313,7 +307,6 @@
 						programs.
 					</li>
 				</ul>
-				<br /><br />
 				<p>
 					Finding new remote desktop software was our main priority, so after researching the stacks
 					behind cloud gaming services like Google Stadia (who excelled at remote app streaming), we
@@ -339,4 +332,9 @@
 </div>
 
 <style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
 </style>

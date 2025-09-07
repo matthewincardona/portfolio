@@ -18,6 +18,7 @@
 	<section>
 		<div>
 			<div class="case-study__title">
+				<p>Case Study</p>
 				<h1>Mission Threads</h1>
 			</div>
 			<div class="case-study__container">
@@ -27,10 +28,11 @@
 						During my time at <b>Peraton</b>, I worked with a small team to transform the company's
 						fragmented knowledge base, consolidating thousands of critical internal documents spread
 						across multiple heritage companies.
-						<br /><br />
-						Employees relied on this system for government contract applications and daily operations,
-						yet it was difficult to search and maintain. Our goal was to create a structured, intuitive
-						system that simplified access and encouraged engagement.
+					</p>
+					<p>
+						Employees relied on this system for government contract applications and daily
+						operations, yet it was difficult to search and maintain. Our goal was to create a
+						structured, intuitive system that simplified access and encouraged engagement.
 					</p>
 				</div>
 				<div>
@@ -54,10 +56,11 @@
 					challenging. Information is often missing, outdated, or lacks proper points of contact.
 					Employees frequently keep documents on personal devices or share them informally, and
 					uploaded files are often unsearchable.
-					<br /><br />
-					The existing knowledge base was a disorganized collection of thousands of documents, making
-					it difficult to find or update information. Our goal was to build a system that allows employees
-					to easily access and contribute valuable knowledge.
+				</p>
+				<p>
+					The existing knowledge base was a disorganized collection of thousands of documents,
+					making it difficult to find or update information. Our goal was to build a system that
+					allows employees to easily access and contribute valuable knowledge.
 				</p>
 			</div>
 		</section>
@@ -73,9 +76,7 @@
 				and what improvements they needed. Key pain points included:
 			</p>
 
-			<br /><br />
-
-			<div class="interview__card-grid">
+			<div class="interview__card-grid" style="margin-top: 40px">
 				<div class="interview__card">
 					<p>
 						"Information is siloed. I know my work, but I have no visibility into what others are
@@ -112,18 +113,26 @@
 		<p>
 			We conducted user interviews with employees at Peraton to gather insights on their experiences
 			with the existing knowledge base. The feedback highlighted several key issues:
-			<br /><br />
-			- The knowledge base was difficult to navigate and search, leading to frustration and inefficiency.
-			<br />
-			- Employees were less motivated to update the knowledge base because they felt it was underutilized.
-			<br />
-			- Information was often siloed, making it hard to get a comprehensive view of the company's knowledge.
-			<br />
-			- It was difficult to quickly identify relevent documents from search results and then pull out
-			relevant info from them.
-			<br />
-			- There was a need for a more user-friendly interface and better search functionality.
 		</p>
+		<ul>
+			<li>
+				The knowledge base was difficult to navigate and search, leading to frustration and
+				inefficiency.
+			</li>
+			<li>
+				Employees were less motivated to update the knowledge base because they felt it was
+				underutilized.
+			</li>
+			<li>
+				Information was often siloed, making it hard to get a comprehensive view of the company's
+				knowledge.
+			</li>
+			<li>
+				It was difficult to quickly identify relevant documents from search results and then pull
+				out relevant info from them.
+			</li>
+			<li>There was a need for a more user-friendly interface and better search functionality.</li>
+		</ul>
 	</section>
 
 	<!-- requirements brainstorming -->
@@ -133,8 +142,6 @@
 			We took the information we gathered from our interviews and conversations with stakeholders
 			and started to brainstorm requirements for the new system.
 		</p>
-
-		<br />
 
 		<iframe
 			title="Requirements brainstorming"
@@ -151,11 +158,9 @@
 	<section>
 		<h2 class="case-study__section-title">Personas & Features</h2>
 		<p>Based on the information gathered from our interviews, we created the following personas.</p>
-		<br />
 		<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
 		<img class="case-study__img" src={userPersona2} alt="" loading="lazy" />
 
-		<br /><br />
 		<p>
 			This further helped us to create a potential list of features, which we would later refine
 			through more interviews and feedback. It included:
@@ -167,7 +172,8 @@
 			<li>Filters</li>
 			<li>Contribute Info Button</li>
 			<li>Upload Documents Page</li>
-			<li>Search Results Page
+			<li>
+				Search Results Page
 				<ul>
 					<li>Breadcrumbs</li>
 					<li>Displays results of a search/filter</li>
@@ -175,13 +181,15 @@
 					<li>Report & request missing information button</li>
 				</ul>
 			</li>
-			<li>Individual Search Result
+			<li>
+				Individual Search Result
 				<ul>
 					<li>Author, date, title, brief description, accuracy rating</li>
 					<li>Document tags</li>
 				</ul>
 			</li>
-			<li>Mission Threads Document Page
+			<li>
+				Mission Threads Document Page
 				<ul>
 					<li>Breadcrumbs</li>
 					<li>Core nodes</li>
@@ -199,7 +207,6 @@
 			From there, we boiled down our features list to just a few items that we wanted to focus on
 			and created a prototype to present to our stakeholders.
 		</p>
-		<br />
 
 		<p><strong>Showcased Features:</strong></p>
 		<ul>
@@ -209,9 +216,7 @@
 			<li>Content pagination</li>
 			<li>View counter</li>
 		</ul>
-		<br />
 
-		<br />
 		<iframe
 			title="Figma prototype"
 			style="border: 1px solid rgba(0, 0, 0, 0.1);"
@@ -221,15 +226,12 @@
 			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1002-5452&viewport=-1254%2C-1050%2C0.12&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
 			allowfullscreen
 		/>
-		<br /><br />
 		<p>
 			We also explored AI-enabled ideas to see what a far-future version of the system could look
 			like. We modeled it after ChatGPT's UI and AI search result UIs from browsers like Brave. This
 			kind of system would sit next to the new proposed UI as a separate feature and would allow
 			users to quickly search for specific points of interest across multiple documents.
 		</p>
-
-		<br />
 
 		<iframe
 			title="Figma AI prototype"
@@ -248,9 +250,9 @@
 		<p>
 			Our redesign transformed Peraton’s outdated knowledge base into an intuitive, searchable
 			system with improved document organization and discoverability.
-			<br /><br />
-			However, key challenges emerged that offer opportunities for further refinement:
 		</p>
+
+		<p>However, key challenges emerged that offer opportunities for further refinement:</p>
 		<ol>
 			<li>
 				<b>Driving Adoption:</b> Despite improved usability, some employees hesitated to contribute.
@@ -277,13 +279,19 @@
 		padding: 100px 5% 20dvh 5%;
 	} */
 
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+
 	.interview__card-grid {
 		display: flex;
 		flex-direction: row;
 		margin: auto;
 		justify-content: start;
 		align-items: center;
-		gap: 3vw;
+		gap: 2vw;
 		flex-wrap: wrap;
 	}
 
@@ -293,11 +301,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: start;
+		align-items: center;
 		text-align: left;
 		padding: 40px;
 		max-width: 500px;
-		max-height: 300px;
+		height: 280px;
 		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}

@@ -3,6 +3,10 @@
 	import murbanMarketing from '$lib/assets/web design/matt urban marketing.webp';
 	import tailoredMale from '$lib/assets/web design/tailored male.webp';
 	import pwec from '$lib/assets/web design/pwec.webp';
+	import yvetteContactMe from '$lib/assets/web design/Contact Me.webm';
+	import yvetteEntrepreneurshipBook from '$lib/assets/web design/Entreprenuership book.webm';
+	import yvetteHome from '$lib/assets/web design/Home.webm';
+	import yvetteJourneyPhyisicianRecruiter from '$lib/assets/web design/Journey of a Phyisician Recruiter.webm';
 </script>
 
 <svelte:head>
@@ -13,6 +17,7 @@
 	<!-- overview -->
 	<section>
 		<div class="case-study__title">
+			<p>Case Studies</p>
 			<h1>DouxDolci Web Design</h1>
 			<!-- <ul class="tag-container">
 				<li class="project-tag"><span>Founder</span></li>
@@ -25,7 +30,9 @@
 						I started DouxDolci Web Design a number of years ago as a way to get my foot in the door
 						and learn web design professionally. Since then, I've worked with a number of small
 						businesses and nonprofit groups, creating custom websites that fit their user's needs
-						and could be managed without the need for a web designer. <br /><br />
+						and could be managed without the need for a web designer.
+					</p>
+					<p>
 						To learn more about DouxDolci, you can visit the website
 						<a href="https://douxdolci.com" target="_blank" rel="noopener noreferrer"
 							><u>here.</u></a
@@ -40,6 +47,93 @@
 		</div>
 	</section>
 
+	<!-- yvette -->
+	<div class="bg-wrapper">
+		<section>
+			<h2 class="case-study__section-title">Yvette Simmons</h2>
+
+			<p>
+				In redesigning Yvette Simmon's website, I aimed to create a platform that authentically
+				represents her journey and expertise as an author and entrepreneur. Yvette's story—from her
+				beginnings in Kingston, Jamaica, to her successful career in the U.S. healthcare staffing
+				industry—serves as an inspiration to many.
+			</p>
+			<h3>Redesign Objectives:</h3>
+			<ul>
+				<li>
+					<strong>Enhanced Storytelling:</strong> Highlighting Yvette's personal and professional journey
+					to engage visitors.
+				</li>
+				<li>
+					<strong>Visual Appeal:</strong> Incorporating vibrant visuals and animations to reflect her
+					dynamic personality.
+				</li>
+				<li>
+					<strong>User Engagement:</strong> Adding clear call-to-action buttons to encourage interactions
+					like book purchases and event bookings.
+				</li>
+				<li>
+					<strong>Accessibility:</strong> Ensuring the site is navigable and usable for all users, regardless
+					of ability.
+				</li>
+			</ul>
+
+			<h3>Accessibility Enhancements:</h3>
+			<ul>
+				<li>Added descriptive alt text to images for screen readers.</li>
+				<li>Conducted thorough screen reader testing to improve navigation.</li>
+				<li>Ensured full keyboard accessibility for all interactive elements.</li>
+				<li>Adjusted color contrast to meet WCAG guidelines for readability.</li>
+				<li>Assigned appropriate ARIA roles to buttons and navigation elements.</li>
+				<li>
+					Refined the HTML structure and heading hierarchy for better screen reader interpretation.
+				</li>
+			</ul>
+
+			<p>
+				These improvements resulted in a polished, user-friendly website that effectively showcases
+				Yvette's work while being easy to maintain and update.
+			</p>
+			<div class="case-study__row">
+				<video
+					src={yvetteHome}
+					id="create-a-form-video"
+					loading="lazy"
+					autoplay="true"
+					controls="true"
+					muted="true"
+				/>
+
+				<video
+					src={yvetteEntrepreneurshipBook}
+					id="create-a-form-video"
+					loading="lazy"
+					autoplay="true"
+					controls="true"
+					muted="true"
+				/>
+
+				<video
+					src={yvetteJourneyPhyisicianRecruiter}
+					id="create-a-form-video"
+					loading="lazy"
+					autoplay="true"
+					controls="true"
+					muted="true"
+				/>
+
+				<video
+					src={yvetteContactMe}
+					id="create-a-form-video"
+					loading="lazy"
+					autoplay="true"
+					controls="true"
+					muted="true"
+				/>
+			</div>
+		</section>
+	</div>
+
 	<!-- med -->
 	<div class="bg-wrapper">
 		<section>
@@ -47,44 +141,61 @@
 			<div class="case-study__row">
 				<h3>Challenge</h3>
 				<p>
-					Creating a more user-friendly website backend, which can be used by interns with little to
-					no web design experience. Our pain points were:
+					The mEducation Alliance, a non-profit organization focused on leveraging technology to
+					improve global education, needed a website that was both functional and easy to maintain.
+					Their existing website had several major pain points that made content management
+					difficult, especially for interns and staff with limited web design experience. The key
+					challenges included:
 				</p>
 				<ul>
-					<li>Very unfriendly and difficult to edit pages</li>
-					<li>Users were unable to previews page updates before they went live</li>
-					<li>No way to restore a page backup, making editing very destructive</li>
+					<li>A complex and unintuitive backend that made updating content time-consuming</li>
+					<li>No ability to preview changes before publishing, leading to errors going live</li>
+					<li>No built-in backup system, making content updates risky and irreversible</li>
+					<li>Performance and accessibility issues that affected usability</li>
 				</ul>
 			</div>
+
 			<div class="case-study__row">
 				<h3>Solution</h3>
 				<p>
-					Rebuilt pages using a WYSIWYG builder, allowing for page backups, intuitive visual
-					editing, and page previews. Rebuilt a nonprofit website with a user-friendly backend
-					interface that fit their requirements. Continue to provide technical support and design
-					prototypes for future pages and content.
+					To create a more efficient and user-friendly system, I worked closely with the mEducation
+					Alliance team to understand their specific needs, workflows, and technical constraints. My
+					goal was to design a solution that allowed their team—especially interns—to manage content
+					confidently without requiring deep technical knowledge.
 				</p>
-				<div class="constrained-img">
-					<div class="case-study__flex">
-						<img
-							class="case-study__img"
-							src={meducationAlliance}
-							alt="mEducation alliance project"
-							loading="lazy"
-						/>
-					</div>
-				</div>
+				<ul>
+					<li>
+						Rebuilt the website using a WYSIWYG (What You See Is What You Get) editor, making it
+						easier for non-technical users to edit content
+					</li>
+					<li>
+						Implemented a preview functionality, allowing users to review changes before publishing
+					</li>
+					<li>
+						Developed a structured backup system to prevent data loss and enable content recovery
+					</li>
+					<li>
+						Optimized site performance through streamlined code, caching, and Cloudflare integration
+					</li>
+					<li>
+						Ensured accessibility compliance by improving navigation, contrast, and screen reader
+						compatibility
+					</li>
+				</ul>
+				<p>
+					Beyond the initial redesign, I continue to collaborate with the mEducation Alliance,
+					providing technical support, training, and ongoing refinements to ensure their website
+					remains functional and scalable. I also prototype new page layouts and interactive
+					elements to enhance user engagement and better align with the organization's evolving
+					goals.
+				</p>
 			</div>
 		</section>
 	</div>
 
 	<!-- urban -->
 	<section>
-		<h2 class="case-study__section-title">
-			<a href="https://www.matturbanmarketing.com/" target="_blank" rel="noopener noreferrer"
-				>Matt Urban Marketing</a
-			>
-		</h2>
+		<h2 class="case-study__section-title">Matt Urban Marketing</h2>
 		<div class="case-study__row">
 			<h3>Challenge</h3>
 			<p>
@@ -129,13 +240,7 @@
 	<!-- tailored male -->
 	<div class="bg-wrapper">
 		<section>
-			<h2 class="case-study__section-title">
-				<a
-					href="https://thetailoredmaleofeastsetauket.com/"
-					target="_blank"
-					rel="noopener noreferrer">The Tailored Male of East Setauket</a
-				>
-			</h2>
+			<h2 class="case-study__section-title">The Tailored Male of East Setauket</h2>
 			<div class="case-study__row">
 				<h3>Challenge</h3>
 				<p>
@@ -174,11 +279,7 @@
 
 	<!-- pwec -->
 	<section>
-		<h2 class="case-study__section-title">
-			<a href="https://pwecna.org/" target="_blank" rel="noopener noreferrer"
-				>Preach the Word Evangelical Church NA</a
-			>
-		</h2>
+		<h2 class="case-study__section-title">Preach the Word Evangelical Church NA</h2>
 		<div class="case-study__row">
 			<h3>Challenge</h3>
 			<p>
@@ -217,3 +318,11 @@
 		</div>
 	</section>
 </div>
+
+<style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+</style>

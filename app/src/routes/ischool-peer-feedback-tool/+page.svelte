@@ -1,4 +1,5 @@
 <script>
+	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import asmithLogin from '$lib/assets/501-feedback-tool/optimized/asmith login.webp';
 	import asmithDash1 from '$lib/assets/501-feedback-tool/optimized/asmith dash 1.webp';
 	import asmithDash2 from '$lib/assets/501-feedback-tool/optimized/asmith dash 2.webp';
@@ -20,6 +21,13 @@
 
 <svelte:head>
 	<title>Projects | iSchool Peer Feedback Tool</title>
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	/>
 </svelte:head>
 
 <div class="case-study">
@@ -27,19 +35,21 @@
 	<section>
 		<div>
 			<div class="case-study__title">
+				<p>Case Study</p>
 				<h1>iSchool Peer Feedback Tool</h1>
 			</div>
 			<div class="case-study__container">
 				<div>
 					<h2>Overview</h2>
 					<p>
-						The <strong>iSchool Peer Feedback Tool</strong> was developed to address the
-						inefficiencies of manual peer review processes in academic settings. Traditionally,
-						gathering and processing feedback for both students and faculty was a time-consuming
-						task that required significant administrative effort. The tool automates feedback
-						solicitation, anonymizes responses, and generates detailed reports, reducing a 30-hour
-						workload to just 1-2 hours per semester.
-						<br /><br />
+						The <strong>iSchool Peer Feedback Tool</strong> was developed to address the inefficiencies
+						of manual peer review processes in academic settings. Traditionally, gathering and processing
+						feedback for both students and faculty was a time-consuming task that required significant
+						administrative effort. The tool automates feedback solicitation, anonymizes responses, and
+						generates detailed reports, reducing a 30-hour workload to just 1-2 hours per semester.
+					</p>
+
+					<p>
 						This was a <strong>two-semester project,</strong> made for clients at the iSchool. We met
 						with our core stakeholders regularly, and at larger gate reviews with additional stakeholders,
 						for strategic discussions and to ensure the final product would effectively meet their needs.
@@ -47,6 +57,14 @@
 				</div>
 				<div>
 					<h2>Tools & Roles</h2>
+					<p>
+						<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
+							<div class="tools-links">
+								<LogoGithub size="32px" style="fill: var(--body-color)" />
+								<span><b>Github Repo</b></span>
+							</div></a
+						>
+					</p>
 					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
@@ -67,16 +85,15 @@
 				as a UX/UI designer and frontend developer, stepping into SQL and API work as needed. I
 				directed the team using a Waterfall methodology, chosen for its structured and predictable
 				approach, which allowed us to effectively plan and allocate time and resources.
-				<br />
-				<br />
-				To ensure consistency and efficiency, I organized our codebase in a clear, scalable structure,
-				making it easy to replicate. Additionally, I created comprehensive documentation to streamline
-				collaboration between our design and development teams, clarifying workflows and communication
-				processes. We utilized Azure DevOps for task management and code hosting, keeping the team aligned
-				and productive.
+			</p>
+			<p>
+				To ensure consistency and efficiency, I organized our codebase in a clear, scalable
+				structure, making it easy to replicate. Additionally, I created comprehensive documentation
+				to streamline collaboration between our design and development teams, clarifying workflows
+				and communication processes. We utilized Azure DevOps for task management and code hosting,
+				keeping the team aligned and productive.
 			</p>
 
-			<br /><br />
 			<p>The final product had to meet the following requirements:</p>
 			<ul>
 				<li>
@@ -153,17 +170,14 @@
 		<h3>Shibboleth Login</h3>
 		<p>Users can securely log in using Shibboleth, similar to RIT's own login system.</p>
 		<img class="case-study__img" src={asmithLogin} alt="" loading="lazy" />
-		<br />
 		<h3>Creating a Form</h3>
 		<p>
 			One of the hardest parts of this project was making it work for both faculty reviews and
 			in-class student reviews. The tool had to be flexible enough to handle both situations and use
 			language that reflected that. We create a system of "Groups", "Teams", and "Users" to
 			effectively capture both use cases.
-
-			<br />
-			<br />
-
+		</p>
+		<p>
 			At the second-highest level of power, behind only admins, creators can make new forms, edit
 			existing forms and assigned teams/users, and view individual and aggregated submission data.
 			Creators can be also be responders on forms.
@@ -171,16 +185,12 @@
 		<img class="case-study__img" src={asmithDash1} alt="" loading="lazy" />
 		<img class="case-study__img" src={asmithDash2} alt="" loading="lazy" />
 
-		<br />
-		<br />
 		<p>
 			Only users in the same team can submit responses for each other. This can be seen later on in
 			the "Responding To Forms" section.
 		</p>
 		<img class="case-study__img" src={createGroup} alt="" loading="lazy" />
 
-		<br />
-		<br />
 		<p>
 			An important feature is the ability to add multiple creators and set their permissions
 			individually. This way, multiple people can see data, edit forms, and edit assigned teams /
@@ -190,11 +200,8 @@
 		</p>
 		<img class="case-study__img" src={addCreators} alt="" loading="lazy" />
 
-		<br />
 		<img class="case-study__img" src={creatorPermissions} alt="" loading="lazy" />
 
-		<br />
-		<br />
 		<p>
 			Start and end dates determine when the form becomes available to responders and if it can be
 			edited (forms cannot be edited after they open, to protect submission data tables).
@@ -206,12 +213,9 @@
 			loading="lazy"
 			autoplay="true"
 			controls="true"
+			muted="true"
 		/>
 		<img class="case-study__img" src={viewData} alt="" loading="lazy" />
-
-		<br />
-		<br />
-		<br />
 
 		<h3>Admin Page</h3>
 		<p>
@@ -221,7 +225,6 @@
 		</p>
 		<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
 
-		<br />
 		<h3>Form States</h3>
 		<p>
 			Forms have appropriate states depending on a form's status (Complete Form, Completed, Not Yet
@@ -232,7 +235,6 @@
 		<img class="case-study__img" src={mincardDashNotYetAvailable} alt="" loading="lazy" />
 		<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
 
-		<br />
 		<h3>Responding To Forms</h3>
 		<p>
 			Users who are assigned to a form can respond if it's available (which happens when it's past
@@ -254,19 +256,31 @@
 				the project management role to ensure the team's success. I focused on delegating tasks
 				effectively, breaking down complex objectives into clear, actionable steps, and providing
 				detailed documentation to streamline execution.
-
-				<br /><br />
-				I also prioritized regular check-ins with team members to address roadblocks, gather feedback,
-				and align on goals. Additionally, I worked on improving sprint planning, setting realistic timelines,
-				and ensuring seamless collaboration across different functions. This shift in approach not only
-				enhanced team productivity but also strengthened my ability to lead projects efficiently while
-				maintaining a clear strategic vision.
+			</p>
+			<p>
+				I also prioritized regular check-ins with team members to address roadblocks, gather
+				feedback, and align on goals. Additionally, I worked on improving sprint planning, setting
+				realistic timelines, and ensuring seamless collaboration across different functions. This
+				shift in approach not only enhanced team productivity but also strengthened my ability to
+				lead projects efficiently while maintaining a clear strategic vision.
 			</p>
 		</div>
 	</section>
 </div>
 
 <style>
+	.case-study__title p {
+		margin-bottom: 0px;
+		font-weight: bold;
+		color: rgb(94, 94, 94);
+	}
+
+	.tools-links {
+		display: flex;
+		align-items: center;
+		gap: 0.8em;
+	}
+
 	#create-a-form-video {
 		width: 95%;
 		margin-left: 3%;
