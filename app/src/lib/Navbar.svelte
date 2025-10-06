@@ -1,5 +1,5 @@
 <script>
-	import resume from '$lib/assets/Matthew_Incardona_Resume.pdf';
+	import resume from '$lib/assets/Matthew.Incardona.CV.pdf';
 	import DocumentPdf from 'carbon-icons-svelte/lib/DocumentPdf.svelte';
 </script>
 
