@@ -25,6 +25,7 @@
 		"carbon-icons-svelte": "^13.3.0",
 		"on-change": "^5.0.1",
 		"onchange": "^7.1.0",
+		"prettier-plugin-svelte": "^3.4.1",
 		"svelte-medium-image-zoom": "^0.2.6"
 	}
 }

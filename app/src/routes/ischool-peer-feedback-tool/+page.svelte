@@ -1,4 +1,6 @@
 <script>
+	import Zoom from 'svelte-medium-image-zoom';
+  	import 'svelte-medium-image-zoom/dist/styles.css';
 	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import asmithLogin from '$lib/assets/501-feedback-tool/optimized/asmith login.webp';
 	import asmithDash1 from '$lib/assets/501-feedback-tool/optimized/asmith dash 1.webp';
@@ -57,14 +59,11 @@
 				</div>
 				<div>
 					<h2>Tools & Roles</h2>
-					<p>
 						<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
 							<div class="tools-links">
 								<LogoGithub size="32px" style="fill: var(--body-color)" />
 								<span><b>Github Repo</b></span>
-							</div></a
-						>
-					</p>
+							</div></a>
 					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
@@ -169,7 +168,9 @@
 		<h2 class="case-study__section-title">Screens</h2>
 		<h3>Shibboleth Login</h3>
 		<p>Users can securely log in using Shibboleth, similar to RIT's own login system.</p>
-		<img class="case-study__img" src={asmithLogin} alt="" loading="lazy" />
+		<Zoom>
+			<img class="case-study__img" src={asmithLogin} alt="" loading="lazy" />
+		</Zoom>
 		<h3>Creating a Form</h3>
 		<p>
 			One of the hardest parts of this project was making it work for both faculty reviews and
@@ -182,14 +183,20 @@
 			existing forms and assigned teams/users, and view individual and aggregated submission data.
 			Creators can be also be responders on forms.
 		</p>
-		<img class="case-study__img" src={asmithDash1} alt="" loading="lazy" />
-		<img class="case-study__img" src={asmithDash2} alt="" loading="lazy" />
+		<Zoom>
+			<img class="case-study__img" src={asmithDash1} alt="" loading="lazy" />
+		</Zoom>
+		<Zoom>
+			<img class="case-study__img" src={asmithDash2} alt="" loading="lazy" />
+		</Zoom>
 
 		<p>
 			Only users in the same team can submit responses for each other. This can be seen later on in
 			the "Responding To Forms" section.
 		</p>
-		<img class="case-study__img" src={createGroup} alt="" loading="lazy" />
+		<Zoom>
+			<img class="case-study__img" src={createGroup} alt="" loading="lazy" />
+		</Zoom>
 
 		<p>
 			An important feature is the ability to add multiple creators and set their permissions
@@ -198,15 +205,20 @@
 			This also applies to the initial creator, who, on the honor system, might need to remove some
 			of their own abilities on a particular form.
 		</p>
-		<img class="case-study__img" src={addCreators} alt="" loading="lazy" />
+		<Zoom>
+			<img class="case-study__img" src={addCreators} alt="" loading="lazy" />
+		</Zoom>
 
-		<img class="case-study__img" src={creatorPermissions} alt="" loading="lazy" />
-
+		<Zoom>
+			<img class="case-study__img" src={creatorPermissions} alt="" loading="lazy" />
+		</Zoom>
 		<p>
 			Start and end dates determine when the form becomes available to responders and if it can be
 			edited (forms cannot be edited after they open, to protect submission data tables).
 		</p>
-		<img class="case-study__img" src={setDates} alt="" loading="lazy" />
+		<Zoom>
+			<img class="case-study__img" src={setDates} alt="" loading="lazy" />
+		</Zoom>
 		<video
 			src={createAForm}
 			id="create-a-form-video"
@@ -215,26 +227,35 @@
 			controls="true"
 			muted="true"
 		/>
-		<img class="case-study__img" src={viewData} alt="" loading="lazy" />
-
+		<Zoom>
+			<img class="case-study__img" src={viewData} alt="" loading="lazy" />
+		</Zoom>
 		<h3>Admin Page</h3>
 		<p>
 			Admins are able to delegate roles to users and have a dedicated page viewable only to them.
 			This was in response to a need for user management that wouldn't require backend skills /
 			knowledge, as the admin wouldn't necessarily be a technically-savy individual.
 		</p>
-		<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
-
+		<Zoom>
+			<img class="case-study__img" src={adminPage} alt="" loading="lazy" />
+		</Zoom>
 		<h3>Form States</h3>
 		<p>
 			Forms have appropriate states depending on a form's status (Complete Form, Completed, Not Yet
 			Available, Passed Deadline).
 		</p>
-		<img class="case-study__img" src={mincardDashCompleteForm} alt="" loading="lazy" />
-		<img class="case-study__img" src={mincardDashCompleted} alt="" loading="lazy" />
-		<img class="case-study__img" src={mincardDashNotYetAvailable} alt="" loading="lazy" />
-		<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
-
+		<Zoom>
+			<img class="case-study__img" src={mincardDashCompleteForm} alt="" loading="lazy" />
+		</Zoom>
+		<Zoom>
+			<img class="case-study__img" src={mincardDashCompleted} alt="" loading="lazy" />
+		</Zoom>
+		<Zoom>	
+			<img class="case-study__img" src={mincardDashNotYetAvailable} alt="" loading="lazy" />
+		</Zoom>
+		<Zoom>	
+			<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
+		</Zoom>
 		<h3>Responding To Forms</h3>
 		<p>
 			Users who are assigned to a form can respond if it's available (which happens when it's past
@@ -242,9 +263,15 @@
 			that they've completed this form and the dashboard view reflects this (by setting the form to
 			a "Completed" status and stopping any further actions).
 		</p>
-		<img class="case-study__img" src={respondToForm1} alt="" loading="lazy" />
-		<img class="case-study__img" src={respondToForm2} alt="" loading="lazy" />
-		<img class="case-study__img" src={respondToForm3} alt="" loading="lazy" />
+		<Zoom>
+			<img class="case-study__img" src={respondToForm1} alt="" loading="lazy" />
+		</Zoom>
+		<Zoom>	
+			<img class="case-study__img" src={respondToForm2} alt="" loading="lazy" />
+		</Zoom>
+		<Zoom>
+			<img class="case-study__img" src={respondToForm3} alt="" loading="lazy" />
+		</Zoom>
 	</section>
 
 	<section>
@@ -279,6 +306,7 @@
 		display: flex;
 		align-items: center;
 		gap: 0.8em;
+		margin-bottom: 8px;
 	}
 
 	#create-a-form-video {

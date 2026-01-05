@@ -1,4 +1,6 @@
 <script>
+	import Zoom from 'svelte-medium-image-zoom';
+  	import 'svelte-medium-image-zoom/dist/styles.css';
 	import greenScorePopup from '$lib/assets/greenovation/green score popup.webp';
 	import greenScore from '$lib/assets/greenovation/green score.webp';
 	import home from '$lib/assets/greenovation/home.webp';
@@ -111,9 +113,13 @@
 			<h4>Information Architecture</h4>
 			<p />
 			<div class="constrained-img--horizontal">
-				<img class="case-study__img" src={informationArchitecture} alt="" loading="lazy" />
+				<Zoom>
+					<img class="case-study__img" src={informationArchitecture} alt="" loading="lazy" />
+				</Zoom>
 			</div>
-			<img class="case-study__img case-study__img--small" src={journey} alt="" loading="lazy" />
+			<Zoom>
+			<img class="case-study__img case-study__img--small bordered" src={journey} alt="" loading="lazy" />
+			</Zoom>
 		</div>
 	</section>
 
@@ -129,18 +135,21 @@
 					landfills.
 				</p>
 				<div class="case-study__flex">
-					<img
+					<Zoom><img
 						class="case-study__img case-study__img--xtra-small bordered"
 						src={splashPage1}
 						alt=""
 						loading="lazy"
-					/>
-					<img
+					/></Zoom>
+										<Zoom><img
 						class="case-study__img case-study__img--xtra-small bordered"
 						src={splashPage2}
 						alt=""
 						loading="lazy"
-					/>
+					/></Zoom>
+
+					
+					
 				</div>
 				<p>
 					<strong>Login & Sign Up screens:</strong>
@@ -149,28 +158,34 @@
 					are given by the person who actually bought the item.
 				</p>
 				<div class="case-study__flex">
+					<Zoom>
 					<img
 						class="case-study__img case-study__img--xtra-small bordered"
 						src={logIn}
 						alt=""
 						loading="lazy"
 					/>
+					</Zoom>
+					<Zoom>
 					<img
 						class="case-study__img case-study__img--xtra-small bordered"
 						src={signUp}
 						alt=""
 						loading="lazy"
 					/>
+					</Zoom>
 				</div>
 				<p>Storefront & Search By Category</p>
 				<div class="case-study__flex">
 					<div class="constrained-img">
+						<Zoom>
 						<img
 							class="case-study__img case-study__img--xtra-small"
 							src={home}
 							alt=""
 							loading="lazy"
 						/>
+						</Zoom>
 					</div>
 					<img
 						class="case-study__img case-study__img--xtra-small bordered"
@@ -212,18 +227,22 @@
 				deadline and just couldn't be prioritized.
 			</p>
 			<div class="case-study__flex">
+				<Zoom>
 				<img
 					class="case-study__img case-study__img--xtra-small bordered"
 					src={greenScore}
 					alt=""
 					loading="lazy"
 				/>
+				</Zoom>
+				<Zoom>
 				<img
 					class="case-study__img case-study__img--xtra-small bordered"
 					src={greenScorePopup}
 					alt=""
 					loading="lazy"
 				/>
+				</Zoom>
 			</div>
 		</div>
 	</section>

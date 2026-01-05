@@ -1,12 +1,8 @@
 <script>
+	import Zoom from 'svelte-medium-image-zoom';
+  	import 'svelte-medium-image-zoom/dist/styles.css';
 	import userPersona1 from '$lib/assets/mission threads/persona1.webp';
 	import userPersona2 from '$lib/assets/mission threads/persona2.webp';
-	import empathyMap1 from '$lib/assets/second desk/empathy map 1.webp';
-	import empathyMap2 from '$lib/assets/second desk/empathy map 2.webp';
-	import userFlow from '$lib/assets/second desk/user flow.png';
-	import homeScreen from '$lib/assets/second desk/home screen.png';
-	import desktopScreen from '$lib/assets/second desk/desktop screen.png';
-	import planSelectionScreen from '$lib/assets/second desk/plan selection screen.png';
 </script>
 
 <svelte:head>
@@ -142,24 +138,21 @@
 			We took the information we gathered from our interviews and conversations with stakeholders
 			and started to brainstorm requirements for the new system.
 		</p>
-
-		<iframe
-			title="Requirements brainstorming"
-			style="border: 1px solid rgba(0, 0, 0, 0.1);"
-			max-width="1000"
-			width="100%"
-			height="700"
-			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1012-4162&viewport=-1254%2C-1050%2C0.12&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
-			allowfullscreen
-		/>
+<iframe title="Requirements brainstorming" style="border: 1px solid rgba(0, 0, 0, 0.1);" max-width="1000px" width="100%" height="700" src="https://embed.figma.com/board/Wd2gCx7QmdTaD8RgBGOzhT/Mission-Thread-%7C-User-Interview-Data---Requirements--Public-?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 	</section>
 
 	<!-- Key Insights -->
 	<section>
 		<h2 class="case-study__section-title">Personas & Features</h2>
 		<p>Based on the information gathered from our interviews, we created the following personas.</p>
-		<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
-		<img class="case-study__img" src={userPersona2} alt="" loading="lazy" />
+		<div class="case-study__flex">
+			<Zoom>
+				<img class="case-study__img case-study__img--small" src={userPersona1} alt="" loading="lazy" />
+			</Zoom>
+			<Zoom>
+				<img class="case-study__img case-study__img--small" src={userPersona2} alt="" loading="lazy" />
+			</Zoom>
+		</div>
 
 		<p>
 			This further helped us to create a potential list of features, which we would later refine
@@ -223,9 +216,10 @@
 			max-width="1000"
 			width="100%"
 			height="700"
-			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1002-5452&viewport=-1254%2C-1050%2C0.12&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
+			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes--Public-?page-id=0%3A1&node-id=809-2329&viewport=-3909%2C36%2C0.37&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=809%3A2329&embed-host=share"
 			allowfullscreen
 		/>
+
 		<p>
 			We also explored AI-enabled ideas to see what a far-future version of the system could look
 			like. We modeled it after ChatGPT's UI and AI search result UIs from browsers like Brave. This
@@ -239,7 +233,7 @@
 			max-width="1000"
 			width="100%"
 			height="700"
-			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes-(Copy)?page-id=0%3A1&node-id=1096-5995&viewport=-12326%2C-8259%2C0.56&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=576%3A5268&embed-host=share"
+			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes--Public-?page-id=1%3A3&node-id=299-9360&viewport=-2235%2C82%2C0.14&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=299%3A9360&embed-host=share"
 			allowfullscreen
 		/>
 	</section>
