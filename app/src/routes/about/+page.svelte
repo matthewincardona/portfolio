@@ -15,17 +15,19 @@
 		<div class="about-me__bio">
 			<h1>About Me</h1>
 			<p>
-				I graduated from <strong
-					>Rochester Institute of Technology with a degree in Human-Centered Computing</strong
-				>, combining my passion for design, development, and business. As an entrepreneur, designer,
-				and developer, I thrive on building digital experiences that are not just visually engaging
-				but also strategically effective.
+				Despite having graduated recently (Rochester Institute of Technology, 2024 Human-Centered
+				Computing major), I've been a web enthusiast since 2018, back when I first started my
+				freelance web design business. I've had the wonderful opportunity since then to work with a
+				lot of great organizations and people, and to make some <a href="/web-design"
+					>projects that I'm really proud of</a
+				>.
 			</p>
 			<p>
-				<strong>For over seven years, I’ve run my own web design business</strong>, DouxDolci Web
-				Design, working with clients to create thoughtful, user-friendly solutions. I’m always
-				learning, experimenting, and finding new ways to push myself and make even better products
-				for my clients.
+				Currently, I'm the web designer for the mEducation Alliance and STSS Inc. and an event
+				moderator for Smashing Magazine. I enjoying working on personal projects in my freetime- my
+				most recent one is my custom job board, which pairs students majoring in web fields (ux
+				design, web design, and frontend development) with entry-level jobs and internships. Outside
+				of my work, I love to go rock climbing and hiking and visiting the beach at night.
 			</p>
 		</div>
 	</div>
@@ -37,22 +39,9 @@
 		<li>Smashing Magazine</li>
 		<li>Chiara Aliotta</li>
 		<li>Debbie Levitt</li>
-		<li>Liddiard Consulting Corp.</li>
+		<li>Stony Brook SBDC</li>
 		<li>STSS Inc.</li>
 		<li>Preservation Quest</li>
-		<li>The Tailored Male</li>
-		<li>Yvette Simmons</li>
-		<li>KPGT</li>
-		<li>PWEC NA</li>
-		<li>Matt Urban Marketing</li>
-		<li>Susan Rodgers</li>
-		<li>Bubble Meets</li>
-		<li>Institute for Caring</li>
-		<li>Emma S. Clark Library</li>
-		<li>SBDC</li>
-		<li>Tri-State Design Solutions, Inc.</li>
-		<li>Students Helping Honduras</li>
-		<li>Asir Law Firm</li>
 	</ul>
 </div>
 
@@ -125,5 +114,9 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1em;
+	}
+
+	.about-me a {
+		text-decoration: underline;
 	}
 </style>
