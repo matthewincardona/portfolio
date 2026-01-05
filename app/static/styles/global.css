@@ -262,7 +262,7 @@ video {
 }
 
 .case-study section {
-	padding: 0% 2% 80px 2%;
+	padding: 0% 2% 0 2%;
 	max-width: 1400px;
 	margin: auto;
 	/* padding-top: 10dvh; */
@@ -310,7 +310,7 @@ video {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	gap: 24px;
 	margin-bottom: 80px;
 }
 
@@ -330,11 +330,16 @@ video {
 	width: 100%;
 	margin-top: 30px;
 	margin-bottom: 40px;
-	filter: saturate(0.8) brightness(0.95);
+	border-radius: 3px;
+	object-fit: scale-down;
 }
 
 .case-study__img--small {
 	max-width: 600px;
+}
+
+.case-study__img--xtra-small {
+	max-width: 300px;
 }
 
 .constrained-img {
@@ -357,6 +362,10 @@ video {
 .constrained-img--horizontal img {
 	max-width: 200%;
 	padding-bottom: 0;
+}
+
+.bordered {
+	border: solid 1px #2d2d3550;
 }
 
 /* Fun hover hover to be added later */

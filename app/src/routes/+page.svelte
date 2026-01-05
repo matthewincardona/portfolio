@@ -11,6 +11,7 @@
 	import LogoFigma from 'carbon-icons-svelte/lib/LogoFigma.svelte';
 	import ApplicationWeb from 'carbon-icons-svelte/lib/ApplicationWeb.svelte';
 	import DocumentVideo from 'carbon-icons-svelte/lib/DocumentVideo.svelte';
+	import Link from 'carbon-icons-svelte/lib/Link.svelte';
 
 	// import { Application } from '@splinetool/runtime';
 	// import { onMount } from 'svelte';
@@ -82,7 +83,6 @@
 				<a href="#projects">
 					<ArrowDown size="20px" style="fill: var(--body-color)" />
 				</a>
-				
 			</div>
 		</div>
 	</div>
@@ -213,12 +213,52 @@
 			<div class="extra-projects__card-grid">
 				<div class="extra-projects__card">
 					<div>
+						<h3>SBC4E Hub</h3>
+						<p>
+							An online hub for Social Behavior Change for Education (SBC4E) content. Created and
+							pitched in part with the mEducation Alliance.
+						</p>
+						<p><strong>Prototyped in Figma</strong></p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a
+							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
+							target="_blank"
+						>
+							<LogoFigma size="32px" style="fill: url(#gradient);" />
+						</a>
+						<a
+							class="linear-gradient"
+							href="https://www.figma.com/board/R0Mr5pPeBylCr3rLp2K01a/SBC4E-Platform-Research?node-id=0-1&t=dHLw1BfE5kPiEXvm-1"
+							target="_blank"
+						>
+							<b>Figjam</b>
+						</a>
+					</div>
+				</div>
+				<div class="extra-projects__card">
+					<div>
+						<h3>Rochester Greenovation</h3>
+						<p>
+							This project was part of a two-week UX competition hosted by the Rochester Institute
+							of Technology. It challenged students to create practical solutions for real clients.
+						</p>
+						<p><strong>Prototyped in Figma</strong></p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a href="/rochester-greenovation">
+							<Link size="32px" style="fill: url(#gradient);" />
+						</a>
+					</div>
+				</div>
+				<div class="extra-projects__card">
+					<div>
 						<h3>Umami AI</h3>
 						<p>
 							A platform for creating and hosting helpful gen AI personas made to do any task.
 							Future plans included file uploads, remixing/forking bots, and embeddable bots.
 						</p>
-						<p><strong>Svelte, ChatGPT API, Firebase</strong></p>
+						<p><strong>Built with Svelte, ChatGPT API, Firebase</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank">
@@ -241,7 +281,7 @@
 						<p>
 							A secure, privacy-focused video-calling app for couples with an interactive artboard.
 						</p>
-						<p><strong>WebRTC, HTML Canvas</strong></p>
+						<p><strong>Built with WebRTC, HTML Canvas</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/close-up" target="_blank">
@@ -254,38 +294,13 @@
 				</div>
 				<div class="extra-projects__card">
 					<div>
-						<h3>SBC4E Hub</h3>
-						<p>
-							An online hub for Social Behavior Change for Education (SBC4E) content. Created and
-							pitched in part with the mEducation Alliance.
-						</p>
-						<p><strong>Prototype Phase</strong></p>
-					</div>
-					<div class="extra-projects__card-toolbar">
-						<a
-							href="https://www.figma.com/proto/8xADyGAXFSU4Cyy4HEvkaK/SBC4E-Hub?page-id=404%3A1279&node-id=497-4513&viewport=-1313%2C360%2C0.09&t=gQePnSvS7rbt4Zn1-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=497%3A4513"
-							target="_blank"
-						>
-							<LogoFigma size="32px" style="fill: url(#gradient);" />
-						</a>
-						<a
-							class="linear-gradient"
-							href="https://www.figma.com/board/R0Mr5pPeBylCr3rLp2K01a/SBC4E-Platform-Research?node-id=0-1&t=dHLw1BfE5kPiEXvm-1"
-							target="_blank"
-						>
-							<b>Figjam</b>
-						</a>
-					</div>
-				</div>
-				<div class="extra-projects__card">
-					<div>
 						<h3>Jukebox</h3>
 						<p>
 							Jukebox encourages anyone to be a DJ, to connect with their friends over music and be
 							part of the jam. It's purposefully designed and built so only one person needs to have
 							the app downloaded.
 						</p>
-						<p><strong>Swift, Spotify API</strong></p>
+						<p><strong>Built with Swift, Spotify API</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank">
@@ -315,7 +330,7 @@
 							A simple website that creates secret santa groups, allowing assignments to be viewed
 							anonymously and without even the event creator knowing.
 						</p>
-						<p><strong>Cloudflare Workers & Cloudflare D1</strong></p>
+						<p><strong>Built with Cloudflare Workers & Cloudflare D1</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/secret-santa" target="_blank">
@@ -483,7 +498,7 @@ EXTRA PROJECTS
 		padding: 32px;
 		max-width: 600px;
 		width: 100%;
-		height: 320px;
+		height: 280px;
 		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}

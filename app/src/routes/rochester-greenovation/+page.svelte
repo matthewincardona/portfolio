@@ -113,7 +113,7 @@
 			<div class="constrained-img--horizontal">
 				<img class="case-study__img" src={informationArchitecture} alt="" loading="lazy" />
 			</div>
-			<img class="case-study__img" src={journey} alt="" loading="lazy" />
+			<img class="case-study__img case-study__img--small" src={journey} alt="" loading="lazy" />
 		</div>
 	</section>
 
@@ -129,8 +129,18 @@
 					landfills.
 				</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={splashPage1} alt="" loading="lazy" />
-					<img class="case-study__img" src={splashPage2} alt="" loading="lazy" />
+					<img
+						class="case-study__img case-study__img--xtra-small bordered"
+						src={splashPage1}
+						alt=""
+						loading="lazy"
+					/>
+					<img
+						class="case-study__img case-study__img--xtra-small bordered"
+						src={splashPage2}
+						alt=""
+						loading="lazy"
+					/>
 				</div>
 				<p>
 					<strong>Login & Sign Up screens:</strong>
@@ -139,15 +149,35 @@
 					are given by the person who actually bought the item.
 				</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={logIn} alt="" loading="lazy" />
-					<img class="case-study__img" src={signUp} alt="" loading="lazy" />
+					<img
+						class="case-study__img case-study__img--xtra-small bordered"
+						src={logIn}
+						alt=""
+						loading="lazy"
+					/>
+					<img
+						class="case-study__img case-study__img--xtra-small bordered"
+						src={signUp}
+						alt=""
+						loading="lazy"
+					/>
 				</div>
 				<p>Storefront & Search By Category</p>
 				<div class="case-study__flex">
 					<div class="constrained-img">
-						<img class="case-study__img" src={home} alt="" loading="lazy" />
+						<img
+							class="case-study__img case-study__img--xtra-small"
+							src={home}
+							alt=""
+							loading="lazy"
+						/>
 					</div>
-					<img class="case-study__img" src={searchCategory} alt="" loading="lazy" />
+					<img
+						class="case-study__img case-study__img--xtra-small bordered"
+						src={searchCategory}
+						alt=""
+						loading="lazy"
+					/>
 				</div>
 				<p>Figma Prototype</p>
 				<div class="case-study__flex">
@@ -182,8 +212,18 @@
 				deadline and just couldn't be prioritized.
 			</p>
 			<div class="case-study__flex">
-				<img class="case-study__img" src={greenScore} alt="" loading="lazy" />
-				<img class="case-study__img" src={greenScorePopup} alt="" loading="lazy" />
+				<img
+					class="case-study__img case-study__img--xtra-small bordered"
+					src={greenScore}
+					alt=""
+					loading="lazy"
+				/>
+				<img
+					class="case-study__img case-study__img--xtra-small bordered"
+					src={greenScorePopup}
+					alt=""
+					loading="lazy"
+				/>
 			</div>
 		</div>
 	</section>
