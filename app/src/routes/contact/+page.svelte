@@ -24,17 +24,17 @@
 	</div>
 	<form action="mailto:mpi7253@rit.edu" method="”POST”">
 		<label for="fname">Name</label>
-		<input type="text" id="fname" name="fullname" placeholder="Name"/>
-		
+		<input type="text" id="fname" name="fullname" placeholder="Name" />
+
 		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label for="email">Email</label>
-		<input type="text" id="email" name="email" placeholder="Email"/>
+		<input type="text" id="email" name="email" placeholder="Email" />
 
 		<!-- svelte-ignore a11y-label-has-associated-control -->
-		<label for="subject">Message<label/>
+		<label for="subject">Message</label>
 		<textarea id="subject" name="subject" placeholder="Message" style="height: 200px"></textarea>
 
-		<input type="submit" value="Submit"/>
+		<input type="submit" value="Submit" />
 	</form>
 </div>
 

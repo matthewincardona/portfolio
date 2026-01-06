@@ -102,7 +102,7 @@
 					autoplay="true"
 					controls="true"
 					muted="true"
-				/>
+				></video>
 
 				<video
 					src={yvetteEntrepreneurshipBook}
@@ -111,7 +111,7 @@
 					autoplay="true"
 					controls="true"
 					muted="true"
-				/>
+				></video>
 
 				<video
 					src={yvetteJourneyPhyisicianRecruiter}
@@ -120,7 +120,7 @@
 					autoplay="true"
 					controls="true"
 					muted="true"
-				/>
+				></video>
 
 				<video
 					src={yvetteContactMe}
@@ -129,7 +129,7 @@
 					autoplay="true"
 					controls="true"
 					muted="true"
-				/>
+				></video>
 			</div>
 		</section>
 	</div>

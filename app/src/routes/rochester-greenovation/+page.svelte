@@ -1,6 +1,6 @@
 <script>
 	import Zoom from 'svelte-medium-image-zoom';
-  	import 'svelte-medium-image-zoom/dist/styles.css';
+	import 'svelte-medium-image-zoom/dist/styles.css';
 	import greenScorePopup from '$lib/assets/greenovation/green score popup.webp';
 	import greenScore from '$lib/assets/greenovation/green score.webp';
 	import home from '$lib/assets/greenovation/home.webp';
@@ -111,14 +111,13 @@
 	<section>
 		<div class="case-study__row">
 			<h4>Information Architecture</h4>
-			<p />
 			<div class="constrained-img--horizontal">
 				<Zoom>
 					<img class="case-study__img" src={informationArchitecture} alt="" loading="lazy" />
 				</Zoom>
 			</div>
 			<Zoom>
-			<img class="case-study__img case-study__img--small " src={journey} alt="" loading="lazy" />
+				<img class="case-study__img case-study__img--small" src={journey} alt="" loading="lazy" />
 			</Zoom>
 		</div>
 	</section>
@@ -135,21 +134,22 @@
 					landfills.
 				</p>
 				<div class="case-study__flex">
-					<Zoom><img
-						class="case-study__img case-study__img--xtra-small "
-						src={splashPage1}
-						alt=""
-						loading="lazy"
-					/></Zoom>
-										<Zoom><img
-						class="case-study__img case-study__img--xtra-small "
-						src={splashPage2}
-						alt=""
-						loading="lazy"
-					/></Zoom>
-
-					
-					
+					<Zoom
+						><img
+							class="case-study__img case-study__img--xtra-small"
+							src={splashPage1}
+							alt=""
+							loading="lazy"
+						/></Zoom
+					>
+					<Zoom
+						><img
+							class="case-study__img case-study__img--xtra-small"
+							src={splashPage2}
+							alt=""
+							loading="lazy"
+						/></Zoom
+					>
 				</div>
 				<p>
 					<strong>Login & Sign Up screens:</strong>
@@ -159,36 +159,36 @@
 				</p>
 				<div class="case-study__flex">
 					<Zoom>
-					<img
-						class="case-study__img case-study__img--xtra-small "
-						src={logIn}
-						alt=""
-						loading="lazy"
-					/>
+						<img
+							class="case-study__img case-study__img--xtra-small"
+							src={logIn}
+							alt=""
+							loading="lazy"
+						/>
 					</Zoom>
 					<Zoom>
-					<img
-						class="case-study__img case-study__img--xtra-small "
-						src={signUp}
-						alt=""
-						loading="lazy"
-					/>
+						<img
+							class="case-study__img case-study__img--xtra-small"
+							src={signUp}
+							alt=""
+							loading="lazy"
+						/>
 					</Zoom>
 				</div>
 				<p>Storefront & Search By Category</p>
 				<div class="case-study__flex">
 					<div class="constrained-img">
 						<Zoom>
-						<img
-							class="case-study__img case-study__img--xtra-small"
-							src={home}
-							alt=""
-							loading="lazy"
-						/>
+							<img
+								class="case-study__img case-study__img--xtra-small"
+								src={home}
+								alt=""
+								loading="lazy"
+							/>
 						</Zoom>
 					</div>
 					<img
-						class="case-study__img case-study__img--xtra-small "
+						class="case-study__img case-study__img--xtra-small"
 						src={searchCategory}
 						alt=""
 						loading="lazy"
@@ -205,7 +205,7 @@
 						loading="lazy"
 						src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzMWSOCraDOteNvTjuydF02%2FRochester-Greenovation%3Fnode-id%3D125%253A68%26viewport%3D241%252C48%252C0.44%26scaling%3Dscale-down%26page-id%3D21%253A2%26starting-point-node-id%3D125%253A68"
 						allowfullscreen
-					/>
+					></iframe>
 				</div>
 			</div>
 		</section>
@@ -228,20 +228,20 @@
 			</p>
 			<div class="case-study__flex">
 				<Zoom>
-				<img
-					class="case-study__img case-study__img--xtra-small "
-					src={greenScore}
-					alt=""
-					loading="lazy"
-				/>
+					<img
+						class="case-study__img case-study__img--xtra-small"
+						src={greenScore}
+						alt=""
+						loading="lazy"
+					/>
 				</Zoom>
 				<Zoom>
-				<img
-					class="case-study__img case-study__img--xtra-small "
-					src={greenScorePopup}
-					alt=""
-					loading="lazy"
-				/>
+					<img
+						class="case-study__img case-study__img--xtra-small"
+						src={greenScorePopup}
+						alt=""
+						loading="lazy"
+					/>
 				</Zoom>
 			</div>
 		</div>
