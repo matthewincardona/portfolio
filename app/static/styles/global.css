@@ -331,6 +331,7 @@ video {
 	border-radius: 3px;
 	object-fit: scale-down;
 	max-width: 1000px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .case-study__img--small {
@@ -361,10 +362,6 @@ video {
 .constrained-img--horizontal img {
 	max-width: 200%;
 	padding-bottom: 0;
-}
-
-.bordered {
-	border: solid 1px #2d2d3550;
 }
 
 /* Fun hover hover to be added later */

@@ -218,7 +218,7 @@
 			<div class="case-study__flex">
 				<Zoom>
 					<img
-					class="case-study__img case-study__img--small bordered"
+					class="case-study__img case-study__img--small "
 					src={empathyMap1}
 					alt=""
 					loading="lazy"
@@ -226,7 +226,7 @@
 				</Zoom>
 				<Zoom>
 					<img
-					class="case-study__img case-study__img--small bordered"
+					class="case-study__img case-study__img--small "
 					src={empathyMap2}
 					alt=""
 					loading="lazy"

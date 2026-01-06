@@ -118,7 +118,7 @@
 				</Zoom>
 			</div>
 			<Zoom>
-			<img class="case-study__img case-study__img--small bordered" src={journey} alt="" loading="lazy" />
+			<img class="case-study__img case-study__img--small " src={journey} alt="" loading="lazy" />
 			</Zoom>
 		</div>
 	</section>
@@ -136,13 +136,13 @@
 				</p>
 				<div class="case-study__flex">
 					<Zoom><img
-						class="case-study__img case-study__img--xtra-small bordered"
+						class="case-study__img case-study__img--xtra-small "
 						src={splashPage1}
 						alt=""
 						loading="lazy"
 					/></Zoom>
 										<Zoom><img
-						class="case-study__img case-study__img--xtra-small bordered"
+						class="case-study__img case-study__img--xtra-small "
 						src={splashPage2}
 						alt=""
 						loading="lazy"
@@ -160,7 +160,7 @@
 				<div class="case-study__flex">
 					<Zoom>
 					<img
-						class="case-study__img case-study__img--xtra-small bordered"
+						class="case-study__img case-study__img--xtra-small "
 						src={logIn}
 						alt=""
 						loading="lazy"
@@ -168,7 +168,7 @@
 					</Zoom>
 					<Zoom>
 					<img
-						class="case-study__img case-study__img--xtra-small bordered"
+						class="case-study__img case-study__img--xtra-small "
 						src={signUp}
 						alt=""
 						loading="lazy"
@@ -188,7 +188,7 @@
 						</Zoom>
 					</div>
 					<img
-						class="case-study__img case-study__img--xtra-small bordered"
+						class="case-study__img case-study__img--xtra-small "
 						src={searchCategory}
 						alt=""
 						loading="lazy"
@@ -229,7 +229,7 @@
 			<div class="case-study__flex">
 				<Zoom>
 				<img
-					class="case-study__img case-study__img--xtra-small bordered"
+					class="case-study__img case-study__img--xtra-small "
 					src={greenScore}
 					alt=""
 					loading="lazy"
@@ -237,7 +237,7 @@
 				</Zoom>
 				<Zoom>
 				<img
-					class="case-study__img case-study__img--xtra-small bordered"
+					class="case-study__img case-study__img--xtra-small "
 					src={greenScorePopup}
 					alt=""
 					loading="lazy"
