@@ -8,7 +8,7 @@
 		<div class="topnav__inner">
 			<a href="/" class="active">Home</a>
 			<a href="/about">About</a>
-			<a href={resume} class="topnav__inner-resume">
+			<a href={resume} class="topnav__inner-resume" target="_blank">
 				Resume
 				<DocumentPdf size="20px" style="fill: var(--body-color)" />
 			</a>
