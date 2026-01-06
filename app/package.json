@@ -20,6 +20,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^7.2.4",
 		"carbon-icons-svelte": "^13.3.0",
 		"crypto-browserify": "^3.12.1",
 		"on-change": "^5.0.1",
