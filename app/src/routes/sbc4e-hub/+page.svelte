@@ -176,7 +176,6 @@
 			<h3 class="case-study__section-title">HiFi Prototypes</h3>
 			<div class="case-study__row">
 				<h4>Research Setup</h4>
-				<p />
 				<p>
 					From my research in the LoFi stage, I was able to create a higher fidelity prototype that
 					I could use to test a more concrete design.
@@ -186,8 +185,7 @@
 						width="1200"
 						height="450"
 						src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F8xADyGAXFSU4Cyy4HEvkaK%2FPrototype%3Ftype%3Ddesign%26node-id%3D497-4513%26t%3DLdSms4aIq70suIym-1%26scaling%3Dmin-zoom%26page-id%3D404%253A1279%26starting-point-node-id%3D418%253A9179%26mode%3Ddesign"
-						allowfullscreen
-					/>
+						allowfullscreen></iframe>
 					<strong> Metrics: </strong>
 				</p>
 				<ul>
@@ -250,7 +248,6 @@
 								platform's design, functionality, and content relevance.
 							</li>
 							<p>Number of participants: 5 Method of Analysis: Online survey</p>
-							<p />
 						</ul>
 					</ul>
 				</ul>

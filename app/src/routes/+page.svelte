@@ -56,7 +56,7 @@
 <section>
 	<div class="hero-container">
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<video src={heroVideo} id="heroVideo" autoplay="true" muted="true" />
+		<video src={heroVideo} id="heroVideo" autoplay="true" muted="true"></video>
 
 		<!-- <canvas id="canvas3d" /> -->
 

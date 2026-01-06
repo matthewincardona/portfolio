@@ -263,9 +263,7 @@
 					style="border: 1px solid rgba(0, 0, 0, 0.1); background-color: gray;"
 					width="1000"
 					height="600"
-					src="<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/0Hn3hbJaOXv90jWwYgbCeB/Second-Desk?page-id=0%3A1&node-id=521-274&viewport=-947%2C-1479%2C0.09&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=521%3A44&embed-host=share" allowfullscreen></iframe>"
-					allowfullscreen
-				/>
+					src="https://embed.figma.com/proto/0Hn3hbJaOXv90jWwYgbCeB/Second-Desk?page-id=0%3A1&node-id=521-274&viewport=-947%2C-1479%2C0.09&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=521%3A44&embed-host=share" allowfullscreen></iframe>
 			</div>
 		</section>
 	</div>

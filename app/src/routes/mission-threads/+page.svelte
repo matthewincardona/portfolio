@@ -217,8 +217,7 @@
 			width="100%"
 			height="700"
 			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes--Public-?page-id=0%3A1&node-id=809-2329&viewport=-3909%2C36%2C0.37&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=809%3A2329&embed-host=share"
-			allowfullscreen
-		/>
+			allowfullscreen></iframe>
 
 		<p>
 			We also explored AI-enabled ideas to see what a far-future version of the system could look
@@ -234,8 +233,7 @@
 			width="100%"
 			height="700"
 			src="https://embed.figma.com/proto/5bpS9Ho7KMtn21RFviLHa1/Mission-Thread-%7C-Prototypes--Public-?page-id=1%3A3&node-id=299-9360&viewport=-2235%2C82%2C0.14&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=299%3A9360&embed-host=share"
-			allowfullscreen
-		/>
+			allowfullscreen></iframe>
 	</section>
 
 	<!-- Future Plans -->

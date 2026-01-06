@@ -225,8 +225,7 @@
 			loading="lazy"
 			autoplay="true"
 			controls="true"
-			muted="true"
-		/>
+			muted="true"></video>
 		<Zoom>
 			<img class="case-study__img" src={viewData} alt="" loading="lazy" />
 		</Zoom>
