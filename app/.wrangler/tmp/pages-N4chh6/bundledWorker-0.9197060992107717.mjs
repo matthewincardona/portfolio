@@ -1,58 +1,51 @@
-var __defProp = Object.defineProperty;
-var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
-
-// .wrangler/tmp/pages-DYjbRk/bundledWorker-0.29233224759237353.mjs
-import { env } from "cloudflare:workers";
 var __create = Object.create;
-var __defProp2 = Object.defineProperty;
+var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __name2 = /* @__PURE__ */ __name((target, value) => __defProp2(target, "name", { value, configurable: true }), "__name");
-var __esm = /* @__PURE__ */ __name((fn, res) => /* @__PURE__ */ __name(function __init() {
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
+var __esm = (fn, res) => function __init() {
   return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
-}, "__init"), "__esm");
-var __commonJS = /* @__PURE__ */ __name((cb, mod) => /* @__PURE__ */ __name(function __require() {
+};
+var __commonJS = (cb, mod) => function __require() {
   return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-}, "__require"), "__commonJS");
-var __export = /* @__PURE__ */ __name((target, all) => {
+};
+var __export = (target, all) => {
   for (var name in all)
-    __defProp2(target, name, { get: all[name], enumerable: true });
-}, "__export");
-var __copyProps = /* @__PURE__ */ __name((to, from, except, desc) => {
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
   if (from && typeof from === "object" || typeof from === "function") {
     for (let key2 of __getOwnPropNames(from))
       if (!__hasOwnProp.call(to, key2) && key2 !== except)
-        __defProp2(to, key2, { get: /* @__PURE__ */ __name(() => from[key2], "get"), enumerable: !(desc = __getOwnPropDesc(from, key2)) || desc.enumerable });
+        __defProp(to, key2, { get: () => from[key2], enumerable: !(desc = __getOwnPropDesc(from, key2)) || desc.enumerable });
   }
   return to;
-}, "__copyProps");
-var __toESM = /* @__PURE__ */ __name((mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
   // If the importer is in node compatibility mode or this is not an ESM
   // file that has been converted to a CommonJS file using a Babel-
   // compatible transform (i.e. "__esModule" has not been set), then set
   // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp2(target, "default", { value: mod, enumerable: true }) : target,
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
   mod
-)), "__toESM");
+));
+
+// ../../node_modules/@sveltejs/kit/src/exports/internal/remote-functions.js
 var init_remote_functions = __esm({
   "../../node_modules/@sveltejs/kit/src/exports/internal/remote-functions.js"() {
   }
 });
-var HttpError;
-var Redirect;
-var SvelteKitError;
-var ActionFailure;
+
+// ../../node_modules/@sveltejs/kit/src/exports/internal/index.js
+var HttpError, Redirect, SvelteKitError, ActionFailure;
 var init_internal = __esm({
   "../../node_modules/@sveltejs/kit/src/exports/internal/index.js"() {
     init_remote_functions();
     HttpError = class {
       static {
         __name(this, "HttpError");
-      }
-      static {
-        __name2(this, "HttpError");
       }
       /**
        * @param {number} status
@@ -76,9 +69,6 @@ var init_internal = __esm({
       static {
         __name(this, "Redirect");
       }
-      static {
-        __name2(this, "Redirect");
-      }
       /**
        * @param {300 | 301 | 302 | 303 | 304 | 305 | 306 | 307 | 308} status
        * @param {string} location
@@ -91,9 +81,6 @@ var init_internal = __esm({
     SvelteKitError = class extends Error {
       static {
         __name(this, "SvelteKitError");
-      }
-      static {
-        __name2(this, "SvelteKitError");
       }
       /**
        * @param {number} status
@@ -110,9 +97,6 @@ var init_internal = __esm({
       static {
         __name(this, "ActionFailure");
       }
-      static {
-        __name2(this, "ActionFailure");
-      }
       /**
        * @param {number} status
        * @param {T} data
@@ -124,12 +108,16 @@ var init_internal = __esm({
     };
   }
 });
+
+// ../../node_modules/@sveltejs/kit/src/runtime/server/constants.js
 var IN_WEBCONTAINER;
 var init_constants = __esm({
   "../../node_modules/@sveltejs/kit/src/runtime/server/constants.js"() {
     IN_WEBCONTAINER = !!globalThis.process?.versions?.webcontainer;
   }
 });
+
+// ../../node_modules/@sveltejs/kit/src/exports/internal/event.js
 function with_request_store(store, fn) {
   try {
     sync_store = store;
@@ -140,18 +128,18 @@ function with_request_store(store, fn) {
     }
   }
 }
-__name(with_request_store, "with_request_store");
-var sync_store;
-var als;
+var sync_store, als;
 var init_event = __esm({
   "../../node_modules/@sveltejs/kit/src/exports/internal/event.js"() {
     init_constants();
     sync_store = null;
     import("node:async_hooks").then((hooks) => als = new hooks.AsyncLocalStorage()).catch(() => {
     });
-    __name2(with_request_store, "with_request_store");
+    __name(with_request_store, "with_request_store");
   }
 });
+
+// ../../node_modules/@sveltejs/kit/src/exports/internal/server.js
 function merge_tracing(event_like, current2) {
   return {
     ...event_like,
@@ -161,13 +149,14 @@ function merge_tracing(event_like, current2) {
     }
   };
 }
-__name(merge_tracing, "merge_tracing");
 var init_server = __esm({
   "../../node_modules/@sveltejs/kit/src/exports/internal/server.js"() {
     init_event();
-    __name2(merge_tracing, "merge_tracing");
+    __name(merge_tracing, "merge_tracing");
   }
 });
+
+// ../output/server/chunks/utils.js
 function get_relative_path(from, to) {
   const from_parts = from.split(/[/\\]/);
   const to_parts = to.split(/[/\\]/);
@@ -180,7 +169,6 @@ function get_relative_path(from, to) {
   while (i--) from_parts[i] = "..";
   return from_parts.concat(to_parts).join("/");
 }
-__name(get_relative_path, "get_relative_path");
 function base64_encode(bytes) {
   if (globalThis.Buffer) {
     return globalThis.Buffer.from(bytes).toString("base64");
@@ -191,7 +179,6 @@ function base64_encode(bytes) {
   }
   return btoa(binary);
 }
-__name(base64_encode, "base64_encode");
 function base64_decode(encoded) {
   if (globalThis.Buffer) {
     const buffer = globalThis.Buffer.from(encoded, "base64");
@@ -204,24 +191,23 @@ function base64_decode(encoded) {
   }
   return bytes;
 }
-__name(base64_decode, "base64_decode");
-var text_encoder2;
-var text_decoder2;
+var text_encoder2, text_decoder2;
 var init_utils = __esm({
   "../output/server/chunks/utils.js"() {
     text_encoder2 = new TextEncoder();
     text_decoder2 = new TextDecoder();
-    __name2(get_relative_path, "get_relative_path");
-    __name2(base64_encode, "base64_encode");
-    __name2(base64_decode, "base64_decode");
+    __name(get_relative_path, "get_relative_path");
+    __name(base64_encode, "base64_encode");
+    __name(base64_decode, "base64_decode");
   }
 });
+
+// ../output/server/chunks/context.js
 function run_all(arr) {
   for (var i = 0; i < arr.length; i++) {
     arr[i]();
   }
 }
-__name(run_all, "run_all");
 function deferred() {
   var resolve2;
   var reject;
@@ -231,7 +217,6 @@ function deferred() {
   });
   return { promise, resolve: resolve2, reject };
 }
-__name(deferred, "deferred");
 function fallback(value, fallback2, lazy = false) {
   return value === void 0 ? lazy ? (
     /** @type {() => V} */
@@ -241,17 +226,14 @@ function fallback(value, fallback2, lazy = false) {
     fallback2
   ) : value;
 }
-__name(fallback, "fallback");
 function lifecycle_outside_component(name) {
   {
     throw new Error(`https://svelte.dev/e/lifecycle_outside_component`);
   }
 }
-__name(lifecycle_outside_component, "lifecycle_outside_component");
 function set_ssr_context(v) {
   ssr_context = v;
 }
-__name(set_ssr_context, "set_ssr_context");
 function getContext(key2) {
   const context_map = get_or_init_context_map();
   const result = (
@@ -260,28 +242,23 @@ function getContext(key2) {
   );
   return result;
 }
-__name(getContext, "getContext");
 function setContext(key2, context2) {
   get_or_init_context_map().set(key2, context2);
   return context2;
 }
-__name(setContext, "setContext");
 function get_or_init_context_map(name) {
   if (ssr_context === null) {
     lifecycle_outside_component();
   }
   return ssr_context.c ??= new Map(get_parent_context(ssr_context) || void 0);
 }
-__name(get_or_init_context_map, "get_or_init_context_map");
 function push(fn) {
   ssr_context = { p: ssr_context, c: null, r: null };
 }
-__name(push, "push");
 function pop() {
   ssr_context = /** @type {SSRContext} */
   ssr_context.p;
 }
-__name(pop, "pop");
 function get_parent_context(ssr_context2) {
   let parent = ssr_context2.p;
   while (parent !== null) {
@@ -293,18 +270,7 @@ function get_parent_context(ssr_context2) {
   }
   return null;
 }
-__name(get_parent_context, "get_parent_context");
-var is_array;
-var index_of;
-var array_from;
-var define_property;
-var get_descriptor;
-var object_prototype;
-var array_prototype;
-var get_prototype_of;
-var is_extensible;
-var noop;
-var ssr_context;
+var is_array, index_of, array_from, define_property, get_descriptor, object_prototype, array_prototype, get_prototype_of, is_extensible, noop, ssr_context;
 var init_context = __esm({
   "../output/server/chunks/context.js"() {
     is_array = Array.isArray;
@@ -316,41 +282,42 @@ var init_context = __esm({
     array_prototype = Array.prototype;
     get_prototype_of = Object.getPrototypeOf;
     is_extensible = Object.isExtensible;
-    noop = /* @__PURE__ */ __name2(() => {
+    noop = /* @__PURE__ */ __name(() => {
     }, "noop");
-    __name2(run_all, "run_all");
-    __name2(deferred, "deferred");
-    __name2(fallback, "fallback");
-    __name2(lifecycle_outside_component, "lifecycle_outside_component");
+    __name(run_all, "run_all");
+    __name(deferred, "deferred");
+    __name(fallback, "fallback");
+    __name(lifecycle_outside_component, "lifecycle_outside_component");
     ssr_context = null;
-    __name2(set_ssr_context, "set_ssr_context");
-    __name2(getContext, "getContext");
-    __name2(setContext, "setContext");
-    __name2(get_or_init_context_map, "get_or_init_context_map");
-    __name2(push, "push");
-    __name2(pop, "pop");
-    __name2(get_parent_context, "get_parent_context");
+    __name(set_ssr_context, "set_ssr_context");
+    __name(getContext, "getContext");
+    __name(setContext, "setContext");
+    __name(get_or_init_context_map, "get_or_init_context_map");
+    __name(push, "push");
+    __name(pop, "pop");
+    __name(get_parent_context, "get_parent_context");
   }
 });
+
+// ../output/server/chunks/equality.js
 function equals(value) {
   return value === this.v;
 }
-__name(equals, "equals");
 function safe_not_equal(a, b) {
   return a != a ? b == b : a !== b || a !== null && typeof a === "object" || typeof a === "function";
 }
-__name(safe_not_equal, "safe_not_equal");
 function safe_equals(value) {
   return !safe_not_equal(value, this.v);
 }
-__name(safe_equals, "safe_equals");
 var init_equality = __esm({
   "../output/server/chunks/equality.js"() {
-    __name2(equals, "equals");
-    __name2(safe_not_equal, "safe_not_equal");
-    __name2(safe_equals, "safe_equals");
+    __name(equals, "equals");
+    __name(safe_not_equal, "safe_not_equal");
+    __name(safe_equals, "safe_equals");
   }
 });
+
+// ../../node_modules/clsx/dist/clsx.mjs
 function r(e3) {
   var t2, f, n2 = "";
   if ("string" == typeof e3 || "number" == typeof e3) n2 += e3;
@@ -360,25 +327,24 @@ function r(e3) {
   } else for (f in e3) e3[f] && (n2 && (n2 += " "), n2 += f);
   return n2;
 }
-__name(r, "r");
 function clsx() {
   for (var e3, t2, f = 0, n2 = "", o2 = arguments.length; f < o2; f++) (e3 = arguments[f]) && (t2 = r(e3)) && (n2 && (n2 += " "), n2 += t2);
   return n2;
 }
-__name(clsx, "clsx");
 var init_clsx = __esm({
   "../../node_modules/clsx/dist/clsx.mjs"() {
-    __name2(r, "r");
-    __name2(clsx, "clsx");
+    __name(r, "r");
+    __name(clsx, "clsx");
   }
 });
+
+// ../output/server/chunks/exports.js
 function resolve(base2, path) {
   if (path[0] === "/" && path[1] === "/") return path;
   let url = new URL(base2, internal);
   url = new URL(path, url);
   return url.protocol === internal.protocol ? url.pathname + url.search + url.hash : url.href;
 }
-__name(resolve, "resolve");
 function normalize_path(path, trailing_slash) {
   if (path === "/" || trailing_slash === "ignore") return path;
   if (trailing_slash === "never") {
@@ -388,18 +354,15 @@ function normalize_path(path, trailing_slash) {
   }
   return path;
 }
-__name(normalize_path, "normalize_path");
 function decode_pathname(pathname) {
   return pathname.split("%25").map(decodeURI).join("%25");
 }
-__name(decode_pathname, "decode_pathname");
 function decode_params(params) {
   for (const key2 in params) {
     params[key2] = decodeURIComponent(params[key2]);
   }
   return params;
 }
-__name(decode_params, "decode_params");
 function make_trackable(url, callback, search_params_callback, allow_hash = false) {
   const tracked = new URL(url);
   Object.defineProperty(tracked, "searchParams", {
@@ -444,7 +407,6 @@ function make_trackable(url, callback, search_params_callback, allow_hash = fals
   }
   return tracked;
 }
-__name(make_trackable, "make_trackable");
 function disable_hash(url) {
   allow_nodejs_console_log(url);
   Object.defineProperty(url, "hash", {
@@ -455,7 +417,6 @@ function disable_hash(url) {
     }
   });
 }
-__name(disable_hash, "disable_hash");
 function disable_search(url) {
   allow_nodejs_console_log(url);
   for (const property of ["search", "searchParams"]) {
@@ -466,7 +427,6 @@ function disable_search(url) {
     });
   }
 }
-__name(disable_search, "disable_search");
 function allow_nodejs_console_log(url) {
   {
     url[/* @__PURE__ */ Symbol.for("nodejs.util.inspect.custom")] = (depth, opts, inspect) => {
@@ -474,13 +434,11 @@ function allow_nodejs_console_log(url) {
     };
   }
 }
-__name(allow_nodejs_console_log, "allow_nodejs_console_log");
 function readable(value, start) {
   return {
     subscribe: writable(value, start).subscribe
   };
 }
-__name(readable, "readable");
 function writable(value, start = noop) {
   let stop = null;
   const subscribers = /* @__PURE__ */ new Set();
@@ -502,8 +460,7 @@ function writable(value, start = noop) {
       }
     }
   }
-  __name(set2, "set2");
-  __name2(set2, "set");
+  __name(set2, "set");
   function update(fn) {
     set2(fn(
       /** @type {T} */
@@ -511,7 +468,6 @@ function writable(value, start = noop) {
     ));
   }
   __name(update, "update");
-  __name2(update, "update");
   function subscribe(run, invalidate = noop) {
     const subscriber = [run, invalidate];
     subscribers.add(subscriber);
@@ -531,10 +487,8 @@ function writable(value, start = noop) {
     };
   }
   __name(subscribe, "subscribe");
-  __name2(subscribe, "subscribe");
   return { set: set2, update, subscribe };
 }
-__name(writable, "writable");
 function validator(expected) {
   function validate(module, file) {
     if (!module) return;
@@ -546,10 +500,8 @@ function validator(expected) {
     }
   }
   __name(validate, "validate");
-  __name2(validate, "validate");
   return validate;
 }
-__name(validator, "validator");
 function hint_for_supported_files(key2, ext = ".js") {
   const supported_files = [];
   if (valid_layout_exports.has(key2)) {
@@ -571,38 +523,26 @@ function hint_for_supported_files(key2, ext = ".js") {
     return `'${key2}' is a valid export in ${supported_files.slice(0, -1).join(", ")}${supported_files.length > 1 ? " or " : ""}${supported_files.at(-1)}`;
   }
 }
-__name(hint_for_supported_files, "hint_for_supported_files");
-var internal;
-var subscriber_queue;
-var valid_layout_exports;
-var valid_page_exports;
-var valid_layout_server_exports;
-var valid_page_server_exports;
-var valid_server_exports;
-var validate_layout_exports;
-var validate_page_exports;
-var validate_layout_server_exports;
-var validate_page_server_exports;
-var validate_server_exports;
+var internal, subscriber_queue, valid_layout_exports, valid_page_exports, valid_layout_server_exports, valid_page_server_exports, valid_server_exports, validate_layout_exports, validate_page_exports, validate_layout_server_exports, validate_page_server_exports, validate_server_exports;
 var init_exports = __esm({
   "../output/server/chunks/exports.js"() {
     init_context();
     init_equality();
     init_clsx();
     internal = new URL("sveltekit-internal://");
-    __name2(resolve, "resolve");
-    __name2(normalize_path, "normalize_path");
-    __name2(decode_pathname, "decode_pathname");
-    __name2(decode_params, "decode_params");
-    __name2(make_trackable, "make_trackable");
-    __name2(disable_hash, "disable_hash");
-    __name2(disable_search, "disable_search");
-    __name2(allow_nodejs_console_log, "allow_nodejs_console_log");
+    __name(resolve, "resolve");
+    __name(normalize_path, "normalize_path");
+    __name(decode_pathname, "decode_pathname");
+    __name(decode_params, "decode_params");
+    __name(make_trackable, "make_trackable");
+    __name(disable_hash, "disable_hash");
+    __name(disable_search, "disable_search");
+    __name(allow_nodejs_console_log, "allow_nodejs_console_log");
     subscriber_queue = [];
-    __name2(readable, "readable");
-    __name2(writable, "writable");
-    __name2(validator, "validator");
-    __name2(hint_for_supported_files, "hint_for_supported_files");
+    __name(readable, "readable");
+    __name(writable, "writable");
+    __name(validator, "validator");
+    __name(hint_for_supported_files, "hint_for_supported_files");
     valid_layout_exports = /* @__PURE__ */ new Set([
       "load",
       "prerender",
@@ -635,6 +575,8 @@ var init_exports = __esm({
     validate_server_exports = validator(valid_server_exports);
   }
 });
+
+// ../output/server/chunks/escaping.js
 function escape_html(value, is_attr) {
   const str = String(value ?? "");
   const pattern2 = is_attr ? ATTR_REGEX : CONTENT_REGEX;
@@ -649,16 +591,16 @@ function escape_html(value, is_attr) {
   }
   return escaped2 + str.substring(last);
 }
-__name(escape_html, "escape_html");
-var ATTR_REGEX;
-var CONTENT_REGEX;
+var ATTR_REGEX, CONTENT_REGEX;
 var init_escaping = __esm({
   "../output/server/chunks/escaping.js"() {
     ATTR_REGEX = /[&"<]/g;
     CONTENT_REGEX = /[&<]/g;
-    __name2(escape_html, "escape_html");
+    __name(escape_html, "escape_html");
   }
 });
+
+// ../output/server/chunks/attributes.js
 function attr(name, value, is_boolean = false) {
   if (name === "hidden" && value !== "until-found") {
     is_boolean = true;
@@ -668,7 +610,6 @@ function attr(name, value, is_boolean = false) {
   const assignment = is_boolean ? "" : `="${escape_html(normalized, true)}"`;
   return ` ${name}${assignment}`;
 }
-__name(attr, "attr");
 function clsx2(value) {
   if (typeof value === "object") {
     return clsx(value);
@@ -676,7 +617,6 @@ function clsx2(value) {
     return value ?? "";
   }
 }
-__name(clsx2, "clsx2");
 function to_class(value, hash2, directives) {
   var classname = value == null ? "" : "" + value;
   if (hash2) {
@@ -702,7 +642,6 @@ function to_class(value, hash2, directives) {
   }
   return classname === "" ? null : classname;
 }
-__name(to_class, "to_class");
 function append_styles(styles, important = false) {
   var separator = important ? " !important;" : ";";
   var css = "";
@@ -714,14 +653,12 @@ function append_styles(styles, important = false) {
   }
   return css;
 }
-__name(append_styles, "append_styles");
 function to_css_name(name) {
   if (name[0] !== "-" || name[1] !== "-") {
     return name.toLowerCase();
   }
   return name;
 }
-__name(to_css_name, "to_css_name");
 function to_style(value, styles) {
   if (styles) {
     var new_style = "";
@@ -798,9 +735,7 @@ function to_style(value, styles) {
   }
   return value == null ? null : String(value);
 }
-__name(to_style, "to_style");
-var replacements;
-var whitespace;
+var replacements, whitespace;
 var init_attributes = __esm({
   "../output/server/chunks/attributes.js"() {
     init_escaping();
@@ -811,28 +746,27 @@ var init_attributes = __esm({
         [false, "no"]
       ])
     };
-    __name2(attr, "attr");
-    __name2(clsx2, "clsx");
+    __name(attr, "attr");
+    __name(clsx2, "clsx");
     whitespace = [..." 	\n\r\f\xA0\v\uFEFF"];
-    __name2(to_class, "to_class");
-    __name2(append_styles, "append_styles");
-    __name2(to_css_name, "to_css_name");
-    __name2(to_style, "to_style");
+    __name(to_class, "to_class");
+    __name(append_styles, "append_styles");
+    __name(to_css_name, "to_css_name");
+    __name(to_style, "to_style");
   }
 });
+
+// ../output/server/chunks/index.js
 function is_boolean_attribute(name) {
   return DOM_BOOLEAN_ATTRIBUTES.includes(name);
 }
-__name(is_boolean_attribute, "is_boolean_attribute");
 function is_passive_event(name) {
   return PASSIVE_EVENTS.includes(name);
 }
-__name(is_passive_event, "is_passive_event");
 function abort() {
   controller?.abort(STALE_REACTION);
   controller = null;
 }
-__name(abort, "abort");
 function await_invalid() {
   const error2 = new Error(`await_invalid
 Encountered asynchronous work while rendering synchronously.
@@ -840,7 +774,6 @@ https://svelte.dev/e/await_invalid`);
   error2.name = "Svelte error";
   throw error2;
 }
-__name(await_invalid, "await_invalid");
 function invalid_csp() {
   const error2 = new Error(`invalid_csp
 \`csp.nonce\` was set while \`csp.hash\` was \`true\`. These options cannot be used simultaneously.
@@ -848,7 +781,6 @@ https://svelte.dev/e/invalid_csp`);
   error2.name = "Svelte error";
   throw error2;
 }
-__name(invalid_csp, "invalid_csp");
 function server_context_required() {
   const error2 = new Error(`server_context_required
 Could not resolve \`render\` context.
@@ -856,13 +788,11 @@ https://svelte.dev/e/server_context_required`);
   error2.name = "Svelte error";
   throw error2;
 }
-__name(server_context_required, "server_context_required");
 function unresolved_hydratable(key2, stack) {
   {
     console.warn(`https://svelte.dev/e/unresolved_hydratable`);
   }
 }
-__name(unresolved_hydratable, "unresolved_hydratable");
 function get_render_context() {
   const store = als2?.getStore();
   {
@@ -870,7 +800,6 @@ function get_render_context() {
   }
   return store;
 }
-__name(get_render_context, "get_render_context");
 async function sha256(data) {
   text_encoder3 ??= new TextEncoder();
   crypto2 ??= globalThis.crypto?.subtle?.digest ? globalThis.crypto : (
@@ -880,7 +809,6 @@ async function sha256(data) {
   const hash_buffer = await crypto2.subtle.digest("SHA-256", text_encoder3.encode(data));
   return base64_encode2(hash_buffer);
 }
-__name(sha256, "sha256");
 function base64_encode2(bytes) {
   if (globalThis.Buffer) {
     return globalThis.Buffer.from(bytes).toString("base64");
@@ -891,7 +819,6 @@ function base64_encode2(bytes) {
   }
   return btoa(binary);
 }
-__name(base64_encode2, "base64_encode2");
 function render(component3, options2 = {}) {
   if (options2.csp?.hash && options2.csp.nonce) {
     invalid_csp();
@@ -902,7 +829,6 @@ function render(component3, options2 = {}) {
     options2
   );
 }
-__name(render, "render");
 function attributes(attrs, css_hash, classes, styles, flags2 = 0) {
   if (styles) {
     attrs.style = to_style(attrs.style, styles);
@@ -936,7 +862,6 @@ function attributes(attrs, css_hash, classes, styles, flags2 = 0) {
   }
   return attr_str;
 }
-__name(attributes, "attributes");
 function slot(renderer, $$props, name, slot_props, fallback_fn) {
   var slot_fn = $$props.$$slots?.[name];
   if (slot_fn === true) {
@@ -946,7 +871,6 @@ function slot(renderer, $$props, name, slot_props, fallback_fn) {
     slot_fn(renderer, slot_props);
   }
 }
-__name(slot, "slot");
 function rest_props(props, rest) {
   const rest_props2 = {};
   let key2;
@@ -957,12 +881,10 @@ function rest_props(props, rest) {
   }
   return rest_props2;
 }
-__name(rest_props, "rest_props");
 function sanitize_props(props) {
   const { children, $$slots, ...sanitized } = props;
   return sanitized;
 }
-__name(sanitize_props, "sanitize_props");
 function bind_props(props_parent, props_now) {
   for (const key2 in props_now) {
     const initial_value = props_parent[key2];
@@ -972,54 +894,7 @@ function bind_props(props_parent, props_now) {
     }
   }
 }
-__name(bind_props, "bind_props");
-var DERIVED;
-var EFFECT;
-var RENDER_EFFECT;
-var MANAGED_EFFECT;
-var BLOCK_EFFECT;
-var BRANCH_EFFECT;
-var ROOT_EFFECT;
-var BOUNDARY_EFFECT;
-var CONNECTED;
-var CLEAN;
-var DIRTY;
-var MAYBE_DIRTY;
-var INERT;
-var DESTROYED;
-var EFFECT_RAN;
-var EFFECT_TRANSPARENT;
-var EAGER_EFFECT;
-var HEAD_EFFECT;
-var EFFECT_PRESERVED;
-var USER_EFFECT;
-var WAS_MARKED;
-var REACTION_IS_UPDATING;
-var ASYNC;
-var ERROR_VALUE;
-var STATE_SYMBOL;
-var LEGACY_PROPS;
-var STALE_REACTION;
-var COMMENT_NODE;
-var HYDRATION_START;
-var HYDRATION_START_ELSE;
-var HYDRATION_END;
-var HYDRATION_ERROR;
-var ELEMENT_IS_NAMESPACED;
-var ELEMENT_PRESERVE_ATTRIBUTE_CASE;
-var ELEMENT_IS_INPUT;
-var UNINITIALIZED;
-var DOM_BOOLEAN_ATTRIBUTES;
-var PASSIVE_EVENTS;
-var BLOCK_OPEN;
-var BLOCK_CLOSE;
-var controller;
-var als2;
-var text_encoder3;
-var crypto2;
-var Renderer;
-var SSRState;
-var INVALID_ATTR_NAME_CHAR_REGEX;
+var DERIVED, EFFECT, RENDER_EFFECT, MANAGED_EFFECT, BLOCK_EFFECT, BRANCH_EFFECT, ROOT_EFFECT, BOUNDARY_EFFECT, CONNECTED, CLEAN, DIRTY, MAYBE_DIRTY, INERT, DESTROYED, EFFECT_RAN, EFFECT_TRANSPARENT, EAGER_EFFECT, HEAD_EFFECT, EFFECT_PRESERVED, USER_EFFECT, WAS_MARKED, REACTION_IS_UPDATING, ASYNC, ERROR_VALUE, STATE_SYMBOL, LEGACY_PROPS, STALE_REACTION, COMMENT_NODE, HYDRATION_START, HYDRATION_START_ELSE, HYDRATION_END, HYDRATION_ERROR, ELEMENT_IS_NAMESPACED, ELEMENT_PRESERVE_ATTRIBUTE_CASE, ELEMENT_IS_INPUT, UNINITIALIZED, DOM_BOOLEAN_ATTRIBUTES, PASSIVE_EVENTS, BLOCK_OPEN, BLOCK_CLOSE, controller, als2, text_encoder3, crypto2, Renderer, SSRState, INVALID_ATTR_NAME_CHAR_REGEX;
 var init_chunks = __esm({
   "../output/server/chunks/index.js"() {
     init_attributes();
@@ -1054,9 +929,6 @@ var init_chunks = __esm({
     STALE_REACTION = new class StaleReactionError extends Error {
       static {
         __name(this, "StaleReactionError");
-      }
-      static {
-        __name2(this, "StaleReactionError");
       }
       name = "StaleReactionError";
       message = "The reaction that called `getAbortSignal()` was re-run or destroyed";
@@ -1100,27 +972,24 @@ var init_chunks = __esm({
       "disablepictureinpicture",
       "disableremoteplayback"
     ];
-    __name2(is_boolean_attribute, "is_boolean_attribute");
+    __name(is_boolean_attribute, "is_boolean_attribute");
     PASSIVE_EVENTS = ["touchstart", "touchmove"];
-    __name2(is_passive_event, "is_passive_event");
+    __name(is_passive_event, "is_passive_event");
     BLOCK_OPEN = `<!--${HYDRATION_START}-->`;
     BLOCK_CLOSE = `<!--${HYDRATION_END}-->`;
     controller = null;
-    __name2(abort, "abort");
-    __name2(await_invalid, "await_invalid");
-    __name2(invalid_csp, "invalid_csp");
-    __name2(server_context_required, "server_context_required");
-    __name2(unresolved_hydratable, "unresolved_hydratable");
-    __name2(get_render_context, "get_render_context");
+    __name(abort, "abort");
+    __name(await_invalid, "await_invalid");
+    __name(invalid_csp, "invalid_csp");
+    __name(server_context_required, "server_context_required");
+    __name(unresolved_hydratable, "unresolved_hydratable");
+    __name(get_render_context, "get_render_context");
     als2 = null;
-    __name2(sha256, "sha256");
-    __name2(base64_encode2, "base64_encode");
+    __name(sha256, "sha256");
+    __name(base64_encode2, "base64_encode");
     Renderer = class _Renderer {
       static {
-        __name(this, "_Renderer");
-      }
-      static {
-        __name2(this, "Renderer");
+        __name(this, "Renderer");
       }
       /**
        * The contents of the renderer.
@@ -1199,7 +1068,7 @@ var init_chunks = __esm({
         let callback = fn;
         if (blockers.length > 0) {
           const context2 = ssr_context;
-          callback = /* @__PURE__ */ __name2((renderer) => {
+          callback = /* @__PURE__ */ __name((renderer) => {
             return Promise.all(blockers).then(() => {
               const previous_context = ssr_context;
               try {
@@ -1302,7 +1171,7 @@ var init_chunks = __esm({
        */
       option(attrs, body2, css_hash, classes, styles, flags2) {
         this.#out.push(`<option${attributes(attrs, css_hash, classes, styles, flags2)}`);
-        const close = /* @__PURE__ */ __name2((renderer, value, { head: head2, body: body22 }) => {
+        const close = /* @__PURE__ */ __name((renderer, value, { head: head2, body: body22 }) => {
           if ("value" in attrs) {
             value = attrs.value;
           }
@@ -1336,7 +1205,7 @@ var init_chunks = __esm({
        */
       title(fn) {
         const path = this.get_path();
-        const close = /* @__PURE__ */ __name2((head2) => {
+        const close = /* @__PURE__ */ __name((head2) => {
           this.global.set_title(head2, path);
         }, "close");
         this.child((renderer) => {
@@ -1422,17 +1291,17 @@ var init_chunks = __esm({
         );
         Object.defineProperties(result, {
           html: {
-            get: /* @__PURE__ */ __name2(() => {
+            get: /* @__PURE__ */ __name(() => {
               return (sync ??= _Renderer.#render(component3, options2)).body;
             }, "get")
           },
           head: {
-            get: /* @__PURE__ */ __name2(() => {
+            get: /* @__PURE__ */ __name(() => {
               return (sync ??= _Renderer.#render(component3, options2)).head;
             }, "get")
           },
           body: {
-            get: /* @__PURE__ */ __name2(() => {
+            get: /* @__PURE__ */ __name(() => {
               return (sync ??= _Renderer.#render(component3, options2)).body;
             }, "get")
           },
@@ -1451,7 +1320,7 @@ var init_chunks = __esm({
                * @param { (value: SyncRenderOutput) => TResult1 } onfulfilled
                * @param { (reason: unknown) => TResult2 } onrejected
                */
-              /* @__PURE__ */ __name2(((onfulfilled, onrejected) => {
+              /* @__PURE__ */ __name(((onfulfilled, onrejected) => {
                 {
                   const result2 = sync ??= _Renderer.#render(component3, options2);
                   const user_result = onfulfilled({
@@ -1686,9 +1555,6 @@ var init_chunks = __esm({
       static {
         __name(this, "SSRState");
       }
-      static {
-        __name2(this, "SSRState");
-      }
       /** @readonly @type {Csp & { script_hashes: Sha256Source[] }} */
       csp;
       /** @readonly @type {'sync' | 'async'} */
@@ -1732,14 +1598,16 @@ var init_chunks = __esm({
       }
     };
     INVALID_ATTR_NAME_CHAR_REGEX = /[\s'">/=\u{FDD0}-\u{FDEF}\u{FFFE}\u{FFFF}\u{1FFFE}\u{1FFFF}\u{2FFFE}\u{2FFFF}\u{3FFFE}\u{3FFFF}\u{4FFFE}\u{4FFFF}\u{5FFFE}\u{5FFFF}\u{6FFFE}\u{6FFFF}\u{7FFFE}\u{7FFFF}\u{8FFFE}\u{8FFFF}\u{9FFFE}\u{9FFFF}\u{AFFFE}\u{AFFFF}\u{BFFFE}\u{BFFFF}\u{CFFFE}\u{CFFFF}\u{DFFFE}\u{DFFFF}\u{EFFFE}\u{EFFFF}\u{FFFFE}\u{FFFFF}\u{10FFFE}\u{10FFFF}]/u;
-    __name2(render, "render");
-    __name2(attributes, "attributes");
-    __name2(slot, "slot");
-    __name2(rest_props, "rest_props");
-    __name2(sanitize_props, "sanitize_props");
-    __name2(bind_props, "bind_props");
+    __name(render, "render");
+    __name(attributes, "attributes");
+    __name(slot, "slot");
+    __name(rest_props, "rest_props");
+    __name(sanitize_props, "sanitize_props");
+    __name(bind_props, "bind_props");
   }
 });
+
+// ../../node_modules/cookie/index.js
 var require_cookie = __commonJS({
   "../../node_modules/cookie/index.js"(exports) {
     "use strict";
@@ -1779,8 +1647,7 @@ var require_cookie = __commonJS({
       }
       return obj;
     }
-    __name(parse3, "parse3");
-    __name2(parse3, "parse");
+    __name(parse3, "parse");
     function serialize2(name, val, options2) {
       var opt = options2 || {};
       var enc = opt.encode || encode2;
@@ -1867,23 +1734,19 @@ var require_cookie = __commonJS({
       }
       return str;
     }
-    __name(serialize2, "serialize2");
-    __name2(serialize2, "serialize");
+    __name(serialize2, "serialize");
     function decode(str) {
       return str.indexOf("%") !== -1 ? decodeURIComponent(str) : str;
     }
     __name(decode, "decode");
-    __name2(decode, "decode");
     function encode2(val) {
       return encodeURIComponent(val);
     }
-    __name(encode2, "encode2");
-    __name2(encode2, "encode");
+    __name(encode2, "encode");
     function isDate(val) {
       return __toString.call(val) === "[object Date]" || val instanceof Date;
     }
     __name(isDate, "isDate");
-    __name2(isDate, "isDate");
     function tryDecode(str, decode2) {
       try {
         return decode2(str);
@@ -1892,9 +1755,10 @@ var require_cookie = __commonJS({
       }
     }
     __name(tryDecode, "tryDecode");
-    __name2(tryDecode, "tryDecode");
   }
 });
+
+// ../../node_modules/set-cookie-parser/lib/set-cookie.js
 var require_set_cookie = __commonJS({
   "../../node_modules/set-cookie-parser/lib/set-cookie.js"(exports, module) {
     "use strict";
@@ -1907,17 +1771,14 @@ var require_set_cookie = __commonJS({
       return typeof key2 !== "string" || key2 in {};
     }
     __name(isForbiddenKey, "isForbiddenKey");
-    __name2(isForbiddenKey, "isForbiddenKey");
     function createNullObj() {
       return /* @__PURE__ */ Object.create(null);
     }
     __name(createNullObj, "createNullObj");
-    __name2(createNullObj, "createNullObj");
     function isNonEmptyString(str) {
       return typeof str === "string" && !!str.trim();
     }
     __name(isNonEmptyString, "isNonEmptyString");
-    __name2(isNonEmptyString, "isNonEmptyString");
     function parseString2(setCookieValue, options2) {
       var parts = setCookieValue.split(";").filter(isNonEmptyString);
       var nameValuePairStr = parts.shift();
@@ -1965,8 +1826,7 @@ var require_set_cookie = __commonJS({
       });
       return cookie;
     }
-    __name(parseString2, "parseString2");
-    __name2(parseString2, "parseString");
+    __name(parseString2, "parseString");
     function parseNameValuePair(nameValuePairStr) {
       var name = "";
       var value = "";
@@ -1980,7 +1840,6 @@ var require_set_cookie = __commonJS({
       return { name, value };
     }
     __name(parseNameValuePair, "parseNameValuePair");
-    __name2(parseNameValuePair, "parseNameValuePair");
     function parse3(input, options2) {
       options2 = options2 ? Object.assign({}, defaultParseOptions, options2) : defaultParseOptions;
       if (!input) {
@@ -2025,8 +1884,7 @@ var require_set_cookie = __commonJS({
         }, cookies);
       }
     }
-    __name(parse3, "parse3");
-    __name2(parse3, "parse");
+    __name(parse3, "parse");
     function splitCookiesString2(cookiesString) {
       if (Array.isArray(cookiesString)) {
         return cookiesString;
@@ -2048,13 +1906,11 @@ var require_set_cookie = __commonJS({
         return pos < cookiesString.length;
       }
       __name(skipWhitespace, "skipWhitespace");
-      __name2(skipWhitespace, "skipWhitespace");
       function notSpecialChar() {
         ch = cookiesString.charAt(pos);
         return ch !== "=" && ch !== ";" && ch !== ",";
       }
       __name(notSpecialChar, "notSpecialChar");
-      __name2(notSpecialChar, "notSpecialChar");
       while (pos < cookiesString.length) {
         start = pos;
         cookiesSeparatorFound = false;
@@ -2086,17 +1942,18 @@ var require_set_cookie = __commonJS({
       }
       return cookiesStrings;
     }
-    __name(splitCookiesString2, "splitCookiesString2");
-    __name2(splitCookiesString2, "splitCookiesString");
+    __name(splitCookiesString2, "splitCookiesString");
     module.exports = parse3;
     module.exports.parse = parse3;
     module.exports.parseString = parseString2;
     module.exports.splitCookiesString = splitCookiesString2;
   }
 });
+
+// ../output/server/entries/pages/_layout.server.js
 var layout_server_exports = {};
 __export(layout_server_exports, {
-  prerender: /* @__PURE__ */ __name(() => prerender, "prerender")
+  prerender: () => prerender
 });
 var prerender;
 var init_layout_server = __esm({
@@ -2104,6 +1961,8 @@ var init_layout_server = __esm({
     prerender = true;
   }
 });
+
+// ../output/server/chunks/Footer.js
 function DocumentPdf($$renderer, $$props) {
   const $$sanitized_props = sanitize_props($$props);
   const $$restProps = rest_props($$sanitized_props, ["size", "title"]);
@@ -2143,13 +2002,11 @@ function DocumentPdf($$renderer, $$props) {
     bind_props($$props, { size, title });
   });
 }
-__name(DocumentPdf, "DocumentPdf");
 function Navbar($$renderer) {
   $$renderer.push(`<nav><div class="topnav svelte-11lpkcp"><div class="topnav__inner svelte-11lpkcp"><a href="/" class="active svelte-11lpkcp">Home</a> <a href="/about" class="svelte-11lpkcp">About</a> <a${attr("href", resume)} class="topnav__inner-resume svelte-11lpkcp">Resume `);
   DocumentPdf($$renderer, { size: "20px", style: "fill: var(--body-color)" });
   $$renderer.push(`<!----></a></div></div></nav>`);
 }
-__name(Navbar, "Navbar");
 function LogoLinkedin($$renderer, $$props) {
   const $$sanitized_props = sanitize_props($$props);
   const $$restProps = rest_props($$sanitized_props, ["size", "title"]);
@@ -2189,13 +2046,11 @@ function LogoLinkedin($$renderer, $$props) {
     bind_props($$props, { size, title });
   });
 }
-__name(LogoLinkedin, "LogoLinkedin");
 function Footer($$renderer) {
   $$renderer.push(`<footer class="svelte-9sff3o"><a href="https://www.linkedin.com/in/matthew-incardona/" target="_blank">`);
   LogoLinkedin($$renderer, { size: "40px", style: "fill: var(--body-color)" });
   $$renderer.push(`<!----></a> <a href="mailto:matthew@douxdolci.com" style="margin-top: 7px;">matthew@douxdolci.com</a></footer>`);
 }
-__name(Footer, "Footer");
 var resume;
 var init_Footer = __esm({
   "../output/server/chunks/Footer.js"() {
@@ -2205,15 +2060,17 @@ var init_Footer = __esm({
     init_escaping();
     init_clsx();
     resume = "/_app/immutable/assets/Matthew.Incardona.CV.CORqvP4t.pdf";
-    __name2(DocumentPdf, "DocumentPdf");
-    __name2(Navbar, "Navbar");
-    __name2(LogoLinkedin, "LogoLinkedin");
-    __name2(Footer, "Footer");
+    __name(DocumentPdf, "DocumentPdf");
+    __name(Navbar, "Navbar");
+    __name(LogoLinkedin, "LogoLinkedin");
+    __name(Footer, "Footer");
   }
 });
+
+// ../output/server/entries/pages/_layout.svelte.js
 var layout_svelte_exports = {};
 __export(layout_svelte_exports, {
-  default: /* @__PURE__ */ __name(() => _layout, "default")
+  default: () => _layout
 });
 function _layout($$renderer, $$props) {
   $$renderer.push(`<div class="bg-overlay">`);
@@ -2224,45 +2081,42 @@ function _layout($$renderer, $$props) {
   Footer($$renderer);
   $$renderer.push(`<!----></div>`);
 }
-__name(_layout, "_layout");
 var init_layout_svelte = __esm({
   "../output/server/entries/pages/_layout.svelte.js"() {
     init_chunks();
     init_Footer();
-    __name2(_layout, "_layout");
+    __name(_layout, "_layout");
   }
 });
+
+// ../output/server/nodes/0.js
 var __exports = {};
 __export(__exports, {
-  component: /* @__PURE__ */ __name(() => component, "component"),
-  fonts: /* @__PURE__ */ __name(() => fonts, "fonts"),
-  imports: /* @__PURE__ */ __name(() => imports, "imports"),
-  index: /* @__PURE__ */ __name(() => index, "index"),
-  server: /* @__PURE__ */ __name(() => layout_server_exports, "server"),
-  server_id: /* @__PURE__ */ __name(() => server_id, "server_id"),
-  stylesheets: /* @__PURE__ */ __name(() => stylesheets, "stylesheets")
+  component: () => component,
+  fonts: () => fonts,
+  imports: () => imports,
+  index: () => index,
+  server: () => layout_server_exports,
+  server_id: () => server_id,
+  stylesheets: () => stylesheets
 });
-var index;
-var component_cache;
-var component;
-var server_id;
-var imports;
-var stylesheets;
-var fonts;
+var index, component_cache, component, server_id, imports, stylesheets, fonts;
 var init__ = __esm({
   "../output/server/nodes/0.js"() {
     init_layout_server();
     index = 0;
-    component = /* @__PURE__ */ __name2(async () => component_cache ??= (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default, "component");
+    component = /* @__PURE__ */ __name(async () => component_cache ??= (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default, "component");
     server_id = "src/routes/+layout.server.js";
     imports = ["_app/immutable/nodes/0.6eMzruJY.js", "_app/immutable/chunks/BDw5cIeZ.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/JV31_T8L.js", "_app/immutable/chunks/C8p6ab3U.js", "_app/immutable/chunks/DSfooUaB.js", "_app/immutable/chunks/DaYP-XK3.js", "_app/immutable/chunks/CY6zCf-n.js", "_app/immutable/chunks/DiecYjvy.js"];
     stylesheets = ["_app/immutable/assets/Footer.TX2yU-d6.css"];
     fonts = [];
   }
 });
+
+// ../output/server/entries/fallbacks/error.svelte.js
 var error_svelte_exports = {};
 __export(error_svelte_exports, {
-  default: /* @__PURE__ */ __name(() => Error$1, "default")
+  default: () => Error$1
 });
 function create_updated_store() {
   const { set: set2, subscribe } = writable(false);
@@ -2270,25 +2124,19 @@ function create_updated_store() {
     return {
       subscribe,
       // eslint-disable-next-line @typescript-eslint/require-await
-      check: /* @__PURE__ */ __name2(async () => false, "check")
+      check: /* @__PURE__ */ __name(async () => false, "check")
     };
   }
 }
-__name(create_updated_store, "create_updated_store");
 function context() {
   return getContext("__request__");
 }
-__name(context, "context");
 function Error$1($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     $$renderer2.push(`<h1>${escape_html(page.status)}</h1> <p>${escape_html(page.error?.message)}</p>`);
   });
 }
-__name(Error$1, "Error$1");
-var is_legacy;
-var stores;
-var page$1;
-var page;
+var is_legacy, stores, page$1, page;
 var init_error_svelte = __esm({
   "../output/server/entries/fallbacks/error.svelte.js"() {
     init_escaping();
@@ -2298,7 +2146,7 @@ var init_error_svelte = __esm({
     init_internal();
     init_exports();
     init_utils();
-    __name2(create_updated_store, "create_updated_store");
+    __name(create_updated_store, "create_updated_store");
     is_legacy = noop.toString().includes("$$") || /function \w+\(\) \{\}/.test(noop.toString());
     if (is_legacy) {
       ({
@@ -2318,7 +2166,7 @@ var init_error_svelte = __esm({
     ({
       check: stores.updated.check
     });
-    __name2(context, "context");
+    __name(context, "context");
     page$1 = {
       get error() {
         return context().page.error;
@@ -2328,32 +2176,31 @@ var init_error_svelte = __esm({
       }
     };
     page = page$1;
-    __name2(Error$1, "Error$1");
+    __name(Error$1, "Error$1");
   }
 });
+
+// ../output/server/nodes/1.js
 var __exports2 = {};
 __export(__exports2, {
-  component: /* @__PURE__ */ __name(() => component2, "component"),
-  fonts: /* @__PURE__ */ __name(() => fonts2, "fonts"),
-  imports: /* @__PURE__ */ __name(() => imports2, "imports"),
-  index: /* @__PURE__ */ __name(() => index2, "index"),
-  stylesheets: /* @__PURE__ */ __name(() => stylesheets2, "stylesheets")
+  component: () => component2,
+  fonts: () => fonts2,
+  imports: () => imports2,
+  index: () => index2,
+  stylesheets: () => stylesheets2
 });
-var index2;
-var component_cache2;
-var component2;
-var imports2;
-var stylesheets2;
-var fonts2;
+var index2, component_cache2, component2, imports2, stylesheets2, fonts2;
 var init__2 = __esm({
   "../output/server/nodes/1.js"() {
     index2 = 1;
-    component2 = /* @__PURE__ */ __name2(async () => component_cache2 ??= (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default, "component");
-    imports2 = ["_app/immutable/nodes/1.CHIxjDve.js", "_app/immutable/chunks/BDw5cIeZ.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/JV31_T8L.js", "_app/immutable/chunks/C8p6ab3U.js", "_app/immutable/chunks/DiecYjvy.js", "_app/immutable/chunks/BacZ9to3.js", "_app/immutable/chunks/D8R6l8tj.js"];
+    component2 = /* @__PURE__ */ __name(async () => component_cache2 ??= (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default, "component");
+    imports2 = ["_app/immutable/nodes/1.D_gclzTK.js", "_app/immutable/chunks/BDw5cIeZ.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/JV31_T8L.js", "_app/immutable/chunks/C8p6ab3U.js", "_app/immutable/chunks/DiecYjvy.js", "_app/immutable/chunks/Dwa1xRGX.js", "_app/immutable/chunks/D8R6l8tj.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
 });
+
+// ../output/server/chunks/environment.js
 var BROWSER = false;
 var base = "";
 var assets = base;
@@ -2365,19 +2212,27 @@ function override(paths) {
   assets = paths.assets;
 }
 __name(override, "override");
-__name2(override, "override");
 function reset() {
   base = initial.base;
   assets = initial.assets;
 }
 __name(reset, "reset");
-__name2(reset, "reset");
+
+// ../../node_modules/@sveltejs/kit/src/exports/index.js
 init_internal();
+
+// ../../node_modules/esm-env/true.js
 var true_default = true;
+
+// ../../node_modules/esm-env/dev-fallback.js
 var node_env = "development";
 var dev_fallback_default = node_env && !node_env.toLowerCase().startsWith("prod");
+
+// ../../node_modules/@sveltejs/kit/src/runtime/utils.js
 var text_encoder = new TextEncoder();
 var text_decoder = new TextDecoder();
+
+// ../../node_modules/@sveltejs/kit/src/exports/index.js
 function error(status, body2) {
   if ((!true_default || dev_fallback_default) && (isNaN(status) || status < 400 || status > 599)) {
     throw new Error(`HTTP error status codes must be between 400 and 599 \u2014 ${status} is invalid`);
@@ -2385,7 +2240,6 @@ function error(status, body2) {
   throw new HttpError(status, body2);
 }
 __name(error, "error");
-__name2(error, "error");
 function json(data, init2) {
   const body2 = JSON.stringify(data);
   const headers2 = new Headers(init2?.headers);
@@ -2401,7 +2255,6 @@ function json(data, init2) {
   });
 }
 __name(json, "json");
-__name2(json, "json");
 function text(body2, init2) {
   const headers2 = new Headers(init2?.headers);
   if (!headers2.has("content-length")) {
@@ -2418,9 +2271,12 @@ function text(body2, init2) {
   });
 }
 __name(text, "text");
-__name2(text, "text");
+
+// ../output/server/index.js
 init_internal();
 init_server();
+
+// ../../node_modules/devalue/src/utils.js
 var escaped = {
   "<": "\\u003C",
   "\\": "\\\\",
@@ -2435,9 +2291,6 @@ var escaped = {
 var DevalueError = class extends Error {
   static {
     __name(this, "DevalueError");
-  }
-  static {
-    __name2(this, "DevalueError");
   }
   /**
    * @param {string} message
@@ -2457,7 +2310,6 @@ function is_primitive(thing) {
   return Object(thing) !== thing;
 }
 __name(is_primitive, "is_primitive");
-__name2(is_primitive, "is_primitive");
 var object_proto_names = /* @__PURE__ */ Object.getOwnPropertyNames(
   Object.prototype
 ).sort().join("\0");
@@ -2466,12 +2318,10 @@ function is_plain_object(thing) {
   return proto === Object.prototype || proto === null || Object.getPrototypeOf(proto) === null || Object.getOwnPropertyNames(proto).sort().join("\0") === object_proto_names;
 }
 __name(is_plain_object, "is_plain_object");
-__name2(is_plain_object, "is_plain_object");
 function get_type(thing) {
   return Object.prototype.toString.call(thing).slice(8, -1);
 }
 __name(get_type, "get_type");
-__name2(get_type, "get_type");
 function get_escaped_char(char) {
   switch (char) {
     case '"':
@@ -2499,7 +2349,6 @@ function get_escaped_char(char) {
   }
 }
 __name(get_escaped_char, "get_escaped_char");
-__name2(get_escaped_char, "get_escaped_char");
 function stringify_string(str) {
   let result = "";
   let last_pos = 0;
@@ -2515,20 +2364,19 @@ function stringify_string(str) {
   return `"${last_pos === 0 ? str : result + str.slice(last_pos)}"`;
 }
 __name(stringify_string, "stringify_string");
-__name2(stringify_string, "stringify_string");
 function enumerable_symbols(object) {
   return Object.getOwnPropertySymbols(object).filter(
     (symbol) => Object.getOwnPropertyDescriptor(object, symbol).enumerable
   );
 }
 __name(enumerable_symbols, "enumerable_symbols");
-__name2(enumerable_symbols, "enumerable_symbols");
 var is_identifier = /^[a-zA-Z_$][a-zA-Z_$0-9]*$/;
 function stringify_key(key2) {
   return is_identifier.test(key2) ? "." + key2 : "[" + JSON.stringify(key2) + "]";
 }
 __name(stringify_key, "stringify_key");
-__name2(stringify_key, "stringify_key");
+
+// ../../node_modules/devalue/src/uneval.js
 var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_$";
 var unsafe_chars = /[<\b\f\n\r\t\0\u2028\u2029]/g;
 var reserved = /^(?:do|if|in|for|int|let|new|try|var|byte|case|char|else|enum|goto|long|this|void|with|await|break|catch|class|const|final|float|short|super|throw|while|yield|delete|double|export|import|native|return|switch|throws|typeof|boolean|default|extends|finally|package|private|abstract|continue|debugger|function|volatile|interface|protected|transient|implements|instanceof|synchronized)$/;
@@ -2633,7 +2481,6 @@ function uneval(value, replacer) {
     }
   }
   __name(walk, "walk");
-  __name2(walk, "walk");
   walk(value);
   const names = /* @__PURE__ */ new Map();
   Array.from(counts).filter((entry) => entry[1] > 1).sort((a, b) => b[1] - a[1]).forEach((entry, i) => {
@@ -2724,8 +2571,7 @@ function uneval(value, replacer) {
         return `{${obj}}`;
     }
   }
-  __name(stringify3, "stringify3");
-  __name2(stringify3, "stringify");
+  __name(stringify3, "stringify");
   const str = stringify3(value);
   if (names.size) {
     const params = [];
@@ -2800,7 +2646,6 @@ function uneval(value, replacer) {
   }
 }
 __name(uneval, "uneval");
-__name2(uneval, "uneval");
 function get_name(num) {
   let name = "";
   do {
@@ -2810,27 +2655,22 @@ function get_name(num) {
   return reserved.test(name) ? `${name}0` : name;
 }
 __name(get_name, "get_name");
-__name2(get_name, "get_name");
 function escape_unsafe_char(c2) {
   return escaped[c2] || c2;
 }
 __name(escape_unsafe_char, "escape_unsafe_char");
-__name2(escape_unsafe_char, "escape_unsafe_char");
 function escape_unsafe_chars(str) {
   return str.replace(unsafe_chars, escape_unsafe_char);
 }
 __name(escape_unsafe_chars, "escape_unsafe_chars");
-__name2(escape_unsafe_chars, "escape_unsafe_chars");
 function safe_key(key2) {
   return /^[_$a-zA-Z][_$a-zA-Z0-9]*$/.test(key2) ? key2 : escape_unsafe_chars(JSON.stringify(key2));
 }
 __name(safe_key, "safe_key");
-__name2(safe_key, "safe_key");
 function safe_prop(key2) {
   return /^[_$a-zA-Z][_$a-zA-Z0-9]*$/.test(key2) ? `.${key2}` : `[${escape_unsafe_chars(JSON.stringify(key2))}]`;
 }
 __name(safe_prop, "safe_prop");
-__name2(safe_prop, "safe_prop");
 function stringify_primitive(thing) {
   if (typeof thing === "string") return stringify_string(thing);
   if (thing === void 0) return "void 0";
@@ -2841,7 +2681,8 @@ function stringify_primitive(thing) {
   return str;
 }
 __name(stringify_primitive, "stringify_primitive");
-__name2(stringify_primitive, "stringify_primitive");
+
+// ../../node_modules/devalue/src/base64.js
 function encode64(arraybuffer) {
   const dv = new DataView(arraybuffer);
   let binaryString = "";
@@ -2851,7 +2692,6 @@ function encode64(arraybuffer) {
   return binaryToAscii(binaryString);
 }
 __name(encode64, "encode64");
-__name2(encode64, "encode64");
 function decode64(string) {
   const binaryString = asciiToBinary(string);
   const arraybuffer = new ArrayBuffer(binaryString.length);
@@ -2862,7 +2702,6 @@ function decode64(string) {
   return arraybuffer;
 }
 __name(decode64, "decode64");
-__name2(decode64, "decode64");
 var KEY_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 function asciiToBinary(data) {
   if (data.length % 4 === 0) {
@@ -2893,7 +2732,6 @@ function asciiToBinary(data) {
   return output;
 }
 __name(asciiToBinary, "asciiToBinary");
-__name2(asciiToBinary, "asciiToBinary");
 function binaryToAscii(str) {
   let out = "";
   for (let i = 0; i < str.length; i += 3) {
@@ -2919,18 +2757,20 @@ function binaryToAscii(str) {
   return out;
 }
 __name(binaryToAscii, "binaryToAscii");
-__name2(binaryToAscii, "binaryToAscii");
+
+// ../../node_modules/devalue/src/constants.js
 var UNDEFINED = -1;
 var HOLE = -2;
 var NAN = -3;
 var POSITIVE_INFINITY = -4;
 var NEGATIVE_INFINITY = -5;
 var NEGATIVE_ZERO = -6;
+
+// ../../node_modules/devalue/src/parse.js
 function parse(serialized, revivers) {
   return unflatten(JSON.parse(serialized), revivers);
 }
 __name(parse, "parse");
-__name2(parse, "parse");
 function unflatten(parsed, revivers) {
   if (typeof parsed === "number") return hydrate2(parsed, true);
   if (!Array.isArray(parsed) || parsed.length === 0) {
@@ -3068,12 +2908,12 @@ function unflatten(parsed, revivers) {
     }
     return hydrated[index3];
   }
-  __name(hydrate2, "hydrate2");
-  __name2(hydrate2, "hydrate");
+  __name(hydrate2, "hydrate");
   return hydrate2(0);
 }
 __name(unflatten, "unflatten");
-__name2(unflatten, "unflatten");
+
+// ../../node_modules/devalue/src/stringify.js
 function stringify(value, reducers) {
   const stringified = [];
   const indexes = /* @__PURE__ */ new Map();
@@ -3245,13 +3085,11 @@ function stringify(value, reducers) {
     return index4;
   }
   __name(flatten, "flatten");
-  __name2(flatten, "flatten");
   const index3 = flatten(value);
   if (index3 < 0) return `${index3}`;
   return `[${stringified.join(",")}]`;
 }
 __name(stringify, "stringify");
-__name2(stringify, "stringify");
 function stringify_primitive2(thing) {
   const type = typeof thing;
   if (type === "string") return stringify_string(thing);
@@ -3261,8 +3099,9 @@ function stringify_primitive2(thing) {
   if (type === "bigint") return `["BigInt","${thing}"]`;
   return String(thing);
 }
-__name(stringify_primitive2, "stringify_primitive2");
-__name2(stringify_primitive2, "stringify_primitive");
+__name(stringify_primitive2, "stringify_primitive");
+
+// ../output/server/chunks/shared.js
 init_utils();
 function set_nested_value(object, path_string, value) {
   if (path_string.startsWith("n:")) {
@@ -3275,7 +3114,6 @@ function set_nested_value(object, path_string, value) {
   deep_set(object, split_path(path_string), value);
 }
 __name(set_nested_value, "set_nested_value");
-__name2(set_nested_value, "set_nested_value");
 function convert_formdata(data) {
   const result = {};
   for (let key2 of data.keys()) {
@@ -3303,7 +3141,6 @@ function convert_formdata(data) {
   return result;
 }
 __name(convert_formdata, "convert_formdata");
-__name2(convert_formdata, "convert_formdata");
 var BINARY_FORM_CONTENT_TYPE = "application/x-sveltekit-formdata";
 var BINARY_FORM_VERSION = 0;
 async function deserialize_binary_form(request) {
@@ -3326,7 +3163,6 @@ async function deserialize_binary_form(request) {
     return chunks[index3];
   }
   __name(get_chunk, "get_chunk");
-  __name2(get_chunk, "get_chunk");
   async function get_buffer(offset, length) {
     let start_chunk;
     let chunk_start = 0;
@@ -3360,7 +3196,6 @@ async function deserialize_binary_form(request) {
     return buffer;
   }
   __name(get_buffer, "get_buffer");
-  __name2(get_buffer, "get_buffer");
   const header = await get_buffer(0, 1 + 4 + 2);
   if (!header) throw new Error("Could not deserialize binary form: too short");
   if (header[0] !== BINARY_FORM_VERSION) {
@@ -3384,7 +3219,7 @@ async function deserialize_binary_form(request) {
     files_start_offset = 1 + 4 + 2 + data_length + file_offsets_length;
   }
   const [data, meta] = parse(text_decoder2.decode(data_buffer), {
-    File: /* @__PURE__ */ __name2(([name, type, size, last_modified, index3]) => {
+    File: /* @__PURE__ */ __name(([name, type, size, last_modified, index3]) => {
       return new Proxy(
         new LazyFile(
           name,
@@ -3412,13 +3247,9 @@ async function deserialize_binary_form(request) {
   return { data, meta, form_data: null };
 }
 __name(deserialize_binary_form, "deserialize_binary_form");
-__name2(deserialize_binary_form, "deserialize_binary_form");
 var LazyFile = class _LazyFile {
   static {
-    __name(this, "_LazyFile");
-  }
-  static {
-    __name2(this, "LazyFile");
+    __name(this, "LazyFile");
   }
   /** @type {(index: number) => Promise<Uint8Array<ArrayBuffer> | undefined>} */
   #get_chunk;
@@ -3486,7 +3317,7 @@ var LazyFile = class _LazyFile {
     let cursor = 0;
     let chunk_index = 0;
     return new ReadableStream({
-      start: /* @__PURE__ */ __name2(async (controller2) => {
+      start: /* @__PURE__ */ __name(async (controller2) => {
         let chunk_start = 0;
         let start_chunk = null;
         for (chunk_index = 0; ; chunk_index++) {
@@ -3509,7 +3340,7 @@ var LazyFile = class _LazyFile {
           cursor = start_chunk.byteLength - this.#offset + chunk_start;
         }
       }, "start"),
-      pull: /* @__PURE__ */ __name2(async (controller2) => {
+      pull: /* @__PURE__ */ __name(async (controller2) => {
         chunk_index++;
         let chunk = await this.#get_chunk(chunk_index);
         if (!chunk) {
@@ -3540,7 +3371,6 @@ function split_path(path) {
   return path.split(/\.|\[|\]/).filter(Boolean);
 }
 __name(split_path, "split_path");
-__name2(split_path, "split_path");
 function check_prototype_pollution(key2) {
   if (key2 === "__proto__" || key2 === "constructor" || key2 === "prototype") {
     throw new Error(
@@ -3549,7 +3379,6 @@ function check_prototype_pollution(key2) {
   }
 }
 __name(check_prototype_pollution, "check_prototype_pollution");
-__name2(check_prototype_pollution, "check_prototype_pollution");
 function deep_set(object, keys, value) {
   let current2 = object;
   for (let i = 0; i < keys.length - 1; i += 1) {
@@ -3571,15 +3400,13 @@ function deep_set(object, keys, value) {
   current2[final_key] = value;
 }
 __name(deep_set, "deep_set");
-__name2(deep_set, "deep_set");
 var INVALIDATED_PARAM = "x-sveltekit-invalidated";
 var TRAILING_SLASH_PARAM = "x-sveltekit-trailing-slash";
 function stringify2(data, transport) {
   const encoders = Object.fromEntries(Object.entries(transport).map(([k, v]) => [k, v.encode]));
   return stringify(data, encoders);
 }
-__name(stringify2, "stringify2");
-__name2(stringify2, "stringify");
+__name(stringify2, "stringify");
 function parse_remote_arg(string, transport) {
   if (!string) return void 0;
   const json_string = text_decoder2.decode(
@@ -3590,14 +3417,16 @@ function parse_remote_arg(string, transport) {
   return parse(json_string, decoders);
 }
 __name(parse_remote_arg, "parse_remote_arg");
-__name2(parse_remote_arg, "parse_remote_arg");
 function create_remote_key(id, payload) {
   return id + "/" + payload;
 }
 __name(create_remote_key, "create_remote_key");
-__name2(create_remote_key, "create_remote_key");
+
+// ../output/server/index.js
 init_exports();
 init_utils();
+
+// ../output/server/chunks/internal.js
 init_chunks();
 init_context();
 init_equality();
@@ -3606,74 +3435,63 @@ var public_env = {};
 function set_private_env(environment) {
 }
 __name(set_private_env, "set_private_env");
-__name2(set_private_env, "set_private_env");
 function set_public_env(environment) {
   public_env = environment;
 }
 __name(set_public_env, "set_public_env");
-__name2(set_public_env, "set_public_env");
 function effect_update_depth_exceeded() {
   {
     throw new Error(`https://svelte.dev/e/effect_update_depth_exceeded`);
   }
 }
 __name(effect_update_depth_exceeded, "effect_update_depth_exceeded");
-__name2(effect_update_depth_exceeded, "effect_update_depth_exceeded");
 function hydration_failed() {
   {
     throw new Error(`https://svelte.dev/e/hydration_failed`);
   }
 }
 __name(hydration_failed, "hydration_failed");
-__name2(hydration_failed, "hydration_failed");
 function state_descriptors_fixed() {
   {
     throw new Error(`https://svelte.dev/e/state_descriptors_fixed`);
   }
 }
 __name(state_descriptors_fixed, "state_descriptors_fixed");
-__name2(state_descriptors_fixed, "state_descriptors_fixed");
 function state_prototype_fixed() {
   {
     throw new Error(`https://svelte.dev/e/state_prototype_fixed`);
   }
 }
 __name(state_prototype_fixed, "state_prototype_fixed");
-__name2(state_prototype_fixed, "state_prototype_fixed");
 function state_unsafe_mutation() {
   {
     throw new Error(`https://svelte.dev/e/state_unsafe_mutation`);
   }
 }
 __name(state_unsafe_mutation, "state_unsafe_mutation");
-__name2(state_unsafe_mutation, "state_unsafe_mutation");
 function svelte_boundary_reset_onerror() {
   {
     throw new Error(`https://svelte.dev/e/svelte_boundary_reset_onerror`);
   }
 }
 __name(svelte_boundary_reset_onerror, "svelte_boundary_reset_onerror");
-__name2(svelte_boundary_reset_onerror, "svelte_boundary_reset_onerror");
 function hydration_mismatch(location) {
   {
     console.warn(`https://svelte.dev/e/hydration_mismatch`);
   }
 }
 __name(hydration_mismatch, "hydration_mismatch");
-__name2(hydration_mismatch, "hydration_mismatch");
 function svelte_boundary_reset_noop() {
   {
     console.warn(`https://svelte.dev/e/svelte_boundary_reset_noop`);
   }
 }
 __name(svelte_boundary_reset_noop, "svelte_boundary_reset_noop");
-__name2(svelte_boundary_reset_noop, "svelte_boundary_reset_noop");
 var hydrating = false;
 function set_hydrating(value) {
   hydrating = value;
 }
 __name(set_hydrating, "set_hydrating");
-__name2(set_hydrating, "set_hydrating");
 var hydrate_node;
 function set_hydrate_node(node) {
   if (node === null) {
@@ -3683,12 +3501,10 @@ function set_hydrate_node(node) {
   return hydrate_node = node;
 }
 __name(set_hydrate_node, "set_hydrate_node");
-__name2(set_hydrate_node, "set_hydrate_node");
 function hydrate_next() {
   return set_hydrate_node(/* @__PURE__ */ get_next_sibling(hydrate_node));
 }
 __name(hydrate_next, "hydrate_next");
-__name2(hydrate_next, "hydrate_next");
 function next(count = 1) {
   if (hydrating) {
     var i = count;
@@ -3701,7 +3517,6 @@ function next(count = 1) {
   }
 }
 __name(next, "next");
-__name2(next, "next");
 function skip_nodes(remove = true) {
   var depth = 0;
   var node = hydrate_node;
@@ -3727,14 +3542,12 @@ function skip_nodes(remove = true) {
   }
 }
 __name(skip_nodes, "skip_nodes");
-__name2(skip_nodes, "skip_nodes");
 var tracing_mode_flag = false;
 var component_context = null;
 function set_component_context(context2) {
   component_context = context2;
 }
 __name(set_component_context, "set_component_context");
-__name2(set_component_context, "set_component_context");
 function push2(props, runes = false, fn) {
   component_context = {
     p: component_context,
@@ -3746,8 +3559,7 @@ function push2(props, runes = false, fn) {
     l: null
   };
 }
-__name(push2, "push2");
-__name2(push2, "push");
+__name(push2, "push");
 function pop2(component3) {
   var context2 = (
     /** @type {ComponentContext} */
@@ -3767,13 +3579,11 @@ function pop2(component3) {
     {}
   );
 }
-__name(pop2, "pop2");
-__name2(pop2, "pop");
+__name(pop2, "pop");
 function is_runes() {
   return true;
 }
 __name(is_runes, "is_runes");
-__name2(is_runes, "is_runes");
 var micro_tasks = [];
 function run_micro_tasks() {
   var tasks = micro_tasks;
@@ -3781,7 +3591,6 @@ function run_micro_tasks() {
   run_all(tasks);
 }
 __name(run_micro_tasks, "run_micro_tasks");
-__name2(run_micro_tasks, "run_micro_tasks");
 function queue_micro_task(fn) {
   if (micro_tasks.length === 0 && !is_flushing_sync) {
     var tasks = micro_tasks;
@@ -3792,14 +3601,12 @@ function queue_micro_task(fn) {
   micro_tasks.push(fn);
 }
 __name(queue_micro_task, "queue_micro_task");
-__name2(queue_micro_task, "queue_micro_task");
 function flush_tasks() {
   while (micro_tasks.length > 0) {
     run_micro_tasks();
   }
 }
 __name(flush_tasks, "flush_tasks");
-__name2(flush_tasks, "flush_tasks");
 function handle_error(error2) {
   var effect = active_effect;
   if (effect === null) {
@@ -3816,7 +3623,6 @@ function handle_error(error2) {
   }
 }
 __name(handle_error, "handle_error");
-__name2(handle_error, "handle_error");
 function invoke_error_boundary(error2, effect) {
   while (effect !== null) {
     if ((effect.f & BOUNDARY_EFFECT) !== 0) {
@@ -3832,7 +3638,6 @@ function invoke_error_boundary(error2, effect) {
   throw error2;
 }
 __name(invoke_error_boundary, "invoke_error_boundary");
-__name2(invoke_error_boundary, "invoke_error_boundary");
 var batches = /* @__PURE__ */ new Set();
 var current_batch = null;
 var batch_values = null;
@@ -3842,10 +3647,7 @@ var is_flushing = false;
 var is_flushing_sync = false;
 var Batch = class _Batch {
   static {
-    __name(this, "_Batch");
-  }
-  static {
-    __name2(this, "Batch");
+    __name(this, "Batch");
   }
   committed = false;
   /**
@@ -4209,7 +4011,6 @@ function flushSync(fn) {
   }
 }
 __name(flushSync, "flushSync");
-__name2(flushSync, "flushSync");
 function flush_effects() {
   var was_updating_effect = is_updating_effect;
   is_flushing = true;
@@ -4235,7 +4036,6 @@ function flush_effects() {
   }
 }
 __name(flush_effects, "flush_effects");
-__name2(flush_effects, "flush_effects");
 function infinite_loop_guard() {
   try {
     effect_update_depth_exceeded();
@@ -4244,7 +4044,6 @@ function infinite_loop_guard() {
   }
 }
 __name(infinite_loop_guard, "infinite_loop_guard");
-__name2(infinite_loop_guard, "infinite_loop_guard");
 var eager_block_effects = null;
 function flush_queued_effects(effects) {
   var length = effects.length;
@@ -4288,7 +4087,6 @@ function flush_queued_effects(effects) {
   eager_block_effects = null;
 }
 __name(flush_queued_effects, "flush_queued_effects");
-__name2(flush_queued_effects, "flush_queued_effects");
 function mark_effects(value, sources, marked, checked) {
   if (marked.has(value)) return;
   marked.add(value);
@@ -4314,7 +4112,6 @@ function mark_effects(value, sources, marked, checked) {
   }
 }
 __name(mark_effects, "mark_effects");
-__name2(mark_effects, "mark_effects");
 function depends_on(reaction, sources, checked) {
   const depends = checked.get(reaction);
   if (depends !== void 0) return depends;
@@ -4342,7 +4139,6 @@ function depends_on(reaction, sources, checked) {
   return false;
 }
 __name(depends_on, "depends_on");
-__name2(depends_on, "depends_on");
 function schedule_effect(signal) {
   var effect = last_scheduled_effect = signal;
   while (effect.parent !== null) {
@@ -4359,7 +4155,6 @@ function schedule_effect(signal) {
   queued_root_effects.push(effect);
 }
 __name(schedule_effect, "schedule_effect");
-__name2(schedule_effect, "schedule_effect");
 function createSubscriber(start) {
   let subscribers = 0;
   let version = source(0);
@@ -4387,19 +4182,14 @@ function createSubscriber(start) {
   };
 }
 __name(createSubscriber, "createSubscriber");
-__name2(createSubscriber, "createSubscriber");
 var flags = EFFECT_TRANSPARENT | EFFECT_PRESERVED | BOUNDARY_EFFECT;
 function boundary(node, props, children) {
   new Boundary(node, props, children);
 }
 __name(boundary, "boundary");
-__name2(boundary, "boundary");
 var Boundary = class {
   static {
     __name(this, "Boundary");
-  }
-  static {
-    __name2(this, "Boundary");
   }
   /** @type {Boundary | null} */
   parent;
@@ -4655,7 +4445,7 @@ var Boundary = class {
     }
     var did_reset = false;
     var calling_on_error = false;
-    const reset2 = /* @__PURE__ */ __name2(() => {
+    const reset2 = /* @__PURE__ */ __name(() => {
       if (did_reset) {
         svelte_boundary_reset_noop();
         return;
@@ -4734,7 +4524,6 @@ function destroy_derived_effects(derived) {
   }
 }
 __name(destroy_derived_effects, "destroy_derived_effects");
-__name2(destroy_derived_effects, "destroy_derived_effects");
 function get_derived_parent_effect(derived) {
   var parent = derived.parent;
   while (parent !== null) {
@@ -4749,7 +4538,6 @@ function get_derived_parent_effect(derived) {
   return null;
 }
 __name(get_derived_parent_effect, "get_derived_parent_effect");
-__name2(get_derived_parent_effect, "get_derived_parent_effect");
 function execute_derived(derived) {
   var value;
   var prev_active_effect = active_effect;
@@ -4766,7 +4554,6 @@ function execute_derived(derived) {
   return value;
 }
 __name(execute_derived, "execute_derived");
-__name2(execute_derived, "execute_derived");
 function update_derived(derived) {
   var value = execute_derived(derived);
   if (!derived.equals(value)) {
@@ -4788,7 +4575,6 @@ function update_derived(derived) {
   }
 }
 __name(update_derived, "update_derived");
-__name2(update_derived, "update_derived");
 var eager_effects = /* @__PURE__ */ new Set();
 var old_values = /* @__PURE__ */ new Map();
 var eager_effects_deferred = false;
@@ -4805,7 +4591,6 @@ function source(v, stack) {
   return signal;
 }
 __name(source, "source");
-__name2(source, "source");
 // @__NO_SIDE_EFFECTS__
 function state(v, stack) {
   const s3 = source(v);
@@ -4813,7 +4598,6 @@ function state(v, stack) {
   return s3;
 }
 __name(state, "state");
-__name2(state, "state");
 // @__NO_SIDE_EFFECTS__
 function mutable_source(initial_value, immutable2 = false, trackable = true) {
   const s3 = source(initial_value);
@@ -4823,7 +4607,6 @@ function mutable_source(initial_value, immutable2 = false, trackable = true) {
   return s3;
 }
 __name(mutable_source, "mutable_source");
-__name2(mutable_source, "mutable_source");
 function set(source2, value, should_proxy = false) {
   if (active_reaction !== null && // since we are untracking the function inside `$inspect.with` we need to add this check
   // to ensure we error if state is set inside an inspect effect
@@ -4834,7 +4617,6 @@ function set(source2, value, should_proxy = false) {
   return internal_set(source2, new_value);
 }
 __name(set, "set");
-__name2(set, "set");
 function internal_set(source2, value) {
   if (!source2.equals(value)) {
     var old_value = source2.v;
@@ -4871,7 +4653,6 @@ function internal_set(source2, value) {
   return value;
 }
 __name(internal_set, "internal_set");
-__name2(internal_set, "internal_set");
 function flush_eager_effects() {
   eager_effects_deferred = false;
   var prev_is_updating_effect = is_updating_effect;
@@ -4892,12 +4673,10 @@ function flush_eager_effects() {
   eager_effects.clear();
 }
 __name(flush_eager_effects, "flush_eager_effects");
-__name2(flush_eager_effects, "flush_eager_effects");
 function increment(source2) {
   set(source2, source2.v + 1);
 }
 __name(increment, "increment");
-__name2(increment, "increment");
 function mark_reactions(signal, status) {
   var reactions = signal.reactions;
   if (reactions === null) return;
@@ -4936,7 +4715,6 @@ function mark_reactions(signal, status) {
   }
 }
 __name(mark_reactions, "mark_reactions");
-__name2(mark_reactions, "mark_reactions");
 function proxy(value) {
   if (typeof value !== "object" || value === null || STATE_SYMBOL in value) {
     return value;
@@ -4949,7 +4727,7 @@ function proxy(value) {
   var is_proxied_array = is_array(value);
   var version = /* @__PURE__ */ state(0);
   var parent_version = update_version;
-  var with_parent = /* @__PURE__ */ __name2((fn) => {
+  var with_parent = /* @__PURE__ */ __name((fn) => {
     if (update_version === parent_version) {
       return fn();
     }
@@ -5128,7 +4906,6 @@ function proxy(value) {
   );
 }
 __name(proxy, "proxy");
-__name2(proxy, "proxy");
 var $window;
 var first_child_getter;
 var next_sibling_getter;
@@ -5154,12 +4931,10 @@ function init_operations() {
   }
 }
 __name(init_operations, "init_operations");
-__name2(init_operations, "init_operations");
 function create_text(value = "") {
   return document.createTextNode(value);
 }
 __name(create_text, "create_text");
-__name2(create_text, "create_text");
 // @__NO_SIDE_EFFECTS__
 function get_first_child(node) {
   return (
@@ -5168,7 +4943,6 @@ function get_first_child(node) {
   );
 }
 __name(get_first_child, "get_first_child");
-__name2(get_first_child, "get_first_child");
 // @__NO_SIDE_EFFECTS__
 function get_next_sibling(node) {
   return (
@@ -5177,12 +4951,10 @@ function get_next_sibling(node) {
   );
 }
 __name(get_next_sibling, "get_next_sibling");
-__name2(get_next_sibling, "get_next_sibling");
 function clear_text_content(node) {
   node.textContent = "";
 }
 __name(clear_text_content, "clear_text_content");
-__name2(clear_text_content, "clear_text_content");
 function without_reactive_context(fn) {
   var previous_reaction = active_reaction;
   var previous_effect = active_effect;
@@ -5196,7 +4968,6 @@ function without_reactive_context(fn) {
   }
 }
 __name(without_reactive_context, "without_reactive_context");
-__name2(without_reactive_context, "without_reactive_context");
 function push_effect(effect, parent_effect) {
   var parent_last = parent_effect.last;
   if (parent_last === null) {
@@ -5208,7 +4979,6 @@ function push_effect(effect, parent_effect) {
   }
 }
 __name(push_effect, "push_effect");
-__name2(push_effect, "push_effect");
 function create_effect(type, fn, sync) {
   var parent = active_effect;
   if (parent !== null && (parent.f & INERT) !== 0) {
@@ -5265,17 +5035,14 @@ function create_effect(type, fn, sync) {
   return effect;
 }
 __name(create_effect, "create_effect");
-__name2(create_effect, "create_effect");
 function effect_tracking() {
   return active_reaction !== null && !untracking;
 }
 __name(effect_tracking, "effect_tracking");
-__name2(effect_tracking, "effect_tracking");
 function create_user_effect(fn) {
   return create_effect(EFFECT | USER_EFFECT, fn, false);
 }
 __name(create_user_effect, "create_user_effect");
-__name2(create_user_effect, "create_user_effect");
 function component_root(fn) {
   Batch.ensure();
   const effect = create_effect(ROOT_EFFECT | EFFECT_PRESERVED, fn, true);
@@ -5294,23 +5061,19 @@ function component_root(fn) {
   };
 }
 __name(component_root, "component_root");
-__name2(component_root, "component_root");
 function render_effect(fn, flags2 = 0) {
   return create_effect(RENDER_EFFECT | flags2, fn, true);
 }
 __name(render_effect, "render_effect");
-__name2(render_effect, "render_effect");
 function block(fn, flags2 = 0) {
   var effect = create_effect(BLOCK_EFFECT | flags2, fn, true);
   return effect;
 }
 __name(block, "block");
-__name2(block, "block");
 function branch(fn) {
   return create_effect(BRANCH_EFFECT | EFFECT_PRESERVED, fn, true);
 }
 __name(branch, "branch");
-__name2(branch, "branch");
 function execute_effect_teardown(effect) {
   var teardown = effect.teardown;
   if (teardown !== null) {
@@ -5327,7 +5090,6 @@ function execute_effect_teardown(effect) {
   }
 }
 __name(execute_effect_teardown, "execute_effect_teardown");
-__name2(execute_effect_teardown, "execute_effect_teardown");
 function destroy_effect_children(signal, remove_dom = false) {
   var effect = signal.first;
   signal.first = signal.last = null;
@@ -5348,7 +5110,6 @@ function destroy_effect_children(signal, remove_dom = false) {
   }
 }
 __name(destroy_effect_children, "destroy_effect_children");
-__name2(destroy_effect_children, "destroy_effect_children");
 function destroy_block_effect_children(signal) {
   var effect = signal.first;
   while (effect !== null) {
@@ -5360,7 +5121,6 @@ function destroy_block_effect_children(signal) {
   }
 }
 __name(destroy_block_effect_children, "destroy_block_effect_children");
-__name2(destroy_block_effect_children, "destroy_block_effect_children");
 function destroy_effect(effect, remove_dom = true) {
   var removed = false;
   if ((remove_dom || (effect.f & HEAD_EFFECT) !== 0) && effect.nodes !== null && effect.nodes.end !== null) {
@@ -5388,7 +5148,6 @@ function destroy_effect(effect, remove_dom = true) {
   effect.next = effect.prev = effect.teardown = effect.ctx = effect.deps = effect.fn = effect.nodes = effect.ac = null;
 }
 __name(destroy_effect, "destroy_effect");
-__name2(destroy_effect, "destroy_effect");
 function remove_effect_dom(node, end) {
   while (node !== null) {
     var next2 = node === end ? null : /* @__PURE__ */ get_next_sibling(node);
@@ -5397,7 +5156,6 @@ function remove_effect_dom(node, end) {
   }
 }
 __name(remove_effect_dom, "remove_effect_dom");
-__name2(remove_effect_dom, "remove_effect_dom");
 function unlink_effect(effect) {
   var parent = effect.parent;
   var prev = effect.prev;
@@ -5410,17 +5168,16 @@ function unlink_effect(effect) {
   }
 }
 __name(unlink_effect, "unlink_effect");
-__name2(unlink_effect, "unlink_effect");
 function pause_effect(effect, callback, destroy = true) {
   var transitions = [];
   pause_children(effect, transitions, true);
-  var fn = /* @__PURE__ */ __name2(() => {
+  var fn = /* @__PURE__ */ __name(() => {
     if (destroy) destroy_effect(effect);
     if (callback) callback();
   }, "fn");
   var remaining = transitions.length;
   if (remaining > 0) {
-    var check = /* @__PURE__ */ __name2(() => --remaining || fn(), "check");
+    var check = /* @__PURE__ */ __name(() => --remaining || fn(), "check");
     for (var transition of transitions) {
       transition.out(check);
     }
@@ -5429,7 +5186,6 @@ function pause_effect(effect, callback, destroy = true) {
   }
 }
 __name(pause_effect, "pause_effect");
-__name2(pause_effect, "pause_effect");
 function pause_children(effect, transitions, local) {
   if ((effect.f & INERT) !== 0) return;
   effect.f ^= INERT;
@@ -5453,7 +5209,6 @@ function pause_children(effect, transitions, local) {
   }
 }
 __name(pause_children, "pause_children");
-__name2(pause_children, "pause_children");
 function move_effect(effect, fragment) {
   if (!effect.nodes) return;
   var node = effect.nodes.start;
@@ -5465,32 +5220,27 @@ function move_effect(effect, fragment) {
   }
 }
 __name(move_effect, "move_effect");
-__name2(move_effect, "move_effect");
 var is_updating_effect = false;
 function set_is_updating_effect(value) {
   is_updating_effect = value;
 }
 __name(set_is_updating_effect, "set_is_updating_effect");
-__name2(set_is_updating_effect, "set_is_updating_effect");
 var is_destroying_effect = false;
 function set_is_destroying_effect(value) {
   is_destroying_effect = value;
 }
 __name(set_is_destroying_effect, "set_is_destroying_effect");
-__name2(set_is_destroying_effect, "set_is_destroying_effect");
 var active_reaction = null;
 var untracking = false;
 function set_active_reaction(reaction) {
   active_reaction = reaction;
 }
 __name(set_active_reaction, "set_active_reaction");
-__name2(set_active_reaction, "set_active_reaction");
 var active_effect = null;
 function set_active_effect(effect) {
   active_effect = effect;
 }
 __name(set_active_effect, "set_active_effect");
-__name2(set_active_effect, "set_active_effect");
 var current_sources = null;
 function push_reaction_value(value) {
   if (active_reaction !== null && true) {
@@ -5502,7 +5252,6 @@ function push_reaction_value(value) {
   }
 }
 __name(push_reaction_value, "push_reaction_value");
-__name2(push_reaction_value, "push_reaction_value");
 var new_deps = null;
 var skipped_deps = 0;
 var untracked_writes = null;
@@ -5510,7 +5259,6 @@ function set_untracked_writes(value) {
   untracked_writes = value;
 }
 __name(set_untracked_writes, "set_untracked_writes");
-__name2(set_untracked_writes, "set_untracked_writes");
 var write_version = 1;
 var read_version = 0;
 var update_version = read_version;
@@ -5518,12 +5266,10 @@ function set_update_version(value) {
   update_version = value;
 }
 __name(set_update_version, "set_update_version");
-__name2(set_update_version, "set_update_version");
 function increment_write_version() {
   return ++write_version;
 }
 __name(increment_write_version, "increment_write_version");
-__name2(increment_write_version, "increment_write_version");
 function is_dirty(reaction) {
   var flags2 = reaction.f;
   if ((flags2 & DIRTY) !== 0) {
@@ -5561,7 +5307,6 @@ function is_dirty(reaction) {
   return false;
 }
 __name(is_dirty, "is_dirty");
-__name2(is_dirty, "is_dirty");
 function schedule_possible_effect_self_invalidation(signal, effect, root2 = true) {
   var reactions = signal.reactions;
   if (reactions === null) return;
@@ -5591,7 +5336,6 @@ function schedule_possible_effect_self_invalidation(signal, effect, root2 = true
   }
 }
 __name(schedule_possible_effect_self_invalidation, "schedule_possible_effect_self_invalidation");
-__name2(schedule_possible_effect_self_invalidation, "schedule_possible_effect_self_invalidation");
 function update_reaction(reaction) {
   var previous_deps = new_deps;
   var previous_skipped_deps = skipped_deps;
@@ -5685,7 +5429,6 @@ function update_reaction(reaction) {
   }
 }
 __name(update_reaction, "update_reaction");
-__name2(update_reaction, "update_reaction");
 function remove_reaction(signal, dependency) {
   let reactions = dependency.reactions;
   if (reactions !== null) {
@@ -5721,7 +5464,6 @@ function remove_reaction(signal, dependency) {
   }
 }
 __name(remove_reaction, "remove_reaction");
-__name2(remove_reaction, "remove_reaction");
 function remove_reactions(signal, start_index) {
   var dependencies = signal.deps;
   if (dependencies === null) return;
@@ -5730,7 +5472,6 @@ function remove_reactions(signal, start_index) {
   }
 }
 __name(remove_reactions, "remove_reactions");
-__name2(remove_reactions, "remove_reactions");
 function update_effect(effect) {
   var flags2 = effect.f;
   if ((flags2 & DESTROYED) !== 0) {
@@ -5759,7 +5500,6 @@ function update_effect(effect) {
   }
 }
 __name(update_effect, "update_effect");
-__name2(update_effect, "update_effect");
 function get(signal) {
   var flags2 = signal.f;
   var is_derived = (flags2 & DERIVED) !== 0;
@@ -5824,7 +5564,6 @@ function get(signal) {
   return signal.v;
 }
 __name(get, "get");
-__name2(get, "get");
 function reconnect(derived) {
   if (derived.deps === null) return;
   derived.f ^= CONNECTED;
@@ -5839,7 +5578,6 @@ function reconnect(derived) {
   }
 }
 __name(reconnect, "reconnect");
-__name2(reconnect, "reconnect");
 function depends_on_old_values(derived) {
   if (derived.v === UNINITIALIZED) return true;
   if (derived.deps === null) return false;
@@ -5857,7 +5595,6 @@ function depends_on_old_values(derived) {
   return false;
 }
 __name(depends_on_old_values, "depends_on_old_values");
-__name2(depends_on_old_values, "depends_on_old_values");
 function untrack(fn) {
   var previous_untracking = untracking;
   try {
@@ -5868,13 +5605,11 @@ function untrack(fn) {
   }
 }
 __name(untrack, "untrack");
-__name2(untrack, "untrack");
 var STATUS_MASK = -7169;
 function set_signal_status(signal, status) {
   signal.f = signal.f & STATUS_MASK | status;
 }
 __name(set_signal_status, "set_signal_status");
-__name2(set_signal_status, "set_signal_status");
 var all_registered_events = /* @__PURE__ */ new Set();
 var root_event_handles = /* @__PURE__ */ new Set();
 var last_propagated_event = null;
@@ -5963,7 +5698,6 @@ function handle_event_propagation(event) {
   }
 }
 __name(handle_event_propagation, "handle_event_propagation");
-__name2(handle_event_propagation, "handle_event_propagation");
 function assign_nodes(start, end) {
   var effect = (
     /** @type {Effect} */
@@ -5974,12 +5708,10 @@ function assign_nodes(start, end) {
   }
 }
 __name(assign_nodes, "assign_nodes");
-__name2(assign_nodes, "assign_nodes");
 function mount(component3, options2) {
   return _mount(component3, options2);
 }
 __name(mount, "mount");
-__name2(mount, "mount");
 function hydrate(component3, options2) {
   init_operations();
   options2.intro = options2.intro ?? false;
@@ -6026,12 +5758,11 @@ function hydrate(component3, options2) {
   }
 }
 __name(hydrate, "hydrate");
-__name2(hydrate, "hydrate");
 var document_listeners = /* @__PURE__ */ new Map();
 function _mount(Component, { target, anchor, props = {}, events, context: context2, intro = true }) {
   init_operations();
   var registered_events = /* @__PURE__ */ new Set();
-  var event_handle = /* @__PURE__ */ __name2((events2) => {
+  var event_handle = /* @__PURE__ */ __name((events2) => {
     for (var i = 0; i < events2.length; i++) {
       var event_name = events2[i];
       if (registered_events.has(event_name)) continue;
@@ -6056,7 +5787,7 @@ function _mount(Component, { target, anchor, props = {}, events, context: contex
       /** @type {TemplateNode} */
       anchor_node,
       {
-        pending: /* @__PURE__ */ __name2(() => {
+        pending: /* @__PURE__ */ __name(() => {
         }, "pending")
       },
       (anchor_node2) => {
@@ -6116,7 +5847,6 @@ function _mount(Component, { target, anchor, props = {}, events, context: contex
   return component3;
 }
 __name(_mount, "_mount");
-__name2(_mount, "_mount");
 var mounted_components = /* @__PURE__ */ new WeakMap();
 function unmount(component3, options2) {
   const fn = mounted_components.get(component3);
@@ -6127,7 +5857,6 @@ function unmount(component3, options2) {
   return Promise.resolve();
 }
 __name(unmount, "unmount");
-__name2(unmount, "unmount");
 function asClassComponent$1(component3) {
   return class extends Svelte4Component {
     /** @param {any} options */
@@ -6140,13 +5869,9 @@ function asClassComponent$1(component3) {
   };
 }
 __name(asClassComponent$1, "asClassComponent$1");
-__name2(asClassComponent$1, "asClassComponent$1");
 var Svelte4Component = class {
   static {
     __name(this, "Svelte4Component");
-  }
-  static {
-    __name2(this, "Svelte4Component");
   }
   /** @type {any} */
   #events;
@@ -6159,7 +5884,7 @@ var Svelte4Component = class {
    */
   constructor(options2) {
     var sources = /* @__PURE__ */ new Map();
-    var add_source = /* @__PURE__ */ __name2((key2, value) => {
+    var add_source = /* @__PURE__ */ __name((key2, value) => {
       var s3 = /* @__PURE__ */ mutable_source(value, false, false);
       sources.set(key2, s3);
       return s3;
@@ -6225,7 +5950,7 @@ var Svelte4Component = class {
    */
   $on(event, callback) {
     this.#events[event] = this.#events[event] || [];
-    const cb = /* @__PURE__ */ __name2((...args) => callback.call(this, ...args), "cb");
+    const cb = /* @__PURE__ */ __name((...args) => callback.call(this, ...args), "cb");
     this.#events[event].push(cb);
     return () => {
       this.#events[event] = this.#events[event].filter(
@@ -6243,10 +5968,9 @@ function set_read_implementation(fn) {
   read_implementation = fn;
 }
 __name(set_read_implementation, "set_read_implementation");
-__name2(set_read_implementation, "set_read_implementation");
 function asClassComponent(component3) {
   const component_constructor = asClassComponent$1(component3);
-  const _render = /* @__PURE__ */ __name2((props, { context: context2, csp } = {}) => {
+  const _render = /* @__PURE__ */ __name((props, { context: context2, csp } = {}) => {
     const result = render(component3, { props, context: context2, csp });
     const munged = Object.defineProperties(
       /** @type {LegacyRenderResult & PromiseLike<LegacyRenderResult>} */
@@ -6256,10 +5980,10 @@ function asClassComponent(component3) {
           value: { code: "", map: null }
         },
         head: {
-          get: /* @__PURE__ */ __name2(() => result.head, "get")
+          get: /* @__PURE__ */ __name(() => result.head, "get")
         },
         html: {
-          get: /* @__PURE__ */ __name2(() => result.body, "get")
+          get: /* @__PURE__ */ __name(() => result.body, "get")
         },
         then: {
           /**
@@ -6270,7 +5994,7 @@ function asClassComponent(component3) {
            * @param { (value: LegacyRenderResult) => TResult1 } onfulfilled
            * @param { (reason: unknown) => TResult2 } onrejected
            */
-          value: /* @__PURE__ */ __name2((onfulfilled, onrejected) => {
+          value: /* @__PURE__ */ __name((onfulfilled, onrejected) => {
             {
               const user_result = onfulfilled({
                 css: munged.css,
@@ -6289,7 +6013,6 @@ function asClassComponent(component3) {
   return component_constructor;
 }
 __name(asClassComponent, "asClassComponent");
-__name2(asClassComponent, "asClassComponent");
 function Root($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     let {
@@ -6316,7 +6039,7 @@ function Root($$renderer, $$props) {
         data: data_0,
         form,
         params: page2.params,
-        children: /* @__PURE__ */ __name2(($$renderer3) => {
+        children: /* @__PURE__ */ __name(($$renderer3) => {
           $$renderer3.push(`<!---->`);
           Pyramid_1($$renderer3, { data: data_1, form, params: page2.params });
           $$renderer3.push(`<!---->`);
@@ -6339,7 +6062,6 @@ function Root($$renderer, $$props) {
   });
 }
 __name(Root, "Root");
-__name2(Root, "Root");
 var root = asClassComponent(Root);
 var options = {
   app_template_contains_nonce: false,
@@ -6358,8 +6080,8 @@ var options = {
   service_worker: false,
   service_worker_options: void 0,
   templates: {
-    app: /* @__PURE__ */ __name2(({ head, body: body2, assets: assets2, nonce, env: env2 }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<link rel="icon" href="' + assets2 + '/logo.png" />\r\n		<meta name="viewport" content="width=device-width" />\r\n		<link rel="stylesheet" href="' + assets2 + '/styles/reset.css" />\r\n		<link rel="stylesheet" href="' + assets2 + '/styles/global.css" />\r\n\r\n		<!-- Jetbrains Mono & Major Mono Display -->\r\n		<link rel="preconnect" href="https://fonts.googleapis.com" />\r\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\r\n		<link\r\n			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Major+Mono+Display&display=swap"\r\n			rel="stylesheet"\r\n		/>\r\n\r\n		' + head + '\r\n	</head>\r\n\r\n	<body data-sveltekit-preload-data="hover">\r\n		<div style="display: contents">' + body2 + "</div>\r\n	</body>\r\n</html>\r\n\r\n<style>\r\n	html {\r\n		scroll-behavior: smooth;\r\n	}\r\n</style>\r\n", "app"),
-    error: /* @__PURE__ */ __name2(({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
+    app: /* @__PURE__ */ __name(({ head, body: body2, assets: assets2, nonce, env: env2 }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<link rel="icon" href="' + assets2 + '/logo.png" />\r\n		<meta name="viewport" content="width=device-width" />\r\n		<link rel="stylesheet" href="' + assets2 + '/styles/reset.css" />\r\n		<link rel="stylesheet" href="' + assets2 + '/styles/global.css" />\r\n\r\n		<!-- Jetbrains Mono & Major Mono Display -->\r\n		<link rel="preconnect" href="https://fonts.googleapis.com" />\r\n		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\r\n		<link\r\n			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Major+Mono+Display&display=swap"\r\n			rel="stylesheet"\r\n		/>\r\n\r\n		' + head + '\r\n	</head>\r\n\r\n	<body data-sveltekit-preload-data="hover">\r\n		<div style="display: contents">' + body2 + "</div>\r\n	</body>\r\n</html>\r\n\r\n<style>\r\n	html {\r\n		scroll-behavior: smooth;\r\n	}\r\n</style>\r\n", "app"),
+    error: /* @__PURE__ */ __name(({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
 			body {
@@ -6430,7 +6152,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n", "error")
   },
-  version_hash: "15smded"
+  version_hash: "5mt4qb"
 };
 async function get_hooks() {
   let handle;
@@ -6451,7 +6173,8 @@ async function get_hooks() {
   };
 }
 __name(get_hooks, "get_hooks");
-__name2(get_hooks, "get_hooks");
+
+// ../output/server/index.js
 var import_cookie = __toESM(require_cookie(), 1);
 var set_cookie_parser = __toESM(require_set_cookie(), 1);
 function with_resolvers() {
@@ -6464,7 +6187,6 @@ function with_resolvers() {
   return { promise, resolve: resolve2, reject };
 }
 __name(with_resolvers, "with_resolvers");
-__name2(with_resolvers, "with_resolvers");
 var NULL_BODY_STATUS = [101, 103, 204, 205, 304];
 var IN_WEBCONTAINER2 = !!globalThis.process?.versions?.webcontainer;
 var SVELTE_KIT_ASSETS = "/_svelte_kit_assets";
@@ -6506,13 +6228,11 @@ function negotiate(accept, types) {
   return accepted;
 }
 __name(negotiate, "negotiate");
-__name2(negotiate, "negotiate");
 function is_content_type(request, ...types) {
   const type = request.headers.get("content-type")?.split(";", 1)[0].trim() ?? "";
   return types.includes(type.toLowerCase());
 }
 __name(is_content_type, "is_content_type");
-__name2(is_content_type, "is_content_type");
 function is_form_content_type(request) {
   return is_content_type(
     request,
@@ -6523,7 +6243,6 @@ function is_form_content_type(request) {
   );
 }
 __name(is_form_content_type, "is_form_content_type");
-__name2(is_form_content_type, "is_form_content_type");
 function coalesce_to_error(err) {
   return err instanceof Error || err && /** @type {any} */
   err.name && /** @type {any} */
@@ -6533,7 +6252,6 @@ function coalesce_to_error(err) {
   ) : new Error(JSON.stringify(err));
 }
 __name(coalesce_to_error, "coalesce_to_error");
-__name2(coalesce_to_error, "coalesce_to_error");
 function normalize_error(error2) {
   return (
     /** @type {import('../exports/internal/index.js').Redirect | HttpError | SvelteKitError | Error} */
@@ -6541,17 +6259,14 @@ function normalize_error(error2) {
   );
 }
 __name(normalize_error, "normalize_error");
-__name2(normalize_error, "normalize_error");
 function get_status(error2) {
   return error2 instanceof HttpError || error2 instanceof SvelteKitError ? error2.status : 500;
 }
 __name(get_status, "get_status");
-__name2(get_status, "get_status");
 function get_message(error2) {
   return error2 instanceof SvelteKitError ? error2.text : "Internal Error";
 }
 __name(get_message, "get_message");
-__name2(get_message, "get_message");
 var escape_html_attr_dict = {
   "&": "&amp;",
   '"': "&quot;"
@@ -6585,8 +6300,7 @@ function escape_html2(str, is_attr) {
   });
   return escaped_str;
 }
-__name(escape_html2, "escape_html2");
-__name2(escape_html2, "escape_html");
+__name(escape_html2, "escape_html");
 function method_not_allowed(mod, method) {
   return text(`${method} method not allowed`, {
     status: 405,
@@ -6598,7 +6312,6 @@ function method_not_allowed(mod, method) {
   });
 }
 __name(method_not_allowed, "method_not_allowed");
-__name2(method_not_allowed, "method_not_allowed");
 function allowed_methods(mod) {
   const allowed = ENDPOINT_METHODS.filter((method) => method in mod);
   if ("GET" in mod && !("HEAD" in mod)) {
@@ -6607,12 +6320,10 @@ function allowed_methods(mod) {
   return allowed;
 }
 __name(allowed_methods, "allowed_methods");
-__name2(allowed_methods, "allowed_methods");
 function get_global_name(options2) {
   return `__sveltekit_${options2.version_hash}`;
 }
 __name(get_global_name, "get_global_name");
-__name2(get_global_name, "get_global_name");
 function static_error_page(options2, status, message) {
   let page2 = options2.templates.error({ status, message: escape_html2(message) });
   return text(page2, {
@@ -6621,7 +6332,6 @@ function static_error_page(options2, status, message) {
   });
 }
 __name(static_error_page, "static_error_page");
-__name2(static_error_page, "static_error_page");
 async function handle_fatal_error(event, state2, options2, error2) {
   error2 = error2 instanceof HttpError ? error2 : coalesce_to_error(error2);
   const status = get_status(error2);
@@ -6638,7 +6348,6 @@ async function handle_fatal_error(event, state2, options2, error2) {
   return static_error_page(options2, status, body2.message);
 }
 __name(handle_fatal_error, "handle_fatal_error");
-__name2(handle_fatal_error, "handle_fatal_error");
 async function handle_error_and_jsonify(event, state2, options2, error2) {
   if (error2 instanceof HttpError) {
     return { message: "Unknown Error", ...error2.body };
@@ -6651,7 +6360,6 @@ async function handle_error_and_jsonify(event, state2, options2, error2) {
   ) ?? { message };
 }
 __name(handle_error_and_jsonify, "handle_error_and_jsonify");
-__name2(handle_error_and_jsonify, "handle_error_and_jsonify");
 function redirect_response(status, location) {
   const response = new Response(void 0, {
     status,
@@ -6660,7 +6368,6 @@ function redirect_response(status, location) {
   return response;
 }
 __name(redirect_response, "redirect_response");
-__name2(redirect_response, "redirect_response");
 function clarify_devalue_error(event, error2) {
   if (error2.path) {
     return `Data returned from \`load\` while rendering ${event.route.id} is not serializable: ${error2.message} (${error2.path}). If you need to serialize/deserialize custom types, use transport hooks: https://svelte.dev/docs/kit/hooks#Universal-hooks-transport.`;
@@ -6671,7 +6378,6 @@ function clarify_devalue_error(event, error2) {
   return error2.message;
 }
 __name(clarify_devalue_error, "clarify_devalue_error");
-__name2(clarify_devalue_error, "clarify_devalue_error");
 function serialize_uses(node) {
   const uses = {};
   if (node.uses && node.uses.dependencies.size > 0) {
@@ -6689,12 +6395,10 @@ function serialize_uses(node) {
   return uses;
 }
 __name(serialize_uses, "serialize_uses");
-__name2(serialize_uses, "serialize_uses");
 function has_prerendered_path(manifest2, pathname) {
   return manifest2._.prerendered_routes.has(pathname) || pathname.at(-1) === "/" && manifest2._.prerendered_routes.has(pathname.slice(0, -1));
 }
 __name(has_prerendered_path, "has_prerendered_path");
-__name2(has_prerendered_path, "has_prerendered_path");
 function format_server_error(status, error2, event) {
   const formatted_text = `
 \x1B[1;31m[${status}] ${event.request.method} ${event.url.pathname}\x1B[0m`;
@@ -6705,7 +6409,6 @@ function format_server_error(status, error2, event) {
 ${error2.stack}`;
 }
 __name(format_server_error, "format_server_error");
-__name2(format_server_error, "format_server_error");
 function get_node_type(node_id) {
   const parts = node_id?.split("/");
   const filename = parts?.at(-1);
@@ -6714,7 +6417,6 @@ function get_node_type(node_id) {
   return dot_parts.slice(0, -1).join(".");
 }
 __name(get_node_type, "get_node_type");
-__name2(get_node_type, "get_node_type");
 async function render_endpoint(event, event_state, mod, state2) {
   const method = (
     /** @type {import('types').HttpMethod} */
@@ -6784,7 +6486,6 @@ async function render_endpoint(event, event_state, mod, state2) {
   }
 }
 __name(render_endpoint, "render_endpoint");
-__name2(render_endpoint, "render_endpoint");
 function is_endpoint_request(event) {
   const { method, headers: headers2 } = event.request;
   if (ENDPOINT_METHODS.includes(method) && !PAGE_METHODS.includes(method)) {
@@ -6795,7 +6496,6 @@ function is_endpoint_request(event) {
   return negotiate(accept, ["*", "text/html"]) !== "text/html";
 }
 __name(is_endpoint_request, "is_endpoint_request");
-__name2(is_endpoint_request, "is_endpoint_request");
 function compact(arr) {
   return arr.filter(
     /** @returns {val is NonNullable<T>} */
@@ -6803,44 +6503,37 @@ function compact(arr) {
   );
 }
 __name(compact, "compact");
-__name2(compact, "compact");
 var DATA_SUFFIX = "/__data.json";
 var HTML_DATA_SUFFIX = ".html__data.json";
 function has_data_suffix2(pathname) {
   return pathname.endsWith(DATA_SUFFIX) || pathname.endsWith(HTML_DATA_SUFFIX);
 }
-__name(has_data_suffix2, "has_data_suffix2");
-__name2(has_data_suffix2, "has_data_suffix");
+__name(has_data_suffix2, "has_data_suffix");
 function add_data_suffix2(pathname) {
   if (pathname.endsWith(".html")) return pathname.replace(/\.html$/, HTML_DATA_SUFFIX);
   return pathname.replace(/\/$/, "") + DATA_SUFFIX;
 }
-__name(add_data_suffix2, "add_data_suffix2");
-__name2(add_data_suffix2, "add_data_suffix");
+__name(add_data_suffix2, "add_data_suffix");
 function strip_data_suffix2(pathname) {
   if (pathname.endsWith(HTML_DATA_SUFFIX)) {
     return pathname.slice(0, -HTML_DATA_SUFFIX.length) + ".html";
   }
   return pathname.slice(0, -DATA_SUFFIX.length);
 }
-__name(strip_data_suffix2, "strip_data_suffix2");
-__name2(strip_data_suffix2, "strip_data_suffix");
+__name(strip_data_suffix2, "strip_data_suffix");
 var ROUTE_SUFFIX = "/__route.js";
 function has_resolution_suffix2(pathname) {
   return pathname.endsWith(ROUTE_SUFFIX);
 }
-__name(has_resolution_suffix2, "has_resolution_suffix2");
-__name2(has_resolution_suffix2, "has_resolution_suffix");
+__name(has_resolution_suffix2, "has_resolution_suffix");
 function add_resolution_suffix2(pathname) {
   return pathname.replace(/\/$/, "") + ROUTE_SUFFIX;
 }
-__name(add_resolution_suffix2, "add_resolution_suffix2");
-__name2(add_resolution_suffix2, "add_resolution_suffix");
+__name(add_resolution_suffix2, "add_resolution_suffix");
 function strip_resolution_suffix2(pathname) {
   return pathname.slice(0, -ROUTE_SUFFIX.length);
 }
-__name(strip_resolution_suffix2, "strip_resolution_suffix2");
-__name2(strip_resolution_suffix2, "strip_resolution_suffix");
+__name(strip_resolution_suffix2, "strip_resolution_suffix");
 var noop_span = {
   spanContext() {
     return noop_span_context;
@@ -6887,7 +6580,6 @@ async function record_span({ name, attributes: attributes2, fn }) {
   }
 }
 __name(record_span, "record_span");
-__name2(record_span, "record_span");
 function is_action_json_request(event) {
   const accept = negotiate(event.request.headers.get("accept") ?? "*/*", [
     "application/json",
@@ -6896,7 +6588,6 @@ function is_action_json_request(event) {
   return accept === "application/json" && event.request.method === "POST";
 }
 __name(is_action_json_request, "is_action_json_request");
-__name2(is_action_json_request, "is_action_json_request");
 async function handle_action_json_request(event, event_state, options2, server2) {
   const actions = server2?.actions;
   if (!actions) {
@@ -6973,12 +6664,10 @@ async function handle_action_json_request(event, event_state, options2, server2)
   }
 }
 __name(handle_action_json_request, "handle_action_json_request");
-__name2(handle_action_json_request, "handle_action_json_request");
 function check_incorrect_fail_use(error2) {
   return error2 instanceof ActionFailure ? new Error('Cannot "throw fail()". Use "return fail()"') : error2;
 }
 __name(check_incorrect_fail_use, "check_incorrect_fail_use");
-__name2(check_incorrect_fail_use, "check_incorrect_fail_use");
 function action_json_redirect(redirect) {
   return action_json({
     type: "redirect",
@@ -6987,17 +6676,14 @@ function action_json_redirect(redirect) {
   });
 }
 __name(action_json_redirect, "action_json_redirect");
-__name2(action_json_redirect, "action_json_redirect");
 function action_json(data, init2) {
   return json(data, init2);
 }
 __name(action_json, "action_json");
-__name2(action_json, "action_json");
 function is_action_request(event) {
   return event.request.method === "POST";
 }
 __name(is_action_request, "is_action_request");
-__name2(is_action_request, "is_action_request");
 async function handle_action_request(event, event_state, server2) {
   const actions = server2?.actions;
   if (!actions) {
@@ -7049,7 +6735,6 @@ async function handle_action_request(event, event_state, server2) {
   }
 }
 __name(handle_action_request, "handle_action_request");
-__name2(handle_action_request, "handle_action_request");
 function check_named_default_separate(actions) {
   if (actions.default && Object.keys(actions).length > 1) {
     throw new Error(
@@ -7058,7 +6743,6 @@ function check_named_default_separate(actions) {
   }
 }
 __name(check_named_default_separate, "check_named_default_separate");
-__name2(check_named_default_separate, "check_named_default_separate");
 async function call_action(event, event_state, actions) {
   const url = new URL(event.request.url);
   let name = "default";
@@ -7089,7 +6773,7 @@ async function call_action(event, event_state, actions) {
     attributes: {
       "http.route": event.route.id || "unknown"
     },
-    fn: /* @__PURE__ */ __name2(async (current2) => {
+    fn: /* @__PURE__ */ __name(async (current2) => {
       const traced_event = merge_tracing(event, current2);
       const result = await with_request_store(
         { event: traced_event, state: event_state },
@@ -7106,9 +6790,8 @@ async function call_action(event, event_state, actions) {
   });
 }
 __name(call_action, "call_action");
-__name2(call_action, "call_action");
 function uneval_action_response(data, route_id, transport) {
-  const replacer = /* @__PURE__ */ __name2((thing) => {
+  const replacer = /* @__PURE__ */ __name((thing) => {
     for (const key2 in transport) {
       const encoded = transport[key2].encode(thing);
       if (encoded) {
@@ -7119,7 +6802,6 @@ function uneval_action_response(data, route_id, transport) {
   return try_serialize(data, (value) => uneval(value, replacer), route_id);
 }
 __name(uneval_action_response, "uneval_action_response");
-__name2(uneval_action_response, "uneval_action_response");
 function stringify_action_response(data, route_id, transport) {
   const encoders = Object.fromEntries(
     Object.entries(transport).map(([key2, value]) => [key2, value.encode])
@@ -7127,7 +6809,6 @@ function stringify_action_response(data, route_id, transport) {
   return try_serialize(data, (value) => stringify(value, encoders), route_id);
 }
 __name(stringify_action_response, "stringify_action_response");
-__name2(stringify_action_response, "stringify_action_response");
 function try_serialize(data, fn, route_id) {
   try {
     return fn(data);
@@ -7150,17 +6831,16 @@ function try_serialize(data, fn, route_id) {
   }
 }
 __name(try_serialize, "try_serialize");
-__name2(try_serialize, "try_serialize");
 function create_async_iterator() {
   let resolved = -1;
   let returned = -1;
   const deferred2 = [];
   return {
-    iterate: /* @__PURE__ */ __name2((transform = (x) => x) => {
+    iterate: /* @__PURE__ */ __name((transform = (x) => x) => {
       return {
         [Symbol.asyncIterator]() {
           return {
-            next: /* @__PURE__ */ __name2(async () => {
+            next: /* @__PURE__ */ __name(async () => {
               const next2 = deferred2[++returned];
               if (!next2) return { value: null, done: true };
               const value = await next2.promise;
@@ -7170,7 +6850,7 @@ function create_async_iterator() {
         }
       };
     }, "iterate"),
-    add: /* @__PURE__ */ __name2((promise) => {
+    add: /* @__PURE__ */ __name((promise) => {
       deferred2.push(with_resolvers());
       void promise.then((value) => {
         deferred2[++resolved].resolve(value);
@@ -7179,14 +6859,13 @@ function create_async_iterator() {
   };
 }
 __name(create_async_iterator, "create_async_iterator");
-__name2(create_async_iterator, "create_async_iterator");
 function server_data_serializer(event, event_state, options2) {
   let promise_id = 1;
   let max_nodes = -1;
   const iterator = create_async_iterator();
   const global = get_global_name(options2);
   function get_replacer(index3) {
-    return /* @__PURE__ */ __name2(/* @__PURE__ */ __name(function replacer(thing) {
+    return /* @__PURE__ */ __name(function replacer(thing) {
       if (typeof thing?.then === "function") {
         const id = promise_id++;
         const promise = thing.then(
@@ -7231,10 +6910,9 @@ function server_data_serializer(event, event_state, options2) {
           }
         }
       }
-    }, "replacer"), "replacer");
+    }, "replacer");
   }
   __name(get_replacer, "get_replacer");
-  __name2(get_replacer, "get_replacer");
   const strings = (
     /** @type {string[]} */
     []
@@ -7278,7 +6956,6 @@ function server_data_serializer(event, event_state, options2) {
   };
 }
 __name(server_data_serializer, "server_data_serializer");
-__name2(server_data_serializer, "server_data_serializer");
 function server_data_serializer_json(event, event_state, options2) {
   let promise_id = 1;
   const iterator = create_async_iterator();
@@ -7287,7 +6964,7 @@ function server_data_serializer_json(event, event_state, options2) {
       Object.entries(options2.hooks.transport).map(([key2, value]) => [key2, value.encode])
     ),
     /** @param {any} thing */
-    Promise: /* @__PURE__ */ __name2((thing) => {
+    Promise: /* @__PURE__ */ __name((thing) => {
       if (typeof thing?.then !== "function") {
         return;
       }
@@ -7366,7 +7043,6 @@ function server_data_serializer_json(event, event_state, options2) {
   };
 }
 __name(server_data_serializer_json, "server_data_serializer_json");
-__name2(server_data_serializer_json, "server_data_serializer_json");
 async function load_server_data({ event, event_state, state: state2, node, parent }) {
   if (!node?.server) return null;
   let is_tracking = true;
@@ -7406,25 +7082,25 @@ async function load_server_data({ event, event_state, state: state2, node, paren
       "sveltekit.load.node_type": get_node_type(node.server_id),
       "http.route": event.route.id || "unknown"
     },
-    fn: /* @__PURE__ */ __name2(async (current2) => {
+    fn: /* @__PURE__ */ __name(async (current2) => {
       const traced_event = merge_tracing(event, current2);
       const result2 = await with_request_store(
         { event: traced_event, state: event_state },
         () => load.call(null, {
           ...traced_event,
-          fetch: /* @__PURE__ */ __name2((info, init2) => {
+          fetch: /* @__PURE__ */ __name((info, init2) => {
             new URL(info instanceof Request ? info.url : info, event.url);
             return event.fetch(info, init2);
           }, "fetch"),
           /** @param {string[]} deps */
-          depends: /* @__PURE__ */ __name2((...deps) => {
+          depends: /* @__PURE__ */ __name((...deps) => {
             for (const dep of deps) {
               const { href } = new URL(dep, event.url);
               uses.dependencies.add(href);
             }
           }, "depends"),
           params: new Proxy(event.params, {
-            get: /* @__PURE__ */ __name2((target, key2) => {
+            get: /* @__PURE__ */ __name((target, key2) => {
               if (is_tracking) {
                 uses.params.add(key2);
               }
@@ -7434,14 +7110,14 @@ async function load_server_data({ event, event_state, state: state2, node, paren
               ];
             }, "get")
           }),
-          parent: /* @__PURE__ */ __name2(async () => {
+          parent: /* @__PURE__ */ __name(async () => {
             if (is_tracking) {
               uses.parent = true;
             }
             return parent();
           }, "parent"),
           route: new Proxy(event.route, {
-            get: /* @__PURE__ */ __name2((target, key2) => {
+            get: /* @__PURE__ */ __name((target, key2) => {
               if (is_tracking) {
                 uses.route = true;
               }
@@ -7473,7 +7149,6 @@ async function load_server_data({ event, event_state, state: state2, node, paren
   };
 }
 __name(load_server_data, "load_server_data");
-__name2(load_server_data, "load_server_data");
 async function load_data({
   event,
   event_state,
@@ -7497,7 +7172,7 @@ async function load_data({
       "sveltekit.load.node_type": get_node_type(node.universal_id),
       "http.route": event.route.id || "unknown"
     },
-    fn: /* @__PURE__ */ __name2(async (current2) => {
+    fn: /* @__PURE__ */ __name(async (current2) => {
       const traced_event = merge_tracing(event, current2);
       return await with_request_store(
         { event: traced_event, state: event_state },
@@ -7508,10 +7183,10 @@ async function load_data({
           route: event.route,
           fetch: create_universal_fetch(event, state2, fetched, csr, resolve_opts),
           setHeaders: event.setHeaders,
-          depends: /* @__PURE__ */ __name2(() => {
+          depends: /* @__PURE__ */ __name(() => {
           }, "depends"),
           parent,
-          untrack: /* @__PURE__ */ __name2((fn) => fn(), "untrack"),
+          untrack: /* @__PURE__ */ __name((fn) => fn(), "untrack"),
           tracing: traced_event.tracing
         })
       );
@@ -7520,9 +7195,8 @@ async function load_data({
   return result ?? null;
 }
 __name(load_data, "load_data");
-__name2(load_data, "load_data");
 function create_universal_fetch(event, state2, fetched, csr, resolve_opts) {
-  const universal_fetch = /* @__PURE__ */ __name2(async (input, init2) => {
+  const universal_fetch = /* @__PURE__ */ __name(async (input, init2) => {
     const cloned_body = input instanceof Request && input.body ? input.clone().body : null;
     const cloned_headers = input instanceof Request && [...input.headers].length ? new Headers(input.headers) : init2?.headers;
     let response = await event.fetch(input, init2);
@@ -7575,7 +7249,6 @@ function create_universal_fetch(event, state2, fetched, csr, resolve_opts) {
           });
         }
         __name(push_fetched, "push_fetched");
-        __name2(push_fetched, "push_fetched");
         if (key2 === "body") {
           if (response2.body === null) {
             return null;
@@ -7627,7 +7300,6 @@ function create_universal_fetch(event, state2, fetched, csr, resolve_opts) {
           return body2;
         }
         __name(text2, "text2");
-        __name2(text2, "text2");
         if (key2 === "text") {
           return text2;
         }
@@ -7681,7 +7353,6 @@ function create_universal_fetch(event, state2, fetched, csr, resolve_opts) {
   };
 }
 __name(create_universal_fetch, "create_universal_fetch");
-__name2(create_universal_fetch, "create_universal_fetch");
 async function stream_to_string(stream) {
   let result = "";
   const reader = stream.getReader();
@@ -7695,7 +7366,6 @@ async function stream_to_string(stream) {
   return result;
 }
 __name(stream_to_string, "stream_to_string");
-__name2(stream_to_string, "stream_to_string");
 function hash(...values) {
   let hash2 = 5381;
   for (const value of values) {
@@ -7713,7 +7383,6 @@ function hash(...values) {
   return (hash2 >>> 0).toString(36);
 }
 __name(hash, "hash");
-__name2(hash, "hash");
 var replacements2 = {
   "<": "\\u003C",
   "\u2028": "\\u2028",
@@ -7768,7 +7437,6 @@ function serialize_data(fetched, filter, prerendering = false) {
   return `<script ${attrs.join(" ")}>${safe_payload}<\/script>`;
 }
 __name(serialize_data, "serialize_data");
-__name2(serialize_data, "serialize_data");
 var s = JSON.stringify;
 function sha2562(data) {
   if (!key[0]) precompute();
@@ -7818,8 +7486,7 @@ function sha2562(data) {
   reverse_endianness(bytes);
   return btoa(String.fromCharCode(...bytes));
 }
-__name(sha2562, "sha2562");
-__name2(sha2562, "sha256");
+__name(sha2562, "sha256");
 var init = new Uint32Array(8);
 var key = new Uint32Array(64);
 function precompute() {
@@ -7827,7 +7494,6 @@ function precompute() {
     return (x - Math.floor(x)) * 4294967296;
   }
   __name(frac, "frac");
-  __name2(frac, "frac");
   let prime = 2;
   for (let i = 0; i < 64; prime++) {
     let is_prime = true;
@@ -7847,7 +7513,6 @@ function precompute() {
   }
 }
 __name(precompute, "precompute");
-__name2(precompute, "precompute");
 function reverse_endianness(bytes) {
   for (let i = 0; i < bytes.length; i += 4) {
     const a = bytes[i + 0];
@@ -7861,7 +7526,6 @@ function reverse_endianness(bytes) {
   }
 }
 __name(reverse_endianness, "reverse_endianness");
-__name2(reverse_endianness, "reverse_endianness");
 function encode(str) {
   const encoded = text_encoder2.encode(str);
   const length = encoded.length * 8;
@@ -7876,14 +7540,12 @@ function encode(str) {
   return words;
 }
 __name(encode, "encode");
-__name2(encode, "encode");
 var array = new Uint8Array(16);
 function generate_nonce() {
   crypto.getRandomValues(array);
   return btoa(String.fromCharCode(...array));
 }
 __name(generate_nonce, "generate_nonce");
-__name2(generate_nonce, "generate_nonce");
 var quoted = /* @__PURE__ */ new Set([
   "self",
   "unsafe-eval",
@@ -7899,9 +7561,6 @@ var crypto_pattern = /^(nonce|sha\d\d\d)-/;
 var BaseProvider = class {
   static {
     __name(this, "BaseProvider");
-  }
-  static {
-    __name2(this, "BaseProvider");
   }
   /** @type {boolean} */
   #use_hashes;
@@ -7952,7 +7611,7 @@ var BaseProvider = class {
     const effective_style_src = d["style-src"] || d["default-src"];
     const style_src_attr = d["style-src-attr"];
     const style_src_elem = d["style-src-elem"];
-    const needs_csp = /* @__PURE__ */ __name2((directive) => !!directive && !directive.some((value) => value === "unsafe-inline"), "needs_csp");
+    const needs_csp = /* @__PURE__ */ __name((directive) => !!directive && !directive.some((value) => value === "unsafe-inline"), "needs_csp");
     this.#script_src_needs_csp = needs_csp(effective_script_src);
     this.#script_src_elem_needs_csp = needs_csp(script_src_elem);
     this.#style_src_needs_csp = needs_csp(effective_style_src);
@@ -8060,9 +7719,6 @@ var CspProvider = class extends BaseProvider {
   static {
     __name(this, "CspProvider");
   }
-  static {
-    __name2(this, "CspProvider");
-  }
   get_meta() {
     const content = this.get_header(true);
     if (!content) {
@@ -8074,9 +7730,6 @@ var CspProvider = class extends BaseProvider {
 var CspReportOnlyProvider = class extends BaseProvider {
   static {
     __name(this, "CspReportOnlyProvider");
-  }
-  static {
-    __name2(this, "CspReportOnlyProvider");
   }
   /**
    * @param {boolean} use_hashes
@@ -8099,9 +7752,6 @@ var CspReportOnlyProvider = class extends BaseProvider {
 var Csp = class {
   static {
     __name(this, "Csp");
-  }
-  static {
-    __name2(this, "Csp");
   }
   /** @readonly */
   nonce = generate_nonce();
@@ -8173,7 +7823,6 @@ function exec(match, params, matchers) {
   return result;
 }
 __name(exec, "exec");
-__name2(exec, "exec");
 function generate_route_object(route, url, manifest2) {
   const { errors, layouts, leaf } = route;
   const nodes = [...errors, ...layouts.map((l) => l?.[1]), leaf[1]].filter((n2) => typeof n2 === "number").map((n2) => `'${n2}': () => ${create_client_import(manifest2._.client.nodes?.[n2], url)}`).join(",\n		");
@@ -8190,7 +7839,6 @@ function generate_route_object(route, url, manifest2) {
   ].join(",\n	");
 }
 __name(generate_route_object, "generate_route_object");
-__name2(generate_route_object, "generate_route_object");
 function create_client_import(import_path, url) {
   if (!import_path) return "Promise.resolve({})";
   if (import_path[0] === "/") {
@@ -8204,7 +7852,6 @@ function create_client_import(import_path, url) {
   return `import('${path}')`;
 }
 __name(create_client_import, "create_client_import");
-__name2(create_client_import, "create_client_import");
 async function resolve_route(resolved_path, url, manifest2) {
   if (!manifest2._.client.routes) {
     return text("Server-side route resolution disabled", { status: 400 });
@@ -8225,7 +7872,6 @@ async function resolve_route(resolved_path, url, manifest2) {
   return create_server_routing_response(route, params, url, manifest2).response;
 }
 __name(resolve_route, "resolve_route");
-__name2(resolve_route, "resolve_route");
 function create_server_routing_response(route, params, url, manifest2) {
   const headers2 = new Headers({
     "content-type": "application/javascript; charset=utf-8"
@@ -8240,7 +7886,6 @@ export const route = ${csr_route}; export const params = ${JSON.stringify(params
   }
 }
 __name(create_server_routing_response, "create_server_routing_response");
-__name2(create_server_routing_response, "create_server_routing_response");
 function create_css_import(route, url, manifest2) {
   const { errors, layouts, leaf } = route;
   let css = "";
@@ -8259,10 +7904,9 @@ function create_css_import(route, url, manifest2) {
   )}.then(x => x.load_css([${css}]));`;
 }
 __name(create_css_import, "create_css_import");
-__name2(create_css_import, "create_css_import");
 var updated = {
   ...readable(false),
-  check: /* @__PURE__ */ __name2(() => false, "check")
+  check: /* @__PURE__ */ __name(() => false, "check")
 };
 async function render_response({
   branch: branch2,
@@ -8391,7 +8035,7 @@ async function render_response({
   const csp = new Csp(options2.csp, {
     prerender: !!state2.prerendering
   });
-  const prefixed = /* @__PURE__ */ __name2((path) => {
+  const prefixed = /* @__PURE__ */ __name((path) => {
     if (path.startsWith("/")) {
       return base + path;
     }
@@ -8562,7 +8206,7 @@ ${indent}}`);
           remote[create_remote_key(info.id, key2)] = await cache[key2];
         }
       }
-      const replacer = /* @__PURE__ */ __name2((thing) => {
+      const replacer = /* @__PURE__ */ __name((thing) => {
         for (const key2 in options2.hooks.transport) {
           const encoded = options2.hooks.transport[key2].encode(thing);
           if (encoded) {
@@ -8682,13 +8326,9 @@ ${indent}}`);
   );
 }
 __name(render_response, "render_response");
-__name2(render_response, "render_response");
 var PageNodes = class {
   static {
     __name(this, "PageNodes");
-  }
-  static {
-    __name2(this, "PageNodes");
   }
   data;
   /**
@@ -8812,7 +8452,7 @@ async function respond_with_error({
         state: state2,
         node: default_layout,
         // eslint-disable-next-line @typescript-eslint/require-await
-        parent: /* @__PURE__ */ __name2(async () => ({}), "parent")
+        parent: /* @__PURE__ */ __name(async () => ({}), "parent")
       });
       const server_data = await server_data_promise;
       data_serializer.add_node(0, server_data);
@@ -8822,7 +8462,7 @@ async function respond_with_error({
         fetched,
         node: default_layout,
         // eslint-disable-next-line @typescript-eslint/require-await
-        parent: /* @__PURE__ */ __name2(async () => ({}), "parent"),
+        parent: /* @__PURE__ */ __name(async () => ({}), "parent"),
         resolve_opts,
         server_data_promise,
         state: state2,
@@ -8871,12 +8511,11 @@ async function respond_with_error({
   }
 }
 __name(respond_with_error, "respond_with_error");
-__name2(respond_with_error, "respond_with_error");
 async function handle_remote_call(event, state2, options2, manifest2, id) {
   return record_span({
     name: "sveltekit.remote.call",
     attributes: {},
-    fn: /* @__PURE__ */ __name2((current2) => {
+    fn: /* @__PURE__ */ __name((current2) => {
       const traced_event = merge_tracing(event, current2);
       return with_request_store(
         { event: traced_event, state: state2 },
@@ -8886,7 +8525,6 @@ async function handle_remote_call(event, state2, options2, manifest2, id) {
   });
 }
 __name(handle_remote_call, "handle_remote_call");
-__name2(handle_remote_call, "handle_remote_call");
 async function handle_remote_call_internal(event, state2, options2, manifest2, id) {
   const [hash2, name, additional_args] = id.split("/");
   const remotes = manifest2._.remotes;
@@ -9052,15 +8690,13 @@ async function handle_remote_call_internal(event, state2, options2, manifest2, i
     );
   }
   __name(serialize_refreshes, "serialize_refreshes");
-  __name2(serialize_refreshes, "serialize_refreshes");
 }
 __name(handle_remote_call_internal, "handle_remote_call_internal");
-__name2(handle_remote_call_internal, "handle_remote_call_internal");
 async function handle_remote_form_post(event, state2, manifest2, id) {
   return record_span({
     name: "sveltekit.remote.form.post",
     attributes: {},
-    fn: /* @__PURE__ */ __name2((current2) => {
+    fn: /* @__PURE__ */ __name((current2) => {
       const traced_event = merge_tracing(event, current2);
       return with_request_store(
         { event: traced_event, state: state2 },
@@ -9070,7 +8706,6 @@ async function handle_remote_form_post(event, state2, manifest2, id) {
   });
 }
 __name(handle_remote_form_post, "handle_remote_form_post");
-__name2(handle_remote_form_post, "handle_remote_form_post");
 async function handle_remote_form_post_internal(event, state2, manifest2, id) {
   const [hash2, name, action_id] = id.split("/");
   const remotes = manifest2._.remotes;
@@ -9128,17 +8763,14 @@ async function handle_remote_form_post_internal(event, state2, manifest2, id) {
   }
 }
 __name(handle_remote_form_post_internal, "handle_remote_form_post_internal");
-__name2(handle_remote_form_post_internal, "handle_remote_form_post_internal");
 function get_remote_id(url) {
   return url.pathname.startsWith(`${base}/${app_dir}/remote/`) && url.pathname.replace(`${base}/${app_dir}/remote/`, "");
 }
 __name(get_remote_id, "get_remote_id");
-__name2(get_remote_id, "get_remote_id");
 function get_remote_action(url) {
   return url.searchParams.get("/remote");
 }
 __name(get_remote_action, "get_remote_action");
-__name2(get_remote_action, "get_remote_action");
 var MAX_DEPTH = 10;
 async function render_page(event, event_state, page2, options2, manifest2, state2, nodes, resolve_opts) {
   if (state2.depth > MAX_DEPTH) {
@@ -9230,7 +8862,7 @@ async function render_page(event, event_state, page2, options2, manifest2, state
             event_state,
             state: state2,
             node,
-            parent: /* @__PURE__ */ __name2(async () => {
+            parent: /* @__PURE__ */ __name(async () => {
               const data = {};
               for (let j = 0; j < i; j += 1) {
                 const parent = await server_promises[j];
@@ -9260,7 +8892,7 @@ async function render_page(event, event_state, page2, options2, manifest2, state
             event_state,
             fetched,
             node,
-            parent: /* @__PURE__ */ __name2(async () => {
+            parent: /* @__PURE__ */ __name(async () => {
               const data = {};
               for (let j = 0; j < i; j += 1) {
                 Object.assign(data, await load_promises[j]);
@@ -9392,7 +9024,6 @@ async function render_page(event, event_state, page2, options2, manifest2, state
   }
 }
 __name(render_page, "render_page");
-__name2(render_page, "render_page");
 function once(fn) {
   let done = false;
   let result;
@@ -9403,7 +9034,6 @@ function once(fn) {
   };
 }
 __name(once, "once");
-__name2(once, "once");
 async function render_data(event, event_state, route, options2, manifest2, state2, invalidated_data_nodes, trailing_slash) {
   if (!route.page) {
     return new Response(void 0, {
@@ -9434,7 +9064,7 @@ async function render_data(event, event_state, route, options2, manifest2, state
             event_state,
             state: state2,
             node,
-            parent: /* @__PURE__ */ __name2(async () => {
+            parent: /* @__PURE__ */ __name(async () => {
               const data2 = {};
               for (let j = 0; j < i; j += 1) {
                 const parent = (
@@ -9520,7 +9150,6 @@ async function render_data(event, event_state, route, options2, manifest2, state
   }
 }
 __name(render_data, "render_data");
-__name2(render_data, "render_data");
 function json_response(json2, status = 200) {
   return text(typeof json2 === "string" ? json2 : JSON.stringify(json2), {
     status,
@@ -9531,7 +9160,6 @@ function json_response(json2, status = 200) {
   });
 }
 __name(json_response, "json_response");
-__name2(json_response, "json_response");
 function redirect_json_response(redirect) {
   return json_response(
     /** @type {import('types').ServerRedirectNode} */
@@ -9542,7 +9170,6 @@ function redirect_json_response(redirect) {
   );
 }
 __name(redirect_json_response, "redirect_json_response");
-__name2(redirect_json_response, "redirect_json_response");
 var INVALID_COOKIE_CHARACTER_REGEX = /[\x00-\x1F\x7F()<>@,;:"/[\]?={} \t]/;
 function validate_options(options2) {
   if (options2?.path === void 0) {
@@ -9550,15 +9177,13 @@ function validate_options(options2) {
   }
 }
 __name(validate_options, "validate_options");
-__name2(validate_options, "validate_options");
 function generate_cookie_key(domain, path, name) {
   return `${domain || ""}${path}?${encodeURIComponent(name)}`;
 }
 __name(generate_cookie_key, "generate_cookie_key");
-__name2(generate_cookie_key, "generate_cookie_key");
 function get_cookies(request, url) {
   const header = request.headers.get("cookie") ?? "";
-  const initial_cookies = (0, import_cookie.parse)(header, { decode: /* @__PURE__ */ __name2((value) => value, "decode") });
+  const initial_cookies = (0, import_cookie.parse)(header, { decode: /* @__PURE__ */ __name((value) => value, "decode") });
   let normalized_url;
   const new_cookies = /* @__PURE__ */ new Map();
   const defaults = {
@@ -9659,7 +9284,7 @@ function get_cookies(request, url) {
       combined_cookies[cookie.name] = encoder(cookie.value);
     }
     if (header2) {
-      const parsed = (0, import_cookie.parse)(header2, { decode: /* @__PURE__ */ __name2((value) => value, "decode") });
+      const parsed = (0, import_cookie.parse)(header2, { decode: /* @__PURE__ */ __name((value) => value, "decode") });
       for (const name in parsed) {
         combined_cookies[name] = parsed[name];
       }
@@ -9667,7 +9292,6 @@ function get_cookies(request, url) {
     return Object.entries(combined_cookies).map(([name, value]) => `${name}=${value}`).join("; ");
   }
   __name(get_cookie_header, "get_cookie_header");
-  __name2(get_cookie_header, "get_cookie_header");
   const internal_queue = [];
   function set_internal(name, value, options2) {
     if (!normalized_url) {
@@ -9683,17 +9307,14 @@ function get_cookies(request, url) {
     new_cookies.set(cookie_key, cookie);
   }
   __name(set_internal, "set_internal");
-  __name2(set_internal, "set_internal");
   function set_trailing_slash(trailing_slash) {
     normalized_url = normalize_path(url.pathname, trailing_slash);
     internal_queue.forEach((fn) => fn());
   }
   __name(set_trailing_slash, "set_trailing_slash");
-  __name2(set_trailing_slash, "set_trailing_slash");
   return { cookies, new_cookies, get_cookie_header, set_internal, set_trailing_slash };
 }
 __name(get_cookies, "get_cookies");
-__name2(get_cookies, "get_cookies");
 function domain_matches(hostname, constraint) {
   if (!constraint) return true;
   const normalized = constraint[0] === "." ? constraint.slice(1) : constraint;
@@ -9701,7 +9322,6 @@ function domain_matches(hostname, constraint) {
   return hostname.endsWith("." + normalized);
 }
 __name(domain_matches, "domain_matches");
-__name2(domain_matches, "domain_matches");
 function path_matches(path, constraint) {
   if (!constraint) return true;
   const normalized = constraint.endsWith("/") ? constraint.slice(0, -1) : constraint;
@@ -9709,7 +9329,6 @@ function path_matches(path, constraint) {
   return path.startsWith(normalized + "/");
 }
 __name(path_matches, "path_matches");
-__name2(path_matches, "path_matches");
 function add_cookies_to_headers(headers2, cookies) {
   for (const new_cookie of cookies) {
     const { name, value, options: options2 } = new_cookie;
@@ -9721,16 +9340,15 @@ function add_cookies_to_headers(headers2, cookies) {
   }
 }
 __name(add_cookies_to_headers, "add_cookies_to_headers");
-__name2(add_cookies_to_headers, "add_cookies_to_headers");
 function create_fetch({ event, options: options2, manifest: manifest2, state: state2, get_cookie_header, set_internal }) {
-  const server_fetch = /* @__PURE__ */ __name2(async (info, init2) => {
+  const server_fetch = /* @__PURE__ */ __name(async (info, init2) => {
     const original_request = normalize_fetch_input(info, init2, event.url);
     let mode = (info instanceof Request ? info.mode : init2?.mode) ?? "cors";
     let credentials = (info instanceof Request ? info.credentials : init2?.credentials) ?? "same-origin";
     return options2.hooks.handleFetch({
       event,
       request: original_request,
-      fetch: /* @__PURE__ */ __name2(async (info2, init3) => {
+      fetch: /* @__PURE__ */ __name(async (info2, init3) => {
         const request = normalize_fetch_input(info2, init3, event.url);
         const url = new URL(request.url);
         if (!request.headers.has("origin")) {
@@ -9808,7 +9426,7 @@ function create_fetch({ event, options: options2, manifest: manifest2, state: st
             const path = options3.path ?? (url.pathname.split("/").slice(0, -1).join("/") || "/");
             set_internal(name, value, {
               path,
-              encode: /* @__PURE__ */ __name2((value2) => value2, "encode"),
+              encode: /* @__PURE__ */ __name((value2) => value2, "encode"),
               .../** @type {import('cookie').CookieSerializeOptions} */
               options3
             });
@@ -9826,7 +9444,6 @@ function create_fetch({ event, options: options2, manifest: manifest2, state: st
   };
 }
 __name(create_fetch, "create_fetch");
-__name2(create_fetch, "create_fetch");
 function normalize_fetch_input(info, init2, url) {
   if (info instanceof Request) {
     return info;
@@ -9834,20 +9451,19 @@ function normalize_fetch_input(info, init2, url) {
   return new Request(typeof info === "string" ? new URL(info, url) : info, init2);
 }
 __name(normalize_fetch_input, "normalize_fetch_input");
-__name2(normalize_fetch_input, "normalize_fetch_input");
 async function internal_fetch(request, options2, manifest2, state2) {
   if (request.signal) {
     if (request.signal.aborted) {
       throw new DOMException("The operation was aborted.", "AbortError");
     }
-    let remove_abort_listener = /* @__PURE__ */ __name2(() => {
+    let remove_abort_listener = /* @__PURE__ */ __name(() => {
     }, "remove_abort_listener");
     const abort_promise = new Promise((_, reject) => {
-      const on_abort = /* @__PURE__ */ __name2(() => {
+      const on_abort = /* @__PURE__ */ __name(() => {
         reject(new DOMException("The operation was aborted.", "AbortError"));
       }, "on_abort");
       request.signal.addEventListener("abort", on_abort, { once: true });
-      remove_abort_listener = /* @__PURE__ */ __name2(() => request.signal.removeEventListener("abort", on_abort), "remove_abort_listener");
+      remove_abort_listener = /* @__PURE__ */ __name(() => request.signal.removeEventListener("abort", on_abort), "remove_abort_listener");
     });
     const result = await Promise.race([
       respond(request, options2, manifest2, {
@@ -9866,7 +9482,6 @@ async function internal_fetch(request, options2, manifest2, state2) {
   }
 }
 __name(internal_fetch, "internal_fetch");
-__name2(internal_fetch, "internal_fetch");
 var body;
 var etag;
 var headers;
@@ -9883,10 +9498,9 @@ function get_public_env(request) {
   return new Response(body, { headers });
 }
 __name(get_public_env, "get_public_env");
-__name2(get_public_env, "get_public_env");
-var default_transform = /* @__PURE__ */ __name2(({ html }) => html, "default_transform");
-var default_filter = /* @__PURE__ */ __name2(() => false, "default_filter");
-var default_preload = /* @__PURE__ */ __name2(({ type }) => type === "js" || type === "css", "default_preload");
+var default_transform = /* @__PURE__ */ __name(({ html }) => html, "default_transform");
+var default_filter = /* @__PURE__ */ __name(() => false, "default_filter");
+var default_preload = /* @__PURE__ */ __name(({ type }) => type === "js" || type === "css", "default_preload");
 var page_methods = /* @__PURE__ */ new Set(["GET", "HEAD", "POST"]);
 var allowed_page_methods = /* @__PURE__ */ new Set(["GET", "HEAD", "OPTIONS"]);
 var respond = propagate_context(internal_respond);
@@ -9957,7 +9571,7 @@ async function internal_respond(request, options2, manifest2, state2) {
     platform: state2.platform,
     request,
     route: { id: null },
-    setHeaders: /* @__PURE__ */ __name2((new_headers) => {
+    setHeaders: /* @__PURE__ */ __name((new_headers) => {
       for (const key2 in new_headers) {
         const lower = key2.toLowerCase();
         const value = new_headers[key2];
@@ -10131,7 +9745,7 @@ async function internal_respond(request, options2, manifest2, state2) {
         "sveltekit.is_data_request": is_data_request,
         "sveltekit.is_sub_request": event.isSubRequest
       },
-      fn: /* @__PURE__ */ __name2(async (root_span) => {
+      fn: /* @__PURE__ */ __name(async (root_span) => {
         const traced_event = {
           ...event,
           tracing: {
@@ -10144,13 +9758,13 @@ async function internal_respond(request, options2, manifest2, state2) {
           { event: traced_event, state: event_state },
           () => options2.hooks.handle({
             event: traced_event,
-            resolve: /* @__PURE__ */ __name2((event2, opts) => {
+            resolve: /* @__PURE__ */ __name((event2, opts) => {
               return record_span({
                 name: "sveltekit.resolve",
                 attributes: {
                   "http.route": event2.route.id || "unknown"
                 },
-                fn: /* @__PURE__ */ __name2((resolve_span) => {
+                fn: /* @__PURE__ */ __name((resolve_span) => {
                   return with_request_store(
                     null,
                     () => resolve2(merge_tracing(event2, resolve_span), page_nodes, opts).then(
@@ -10371,10 +9985,8 @@ async function internal_respond(request, options2, manifest2, state2) {
     }
   }
   __name(resolve2, "resolve2");
-  __name2(resolve2, "resolve2");
 }
 __name(internal_respond, "internal_respond");
-__name2(internal_respond, "internal_respond");
 function load_page_nodes(page2, manifest2) {
   return Promise.all([
     // we use == here rather than === because [undefined] serializes as "[null]"
@@ -10383,7 +9995,6 @@ function load_page_nodes(page2, manifest2) {
   ]);
 }
 __name(load_page_nodes, "load_page_nodes");
-__name2(load_page_nodes, "load_page_nodes");
 function propagate_context(fn) {
   return async (req, ...rest) => {
     {
@@ -10392,7 +10003,6 @@ function propagate_context(fn) {
   };
 }
 __name(propagate_context, "propagate_context");
-__name2(propagate_context, "propagate_context");
 function filter_env(env2, allowed, disallowed) {
   return Object.fromEntries(
     Object.entries(env2).filter(
@@ -10401,19 +10011,14 @@ function filter_env(env2, allowed, disallowed) {
   );
 }
 __name(filter_env, "filter_env");
-__name2(filter_env, "filter_env");
 function set_app(value) {
 }
 __name(set_app, "set_app");
-__name2(set_app, "set_app");
 var init_promise;
 var current = null;
 var Server = class {
   static {
     __name(this, "Server");
-  }
-  static {
-    __name2(this, "Server");
   }
   /** @type {import('types').SSROptions} */
   #options;
@@ -10445,7 +10050,7 @@ var Server = class {
     set_private_env(filter_env(env2, env_private_prefix, env_public_prefix));
     set_public_env(filter_env(env2, env_public_prefix, env_private_prefix));
     if (read) {
-      const wrapped_read = /* @__PURE__ */ __name2((file) => {
+      const wrapped_read = /* @__PURE__ */ __name((file) => {
         const result = read(file);
         if (result instanceof ReadableStream) {
           return result;
@@ -10522,20 +10127,21 @@ var Server = class {
     });
   }
 };
+
+// ../cloudflare-tmp/manifest.js
 var manifest = (() => {
   function __memo(fn) {
     let value;
     return () => value ??= value = fn();
   }
   __name(__memo, "__memo");
-  __name2(__memo, "__memo");
   return {
     appDir: "_app",
     appPath: "_app",
     assets: /* @__PURE__ */ new Set(["favicon.png", "logo.png", "styles/bg.png", "styles/bg.webp", "styles/global.css", "styles/reset.css", "styles/text-mask-des.png", "styles/text-mask-des.webp", "styles/text-mask-dev.png", "styles/text-mask-dev.webp"]),
     mimeTypes: { ".png": "image/png", ".webp": "image/webp", ".css": "text/css" },
     _: {
-      client: { start: "_app/immutable/entry/start.DSpGMCU-.js", app: "_app/immutable/entry/app.D4mECkZE.js", imports: ["_app/immutable/entry/start.DSpGMCU-.js", "_app/immutable/chunks/BacZ9to3.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/D8R6l8tj.js", "_app/immutable/entry/app.D4mECkZE.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/C8p6ab3U.js", "_app/immutable/chunks/BDw5cIeZ.js", "_app/immutable/chunks/D8R6l8tj.js", "_app/immutable/chunks/CY6zCf-n.js", "_app/immutable/chunks/DWpoCReb.js"], stylesheets: [], fonts: [], uses_env_dynamic_public: false },
+      client: { start: "_app/immutable/entry/start.B8jxDgoO.js", app: "_app/immutable/entry/app.BsCGhuY9.js", imports: ["_app/immutable/entry/start.B8jxDgoO.js", "_app/immutable/chunks/Dwa1xRGX.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/D8R6l8tj.js", "_app/immutable/entry/app.BsCGhuY9.js", "_app/immutable/chunks/BqfPy25W.js", "_app/immutable/chunks/C8p6ab3U.js", "_app/immutable/chunks/BDw5cIeZ.js", "_app/immutable/chunks/D8R6l8tj.js", "_app/immutable/chunks/CY6zCf-n.js", "_app/immutable/chunks/DWpoCReb.js"], stylesheets: [], fonts: [], uses_env_dynamic_public: false },
       nodes: [
         __memo(() => Promise.resolve().then(() => (init__(), __exports))),
         __memo(() => Promise.resolve().then(() => (init__2(), __exports2)))
@@ -10543,7 +10149,7 @@ var manifest = (() => {
       remotes: {},
       routes: [],
       prerendered_routes: /* @__PURE__ */ new Set(["/", "/about", "/contact", "/ischool-peer-feedback-tool", "/mission-threads", "/rochester-greenovation", "/sbc4e-hub", "/second-desk", "/web-design"]),
-      matchers: /* @__PURE__ */ __name2(async () => {
+      matchers: /* @__PURE__ */ __name(async () => {
         return {};
       }, "matchers"),
       server_assets: {}
@@ -10552,6 +10158,9 @@ var manifest = (() => {
 })();
 var prerendered = /* @__PURE__ */ new Set(["/", "/about", "/contact", "/ischool-peer-feedback-tool", "/mission-threads", "/rochester-greenovation", "/sbc4e-hub", "/second-desk", "/web-design"]);
 var base_path = "";
+
+// _worker.js
+import { env } from "cloudflare:workers";
 async function e(e3, t2) {
   let n2 = "string" != typeof t2 && "HEAD" === t2.method;
   n2 && (t2 = new Request(t2, { method: "GET" }));
@@ -10559,12 +10168,10 @@ async function e(e3, t2) {
   return n2 && r3 && (r3 = new Response(null, r3)), r3;
 }
 __name(e, "e");
-__name2(e, "e");
 function t(e3, t2, n2, o2) {
   return ("string" == typeof t2 || "GET" === t2.method) && r2(n2) && (n2.headers.has("Set-Cookie") && (n2 = new Response(n2.body, n2)).headers.append("Cache-Control", "private=Set-Cookie"), o2.waitUntil(e3.put(t2, n2.clone()))), n2;
 }
 __name(t, "t");
-__name2(t, "t");
 var n = /* @__PURE__ */ new Set([200, 203, 204, 300, 301, 404, 405, 410, 414, 501]);
 function r2(e3) {
   if (!n.has(e3.status)) return false;
@@ -10572,8 +10179,7 @@ function r2(e3) {
   let t2 = e3.headers.get("Cache-Control") || "";
   return !/(private|no-cache|no-store)/i.test(t2);
 }
-__name(r2, "r2");
-__name2(r2, "r");
+__name(r2, "r");
 function o(n2) {
   return async function(r3, o2) {
     let a = await e(n2, r3);
@@ -10584,7 +10190,6 @@ function o(n2) {
   };
 }
 __name(o, "o");
-__name2(o, "o");
 var s2 = caches.default;
 var c = t.bind(0, s2);
 var r22 = e.bind(0, s2);
@@ -10597,7 +10202,7 @@ var origin;
 var initialized = server.init({
   // @ts-expect-error env contains environment variables and bindings
   env,
-  read: /* @__PURE__ */ __name2(async (file) => {
+  read: /* @__PURE__ */ __name(async (file) => {
     const url = `${origin}/${file}`;
     const response = await /** @type {{ ASSETS: { fetch: typeof fetch } }} */
     env.ASSETS.fetch(
@@ -10672,7 +10277,9 @@ var worker_default = {
     return pragma && res.status < 400 ? c(req, res, ctx) : res;
   }
 };
-var drainBody = /* @__PURE__ */ __name2(async (request, env2, _ctx, middlewareCtx) => {
+
+// ../../node_modules/wrangler/templates/middleware/middleware-ensure-req-body-drained.ts
+var drainBody = /* @__PURE__ */ __name(async (request, env2, _ctx, middlewareCtx) => {
   try {
     return await middlewareCtx.next(request, env2);
   } finally {
@@ -10688,6 +10295,8 @@ var drainBody = /* @__PURE__ */ __name2(async (request, env2, _ctx, middlewareCt
   }
 }, "drainBody");
 var middleware_ensure_req_body_drained_default = drainBody;
+
+// ../../node_modules/wrangler/templates/middleware/middleware-miniflare3-json-error.ts
 function reduceError(e3) {
   return {
     name: e3?.name,
@@ -10697,8 +10306,7 @@ function reduceError(e3) {
   };
 }
 __name(reduceError, "reduceError");
-__name2(reduceError, "reduceError");
-var jsonError = /* @__PURE__ */ __name2(async (request, env2, _ctx, middlewareCtx) => {
+var jsonError = /* @__PURE__ */ __name(async (request, env2, _ctx, middlewareCtx) => {
   try {
     return await middlewareCtx.next(request, env2);
   } catch (e3) {
@@ -10710,17 +10318,20 @@ var jsonError = /* @__PURE__ */ __name2(async (request, env2, _ctx, middlewareCt
   }
 }, "jsonError");
 var middleware_miniflare3_json_error_default = jsonError;
+
+// ../../.wrangler/tmp/bundle-HUgDIx/middleware-insertion-facade.js
 var __INTERNAL_WRANGLER_MIDDLEWARE__ = [
   middleware_ensure_req_body_drained_default,
   middleware_miniflare3_json_error_default
 ];
 var middleware_insertion_facade_default = worker_default;
+
+// ../../node_modules/wrangler/templates/middleware/common.ts
 var __facade_middleware__ = [];
 function __facade_register__(...args) {
   __facade_middleware__.push(...args.flat());
 }
 __name(__facade_register__, "__facade_register__");
-__name2(__facade_register__, "__facade_register__");
 function __facade_invokeChain__(request, env2, ctx, dispatch, middlewareChain) {
   const [head, ...tail] = middlewareChain;
   const middlewareCtx = {
@@ -10732,7 +10343,6 @@ function __facade_invokeChain__(request, env2, ctx, dispatch, middlewareChain) {
   return head(request, env2, ctx, middlewareCtx);
 }
 __name(__facade_invokeChain__, "__facade_invokeChain__");
-__name2(__facade_invokeChain__, "__facade_invokeChain__");
 function __facade_invoke__(request, env2, ctx, dispatch, finalMiddleware) {
   return __facade_invokeChain__(request, env2, ctx, dispatch, [
     ...__facade_middleware__,
@@ -10740,18 +10350,16 @@ function __facade_invoke__(request, env2, ctx, dispatch, finalMiddleware) {
   ]);
 }
 __name(__facade_invoke__, "__facade_invoke__");
-__name2(__facade_invoke__, "__facade_invoke__");
+
+// ../../.wrangler/tmp/bundle-HUgDIx/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class ___Facade_ScheduledController__ {
-  static {
-    __name(this, "___Facade_ScheduledController__");
-  }
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;
     this.cron = cron;
     this.#noRetry = noRetry;
   }
   static {
-    __name2(this, "__Facade_ScheduledController__");
+    __name(this, "__Facade_ScheduledController__");
   }
   #noRetry;
   noRetry() {
@@ -10768,7 +10376,7 @@ function wrapExportedHandler(worker) {
   for (const middleware of __INTERNAL_WRANGLER_MIDDLEWARE__) {
     __facade_register__(middleware);
   }
-  const fetchDispatcher = /* @__PURE__ */ __name2(function(request, env2, ctx) {
+  const fetchDispatcher = /* @__PURE__ */ __name(function(request, env2, ctx) {
     if (worker.fetch === void 0) {
       throw new Error("Handler does not export a fetch() function.");
     }
@@ -10777,7 +10385,7 @@ function wrapExportedHandler(worker) {
   return {
     ...worker,
     fetch(request, env2, ctx) {
-      const dispatcher = /* @__PURE__ */ __name2(function(type, init2) {
+      const dispatcher = /* @__PURE__ */ __name(function(type, init2) {
         if (type === "scheduled" && worker.scheduled !== void 0) {
           const controller2 = new __Facade_ScheduledController__(
             Date.now(),
@@ -10793,7 +10401,6 @@ function wrapExportedHandler(worker) {
   };
 }
 __name(wrapExportedHandler, "wrapExportedHandler");
-__name2(wrapExportedHandler, "wrapExportedHandler");
 function wrapWorkerEntrypoint(klass) {
   if (__INTERNAL_WRANGLER_MIDDLEWARE__ === void 0 || __INTERNAL_WRANGLER_MIDDLEWARE__.length === 0) {
     return klass;
@@ -10802,7 +10409,7 @@ function wrapWorkerEntrypoint(klass) {
     __facade_register__(middleware);
   }
   return class extends klass {
-    #fetchDispatcher = /* @__PURE__ */ __name2((request, env2, ctx) => {
+    #fetchDispatcher = /* @__PURE__ */ __name((request, env2, ctx) => {
       this.env = env2;
       this.ctx = ctx;
       if (super.fetch === void 0) {
@@ -10810,7 +10417,7 @@ function wrapWorkerEntrypoint(klass) {
       }
       return super.fetch(request);
     }, "#fetchDispatcher");
-    #dispatcher = /* @__PURE__ */ __name2((type, init2) => {
+    #dispatcher = /* @__PURE__ */ __name((type, init2) => {
       if (type === "scheduled" && super.scheduled !== void 0) {
         const controller2 = new __Facade_ScheduledController__(
           Date.now(),
@@ -10833,7 +10440,6 @@ function wrapWorkerEntrypoint(klass) {
   };
 }
 __name(wrapWorkerEntrypoint, "wrapWorkerEntrypoint");
-__name2(wrapWorkerEntrypoint, "wrapWorkerEntrypoint");
 var WRAPPED_ENTRY;
 if (typeof middleware_insertion_facade_default === "object") {
   WRAPPED_ENTRY = wrapExportedHandler(middleware_insertion_facade_default);
@@ -10841,262 +10447,9 @@ if (typeof middleware_insertion_facade_default === "object") {
   WRAPPED_ENTRY = wrapWorkerEntrypoint(middleware_insertion_facade_default);
 }
 var middleware_loader_entry_default = WRAPPED_ENTRY;
-
-// node_modules/wrangler/templates/pages-dev-util.ts
-function isRoutingRuleMatch(pathname, routingRule) {
-  if (!pathname) {
-    throw new Error("Pathname is undefined.");
-  }
-  if (!routingRule) {
-    throw new Error("Routing rule is undefined.");
-  }
-  const ruleRegExp = transformRoutingRuleToRegExp(routingRule);
-  return pathname.match(ruleRegExp) !== null;
-}
-__name(isRoutingRuleMatch, "isRoutingRuleMatch");
-function transformRoutingRuleToRegExp(rule) {
-  let transformedRule;
-  if (rule === "/" || rule === "/*") {
-    transformedRule = rule;
-  } else if (rule.endsWith("/*")) {
-    transformedRule = `${rule.substring(0, rule.length - 2)}(/*)?`;
-  } else if (rule.endsWith("/")) {
-    transformedRule = `${rule.substring(0, rule.length - 1)}(/)?`;
-  } else if (rule.endsWith("*")) {
-    transformedRule = rule;
-  } else {
-    transformedRule = `${rule}(/)?`;
-  }
-  transformedRule = `^${transformedRule.replaceAll(/\./g, "\\.").replaceAll(/\*/g, ".*")}$`;
-  return new RegExp(transformedRule);
-}
-__name(transformRoutingRuleToRegExp, "transformRoutingRuleToRegExp");
-
-// .wrangler/tmp/pages-DYjbRk/xneasg4ht4o.js
-var define_ROUTES_default = {
-  version: 1,
-  description: "Generated by @sveltejs/adapter-cloudflare",
-  include: [
-    "/*"
-  ],
-  exclude: [
-    "/_app/immutable/*",
-    "/_app/version.json",
-    "/favicon.png",
-    "/logo.png",
-    "/styles/bg.png",
-    "/styles/bg.webp",
-    "/styles/global.css",
-    "/styles/reset.css",
-    "/styles/text-mask-des.png",
-    "/styles/text-mask-des.webp",
-    "/styles/text-mask-dev.png",
-    "/styles/text-mask-dev.webp",
-    "/",
-    "/about",
-    "/contact",
-    "/ischool-peer-feedback-tool",
-    "/mission-threads",
-    "/rochester-greenovation",
-    "/sbc4e-hub",
-    "/second-desk",
-    "/web-design"
-  ]
-};
-var routes = define_ROUTES_default;
-var pages_dev_pipeline_default = {
-  fetch(request, env2, context2) {
-    const { pathname } = new URL(request.url);
-    for (const exclude of routes.exclude) {
-      if (isRoutingRuleMatch(pathname, exclude)) {
-        return env2.ASSETS.fetch(request);
-      }
-    }
-    for (const include of routes.include) {
-      if (isRoutingRuleMatch(pathname, include)) {
-        const workerAsHandler = middleware_loader_entry_default;
-        if (workerAsHandler.fetch === void 0) {
-          throw new TypeError("Entry point missing `fetch` handler");
-        }
-        return workerAsHandler.fetch(request, env2, context2);
-      }
-    }
-    return env2.ASSETS.fetch(request);
-  }
-};
-
-// node_modules/wrangler/templates/middleware/middleware-ensure-req-body-drained.ts
-var drainBody2 = /* @__PURE__ */ __name(async (request, env2, _ctx, middlewareCtx) => {
-  try {
-    return await middlewareCtx.next(request, env2);
-  } finally {
-    try {
-      if (request.body !== null && !request.bodyUsed) {
-        const reader = request.body.getReader();
-        while (!(await reader.read()).done) {
-        }
-      }
-    } catch (e3) {
-      console.error("Failed to drain the unused request body.", e3);
-    }
-  }
-}, "drainBody");
-var middleware_ensure_req_body_drained_default2 = drainBody2;
-
-// node_modules/wrangler/templates/middleware/middleware-miniflare3-json-error.ts
-function reduceError2(e3) {
-  return {
-    name: e3?.name,
-    message: e3?.message ?? String(e3),
-    stack: e3?.stack,
-    cause: e3?.cause === void 0 ? void 0 : reduceError2(e3.cause)
-  };
-}
-__name(reduceError2, "reduceError");
-var jsonError2 = /* @__PURE__ */ __name(async (request, env2, _ctx, middlewareCtx) => {
-  try {
-    return await middlewareCtx.next(request, env2);
-  } catch (e3) {
-    const error2 = reduceError2(e3);
-    return Response.json(error2, {
-      status: 500,
-      headers: { "MF-Experimental-Error-Stack": "true" }
-    });
-  }
-}, "jsonError");
-var middleware_miniflare3_json_error_default2 = jsonError2;
-
-// .wrangler/tmp/bundle-AvjYHM/middleware-insertion-facade.js
-var __INTERNAL_WRANGLER_MIDDLEWARE__2 = [
-  middleware_ensure_req_body_drained_default2,
-  middleware_miniflare3_json_error_default2
-];
-var middleware_insertion_facade_default2 = pages_dev_pipeline_default;
-
-// node_modules/wrangler/templates/middleware/common.ts
-var __facade_middleware__2 = [];
-function __facade_register__2(...args) {
-  __facade_middleware__2.push(...args.flat());
-}
-__name(__facade_register__2, "__facade_register__");
-function __facade_invokeChain__2(request, env2, ctx, dispatch, middlewareChain) {
-  const [head, ...tail] = middlewareChain;
-  const middlewareCtx = {
-    dispatch,
-    next(newRequest, newEnv) {
-      return __facade_invokeChain__2(newRequest, newEnv, ctx, dispatch, tail);
-    }
-  };
-  return head(request, env2, ctx, middlewareCtx);
-}
-__name(__facade_invokeChain__2, "__facade_invokeChain__");
-function __facade_invoke__2(request, env2, ctx, dispatch, finalMiddleware) {
-  return __facade_invokeChain__2(request, env2, ctx, dispatch, [
-    ...__facade_middleware__2,
-    finalMiddleware
-  ]);
-}
-__name(__facade_invoke__2, "__facade_invoke__");
-
-// .wrangler/tmp/bundle-AvjYHM/middleware-loader.entry.ts
-var __Facade_ScheduledController__2 = class ___Facade_ScheduledController__2 {
-  constructor(scheduledTime, cron, noRetry) {
-    this.scheduledTime = scheduledTime;
-    this.cron = cron;
-    this.#noRetry = noRetry;
-  }
-  static {
-    __name(this, "__Facade_ScheduledController__");
-  }
-  #noRetry;
-  noRetry() {
-    if (!(this instanceof ___Facade_ScheduledController__2)) {
-      throw new TypeError("Illegal invocation");
-    }
-    this.#noRetry();
-  }
-};
-function wrapExportedHandler2(worker) {
-  if (__INTERNAL_WRANGLER_MIDDLEWARE__2 === void 0 || __INTERNAL_WRANGLER_MIDDLEWARE__2.length === 0) {
-    return worker;
-  }
-  for (const middleware of __INTERNAL_WRANGLER_MIDDLEWARE__2) {
-    __facade_register__2(middleware);
-  }
-  const fetchDispatcher = /* @__PURE__ */ __name(function(request, env2, ctx) {
-    if (worker.fetch === void 0) {
-      throw new Error("Handler does not export a fetch() function.");
-    }
-    return worker.fetch(request, env2, ctx);
-  }, "fetchDispatcher");
-  return {
-    ...worker,
-    fetch(request, env2, ctx) {
-      const dispatcher = /* @__PURE__ */ __name(function(type, init2) {
-        if (type === "scheduled" && worker.scheduled !== void 0) {
-          const controller2 = new __Facade_ScheduledController__2(
-            Date.now(),
-            init2.cron ?? "",
-            () => {
-            }
-          );
-          return worker.scheduled(controller2, env2, ctx);
-        }
-      }, "dispatcher");
-      return __facade_invoke__2(request, env2, ctx, dispatcher, fetchDispatcher);
-    }
-  };
-}
-__name(wrapExportedHandler2, "wrapExportedHandler");
-function wrapWorkerEntrypoint2(klass) {
-  if (__INTERNAL_WRANGLER_MIDDLEWARE__2 === void 0 || __INTERNAL_WRANGLER_MIDDLEWARE__2.length === 0) {
-    return klass;
-  }
-  for (const middleware of __INTERNAL_WRANGLER_MIDDLEWARE__2) {
-    __facade_register__2(middleware);
-  }
-  return class extends klass {
-    #fetchDispatcher = /* @__PURE__ */ __name((request, env2, ctx) => {
-      this.env = env2;
-      this.ctx = ctx;
-      if (super.fetch === void 0) {
-        throw new Error("Entrypoint class does not define a fetch() function.");
-      }
-      return super.fetch(request);
-    }, "#fetchDispatcher");
-    #dispatcher = /* @__PURE__ */ __name((type, init2) => {
-      if (type === "scheduled" && super.scheduled !== void 0) {
-        const controller2 = new __Facade_ScheduledController__2(
-          Date.now(),
-          init2.cron ?? "",
-          () => {
-          }
-        );
-        return super.scheduled(controller2);
-      }
-    }, "#dispatcher");
-    fetch(request) {
-      return __facade_invoke__2(
-        request,
-        this.env,
-        this.ctx,
-        this.#dispatcher,
-        this.#fetchDispatcher
-      );
-    }
-  };
-}
-__name(wrapWorkerEntrypoint2, "wrapWorkerEntrypoint");
-var WRAPPED_ENTRY2;
-if (typeof middleware_insertion_facade_default2 === "object") {
-  WRAPPED_ENTRY2 = wrapExportedHandler2(middleware_insertion_facade_default2);
-} else if (typeof middleware_insertion_facade_default2 === "function") {
-  WRAPPED_ENTRY2 = wrapWorkerEntrypoint2(middleware_insertion_facade_default2);
-}
-var middleware_loader_entry_default2 = WRAPPED_ENTRY2;
 export {
-  __INTERNAL_WRANGLER_MIDDLEWARE__2 as __INTERNAL_WRANGLER_MIDDLEWARE__,
-  middleware_loader_entry_default2 as default
+  __INTERNAL_WRANGLER_MIDDLEWARE__,
+  middleware_loader_entry_default as default
 };
 /*! Bundled license information:
 
@@ -11108,4 +10461,4 @@ cookie/index.js:
    * MIT Licensed
    *)
 */
-//# sourceMappingURL=xneasg4ht4o.js.map
+//# sourceMappingURL=bundledWorker-0.9197060992107717.mjs.map
