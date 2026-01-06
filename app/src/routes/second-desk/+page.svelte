@@ -1,4 +1,6 @@
 <script>
+	import Zoom from 'svelte-medium-image-zoom';
+  	import 'svelte-medium-image-zoom/dist/styles.css';
 	import competitivePositioningAnalysis1 from '$lib/assets/second desk/competitive positioning analysis 1.png';
 	import competitivePositioningAnalysis2 from '$lib/assets/second desk/competitive positioning analysis 2.png';
 	import productOffering from '$lib/assets/second desk/product offering.png';
@@ -89,15 +91,17 @@
 				consumer-grade ones. We found that there were very few companies who had products that both
 				catered to individual consumers and offered a relatively low price point.
 			</p>
-			<div class="case-study__flex">
-				<img class="case-study__img" src={competitivePositioningAnalysis1} alt="" loading="lazy" />
-			</div>
 			<p>
 				We found that there were very few companies who had products that both catered to individual
 				consumers and offered a relatively low price point.
 			</p>
 			<div class="case-study__flex">
-				<img class="case-study__img" src={competitivePositioningAnalysis2} alt="" loading="lazy" />
+				<Zoom>
+					<img class="case-study__img case-study__img--small" src={competitivePositioningAnalysis1} alt="" loading="lazy" />
+				</Zoom>
+				<Zoom>
+					<img class="case-study__img case-study__img--small" src={competitivePositioningAnalysis2} alt="" loading="lazy" />
+				</Zoom>
 			</div>
 		</div>
 	</section>
@@ -115,7 +119,9 @@
 					when compared to a common existing solution:
 				</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={productOffering} alt="" loading="lazy" />
+					<Zoom>
+						<img class="case-study__img case-study__img--small" src={productOffering} alt="" loading="lazy" />
+					</Zoom>
 				</div>
 				<p>
 					After comparing these two approaches, we felt that ours did an excellent job of addressing
@@ -187,8 +193,12 @@
 					PC, and were frustrated at having to switch between devices to get their work done.
 				</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={userPersona1} alt="" loading="lazy" />
-					<img class="case-study__img" src={userPersona2} alt="" loading="lazy" />
+					<Zoom>
+						<img class="case-study__img case-study__img--small" src={userPersona1} alt="" loading="lazy" />
+					</Zoom>
+					<Zoom>
+						<img class="case-study__img case-study__img--small" src={userPersona2} alt="" loading="lazy" />
+					</Zoom>
 				</div>
 			</div>
 		</section>
@@ -206,30 +216,25 @@
 				understanding people's general emotions and what they were thinking.
 			</p>
 			<div class="case-study__flex">
-				<img
-					class="case-study__img case-study__img--small"
+				<Zoom>
+					<img
+					class="case-study__img case-study__img--small bordered"
 					src={empathyMap1}
 					alt=""
 					loading="lazy"
-				/>
-				<img
-					class="case-study__img case-study__img--small"
+					/>
+				</Zoom>
+				<Zoom>
+					<img
+					class="case-study__img case-study__img--small bordered"
 					src={empathyMap2}
 					alt=""
 					loading="lazy"
-				/>
+					/>
+				</Zoom>
 			</div>
 		</div>
 	</section>
-
-	<!-- <div class="bg-wrapper">
-      <section>
-        <div class="case-study__row">
-          <h3>User Flow</h3>
-          <img class="case-study__img" src="./assets/second-desk/user-flow.png" alt="" loading="lazy">
-        </div>
-      </section>
-    </div> -->
 
 	<!-- mockups -->
 	<div class="bg-wrapper">
@@ -242,19 +247,27 @@
 					flow looks.
 				</p>
 				<div class="constrained-img--horizontal" style="margin-bottom: 80px;">
-					<img class="case-study__img" src={userFlow} alt="" loading="lazy" />
+					<Zoom>
+						<img class="case-study__img" src={userFlow} alt="" loading="lazy" />
+					</Zoom>
 				</div>
 				<p>Home page</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={homeScreen} alt="" loading="lazy" />
+					<Zoom>
+						<img class="case-study__img" src={homeScreen} alt="" loading="lazy" />
+					</Zoom>
 				</div>
 				<p>Select a plan</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={planSelectionScreen} alt="" loading="lazy" />
+					<Zoom>
+						<img class="case-study__img" src={planSelectionScreen} alt="" loading="lazy" />
+					</Zoom>
 				</div>
 				<p>Desktop</p>
 				<div class="case-study__flex">
-					<img class="case-study__img" src={desktopScreen} alt="" loading="lazy" />
+					<Zoom>
+						<img class="case-study__img" src={desktopScreen} alt="" loading="lazy" />
+					</Zoom>
 				</div>
 				<p>Interactive Figma Prototype</p>
 				<iframe
