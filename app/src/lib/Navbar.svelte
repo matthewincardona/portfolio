@@ -1,6 +1,7 @@
 <script>
 	import resume from '$lib/assets/Matthew.Incardona.CV.pdf';
 	import DocumentPdf from 'carbon-icons-svelte/lib/DocumentPdf.svelte';
+	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 </script>
 
 <nav>
@@ -8,6 +9,12 @@
 		<div class="topnav__inner">
 			<a href="/" class="active">Home</a>
 			<a href="/about">About</a>
+			<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
+				<span class="topnav__inner-github">
+					GitHub
+					<LogoGithub size="24px" style="fill: var(--body-color)" />
+				</span>
+			</a>
 			<a href={resume} class="topnav__inner-resume" target="_blank">
 				Resume
 				<DocumentPdf size="20px" style="fill: var(--body-color)" />
@@ -68,5 +75,12 @@
 
 	.topnav__inner-resume:hover {
 		opacity: 0.6;
+	}
+
+	.topnav__inner-github {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
 	}
 </style>
