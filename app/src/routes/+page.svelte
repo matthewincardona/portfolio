@@ -434,10 +434,30 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		color: transparent;
+		padding-top: 20px;
 	}
 
 	.hero__inner__title--des span {
 		display: block;
+	}
+
+	@media (max-width: 768px) {
+		.hero__inner {
+			margin-top: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+		}
+
+		#heroVideo {
+			position: absolute;
+			top: -24vw;
+			left: -40vw;
+			width: 100vw;
+			height: 80dvh;
+			transform: scale(1.8);
+			z-index: 100;
+		}
 	}
 
 	/* .hero__inner__title--dev {
@@ -541,6 +561,22 @@ PROJECTS
 		width: 70%;
 		height: auto;
 		max-width: 600px;
+	}
+
+	@media (max-width: 768px) {
+		.project-container {
+			row-gap: 1.5em;
+		}
+
+		.project-container__right-panel {
+			margin-bottom: 20px;
+		}
+
+		.project__img {
+			width: 100%;
+			height: auto;
+			max-width: 1000px;
+		}
 	}
 
 	.project__btn {
