@@ -1,6 +1,6 @@
 <script>
 	import Zoom from 'svelte-medium-image-zoom';
-  	import 'svelte-medium-image-zoom/dist/styles.css';
+	import 'svelte-medium-image-zoom/dist/styles.css';
 	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import asmithLogin from '$lib/assets/501-feedback-tool/optimized/asmith login.webp';
 	import asmithDash1 from '$lib/assets/501-feedback-tool/optimized/asmith dash 1.webp';
@@ -23,13 +23,6 @@
 
 <svelte:head>
 	<title>Projects | iSchool Peer Feedback Tool</title>
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-		crossorigin="anonymous"
-		referrerpolicy="no-referrer"
-	/>
 </svelte:head>
 
 <div class="case-study">
@@ -59,11 +52,12 @@
 				</div>
 				<div>
 					<h2>Tools & Roles</h2>
-						<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
-							<div class="tools-links">
-								<LogoGithub size="32px" style="fill: var(--body-color)" />
-								<span><b>Github Repo</b></span>
-							</div></a>
+					<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
+						<div class="tools-links">
+							<LogoGithub size="32px" style="fill: var(--body-color)" />
+							<span><b>Github Repo</b></span>
+						</div></a
+					>
 					<p>Project Management, UX/UI Design, Frontend Development</p>
 					<ul class="tag-container">
 						<li class="project-tag"><span>Azure DevOps</span></li>
@@ -225,7 +219,8 @@
 			loading="lazy"
 			autoplay="true"
 			controls="true"
-			muted="true"></video>
+			muted="true"
+		></video>
 		<Zoom>
 			<img class="case-study__img" src={viewData} alt="" loading="lazy" />
 		</Zoom>
@@ -249,10 +244,10 @@
 		<Zoom>
 			<img class="case-study__img" src={mincardDashCompleted} alt="" loading="lazy" />
 		</Zoom>
-		<Zoom>	
+		<Zoom>
 			<img class="case-study__img" src={mincardDashNotYetAvailable} alt="" loading="lazy" />
 		</Zoom>
-		<Zoom>	
+		<Zoom>
 			<img class="case-study__img" src={mincardDashPassedDeadline} alt="" loading="lazy" />
 		</Zoom>
 		<h3>Responding To Forms</h3>
@@ -265,7 +260,7 @@
 		<Zoom>
 			<img class="case-study__img" src={respondToForm1} alt="" loading="lazy" />
 		</Zoom>
-		<Zoom>	
+		<Zoom>
 			<img class="case-study__img" src={respondToForm2} alt="" loading="lazy" />
 		</Zoom>
 		<Zoom>
