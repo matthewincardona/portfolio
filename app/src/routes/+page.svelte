@@ -166,25 +166,6 @@
 			<div class="project-container__right-panel">
 				<img class="project__img" src={secondDesk} alt="Second Desk project preview" />
 			</div>
-
-			<!-- <div class="project-container__left-panel">
-				<h2>Rochester Greenovation</h2>
-				<ul class="tag-container">
-					<li class="project-tag"><span>UX/UI Designer</span></li>
-				</ul>
-				<p class="project__descr">
-					Take a look at my time with Rochester Greenovation, a local thrift store with a goal to
-					let nothing go to waste. This project was part of a two-week team-based UX competition
-					hosted by the Rochester Institute of Technology.
-				</p>
-				<a class="project__btn" href="/rochester-greenovation">
-					Open Project
-					<img  src={arrow} alt="" />
-				</a>
-			</div>
-			<div class="project-container__right-panel">
-				<img class="project__img" src={greenovation} alt="Rochester Greenovation project preview" />
-			</div> -->
 		</div>
 
 		<!-- Extra Projects -->
