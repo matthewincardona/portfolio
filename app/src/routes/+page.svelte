@@ -252,7 +252,7 @@
 							A platform for creating and hosting helpful gen AI personas made to do any task.
 							Future plans included file uploads, remixing/forking bots, and embeddable bots.
 						</p>
-						<p><strong>Built with Svelte, ChatGPT API, Firebase</strong></p>
+						<p><strong>Built with Svelte, the ChatGPT API, & Firebase</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/umami-ai-public" target="_blank">
@@ -275,7 +275,7 @@
 						<p>
 							A secure, privacy-focused video-calling app for couples with an interactive artboard.
 						</p>
-						<p><strong>Built with WebRTC, HTML Canvas</strong></p>
+						<p><strong>Built with WebRTC & HTML Canvas</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/close-up" target="_blank">
@@ -294,7 +294,7 @@
 							part of the jam. It's purposefully designed and built so only one person needs to have
 							the app downloaded.
 						</p>
-						<p><strong>Built with Swift, Spotify API</strong></p>
+						<p><strong>Built with Swift & the Spotify API</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/jukebox-ios" target="_blank">
