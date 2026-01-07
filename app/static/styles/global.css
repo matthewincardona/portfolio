@@ -96,7 +96,7 @@ h2 {
 h3 {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--header-color);
-	font-size: clamp(1.3rem, 4vw, 1.5rem);
+	font-size: clamp(1.2rem, 4vw, 1.4rem);
 	letter-spacing: 4%;
 	line-height: 140%;
 	margin-bottom: 15px;
@@ -331,7 +331,9 @@ video {
 	border-radius: 3px;
 	object-fit: scale-down;
 	max-width: 1000px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	box-shadow:
+		rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .case-study__img--small {
