@@ -309,7 +309,7 @@
 							A volatile task manager with an ever-present countdown that encourages you to complete
 							your tasks on time.
 						</p>
-						<p><strong>Kotlin</strong></p>
+						<p><strong>Built with Kotlin</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
 						<a href="https://github.com/matthewincardona/outta-time" target="_blank">
