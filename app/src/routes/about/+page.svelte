@@ -27,7 +27,7 @@
 				moderator for Smashing Magazine. I enjoying working on personal projects in my freetime- my
 				most recent one is my custom job board, which pairs students majoring in web fields (ux
 				design, web design, and frontend development) with entry-level jobs and internships. Outside
-				of my work, I love to go rock climbing and hiking and visiting the beach at night.
+				of my work, I love to go rock climbing, practice my cooking, and visit the beach at night.
 			</p>
 		</div>
 	</div>
