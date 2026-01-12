@@ -15,19 +15,18 @@
 		<div class="about-me__bio">
 			<h1>About Me</h1>
 			<p>
-				Despite having graduated recently (Rochester Institute of Technology, 2024 Human-Centered
-				Computing major), I've been a web enthusiast since 2018, back when I first started my
-				freelance web design business. I've had the wonderful opportunity since then to work with a
-				lot of great organizations and people, and to make some <a href="/web-design"
+				I've been a web enthusiast since 2018, back when I first started my freelance web design
+				business. I've had the wonderful opportunity since then to work with a lot of great
+				organizations and people, and to make some <a href="/web-design"
 					>projects that I'm really proud of</a
-				>.
+				>. Currently, I'm working with the mEducation Alliance and STSS Inc., and I'm also an event
+				moderator for the wonderful Smashing Magazine.
 			</p>
 			<p>
-				Currently, I'm the web designer for the mEducation Alliance and STSS Inc. and an event
-				moderator for Smashing Magazine. I enjoying working on personal projects in my freetime- my
-				most recent one is my custom job board, which pairs students majoring in web fields (ux
-				design, web design, and frontend development) with entry-level jobs and internships. Outside
-				of my work, I love to go rock climbing, practice my cooking, and visit the beach at night.
+				I enjoy working on personal projects in my freetime- my most recent one is my custom job
+				board, which uses AI to pair students majoring in web fields (ux design, web design, and
+				frontend development) with entry level jobs and internships. Outside of my work, I love to
+				go rock climbing and practice my cooking.
 			</p>
 		</div>
 	</div>
