@@ -9,7 +9,7 @@
 		<div class="topnav__inner">
 			<a href="/" class="active">Home</a>
 			<a href="/about">About</a>
-			<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
+			<a href="https://github.com/matthewincardona" target="_blank">
 				<span class="topnav__inner-github">
 					GitHub
 					<LogoGithub size="24px" style="fill: var(--body-color)" />
