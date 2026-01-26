@@ -377,37 +377,3 @@ video {
 	max-width: 200%;
 	padding-bottom: 0;
 }
-
-/* Fun hover hover to be added later */
-/* .project__img {
-  position: relative;
-  transition: 0.15s all ease-out;
-  box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px -3px rgba(0, 0, 0, 0.75);
-}
-
-.project__img:hover {
-  box-shadow: 15px 15px 5px -1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 15px 15px 5px -1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 15px 15px 5px -1px rgba(0, 0, 0, 0.75);
-}
-
-.project__img::after {
-  content: "";
-  position: absolute;
-  height: inherit;
-  width: inherit;
-  background: red;
-  top: 0px;
-  left: 0px;
-  margin-left: 15px;
-  margin-top: 15px;
-  transition: 0.15s all;
-  z-index: -1;
-}
-
-.project__img:hover::after {
-  margin-left: 20px;
-  margin-top: 20px;
-} */
