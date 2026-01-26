@@ -49,7 +49,7 @@
 <section>
 	<div class="hero-container">
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<video src={heroVideo} id="heroVideo" autoplay="true" muted="true" />
+		<video src={heroVideo} id="heroVideo" autoplay="true" muted="true"></video>
 
 		<!-- <canvas id="canvas3d" /> -->
 
@@ -505,7 +505,8 @@ EXTRA PROJECTS
 		max-width: 600px;
 		width: 100%;
 		height: 280px;
-		box-shadow: inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
+		box-shadow:
+			inset 0px 0px 30px -10px rgba(255, 255, 255, 0.249),
 			inset 0px -10px 20px 0px rgba(50, 1, 130, 0.249);
 	}
 
@@ -599,8 +600,12 @@ PROJECTS
 		border-radius: 50px;
 		padding: 2px; /* Adjust the thickness of the border */
 		background: linear-gradient(90deg, #b444d0 0%, #58334a 100%);
-		mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-		-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
 		-webkit-mask-composite: xor;
 		mask-composite: exclude;
 		z-index: -1;
