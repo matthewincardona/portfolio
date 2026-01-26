@@ -58,6 +58,16 @@ hr {
 	width: 20%;
 }
 
+@font-face {
+	font-family: 'JetBrains Mono';
+	src: url('./fonts/JetBrainsMono-VariableFont_wght.woff2');
+}
+
+@font-face {
+	font-family: 'Major Mono Display';
+	src: url('./fonts/MajorMonoDisplay-Regular.woff2');
+}
+
 h1 {
 	font-family: 'Major Mono Display', monospace;
 	color: var(--header-color);
