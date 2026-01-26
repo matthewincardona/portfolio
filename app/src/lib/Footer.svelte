@@ -8,7 +8,7 @@
 	<a href="https://www.linkedin.com/in/matthew-incardona/" target="_blank">
 		<LogoLinkedin size="40px" style="fill: var(--body-color)" />
 	</a>
-	<a href="https://github.com/matthewincardona/501-peer-feedback-system" target="_blank">
+	<a href="https://github.com/matthewincardona/" target="_blank">
 		<LogoGithub size="40px" style="fill: var(--body-color)" />
 	</a>
 
