@@ -128,7 +128,7 @@
 
 			<!-- Project Three -->
 			<div class="project-container__left-panel">
-				<h2>DouxDolci Web Design</h2>
+				<h2>Freelance Web Design</h2>
 				<ul class="tag-container">
 					<li class="project-tag"><span>Founder</span></li>
 					<li class="project-tag"><span>Web Designer</span></li>
