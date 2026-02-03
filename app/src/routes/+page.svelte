@@ -12,50 +12,17 @@
 	import ApplicationWeb from 'carbon-icons-svelte/lib/ApplicationWeb.svelte';
 	import DocumentVideo from 'carbon-icons-svelte/lib/DocumentVideo.svelte';
 	import Link from 'carbon-icons-svelte/lib/Link.svelte';
-
-	// import { Application } from '@splinetool/runtime';
-	// import { onMount } from 'svelte';
-
-	// Load spline
-	// onMount(() => {
-	// 	// Spline
-	// 	const canvas = document.getElementById('canvas3d');
-	// 	// // start the application and load the scene
-	// 	const spline = new Application(canvas);
-	// 	spline.load('https://prod.spline.design/dquOI6xKoTCv6DlD/scene.splinecode').then(() => {
-	// 		document.getElementsByClassName('hero__inner__title--des')[0].classList.add('fade-up');
-	// 		document.getElementsByClassName('hero__descr')[0].classList.add('fade-down');
-
-	// 		document
-	// 			.getElementsByClassName('loader-container')[0]
-	// 			.classList.add('loader-container--hidden');
-
-	// 		setTimeout(function () {
-	// 			spline.stop();
-	// 		}, 4200);
-	// 	});
-	// });
+	import Code from 'carbon-icons-svelte/lib/Code.svelte';
 </script>
 
 <svelte:head>
 	<title>Matthew Incardona</title>
-	<!-- <link
-		rel="preload"
-		href="https://prod.spline.design/KWvZ9DsHNqCoOsAC/scene.splinecode"
-		as="script"
-	/> -->
 </svelte:head>
 
 <section>
 	<div class="hero-container">
 		<!-- svelte-ignore a11y-media-has-caption -->
 		<video src={heroVideo} id="heroVideo" autoplay="true" muted="true"></video>
-
-		<!-- <canvas id="canvas3d" /> -->
-
-		<!-- <div class="loader-container">
-			<div class="loader2" />
-		</div> -->
 
 		<div class="hero" id="hero">
 			<div class="hero__inner" id="hero__inner">
@@ -65,18 +32,18 @@
 					<span>Developer</span>
 				</h1>
 			</div>
-		</div>
-		<div class="hero__descr fade-up">
-			<p>
-				<strong>Hi, I’m Matthew Incardona!</strong>
-				I'm a web enthusiast who loves building cool things. Check out my work to see some of it!
-			</p>
-			<a href="#projects">
-				<p>See My Work</p>
-				<div class="hero__descr-icon">
-					<ArrowDown size="20px" style="fill: var(--body-color)" />
-				</div>
-			</a>
+			<div class="hero__descr fade-up">
+				<p>
+					<strong>Hi, I’m Matthew.</strong><br />
+					I'm a web enthusiast who loves building cool things.
+				</p>
+				<!-- <a href="#projects">
+					<p>See My Work</p>
+					<div class="hero__descr-icon">
+						<ArrowDown size="20px" style="fill: var(--body-color)" />
+					</div>
+				</a> -->
+			</div>
 		</div>
 	</div>
 	<!-- Projects area -->
@@ -179,7 +146,11 @@
 		</svg>
 
 		<div class="extra-projects__card-grid-wrapper">
-			<h2 style="text-align: left;">More Projects</h2>
+			<div style="display: flex; gap: .5em">
+				<Code size="32px" style="fill: #101010; padding-top: 6px" />
+
+				<h2 style="text-align: left;">More Projects</h2>
+			</div>
 			<p>A collection of interesting projects that I've made over the years.</p>
 			<p style="text-align: left; margin-bottom: 40px">
 				<b>* Click the project icons</b> to view repos, prototypes, and more!
@@ -339,25 +310,25 @@
 </section>
 
 <style>
-	/* #canvas3d {
-		position: absolute;
-		width: 100vw !important;
-		height: calc(100dvh + 32px) !important;
-	}  */
-
 	.hero-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		position: relative;
-		min-height: 100dvh;
+		height: 100vh;
+		max-height: 600px;
 		box-shadow: inset 0px 0px 30px -10px rgba(31, 25, 25, 0.249);
 		overflow: hidden;
+		width: 100%;
 	}
 
 	.hero {
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 75dvh;
+		flex-direction: column;
+		row-gap: 2em;
 		width: 100%;
+		max-width: 1600px;
+		padding: 0px 5% 0 5%;
 	}
 
 	@keyframes fade-in {
@@ -385,39 +356,15 @@
 
 	#heroVideo {
 		position: absolute;
-		bottom: 10dvh;
-		left: 10vw;
+		bottom: -3dvh;
+		left: 8vw;
 		width: 100vw;
 		height: 80dvh;
-	}
-
-	.hero__inner {
-		/* transition-property: transform, filter; */
-		/* transition-duration: 0.8s, 0.4s; durations for width, height, and background-color transitions */
-		/* transition-timing-function: cubic-bezier(0.77, 0.15, 0.07, 0.85), linear; timing functions for each transition */
-		margin: auto;
-		width: fit-content;
 	}
 
 	h1 {
 		transition: letter-spacing 0.8s cubic-bezier(0.77, 0.15, 0.07, 0.85);
 		white-space: nowrap;
-	}
-
-	.hero__descr {
-		width: 100%;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: wrap;
-		padding: 16px;
-		padding-bottom: 24px;
-	}
-
-	.hero__descr p {
-		max-width: 70ch;
-		margin-bottom: 20px;
 	}
 
 	.hero__descr-icon {
@@ -452,6 +399,7 @@
 		-webkit-background-clip: text;
 		color: transparent;
 		padding-top: 20px;
+		margin-left: -8px;
 	}
 
 	.hero__inner__title--des span {
@@ -459,16 +407,22 @@
 	}
 
 	@media (max-width: 768px) {
+		.hero {
+			margin-top: 50px;
+		}
+
 		.hero__inner {
 			margin-top: auto;
-			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 20px;
+		}
+
+		.hero__inner__title--des {
+			margin-left: -5px;
 		}
 
 		#heroVideo {
 			position: absolute;
-			top: -24vw;
+			top: -32vw;
 			left: -40vw;
 			width: 100vw;
 			height: 80dvh;
@@ -476,17 +430,6 @@
 			z-index: 100;
 		}
 	}
-
-	/* .hero__inner__title--dev {
-		mix-blend-mode: lighten;
-		mask-image: url('$lib/assets/text-mask-dev.png');
-		background: url('$lib/assets/text-mask-dev.webp');
-		background-position: 0% 50%;
-		background-size: cover;
-		background-clip: text;
-		-webkit-background-clip: text;
-		color: transparent;
-	} */
 
 	/* ================
 EXTRA PROJECTS
@@ -498,7 +441,7 @@ EXTRA PROJECTS
 		margin: auto;
 		max-width: 1600px;
 		padding: 0px 5% 20dvh 5%;
-		margin-top: 10dvh;
+		margin-top: 5dvh;
 	}
 
 	.extra-projects__card-grid {
@@ -507,7 +450,7 @@ EXTRA PROJECTS
 		margin: auto;
 		justify-content: start;
 		align-items: center;
-		gap: 3vw;
+		gap: 1em;
 		flex-wrap: wrap;
 	}
 
@@ -570,8 +513,8 @@ PROJECTS
 		grid-template-columns: 0.8fr 1fr;
 		grid-template-rows: auto;
 		padding: 10dvh 5% 10dvh 5%;
-		column-gap: 4em;
-		row-gap: 9em;
+		column-gap: 3em;
+		row-gap: 4em;
 	}
 
 	.project__img {
