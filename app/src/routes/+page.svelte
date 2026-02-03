@@ -212,6 +212,24 @@
 				</div>
 				<div class="extra-projects__card">
 					<div>
+						<h3>Stations</h3>
+						<p>
+							A train-themed job board and tracker that encourages applying regularly with its
+							'Trip' feature.
+						</p>
+						<p><strong>Prototyped in Figma</strong></p>
+					</div>
+					<div class="extra-projects__card-toolbar">
+						<a
+							href="https://www.figma.com/design/9BNgvfscJ59olfhXzo50kq/Stations--Public-?node-id=1-156&t=QpUBsA8XsPxCkVZq-1"
+							target="_blank"
+						>
+							<LogoFigma size="32px" style="fill: url(#gradient);" />
+						</a>
+					</div>
+				</div>
+				<div class="extra-projects__card">
+					<div>
 						<h3>Rochester Greenovation</h3>
 						<p>
 							This project was part of a two-week UX competition hosted by the Rochester Institute
