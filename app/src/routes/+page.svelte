@@ -5,11 +5,9 @@
 	import missionThreads from '$lib/assets/missionThreads.webp';
 	import ISTEPeerFeedbackTool from '$lib/assets/501 peer feedback tool cover.webp';
 	import umamiVideo from '$lib/assets/umami walkthrough.webm';
-	import ArrowDown from 'carbon-icons-svelte/lib/ArrowDown.svelte';
 	import ArrowRight from 'carbon-icons-svelte/lib/ArrowRight.svelte';
 	import LogoGithub from 'carbon-icons-svelte/lib/LogoGithub.svelte';
 	import LogoFigma from 'carbon-icons-svelte/lib/LogoFigma.svelte';
-	import ApplicationWeb from 'carbon-icons-svelte/lib/ApplicationWeb.svelte';
 	import DocumentVideo from 'carbon-icons-svelte/lib/DocumentVideo.svelte';
 	import Link from 'carbon-icons-svelte/lib/Link.svelte';
 	import Code from 'carbon-icons-svelte/lib/Code.svelte';
@@ -209,7 +207,7 @@
 						<p><strong>Prototyped in Figma</strong></p>
 					</div>
 					<div class="extra-projects__card-toolbar">
-						<a href="/rochester-greenovation">
+						<a href="/rochester-greenovation" target="_blank">
 							<Link size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
@@ -251,7 +249,7 @@
 							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
 						<a href="https://close-up.pages.dev" target="_blank">
-							<ApplicationWeb size="32px" style="fill: url(#gradient);" />
+							<Link size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
@@ -300,7 +298,7 @@
 							<LogoGithub size="32px" style="fill: url(#gradient);" />
 						</a>
 						<a href="https://secret-santa.matthewincardona.com/" target="_blank">
-							<ApplicationWeb size="32px" style="fill: url(#gradient);" />
+							<Link size="32px" style="fill: url(#gradient);" />
 						</a>
 					</div>
 				</div>
