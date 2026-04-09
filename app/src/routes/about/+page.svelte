@@ -41,6 +41,9 @@
 		<li>Stony Brook SBDC</li>
 		<li>STSS Inc.</li>
 		<li>Preservation Quest</li>
+		<li>Students Helping Honduras</li>
+		<li>Bubble Meets</li>
+		<li>Liddiard Consulting Corp</li>
 	</ul>
 </div>
 
