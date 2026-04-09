@@ -32,7 +32,7 @@
 	</div>
 
 	<!-- People I've Worked With -->
-	<h2 style="margin-top: 150px;">People & Orgs I've Worked With</h2>
+	<h2 style="margin-top: 150px;">Some of The People & Orgs I've Worked With</h2>
 	<ul class="hero__people-ive-worked-with">
 		<li>mEducation Alliance</li>
 		<li>Smashing Magazine</li>
@@ -42,7 +42,6 @@
 		<li>STSS Inc.</li>
 		<li>Preservation Quest</li>
 		<li>Students Helping Honduras</li>
-		<li>Bubble Meets</li>
 		<li>Liddiard Consulting Corp</li>
 	</ul>
 </div>
