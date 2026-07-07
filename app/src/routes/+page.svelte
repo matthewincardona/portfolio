@@ -69,6 +69,26 @@
 
 			<!-- Project Two -->
 			<div class="project-container__left-panel">
+				<h2>Freelance Web Design</h2>
+				<ul class="tag-container">
+					<li class="project-tag"><span>Founder</span></li>
+					<li class="project-tag"><span>Web Designer</span></li>
+				</ul>
+				<p class="project__descr">
+					Explore projects from my freelance web design business, DouxDolci Web Design, where I work
+					one-on-one with a variety of clients to improve their online presence.
+				</p>
+				<a class="project__btn" href="/web-design">
+					Open Project
+					<ArrowRight size="20px" style="fill: var(--body-color)" />
+				</a>
+			</div>
+			<div class="project-container__right-panel">
+				<img class="project__img" src={douxDolci2} alt="Web design project preview" />
+			</div>
+
+			<!-- Project Three -->
+			<div class="project-container__left-panel">
 				<h2>iSchool Peer Feedback Tool</h2>
 				<ul class="tag-container">
 					<li class="project-tag"><span>Project Manager</span></li>
@@ -89,26 +109,6 @@
 					src={ISTEPeerFeedbackTool}
 					alt="iSchool peer feedback tool project preview"
 				/>
-			</div>
-
-			<!-- Project Three -->
-			<div class="project-container__left-panel">
-				<h2>Freelance Web Design</h2>
-				<ul class="tag-container">
-					<li class="project-tag"><span>Founder</span></li>
-					<li class="project-tag"><span>Web Designer</span></li>
-				</ul>
-				<p class="project__descr">
-					Explore projects from my freelance web design business, DouxDolci Web Design, where I work
-					one-on-one with a variety of clients to improve their online presence.
-				</p>
-				<a class="project__btn" href="/web-design">
-					Open Project
-					<ArrowRight size="20px" style="fill: var(--body-color)" />
-				</a>
-			</div>
-			<div class="project-container__right-panel">
-				<img class="project__img" src={douxDolci2} alt="Web design project preview" />
 			</div>
 
 			<!-- Project Four -->
